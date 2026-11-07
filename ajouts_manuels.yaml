@@ -1,21 +1,34 @@
-# Événements ajoutés à la main (trouvés ailleurs, ex. Fäger, affiche dans le quartier…).
-# Copie le modèle ci-dessous, retire les « # » et modifie-le.
-# Champs obligatoires : id, titre, debut, lieu_nom, source, url_source.
-# Dates au format AAAA-MM-JJTHH:MM (heure de Berne). Les événements passés disparaissent tout seuls.
+# Événements ajoutés à la main (trouvés ailleurs : Fäger, affiche dans le quartier, message d'école…).
+#
+# Comment faire :
+#   1. Copie le modèle ci-dessous sous la ligne « evenements: » et retire les « # » au début des lignes.
+#      Garde les deux espaces avant le tiret et les quatre espaces avant les autres lignes.
+#   2. Efface les crochets « [] » à la fin de la dernière ligne dès qu'il y a une fiche
+#      (les crochets veulent dire « liste vide »).
+#   3. Lance « python recuperer.py » : le terminal dit si une fiche a un problème.
+#
+# Obligatoire : titre, debut, lieu_nom. Tout le reste est facultatif.
+# Dates : "2026-11-20 14:00" (entre guillemets). Les événements passés disparaissent tout seuls.
 # Catégories possibles : atelier, conte, spectacle, musique, nature, sport, fête, visite
 #
-# Modèle :
-#  - id: manuel-peter-und-der-wolf-2026-11-08
-#    titre: Peter und der Wolf
-#    description_courte: Familienkonzert – le conte musical de Prokofiev.
-#    debut: "2026-11-08T16:00"
-#    fin: "2026-11-08T17:00"
-#    lieu_nom: Yehudi Menuhin Forum
-#    adresse: Helvetiaplatz 6, 3005 Bern
-#    age_min: 4
-#    prix: gratuit
-#    categorie: musique
-#    source: Yehudi Menuhin Forum
-#    url_source: https://menuhinforum.ch/events/peter-und-der-wolf/
+# Modèle complet (exemple inventé) :
+#  - titre: Zirkus-Nachmittag
+#    debut: "2026-11-20 14:00"
+#    fin: "2026-11-20 16:00"
+#    lieu_nom: Quartierzentrum
+#    adresse: Beispielstrasse 1, 3000 Bern
+#    description_courte: Jonglage et acrobatie pour les petits.
+#    age_min: 5
+#    age_max: 10
+#    prix: gratuit            # ou « 10 CHF », ou « inconnu »
+#    inscription_requise: true
+#    categorie: sport
+#    source: Fäger            # sinon « Ajout manuel »
+#    url_source: https://exemple.ch/zirkus
+#
+# Modèle minimal (exemple inventé) :
+#  - titre: Kasperlitheater
+#    debut: "2026-11-21 15:00"
+#    lieu_nom: Quartierzentrum
 
 evenements: []

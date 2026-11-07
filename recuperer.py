@@ -14,9 +14,9 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
+from agenda import ajouts
 from agenda.doublons import fusionner_doublons
 from agenda.filtre_enfants import completer, trier
-from agenda.modele import Evenement
 from agenda.regulier import separer
 
 # Dossier du projet (là où se trouve ce fichier)
@@ -39,10 +39,9 @@ def charger_sources():
 
 
 def charger_ajouts_manuels():
-    """Lit ajouts_manuels.yaml et renvoie une liste d'Evenement."""
-    with open(FICHIER_AJOUTS, encoding="utf-8") as f:
-        config = yaml.safe_load(f) or {}
-    return [Evenement(**donnees) for donnees in (config.get("evenements") or [])]
+    """Lit ajouts_manuels.yaml et renvoie la liste des Evenement valides (les erreurs sont ignorées)."""
+    evenements, _ = ajouts.charger(FICHIER_AJOUTS)
+    return evenements
 
 
 def dans_la_fenetre(evenement, maintenant):
@@ -95,9 +94,15 @@ def main():
             print(f"- {source['nom']} : ÉCHEC ({erreur})")
 
     # Les ajouts manuels sont toujours gardés : on complète seulement âge et catégorie
-    ajouts = [completer(e) for e in charger_ajouts_manuels()]
-    print(f"- Ajouts manuels : {len(ajouts)} lu(s)")
-    evenements.extend(ajouts)
+    manuels, erreurs = ajouts.charger(FICHIER_AJOUTS)
+    manuels = [completer(e) for e in manuels]
+    print(f"- Ajouts manuels : {len(manuels)} lu(s)")
+    for erreur in erreurs:
+        print(f"    ⚠️  {erreur}")
+    if erreurs:
+        # Visible aussi sur la page, pour ne pas croire qu'un ajout a été pris en compte
+        statuts.append({"nom": "Ajouts manuels", "ok": False, "erreur": " ; ".join(erreurs)})
+    evenements.extend(manuels)
 
     # On ne garde que les 14 prochains jours, triés par date
     evenements = [e for e in evenements if dans_la_fenetre(e, maintenant)]

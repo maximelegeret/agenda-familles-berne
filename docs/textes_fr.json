@@ -21,6 +21,7 @@
   "chaque_semaine": "Chaque semaine",
   "chaque_semaine_aide": "Activités régulières, sans date à retenir.",
   "source_en_echec": "⚠️ {nom} n'a pas pu être lu lors de la dernière mise à jour.",
+  "ajouts_en_erreur": "⚠️ Un ajout manuel a été ignoré car il contient une erreur (détail affiché dans le terminal).",
   "mis_a_jour": "Mis à jour le",
   "aujourd_hui": "Aujourd'hui",
   "demain": "Demain",

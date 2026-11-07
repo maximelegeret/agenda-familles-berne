@@ -100,12 +100,16 @@ function fiche(e) {
   if (e.inscription_requise) infos.append(el("span", "pastille pastille-alerte", T.inscription_requise));
   carte.append(infos);
 
-  // Lien vers la source (toujours affiché), puis les autres sources éventuelles
-  const lien = el("a", "fiche-lien", `${T.voir_source} ${e.source} →`);
-  lien.href = e.url_source;
-  lien.target = "_blank";
-  lien.rel = "noopener";
-  carte.append(lien);
+  // Lien vers la source (toujours affiché) ; un ajout manuel peut ne pas avoir de lien
+  if (e.url_source) {
+    const lien = el("a", "fiche-lien", `${T.voir_source} ${e.source} →`);
+    lien.href = e.url_source;
+    lien.target = "_blank";
+    lien.rel = "noopener";
+    carte.append(lien);
+  } else {
+    carte.append(el("p", "fiche-source", e.source));
+  }
   if (e.autres_sources && e.autres_sources.length) {
     const autres = el("p", "fiche-autres", T.aussi_sur + " ");
     e.autres_sources.forEach((s, i) => {
@@ -222,7 +226,11 @@ function afficher(donnees) {
 
   // Avertissement si une source n'a pas pu être lue
   for (const s of donnees.sources || []) {
-    if (!s.ok) liste.append(el("p", "message message-erreur", remplir(T.source_en_echec, { nom: s.nom })));
+    if (!s.ok) {
+      // Ajouts manuels : une ou plusieurs fiches mal écrites (le détail est dans le terminal)
+      const texte = s.nom === "Ajouts manuels" ? T.ajouts_en_erreur : remplir(T.source_en_echec, { nom: s.nom });
+      liste.append(el("p", "message message-erreur", texte));
+    }
   }
 
   const jours = joursDeLaPeriode(filtres.periode);
