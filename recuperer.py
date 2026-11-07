@@ -14,6 +14,7 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
+from agenda.doublons import fusionner_doublons
 from agenda.filtre_enfants import completer, trier
 from agenda.modele import Evenement
 from agenda.regulier import separer
@@ -100,6 +101,10 @@ def main():
 
     # On ne garde que les 14 prochains jours, triés par date
     evenements = [e for e in evenements if dans_la_fenetre(e, maintenant)]
+
+    # Un même événement vu dans plusieurs sources n'apparaît qu'une fois
+    evenements, nb_fusions = fusionner_doublons(evenements)
+    print(f"- Doublons fusionnés : {nb_fusions}")
     evenements.sort(key=lambda e: e.debut)
 
     # Les activités qui reviennent chaque semaine vont dans la section « Chaque semaine »
