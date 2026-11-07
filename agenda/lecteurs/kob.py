@@ -16,6 +16,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 
 from agenda.modele import Evenement
+from agenda.textes import lire_inscription, lire_prix, raccourcir  # noqa: F401 (utilisés aussi par les tests)
 from agenda.web import telecharger
 
 NOM_SOURCE = "Kornhausbibliotheken"
@@ -41,9 +42,6 @@ RE_DATE_SIMPLE = re.compile(_DATE + r",\s*(\d{1,2}:\d{2})\s*-\s*(\d{1,2}:\d{2})"
 # Période : « Freitag, 13. November 2026 bis Samstag, 14. November 2026, 18:00-08:30 Uhr »
 RE_PERIODE = re.compile(_DATE + r"\s+bis\s+\w+,\s*" + _DATE + r",\s*(\d{1,2}:\d{2})\s*-\s*(\d{1,2}:\d{2})")
 
-MOTS_GRATUIT = ("gratis", "kostenlos", "eintritt frei", "freier eintritt")
-
-
 def _date_iso(jour, mois, annee, heure):
     """('07', 'November', '2026', '16:00') -> '2026-11-07T16:00'"""
     h, m = heure.split(":")
@@ -68,29 +66,6 @@ def lire_dates(texte):
     return sorted(resultats)
 
 
-def lire_prix(texte):
-    """« Gratis » -> 'gratuit' ; « CHF 5,- pro Kind » -> '5 CHF' ; rien -> 'inconnu'."""
-    if not texte:
-        return "inconnu"
-    bas = texte.lower()
-    if any(mot in bas for mot in MOTS_GRATUIT):
-        return "gratuit"
-    nombre = re.search(r"(\d+(?:[.,]\d+)?)", texte)
-    if nombre:
-        return f"{nombre.group(1).replace(',', '.')} CHF"
-    return texte  # texte inattendu : on le garde tel quel
-
-
-def lire_inscription(texte):
-    """Vrai si la fiche demande une inscription, Faux si elle dit le contraire, None sinon."""
-    bas = texte.lower()
-    if "ohne anmeldung" in bas or "keine anmeldung" in bas:
-        return False
-    if "anmeldung" in bas:
-        return True
-    return None
-
-
 def analyser_fiche(page_html, url, id_wordpress, titre):
     """Lit une fiche HTML kob.ch et renvoie un Evenement par date."""
     soupe = BeautifulSoup(page_html, "html.parser")
@@ -107,9 +82,7 @@ def analyser_fiche(page_html, url, id_wordpress, titre):
     paragraphes = [p.get_text(" ", strip=True) for p in bloc.find_all("p")] if bloc else []
     paragraphes = [p for p in paragraphes if p]
     texte_complet = " ".join(paragraphes)
-    description = paragraphes[0] if paragraphes else ""
-    if len(description) > 200:
-        description = description[:197].rsplit(" ", 1)[0] + "…"
+    description = raccourcir(paragraphes[0]) if paragraphes else ""
 
     evenements = []
     for debut, fin in lire_dates(infos.get("Zeit", "")):

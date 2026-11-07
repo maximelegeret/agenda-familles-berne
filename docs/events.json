@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-07T13:56+01:00",
+  "mis_a_jour": "2026-11-07T14:10+01:00",
   "sources": [
     {
       "nom": "Kornhausbibliotheken",
@@ -10,6 +10,11 @@
       "nom": "Creaviva (Zentrum Paul Klee)",
       "ok": true,
       "nb": 48
+    },
+    {
+      "nom": "MuseumsQuartier Bern",
+      "ok": true,
+      "nb": 4
     }
   ],
   "offres_regulieres": [
@@ -247,7 +252,7 @@
       "lieu_nom": "Bibliothek Zollikofen",
       "source": "Kornhausbibliotheken",
       "url_source": "https://www.kob.ch/veranstaltung/eine-geschichte-fuer-dich/",
-      "description_courte": "Eine Geschichte für dich – auf Türkisch, Arabisch, Kurdisch, Persisch und Deutsch. Für Kinder ab dreijährig. Programm: 14.10.2026  – Türkisch/Deutsch 11.11.2026 – Arabisch/Deutsch 09.12.2027 –…",
+      "description_courte": "Eine Geschichte für dich – auf Türkisch, Arabisch, Kurdisch, Persisch und Deutsch. Für Kinder ab dreijährig. Programm: 14.10.2026 – Türkisch/Deutsch 11.11.2026 – Arabisch/Deutsch 09.12.2027 –…",
       "fin": "2026-11-11T15:00",
       "adresse": "",
       "latitude": null,
@@ -647,7 +652,7 @@
       "lieu_nom": "Bibliothek Münsingen",
       "source": "Kornhausbibliotheken",
       "url_source": "https://www.kob.ch/veranstaltung/gschichte-zyt-u-baschtle/",
-      "description_courte": "14.15 Uhr Geschichte in der Bibliothek 14.30 bis 16.30 Uhr Basteln im Kirchgemeindehaus Für Kinder ab vier Jahren in Begleitung einer erwachsenen Person. Mitnehmen: Kartonkiste oder Sack für…",
+      "description_courte": "14.15 Uhr Geschichte in der Bibliothek 14.30 bis 16.30 Uhr Basteln im Kirchgemeindehaus Für Kinder ab vier Jahren in Begleitung einer erwachsenen Person. Mitnehmen: Kartonkiste oder Sack für…",
       "fin": "2026-11-18T16:30",
       "adresse": "",
       "latitude": null,

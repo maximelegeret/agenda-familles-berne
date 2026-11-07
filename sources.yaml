@@ -25,8 +25,9 @@ sources:
 
   - nom: MuseumsQuartier Bern
     lecteur: mqb
-    url: https://mqb.ch/en/agenda
-    actif: false   # étape 5
+    url: https://www.mqb.ch/en/agenda
+    actif: true
+    pour_enfants: true   # le lecteur filtre déjà sur le public « Children & Family » du site
 
   - nom: Yehudi Menuhin Forum
     lecteur: menuhin
