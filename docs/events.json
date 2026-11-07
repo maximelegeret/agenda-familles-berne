@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-07T16:46+01:00",
+  "mis_a_jour": "2026-11-07T17:51+01:00",
   "sources": [
     {
       "nom": "Kornhausbibliotheken",
@@ -9,7 +9,7 @@
     {
       "nom": "Creaviva (Zentrum Paul Klee)",
       "ok": true,
-      "nb": 49
+      "nb": 48
     },
     {
       "nom": "MuseumsQuartier Bern",
@@ -31,12 +31,12 @@
     {
       "id": "creaviva-14498-regulier",
       "titre": "Karneval der Käfer: Kreativ verweilen Fünfliber-Werkstatt",
-      "debut": "2026-11-07T10:00",
+      "debut": "2026-11-08T10:00",
       "lieu_nom": "Creaviva, Zentrum Paul Klee",
       "source": "Creaviva (Zentrum Paul Klee)",
       "url_source": "https://zpk.org/de/kreativ-verweilen/karneval-der-kaefer",
       "description_courte": "Gepunktet, gestreift oder mit ganz vielen Beinchen? Mit verschiedenen Stempeln lassen wir im November kleine Käfer entstehen, die sich Schicht für Schicht zu einer fröhlichen Krabbelgesellschaft… Täglich zwischen 10:00–17:00 · Loft im Creaviva",
-      "fin": "2026-11-07T17:00",
+      "fin": "2026-11-08T17:00",
       "adresse": "Monument im Fruchtland 3, 3006 Bern",
       "latitude": null,
       "longitude": null,
@@ -49,31 +49,6 @@
       "categorie": "atelier",
       "type": "offre régulière",
       "repetition": "du mardi au dimanche 10:00–17:00",
-      "ville": "Berne",
-      "licence": "",
-      "autres_sources": []
-    },
-    {
-      "id": "creaviva-14208-regulier",
-      "titre": "Vogelperspektive: Workshop Offenes Atelier",
-      "debut": "2026-11-07T16:00",
-      "lieu_nom": "Creaviva, Zentrum Paul Klee",
-      "source": "Creaviva (Zentrum Paul Klee)",
-      "url_source": "https://zpk.org/de/workshop/vogelperspektive",
-      "description_courte": "Wir schneiden biomorphe Formen aus Seidenpapier aus und schichten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen, Bäumen, Teichen und allem, was darin Platz findet. Atelier 1",
-      "fin": "2026-11-07T17:00",
-      "adresse": "Monument im Fruchtland 3, 3006 Bern",
-      "latitude": null,
-      "longitude": null,
-      "age_min": 4,
-      "age_max": null,
-      "age_source": "fourni",
-      "age_texte": "Ab 4 J. bis ins hohe Alter",
-      "prix": "18 CHF",
-      "inscription_requise": null,
-      "categorie": "atelier",
-      "type": "offre régulière",
-      "repetition": "du mardi au vendredi 14:00–15:00, 16:00–17:00 · samedi et dimanche 12:00–13:00, 14:00–15:00, 16:00–17:00",
       "ville": "Berne",
       "licence": "",
       "autres_sources": []
@@ -99,6 +74,31 @@
       "categorie": "atelier",
       "type": "offre régulière",
       "repetition": "dimanche 10:15–11:30",
+      "ville": "Berne",
+      "licence": "",
+      "autres_sources": []
+    },
+    {
+      "id": "creaviva-14208-regulier",
+      "titre": "Vogelperspektive: Workshop Offenes Atelier",
+      "debut": "2026-11-08T12:00",
+      "lieu_nom": "Creaviva, Zentrum Paul Klee",
+      "source": "Creaviva (Zentrum Paul Klee)",
+      "url_source": "https://zpk.org/de/workshop/vogelperspektive",
+      "description_courte": "Wir schneiden biomorphe Formen aus Seidenpapier aus und schichten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen, Bäumen, Teichen und allem, was darin Platz findet. Atelier 1",
+      "fin": "2026-11-08T13:00",
+      "adresse": "Monument im Fruchtland 3, 3006 Bern",
+      "latitude": null,
+      "longitude": null,
+      "age_min": 4,
+      "age_max": null,
+      "age_source": "fourni",
+      "age_texte": "Ab 4 J. bis ins hohe Alter",
+      "prix": "18 CHF",
+      "inscription_requise": null,
+      "categorie": "atelier",
+      "type": "offre régulière",
+      "repetition": "du mardi au vendredi 14:00–15:00, 16:00–17:00 · samedi et dimanche 12:00–13:00, 14:00–15:00, 16:00–17:00",
       "ville": "Berne",
       "licence": "",
       "autres_sources": []
@@ -180,31 +180,6 @@
     }
   ],
   "evenements": [
-    {
-      "id": "kob-49819-202611071600",
-      "titre": "Lorenz Paulis Erzähltheater – grosse Geschichten für kleine Ohren",
-      "debut": "2026-11-07T16:00",
-      "lieu_nom": "Bibliothek Zollikofen",
-      "source": "Kornhausbibliotheken",
-      "url_source": "https://www.kob.ch/veranstaltung/lorenz-paulis-erzaehltheater-grosse-geschichten-fuer-kleine-ohren/",
-      "description_courte": "Lorenz Pauli kommt und erzählt, falls er nicht von seinem Bären gestört wird. Was durchaus sein könnte. Vorgesehen wäre eine bunte Mischung. Vielleicht die Geschichte von der Winternacht im Wald?…",
-      "fin": "2026-11-07T17:00",
-      "adresse": "",
-      "latitude": null,
-      "longitude": null,
-      "age_min": 5,
-      "age_max": null,
-      "age_source": "fourni",
-      "age_texte": "ab fünf Jahren",
-      "prix": "5 CHF",
-      "inscription_requise": true,
-      "categorie": "spectacle",
-      "type": "événement",
-      "repetition": "",
-      "ville": "Berne",
-      "licence": "",
-      "autres_sources": []
-    },
     {
       "id": "menuhin-743-202611081600",
       "titre": "Peter und der Wolf",
