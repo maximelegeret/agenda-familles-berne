@@ -1,0 +1,39 @@
+# Liste des sources d'événements.
+# Pour chaque source :
+#   nom     : nom affiché sur le site
+#   lecteur : nom du fichier Python dans agenda/lecteurs/ (sans .py)
+#   url     : page ou API de départ
+#   actif   : true = lue chaque jour ; false = ignorée (lecteur pas encore écrit, ou en pause)
+#
+# Pour ajouter une source : donne l'URL à Claude Code, il écrit le lecteur et ajoute une ligne ici.
+
+sources:
+  - nom: Kornhausbibliotheken
+    lecteur: kob
+    url: https://www.kob.ch/agenda/
+    actif: false   # lecteur écrit à l'étape 2
+
+  - nom: Creaviva (Zentrum Paul Klee)
+    lecteur: creaviva
+    url: https://zpk.org/de/creaviva
+    actif: false   # étape 4
+
+  - nom: MuseumsQuartier Bern
+    lecteur: mqb
+    url: https://mqb.ch/en/agenda
+    actif: false   # étape 5
+
+  - nom: Yehudi Menuhin Forum
+    lecteur: menuhin
+    url: https://menuhinforum.ch/konzertkalender/
+    actif: false   # étape 6
+
+  - nom: Bühnen Bern
+    lecteur: buehnenbern
+    url: https://buehnenbern.ch/spielplan/programm/
+    actif: false   # étape 7
+
+  - nom: Eventfrog
+    lecteur: eventfrog
+    url: https://api.eventfrog.net/public/v1/events
+    actif: false   # étape 12, quand le jeton sera arrivé

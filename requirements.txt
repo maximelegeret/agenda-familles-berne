@@ -1,0 +1,6 @@
+# Bibliothèques Python utilisées par le projet
+requests>=2.32          # télécharger les pages et appeler les API
+beautifulsoup4>=4.12    # lire le contenu des pages HTML
+icalendar>=6.0          # lire les fichiers calendrier (.ics)
+pyyaml>=6.0             # lire les fichiers de configuration .yaml
+pytest>=8.0             # lancer les tests automatiques
