@@ -9,7 +9,11 @@ Document de cadrage : « Agenda Familles Berne – Cadrage V1 » (6 nov. 2026). 
 
 ## Façon de travailler
 - Maxime débute en programmation : code simple, commenté en français.
-- Une étape à la fois ; on s'arrête à la fin de chaque étape pour qu'il teste. Un commit Git par étape validée.
+- Une étape à la fois ; on s'arrête à la fin de chaque étape pour qu'il teste.
+- **Commits automatiques** (accord de Maxime, 7 nov. 2026) : à la fin de chaque étape terminée, quand les tests passent
+  et que le résultat est vérifié, faire le commit sans demander. Si Maxime demande ensuite un changement, le faire
+  dans un nouveau commit. **Toujours demander avant tout `git push`, toute publication en ligne ou toute action
+  visible par d'autres.**
 - Respecter strictement le périmètre V1 et le hors-périmètre du cadrage.
 - Interface en français ; tous les textes dans `docs/textes_fr.json` pour pouvoir traduire en allemand plus tard. Les contenus des événements restent dans leur langue d'origine.
 
