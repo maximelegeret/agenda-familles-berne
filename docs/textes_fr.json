@@ -11,10 +11,13 @@
   "gratuit": "Gratuit",
   "prix_inconnu": "Prix inconnu",
   "age_inconnu": "Âge non précisé",
-  "age_des": "Dès {min} ans",
-  "age_jusqu_a": "Jusqu'à {max} ans",
-  "age_entre": "{min}–{max} ans",
+  "age_des": "Dès {age}",
+  "age_jusqu_a": "Jusqu'à {age}",
   "age_deduit": "(estimé)",
+  "mois": "{n} mois",
+  "an": "{n} an",
+  "ans": "{n} ans",
+  "accompagne": "Avec un adulte",
   "inscription_requise": "Inscription requise",
   "voir_source": "Voir sur",
   "aussi_sur": "Aussi sur",
@@ -25,6 +28,7 @@
     "musique": "Musique",
     "nature": "Nature",
     "sport": "Sport",
-    "fête": "Fête"
+    "fête": "Fête",
+    "visite": "Visite"
   }
 }

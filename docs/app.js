@@ -45,13 +45,23 @@ function heure(iso) {
   return lireDate(iso).toLocaleTimeString(LANGUE, { hour: "2-digit", minute: "2-digit" });
 }
 
+// 0.5 -> "6 mois" ; 4 -> "4 ans"
+function duree(age) {
+  if (age < 1) return remplir(T.mois, { n: Math.round(age * 12) });
+  return remplir(age === 1 ? T.an : T.ans, { n: String(age).replace(".", ",") });
+}
+
 // Texte de l'âge selon ce que la source indique
 function texteAge(e) {
   let texte;
-  if (e.age_min != null && e.age_max != null) texte = remplir(T.age_entre, { min: e.age_min, max: e.age_max });
-  else if (e.age_min != null) texte = remplir(T.age_des, { min: e.age_min });
-  else if (e.age_max != null) texte = remplir(T.age_jusqu_a, { max: e.age_max });
-  else if (e.age_texte) return e.age_texte; // âge pas encore compris : on montre le texte de la source
+  const min = e.age_min, max = e.age_max;
+  if (min != null && max != null) {
+    // "6–10 ans", ou "6 mois – 4 ans" quand les unités diffèrent
+    texte = min >= 1 ? `${min}–${duree(max)}` : `${duree(min)} – ${duree(max)}`;
+  }
+  else if (min != null) texte = remplir(T.age_des, { age: duree(min) });
+  else if (max != null) texte = remplir(T.age_jusqu_a, { age: duree(max) });
+  else if (e.age_texte) return e.age_texte; // âge pas compris : on montre le texte de la source
   else return null;
   if (e.age_source === "déduit") texte += " " + T.age_deduit;
   return texte;
@@ -83,6 +93,7 @@ function fiche(e) {
   const infos = el("div", "fiche-infos");
   const age = texteAge(e);
   infos.append(el("span", age ? "pastille" : "pastille pastille-vide", age || T.age_inconnu));
+  if (/begleitung/i.test(e.age_texte || "")) infos.append(el("span", "pastille", T.accompagne));
   infos.append(el("span", e.prix === "gratuit" ? "pastille pastille-gratuit" : "pastille", textePrix(e.prix)));
   if (e.inscription_requise) infos.append(el("span", "pastille pastille-alerte", T.inscription_requise));
   carte.append(infos);

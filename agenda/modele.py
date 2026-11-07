@@ -11,7 +11,7 @@ from datetime import datetime
 from typing import Optional
 
 # Listes fermées : toute autre valeur est refusée
-CATEGORIES = ["atelier", "conte", "spectacle", "musique", "nature", "sport", "fête"]
+CATEGORIES = ["atelier", "conte", "spectacle", "musique", "nature", "sport", "fête", "visite"]
 TYPES = ["événement", "offre régulière"]
 
 

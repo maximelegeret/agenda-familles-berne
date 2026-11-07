@@ -14,6 +14,7 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
+from agenda.filtre_enfants import completer, trier
 from agenda.modele import Evenement
 
 # Dossier du projet (là où se trouve ce fichier)
@@ -53,6 +54,24 @@ def dans_la_fenetre(evenement, maintenant):
     return fin >= maintenant and debut < limite
 
 
+def garder_enfants(evenements, source_enfants, maintenant):
+    """
+    Complète âge et catégorie, puis ne garde que les événements pour enfants.
+    Affiche dans le terminal ce qui est écarté (dans les 14 jours), pour pouvoir vérifier le tri.
+    """
+    gardes, ecartes = [], {}
+    for e in evenements:
+        completer(e)
+        garder, raison = trier(e, source_enfants)
+        if garder:
+            gardes.append(e)
+        elif dans_la_fenetre(e, maintenant):
+            ecartes[e.titre] = raison  # une ligne par titre suffit
+    for titre, raison in ecartes.items():
+        print(f"    écarté : {titre[:60]}  ({raison})")
+    return gardes
+
+
 def main():
     maintenant = datetime.now(FUSEAU)
     sources = charger_sources()
@@ -64,15 +83,17 @@ def main():
         try:
             lecteur = importlib.import_module(f"agenda.lecteurs.{source['lecteur']}")
             lus = lecteur.lire(source)
-            evenements.extend(lus)
-            statuts.append({"nom": source["nom"], "ok": True, "nb": len(lus)})
-            print(f"- {source['nom']} : {len(lus)} lu(s)")
+            gardes = garder_enfants(lus, source.get("pour_enfants", False), maintenant)
+            evenements.extend(gardes)
+            statuts.append({"nom": source["nom"], "ok": True, "nb": len(gardes)})
+            print(f"- {source['nom']} : {len(lus)} lu(s), {len(gardes)} gardé(s) pour enfants")
         except Exception as erreur:
             traceback.print_exc()
             statuts.append({"nom": source["nom"], "ok": False, "erreur": str(erreur)})
             print(f"- {source['nom']} : ÉCHEC ({erreur})")
 
-    ajouts = charger_ajouts_manuels()
+    # Les ajouts manuels sont toujours gardés : on complète seulement âge et catégorie
+    ajouts = [completer(e) for e in charger_ajouts_manuels()]
     print(f"- Ajouts manuels : {len(ajouts)} lu(s)")
     evenements.extend(ajouts)
 

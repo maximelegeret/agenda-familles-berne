@@ -1,7 +1,7 @@
 # Événements ajoutés à la main (trouvés ailleurs, ex. Fäger, affiche dans le quartier…).
 # Copie un bloc existant et modifie-le. Champs obligatoires : id, titre, debut, lieu_nom, source, url_source.
 # Dates au format AAAA-MM-JJTHH:MM (heure de Berne). Les événements passés disparaissent tout seuls.
-# Catégories possibles : atelier, conte, spectacle, musique, nature, sport, fête
+# Catégories possibles : atelier, conte, spectacle, musique, nature, sport, fête, visite
 
 evenements:
   # Exemple réel, à retirer quand le lecteur Menuhin Forum sera écrit (étape 6)

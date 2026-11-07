@@ -22,6 +22,9 @@ Document de cadrage : « Agenda Familles Berne – Cadrage V1 » (6 nov. 2026). 
 - **Eventfrog** : l'API exige un jeton (Bearer) demandé par Maxime à support@eventfrog.net. En attendant, on commence par les Kornhausbibliotheken (kob.ch).
 - **Images** : pas d'images des sources en V1 (Eventfrog interdit le lien direct).
 - **Guidle** : aucune donnée Guidle sans leur accord.
+- **Catégories** : liste fermée du cadrage + « visite » (visites guidées pour enfants), ajoutée avec l'accord de Maxime.
+- **Champ `age_texte`** : l'âge tel qu'écrit par la source (ex. « in Begleitung »), en plus de age_min/age_max.
+- **Tranche d'âge visée** : 0–10 ans ; un événement « dès 11 ans » ou plus est écarté.
 
 ## Sources de la vague 1 (comment les lire)
 | Source | Méthode |

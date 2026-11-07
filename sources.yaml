@@ -4,6 +4,8 @@
 #   lecteur : nom du fichier Python dans agenda/lecteurs/ (sans .py)
 #   url     : page ou API de départ
 #   actif   : true = lue chaque jour ; false = ignorée (lecteur pas encore écrit, ou en pause)
+#   pour_enfants : true si la source ne donne que des activités pour enfants
+#                  (sinon le tri par mots-clés écarte ce qui ne mentionne pas les enfants)
 #
 # Pour ajouter une source : donne l'URL à Claude Code, il écrit le lecteur et ajoute une ligne ici.
 
@@ -12,6 +14,7 @@ sources:
     lecteur: kob
     url: https://www.kob.ch/agenda/
     actif: true
+    pour_enfants: true   # le lecteur ne garde que les catégories enfants ou les fiches avec un âge
 
   - nom: Creaviva (Zentrum Paul Klee)
     lecteur: creaviva
