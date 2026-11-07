@@ -49,7 +49,40 @@ body {
   padding: 0 16px;
 }
 
+.entete, .liste, .pied, .filtres {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 .entete { padding-top: 28px; padding-bottom: 8px; }
+
+/* --- Filtres --- */
+.filtres { padding-top: 8px; padding-bottom: 4px; display: grid; gap: 8px; }
+.filtre-groupe { display: flex; align-items: baseline; gap: 8px; }
+.filtre-libelle {
+  flex: 0 0 40px;            /* même largeur pour aligner les trois lignes */
+  font-size: 0.72rem;
+  color: var(--texte-doux);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.filtre-boutons { display: flex; flex-wrap: wrap; gap: 6px; }
+.puce {
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 7px 10px;         /* zone de toucher confortable sur téléphone */
+  border-radius: 999px;
+  border: 1px solid var(--bordure);
+  background: var(--carte);
+  color: var(--texte);
+  cursor: pointer;
+}
+.puce[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.puce:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.compteur { margin: 14px 0 0; color: var(--texte-doux); font-size: 0.88rem; }
+.message .puce { margin-top: 8px; }
 .entete h1 { margin: 0; font-size: 1.6rem; color: var(--accent); }
 .sous-titre { margin: 4px 0 0; color: var(--texte-doux); }
 
