@@ -2,28 +2,41 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <!-- Site privé : on demande aux moteurs de recherche de ne pas l'indexer -->
   <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#fbeee2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1d1714" media="(prefers-color-scheme: dark)">
   <title>Agenda Familles Berne</title>
+  <link rel="preload" href="fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- En-tête : scène bernoise dessinée, titre, résumé -->
   <header class="entete">
-    <h1 id="titre-page">Agenda Familles Berne</h1>
-    <p id="sous-titre" class="sous-titre"></p>
+    <div id="scene" class="entete-scene"></div>
+    <div class="entete-texte">
+      <p id="marque" class="marque"></p>
+      <h1 id="titre-page"></h1>
+      <p id="resume" class="resume"></p>
+    </div>
   </header>
 
-  <!-- Les filtres (période, prix, type) sont créés par app.js -->
-  <nav id="filtres" class="filtres" aria-label="Filtres"></nav>
-
-  <!-- La liste des événements est remplie par app.js -->
-  <main id="liste" class="liste" aria-live="polite"></main>
+  <!-- Contenu rempli par app.js : prochaine activité, offres régulières, liste par jour -->
+  <main id="contenu" class="contenu" aria-live="polite"></main>
 
   <footer class="pied">
     <p id="mise-a-jour"></p>
+    <p id="sources"></p>
   </footer>
 
+  <!-- Barre du bas, à portée de pouce : période + bouton des filtres -->
+  <nav id="barre" class="barre" aria-label="Période et filtres"></nav>
+
+  <!-- Feuille des filtres (prix, type), qui monte du bas de l'écran -->
+  <dialog id="feuille" class="feuille" aria-labelledby="feuille-titre"></dialog>
+
+  <script src="illustrations.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

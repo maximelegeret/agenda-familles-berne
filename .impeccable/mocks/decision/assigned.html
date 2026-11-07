@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=390">
+<title>Arcades</title>
+<style>
+:root{--sapin:#24463a;--sapin-2:#1a352b;--gres:#dfe3d6;--gres-2:#cdd3c2;--gres-3:#b9c1ac;--geranium:#d2353a;--encre:#1d221c;--doux:#5a6356}
+*{box-sizing:border-box;margin:0}
+body{width:390px;height:844px;overflow:hidden;background:var(--gres);color:var(--encre);font-family:-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--sapin);color:#eef1e8;padding:18px 16px 14px}
+h1{font-size:22px;font-weight:800;letter-spacing:-.01em}
+.sous{font-size:13px;opacity:.75;margin-top:2px}
+.filtres{display:flex;gap:6px;margin-top:12px}
+.f{border:1px solid rgba(238,241,232,.35);border-radius:999px;padding:7px 12px;font-size:14px;color:#eef1e8}
+.f.on{background:#eef1e8;color:var(--sapin);font-weight:700;border-color:#eef1e8}
+.bientot{padding:16px 16px 4px}
+.lab{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--sapin)}
+.arcs{display:grid;grid-template-columns:1.25fr 1fr;gap:10px;margin-top:10px}
+.arc{background:#fff;border-radius:999px 999px 14px 14px;padding:26px 14px 14px;border:2px solid var(--sapin);position:relative}
+.arc.next{background:var(--sapin);color:#fff;grid-row:span 2}
+.dans{font-size:30px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--geranium);line-height:1}
+.arc.next .dans{color:#ffd9d6}
+.t{font-size:15px;font-weight:700;margin-top:8px;line-height:1.25}
+.m{font-size:12.5px;opacity:.8;margin-top:4px}
+.tampon{display:inline-block;margin-top:8px;border:1.5px solid currentColor;border-radius:4px;padding:1px 6px;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.jour{padding:16px}
+.jour h2{font-size:15px;font-weight:800;border-bottom:2px solid var(--gres-3);padding-bottom:6px}
+.ligne{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--gres-2)}
+.h{font-weight:800;font-variant-numeric:tabular-nums;font-size:15px}
+.l .t{margin:0;font-size:15px}
+</style></head><body>
+<header><h1>Agenda Familles Berne</h1><div class="sous">Pour les 0–10 ans · mis à jour ce matin</div>
+<div class="filtres"><span class="f on">Aujourd'hui</span><span class="f">Week-end</span><span class="f">14 jours</span></div></header>
+<section class="bientot"><div class="lab">Bientôt</div>
+<div class="arcs">
+<div class="arc next"><div class="dans">40 min</div><div class="t">Familienmorgen – Mit Roberto Burle Marx im Atelier</div><div class="m">10:15 · Creaviva · Dès 4 ans</div><span class="tampon">18 CHF</span></div>
+<div class="arc"><div class="dans">2 h</div><div class="t">Offenes Atelier</div><div class="m">12:00 · Creaviva</div></div>
+<div class="arc"><div class="dans">5 h 45</div><div class="t">Peter und der Wolf</div><div class="m">16:00 · Menuhin Forum</div><span class="tampon">Gratuit</span></div>
+</div></section>
+<section class="jour"><h2>Mercredi 11 novembre</h2>
+<div class="ligne"><div class="h">14:15</div><div class="l"><div class="t">Märli-Zyt</div><div class="m">Bibliothek Münsingen · Dès 4 ans · Gratuit</div></div></div>
+<div class="ligne"><div class="h">14:30</div><div class="l"><div class="t">Eine Geschichte für dich!</div><div class="m">Bibliothek Zollikofen · Dès 3 ans</div></div></div>
+<div class="ligne"><div class="h">15:00</div><div class="l"><div class="t">Kinderlesung mit Evelyn Studer-Kopp</div><div class="m">Bibliothek Länggasse</div></div></div>
+</section>
+</body></html>

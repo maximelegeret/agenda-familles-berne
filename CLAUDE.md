@@ -27,7 +27,9 @@ Document de cadrage : « Agenda Familles Berne – Cadrage V1 » (6 nov. 2026). 
 - **Python 3.12** (Homebrew), environnement virtuel dans `.venv/`.
 - **Tri enfants/adultes** : mots-clés uniquement en V1. L'API Claude viendra plus tard, dans une étape dédiée.
 - **Eventfrog** : l'API exige un jeton (Bearer) demandé par Maxime à support@eventfrog.net. En attendant, on commence par les Kornhausbibliotheken (kob.ch).
-- **Images** : pas d'images des sources en V1 (Eventfrog interdit le lien direct).
+- **Images** : pas d'images des sources (Eventfrog interdit le lien direct, site public). À la place : illustrations dessinées en SVG (`docs/illustrations.js`), une par type d'activité + une scène bernoise.
+- **Design** (7 nov. 2026) : univers « appli chaleureuse » choisi par Maxime avec le skill Impeccable (`.claude/skills/impeccable`, copie manuelle, télémétrie coupée). Produit décrit dans `PRODUCT.md`, système visuel dans `DESIGN.md` : **les lire avant toute modification de la page**. Police Figtree auto-hébergée (`docs/fonts/`, licence OFL).
+- **Nom** : « Agenda Familles Berne » reste en attendant ; Maxime est ouvert à un nom plus chaleureux, à valider avant affichage.
 - **Guidle** : aucune donnée Guidle sans leur accord.
 - **Catégories** : liste fermée du cadrage + « visite » (visites guidées pour enfants), ajoutée avec l'accord de Maxime.
 - **Champ `age_texte`** : l'âge tel qu'écrit par la source (ex. « in Begleitung »), en plus de age_min/age_max.
