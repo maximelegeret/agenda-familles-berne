@@ -20,7 +20,10 @@ Document de cadrage : « Agenda Familles Berne – Cadrage V1 » (6 nov. 2026). 
 ## Décisions prises (7 nov. 2026)
 - **Architecture** : pas de serveur ni de base. `recuperer.py` lit les sources → `docs/events.json` ; page statique `docs/index.html` + `app.js`.
 - **Hébergement** : dépôt GitHub **public** + GitHub Pages. Aucun secret dans le code : les clés vont dans les secrets GitHub.
-- **Exécution quotidienne** : GitHub Actions.
+- **Exécution quotidienne** : GitHub Actions (`.github/workflows/quotidien.yml`, 4:00 UTC + bouton manuel).
+- **En ligne** : dépôt https://github.com/maximelegeret/agenda-familles-berne, site https://maximelegeret.github.io/agenda-familles-berne/ (Pages depuis `main` /docs).
+- **Commits du robot** : chaque nuit, « github-actions[bot] » commite `docs/events.json`. Toujours faire `git pull` avant de travailler et avant tout push.
+- **Outil gh** : installé dans `/opt/homebrew/bin/gh` (pas dans le PATH du terminal de Maxime).
 - **Python 3.12** (Homebrew), environnement virtuel dans `.venv/`.
 - **Tri enfants/adultes** : mots-clés uniquement en V1. L'API Claude viendra plus tard, dans une étape dédiée.
 - **Eventfrog** : l'API exige un jeton (Bearer) demandé par Maxime à support@eventfrog.net. En attendant, on commence par les Kornhausbibliotheken (kob.ch).
