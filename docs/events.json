@@ -1,4 +1,53 @@
 {
-  "mis_a_jour": "2026-11-07T13:28+01:00",
-  "evenements": []
+  "mis_a_jour": "2026-11-07T13:30+01:00",
+  "evenements": [
+    {
+      "id": "manuel-peter-und-der-wolf-2026-11-08",
+      "titre": "Peter und der Wolf",
+      "debut": "2026-11-08T16:00",
+      "lieu_nom": "Yehudi Menuhin Forum",
+      "source": "Yehudi Menuhin Forum",
+      "url_source": "https://menuhinforum.ch/events/peter-und-der-wolf/",
+      "description_courte": "Familienkonzert – le conte musical de Prokofiev.",
+      "fin": null,
+      "adresse": "Helvetiaplatz 6, 3005 Bern",
+      "latitude": null,
+      "longitude": null,
+      "age_min": null,
+      "age_max": null,
+      "age_source": null,
+      "prix": "gratuit",
+      "inscription_requise": null,
+      "categorie": "musique",
+      "type": "événement",
+      "repetition": "",
+      "ville": "Berne",
+      "licence": "",
+      "autres_sources": []
+    },
+    {
+      "id": "manuel-creaviva-familienmorgen-2026-11-15",
+      "titre": "Familienmorgen – Mit Roberto Burle Marx im Atelier",
+      "debut": "2026-11-15T10:15",
+      "lieu_nom": "Creaviva, Zentrum Paul Klee",
+      "source": "Creaviva (Zentrum Paul Klee)",
+      "url_source": "https://zpk.org/de/workshop/mit-roberto-burle-marx-im-atelier",
+      "description_courte": "Atelier créatif en famille, chaque dimanche matin.",
+      "fin": "2026-11-15T11:30",
+      "adresse": "Monument im Fruchtland 3, 3006 Bern",
+      "latitude": null,
+      "longitude": null,
+      "age_min": 4,
+      "age_max": null,
+      "age_source": "fourni",
+      "prix": "inconnu",
+      "inscription_requise": null,
+      "categorie": "atelier",
+      "type": "événement",
+      "repetition": "",
+      "ville": "Berne",
+      "licence": "",
+      "autres_sources": []
+    }
+  ]
 }

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Site privé : on demande aux moteurs de recherche de ne pas l'indexer -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Agenda Familles Berne</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="entete">
+    <h1 id="titre-page">Agenda Familles Berne</h1>
+    <p id="sous-titre" class="sous-titre"></p>
+  </header>
+
+  <!-- La liste des événements est remplie par app.js -->
+  <main id="liste" class="liste" aria-live="polite"></main>
+
+  <footer class="pied">
+    <p id="mise-a-jour"></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

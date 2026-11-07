@@ -1,0 +1,29 @@
+{
+  "titre_page": "Agenda Familles Berne",
+  "sous_titre": "Activités pour enfants des 14 prochains jours",
+  "chargement": "Chargement…",
+  "erreur_chargement": "Impossible de charger les événements.",
+  "aucun_evenement": "Aucun événement pour l'instant.",
+  "mis_a_jour": "Mis à jour le",
+  "aujourd_hui": "Aujourd'hui",
+  "demain": "Demain",
+  "gratuit": "Gratuit",
+  "prix_inconnu": "Prix inconnu",
+  "age_inconnu": "Âge non précisé",
+  "age_des": "Dès {min} ans",
+  "age_jusqu_a": "Jusqu'à {max} ans",
+  "age_entre": "{min}–{max} ans",
+  "age_deduit": "(estimé)",
+  "inscription_requise": "Inscription requise",
+  "voir_source": "Voir sur",
+  "aussi_sur": "Aussi sur",
+  "categories": {
+    "atelier": "Atelier",
+    "conte": "Conte",
+    "spectacle": "Spectacle",
+    "musique": "Musique",
+    "nature": "Nature",
+    "sport": "Sport",
+    "fête": "Fête"
+  }
+}

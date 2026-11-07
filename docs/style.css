@@ -1,0 +1,107 @@
+/* Couleurs et tailles réutilisées partout (thème clair) */
+:root {
+  --fond: #faf7f2;
+  --carte: #ffffff;
+  --texte: #2b2a28;
+  --texte-doux: #6b675f;
+  --accent: #d2553a;        /* rouge-orangé « Berne » */
+  --vert: #2f7d4f;
+  --vert-fond: #e3f2e8;
+  --alerte: #8a5a00;
+  --alerte-fond: #fdf0d5;
+  --pastille-fond: #f0ece5;
+  --bordure: #e7e1d7;
+  --rayon: 14px;
+}
+
+/* Thème sombre, si le téléphone est réglé ainsi */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond: #1c1b19;
+    --carte: #262522;
+    --texte: #ece8e1;
+    --texte-doux: #a9a397;
+    --accent: #f0805f;
+    --vert: #7cc89a;
+    --vert-fond: #23382b;
+    --alerte: #f2c66d;
+    --alerte-fond: #3b3120;
+    --pastille-fond: #33312d;
+    --bordure: #3a3833;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+/* Contenu centré, large de 640 px au plus ; marge de 16 px sur téléphone */
+.entete, .liste, .pied {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.entete { padding-top: 28px; padding-bottom: 8px; }
+.entete h1 { margin: 0; font-size: 1.6rem; color: var(--accent); }
+.sous-titre { margin: 4px 0 0; color: var(--texte-doux); }
+
+.jour { margin-top: 24px; }
+.jour-titre {
+  font-size: 1rem;
+  margin: 0 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--bordure);
+}
+
+/* Majuscule seulement à la première lettre (« dimanche 15 novembre » → « Dimanche 15 novembre ») */
+.jour-titre::first-letter { text-transform: uppercase; }
+
+.fiche {
+  background: var(--carte);
+  border: 1px solid var(--bordure);
+  border-radius: var(--rayon);
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.fiche-haut { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.fiche-heure { font-weight: 700; color: var(--accent); }
+.etiquette {
+  font-size: 0.8rem;
+  color: var(--texte-doux);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.fiche-titre { margin: 6px 0 4px; font-size: 1.1rem; line-height: 1.3; }
+.fiche-description { margin: 0 0 6px; }
+.fiche-lieu { margin: 0 0 10px; color: var(--texte-doux); font-size: 0.92rem; }
+
+.fiche-infos { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.pastille {
+  background: var(--pastille-fond);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.85rem;
+}
+.pastille-vide { color: var(--texte-doux); }
+.pastille-gratuit { background: var(--vert-fond); color: var(--vert); font-weight: 600; }
+.pastille-alerte { background: var(--alerte-fond); color: var(--alerte); }
+
+.fiche-lien { color: var(--accent); font-weight: 600; text-decoration: none; font-size: 0.92rem; }
+.fiche-lien:hover { text-decoration: underline; }
+.fiche-autres { margin: 6px 0 0; font-size: 0.85rem; color: var(--texte-doux); }
+.fiche-autres a { color: inherit; }
+
+.message { color: var(--texte-doux); margin-top: 24px; }
+.message-erreur { color: var(--accent); }
+
+.pied { padding-top: 16px; padding-bottom: 32px; color: var(--texte-doux); font-size: 0.85rem; }
