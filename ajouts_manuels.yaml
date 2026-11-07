@@ -15,17 +15,3 @@ evenements:
     categorie: musique
     source: Yehudi Menuhin Forum
     url_source: https://menuhinforum.ch/events/peter-und-der-wolf/
-
-  # Exemple réel, à retirer quand le lecteur Creaviva sera écrit (étape 4)
-  - id: manuel-creaviva-familienmorgen-2026-11-15
-    titre: Familienmorgen – Mit Roberto Burle Marx im Atelier
-    description_courte: Atelier créatif en famille, chaque dimanche matin.
-    debut: "2026-11-15T10:15"
-    fin: "2026-11-15T11:30"
-    lieu_nom: Creaviva, Zentrum Paul Klee
-    adresse: Monument im Fruchtland 3, 3006 Bern
-    age_min: 4
-    age_source: fourni
-    categorie: atelier
-    source: Creaviva (Zentrum Paul Klee)
-    url_source: https://zpk.org/de/workshop/mit-roberto-burle-marx-im-atelier

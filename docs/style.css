@@ -61,6 +61,35 @@ body {
   border-bottom: 2px solid var(--bordure);
 }
 
+/* Titre cliquable de la section repliable « Chaque semaine » */
+.jour-regulier summary {
+  cursor: pointer;
+  list-style: none;            /* retire le triangle par défaut… */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+}
+.jour-regulier summary::-webkit-details-marker { display: none; }
+.jour-regulier summary > span:first-child { font-weight: 700; }
+.jour-regulier summary::before {  /* …et le remplace par une flèche qui tourne */
+  content: "▸";
+  color: var(--accent);
+  transition: transform 0.15s;
+}
+.jour-regulier[open] summary::before { transform: rotate(90deg); }
+.jour-regulier[open] summary { margin-bottom: 10px; }
+.jour-aide { color: var(--texte-doux); font-size: 0.85rem; font-weight: normal; }
+/* Dans « Chaque semaine », les horaires peuvent être longs : on les laisse passer à la ligne */
+.jour-regulier .fiche-haut { align-items: flex-start; }
+.jour-regulier .fiche-heure { font-size: 0.92rem; }
+/* Fiches compactes : sans texte de présentation, pour que les dates restent visibles vite */
+.jour-regulier .fiche { padding: 10px 14px; margin-bottom: 8px; }
+.jour-regulier .fiche-description { display: none; }
+.jour-regulier .fiche-lieu { margin-bottom: 6px; }
+.jour-regulier .fiche-infos { margin-bottom: 6px; }
+.jour-regulier .fiche-heure::first-letter { text-transform: uppercase; }
+
 /* Majuscule seulement à la première lettre (« dimanche 15 novembre » → « Dimanche 15 novembre ») */
 .jour-titre::first-letter { text-transform: uppercase; }
 

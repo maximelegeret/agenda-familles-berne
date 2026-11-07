@@ -80,6 +80,8 @@ function fiche(e) {
   const haut = el("div", "fiche-haut");
   let horaire = heure(e.debut);
   if (e.fin) horaire += " – " + heure(e.fin);
+  // Offre régulière : on montre les horaires habituels à la place d'une heure précise
+  if (e.type === "offre régulière") horaire = e.repetition;
   haut.append(el("span", "fiche-heure", horaire));
   if (e.categorie) haut.append(el("span", "etiquette", T.categories[e.categorie] || e.categorie));
   carte.append(haut);
@@ -126,6 +128,19 @@ function afficher(donnees) {
   // Avertissement si une source n'a pas pu être lue
   for (const s of donnees.sources || []) {
     if (!s.ok) liste.append(el("p", "message message-erreur", remplir(T.source_en_echec, { nom: s.nom })));
+  }
+
+  // Section « Chaque semaine » : les offres régulières, repliée par défaut
+  // (<details> se déplie d'un toucher, sans JavaScript supplémentaire)
+  const offres = donnees.offres_regulieres || [];
+  if (offres.length) {
+    const section = el("details", "jour jour-regulier");
+    const titre = el("summary", "jour-titre");
+    titre.append(el("span", null, `${T.chaque_semaine} (${offres.length})`));
+    titre.append(el("span", "jour-aide", T.chaque_semaine_aide));
+    section.append(titre);
+    offres.forEach((o) => section.append(fiche(o)));
+    liste.append(section);
   }
 
   if (!donnees.evenements.length) {

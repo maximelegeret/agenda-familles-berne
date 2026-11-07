@@ -19,7 +19,9 @@ sources:
   - nom: Creaviva (Zentrum Paul Klee)
     lecteur: creaviva
     url: https://zpk.org/de/creaviva
-    actif: false   # étape 4
+    actif: true
+    pour_enfants: true   # le Creaviva est l'atelier pour enfants ; les cours adultes sont écartés par le lecteur
+    espace: 18           # numéro du Creaviva dans l'API (7 = Kunstmuseum, pour la vague 2)
 
   - nom: MuseumsQuartier Bern
     lecteur: mqb

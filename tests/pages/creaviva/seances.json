@@ -1,0 +1,1458 @@
+{
+ "seances": [
+  {
+   "type": "node--activity",
+   "id": "f08446c1-9690-4374-934d-9f200c801db0",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/f08446c1-9690-4374-934d-9f200c801db0?resourceVersion=id%3A51167"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/f08446c1-9690-4374-934d-9f200c801db0?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "field_activity_date": {
+     "value": "2026-11-07T10:00:00+01:00",
+     "end_value": "2026-11-08T16:00:00+01:00"
+    }
+   },
+   "relationships": {
+    "field_activity_ref_event": {
+     "data": {
+      "type": "node--event",
+      "id": "70282a23-3510-46da-86e1-130d188662e7",
+      "meta": {
+       "drupal_internal__target_id": 14390
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/f08446c1-9690-4374-934d-9f200c801db0/field_activity_ref_event?resourceVersion=id%3A51167"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/f08446c1-9690-4374-934d-9f200c801db0/relationships/field_activity_ref_event?resourceVersion=id%3A51167"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "node--activity",
+   "id": "177cdc4b-adee-4411-a0fa-5b7e5dbe2ad7",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/177cdc4b-adee-4411-a0fa-5b7e5dbe2ad7?resourceVersion=id%3A50740"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/177cdc4b-adee-4411-a0fa-5b7e5dbe2ad7?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "field_activity_date": {
+     "value": "2026-11-07T12:00:00+01:00",
+     "end_value": "2026-11-07T13:00:00+01:00"
+    }
+   },
+   "relationships": {
+    "field_activity_ref_event": {
+     "data": {
+      "type": "node--event",
+      "id": "a1ad3f0a-ff9e-4db9-b641-2da6778f4efb",
+      "meta": {
+       "drupal_internal__target_id": 14208
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/177cdc4b-adee-4411-a0fa-5b7e5dbe2ad7/field_activity_ref_event?resourceVersion=id%3A50740"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/177cdc4b-adee-4411-a0fa-5b7e5dbe2ad7/relationships/field_activity_ref_event?resourceVersion=id%3A50740"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "node--activity",
+   "id": "e1abf8e5-01e5-4ee2-8364-c57948809af3",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/e1abf8e5-01e5-4ee2-8364-c57948809af3?resourceVersion=id%3A50672"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/e1abf8e5-01e5-4ee2-8364-c57948809af3?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "field_activity_date": {
+     "value": "2026-11-07T14:00:00+01:00",
+     "end_value": "2026-11-07T15:00:00+01:00"
+    }
+   },
+   "relationships": {
+    "field_activity_ref_event": {
+     "data": {
+      "type": "node--event",
+      "id": "a1ad3f0a-ff9e-4db9-b641-2da6778f4efb",
+      "meta": {
+       "drupal_internal__target_id": 14208
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/e1abf8e5-01e5-4ee2-8364-c57948809af3/field_activity_ref_event?resourceVersion=id%3A50672"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/e1abf8e5-01e5-4ee2-8364-c57948809af3/relationships/field_activity_ref_event?resourceVersion=id%3A50672"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "node--activity",
+   "id": "eea728c3-6277-4ede-8c6e-e572c0b2d8e0",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/eea728c3-6277-4ede-8c6e-e572c0b2d8e0?resourceVersion=id%3A52142"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/eea728c3-6277-4ede-8c6e-e572c0b2d8e0?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "field_activity_date": {
+     "value": "2026-11-07T17:00:00+01:00",
+     "end_value": "2026-11-07T18:00:00+01:00"
+    }
+   },
+   "relationships": {
+    "field_activity_ref_event": {
+     "data": {
+      "type": "node--event",
+      "id": "9dd81a02-9781-4a12-bc2c-9959828e9afc",
+      "meta": {
+       "drupal_internal__target_id": 14498
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/eea728c3-6277-4ede-8c6e-e572c0b2d8e0/field_activity_ref_event?resourceVersion=id%3A52142"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/eea728c3-6277-4ede-8c6e-e572c0b2d8e0/relationships/field_activity_ref_event?resourceVersion=id%3A52142"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "node--activity",
+   "id": "a58fa54e-bfb1-40a1-a57d-0ebe28fa0ed3",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/a58fa54e-bfb1-40a1-a57d-0ebe28fa0ed3?resourceVersion=id%3A42504"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/a58fa54e-bfb1-40a1-a57d-0ebe28fa0ed3?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "field_activity_date": {
+     "value": "2026-11-08T10:15:00+01:00",
+     "end_value": "2026-11-08T11:30:00+01:00"
+    }
+   },
+   "relationships": {
+    "field_activity_ref_event": {
+     "data": {
+      "type": "node--event",
+      "id": "5d14eddc-5af0-48d0-b079-9a2873e72fe4",
+      "meta": {
+       "drupal_internal__target_id": 11711
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/a58fa54e-bfb1-40a1-a57d-0ebe28fa0ed3/field_activity_ref_event?resourceVersion=id%3A42504"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/a58fa54e-bfb1-40a1-a57d-0ebe28fa0ed3/relationships/field_activity_ref_event?resourceVersion=id%3A42504"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "node--activity",
+   "id": "6f2765b8-c7a7-427a-9c4e-a9e4dc894e6a",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/6f2765b8-c7a7-427a-9c4e-a9e4dc894e6a?resourceVersion=id%3A52152"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/6f2765b8-c7a7-427a-9c4e-a9e4dc894e6a?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "field_activity_date": {
+     "value": "2026-11-08T17:00:00+01:00",
+     "end_value": "2026-11-08T18:00:00+01:00"
+    }
+   },
+   "relationships": {
+    "field_activity_ref_event": {
+     "data": {
+      "type": "node--event",
+      "id": "9dd81a02-9781-4a12-bc2c-9959828e9afc",
+      "meta": {
+       "drupal_internal__target_id": 14498
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/6f2765b8-c7a7-427a-9c4e-a9e4dc894e6a/field_activity_ref_event?resourceVersion=id%3A52152"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/6f2765b8-c7a7-427a-9c4e-a9e4dc894e6a/relationships/field_activity_ref_event?resourceVersion=id%3A52152"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "node--activity",
+   "id": "22a5f5da-78be-4d8d-bbe5-b7873addafc7",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/22a5f5da-78be-4d8d-bbe5-b7873addafc7?resourceVersion=id%3A48629"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/22a5f5da-78be-4d8d-bbe5-b7873addafc7?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "field_activity_date": {
+     "value": "2026-11-11T14:00:00+01:00",
+     "end_value": "2026-11-11T16:00:00+01:00"
+    }
+   },
+   "relationships": {
+    "field_activity_ref_event": {
+     "data": {
+      "type": "node--event",
+      "id": "9f1424cd-f1f8-4cde-8498-c5476ea98e20",
+      "meta": {
+       "drupal_internal__target_id": 9385
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/22a5f5da-78be-4d8d-bbe5-b7873addafc7/field_activity_ref_event?resourceVersion=id%3A48629"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/22a5f5da-78be-4d8d-bbe5-b7873addafc7/relationships/field_activity_ref_event?resourceVersion=id%3A48629"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "node--activity",
+   "id": "ace134ea-d828-4877-bdf1-725161b3a9a5",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/ace134ea-d828-4877-bdf1-725161b3a9a5?resourceVersion=id%3A39746"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/ace134ea-d828-4877-bdf1-725161b3a9a5?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "field_activity_date": {
+     "value": "2026-11-14T09:30:00+01:00",
+     "end_value": "2026-11-14T11:30:00+01:00"
+    }
+   },
+   "relationships": {
+    "field_activity_ref_event": {
+     "data": {
+      "type": "node--event",
+      "id": "15456193-e664-4a94-b38e-f53aa032c15b",
+      "meta": {
+       "drupal_internal__target_id": 10412
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/ace134ea-d828-4877-bdf1-725161b3a9a5/field_activity_ref_event?resourceVersion=id%3A39746"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/ace134ea-d828-4877-bdf1-725161b3a9a5/relationships/field_activity_ref_event?resourceVersion=id%3A39746"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "node--activity",
+   "id": "e492807d-39d8-43c0-80af-e697dbd43053",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/e492807d-39d8-43c0-80af-e697dbd43053?resourceVersion=id%3A42505"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/e492807d-39d8-43c0-80af-e697dbd43053?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "field_activity_date": {
+     "value": "2026-11-15T10:15:00+01:00",
+     "end_value": "2026-11-15T11:30:00+01:00"
+    }
+   },
+   "relationships": {
+    "field_activity_ref_event": {
+     "data": {
+      "type": "node--event",
+      "id": "5d14eddc-5af0-48d0-b079-9a2873e72fe4",
+      "meta": {
+       "drupal_internal__target_id": 11711
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/e492807d-39d8-43c0-80af-e697dbd43053/field_activity_ref_event?resourceVersion=id%3A42505"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/e492807d-39d8-43c0-80af-e697dbd43053/relationships/field_activity_ref_event?resourceVersion=id%3A42505"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "node--activity",
+   "id": "a281ff86-ef14-4acf-8911-65fdd1a68e93",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/a281ff86-ef14-4acf-8911-65fdd1a68e93?resourceVersion=id%3A48631"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/a281ff86-ef14-4acf-8911-65fdd1a68e93?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "field_activity_date": {
+     "value": "2026-11-18T14:00:00+01:00",
+     "end_value": "2026-11-18T16:00:00+01:00"
+    }
+   },
+   "relationships": {
+    "field_activity_ref_event": {
+     "data": {
+      "type": "node--event",
+      "id": "9f1424cd-f1f8-4cde-8498-c5476ea98e20",
+      "meta": {
+       "drupal_internal__target_id": 9385
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/a281ff86-ef14-4acf-8911-65fdd1a68e93/field_activity_ref_event?resourceVersion=id%3A48631"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/a281ff86-ef14-4acf-8911-65fdd1a68e93/relationships/field_activity_ref_event?resourceVersion=id%3A48631"
+      }
+     }
+    }
+   }
+  },
+  {
+   "type": "node--activity",
+   "id": "c491420a-17b7-4abd-93f3-66c6a704e7b8",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/c491420a-17b7-4abd-93f3-66c6a704e7b8?resourceVersion=id%3A49815"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/c491420a-17b7-4abd-93f3-66c6a704e7b8?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "field_activity_date": {
+     "value": "2026-11-21T10:15:00+01:00",
+     "end_value": "2026-11-21T12:15:00+01:00"
+    }
+   },
+   "relationships": {
+    "field_activity_ref_event": {
+     "data": {
+      "type": "node--event",
+      "id": "51080aad-0221-4883-85db-f60bcf0bb8b4",
+      "meta": {
+       "drupal_internal__target_id": 1255
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/c491420a-17b7-4abd-93f3-66c6a704e7b8/field_activity_ref_event?resourceVersion=id%3A49815"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/activity/c491420a-17b7-4abd-93f3-66c6a704e7b8/relationships/field_activity_ref_event?resourceVersion=id%3A49815"
+      }
+     }
+    }
+   }
+  }
+ ],
+ "lies": {
+  "edc665cc-10fc-4287-9941-420533a88df6": {
+   "type": "commerce_product_variation--ticket",
+   "id": "edc665cc-10fc-4287-9941-420533a88df6",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/edc665cc-10fc-4287-9941-420533a88df6"
+    }
+   },
+   "attributes": {
+    "title": "Offenes Atelier Begleitperson",
+    "price": {
+     "number": "0.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 0.00"
+    }
+   }
+  },
+  "39e1c207-828d-4982-96f8-9f6b81af9c41": {
+   "type": "commerce_product_variation--ticket",
+   "id": "39e1c207-828d-4982-96f8-9f6b81af9c41",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/39e1c207-828d-4982-96f8-9f6b81af9c41"
+    }
+   },
+   "attributes": {
+    "title": "Hochdruck Linolschnitt ermässigt 50% KulturLegi",
+    "price": {
+     "number": "210.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 210.00"
+    }
+   }
+  },
+  "15456193-e664-4a94-b38e-f53aa032c15b": {
+   "type": "node--event",
+   "id": "15456193-e664-4a94-b38e-f53aa032c15b",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/15456193-e664-4a94-b38e-f53aa032c15b?resourceVersion=id%3A50279"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/15456193-e664-4a94-b38e-f53aa032c15b?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "drupal_internal__nid": 10412,
+    "path": {
+     "alias": "/kurse-fuer-erwachsene-ab-16-j/goldener-morgen-0",
+     "pid": 5438,
+     "langcode": "de"
+    },
+    "field_additional_information_2": "14.11.2026, 9:30–11:30",
+    "field_location": "Kurssprache: Deutsch",
+    "field_teaser_text": "Kunst betrachten, verstehen und selbst gestalten – inspiriert von wechselnden Ausstellungen. Als Einzel- oder Serienkurs geeignet | 14.11.2026, 9:30–11:30 | Kunstkurs für Erwachsene (ab 16 J.)",
+    "title": "Goldener Morgen: Kurse für Erwachsene (ab 16 J.) Kunstkurs",
+    "field_additional_information": null
+   },
+   "relationships": {
+    "field_ref_category": {
+     "data": {
+      "type": "taxonomy_term--event_type",
+      "id": "f439fae7-8068-4c7a-bfcf-963cb00e2220",
+      "meta": {
+       "drupal_internal__target_id": 298
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/15456193-e664-4a94-b38e-f53aa032c15b/field_ref_category?resourceVersion=id%3A50279"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/15456193-e664-4a94-b38e-f53aa032c15b/relationships/field_ref_category?resourceVersion=id%3A50279"
+      }
+     }
+    },
+    "field_ref_product": {
+     "data": {
+      "type": "commerce_product--ticket",
+      "id": "0c66752d-ce0d-4fd7-9492-3839b2485a2c",
+      "meta": {
+       "drupal_internal__target_id": 1463
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/15456193-e664-4a94-b38e-f53aa032c15b/field_ref_product?resourceVersion=id%3A50279"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/15456193-e664-4a94-b38e-f53aa032c15b/relationships/field_ref_product?resourceVersion=id%3A50279"
+      }
+     }
+    },
+    "nodehive_space": {
+     "data": [
+      {
+       "type": "nodehive_space--nodehive_space",
+       "id": "10e3f3ab-3ad4-4646-8cd7-e1b4f262a844",
+       "meta": {
+        "drupal_internal__target_id": 18
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/15456193-e664-4a94-b38e-f53aa032c15b/nodehive_space?resourceVersion=id%3A50279"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/15456193-e664-4a94-b38e-f53aa032c15b/relationships/nodehive_space?resourceVersion=id%3A50279"
+      }
+     }
+    }
+   }
+  },
+  "70282a23-3510-46da-86e1-130d188662e7": {
+   "type": "node--event",
+   "id": "70282a23-3510-46da-86e1-130d188662e7",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/70282a23-3510-46da-86e1-130d188662e7?resourceVersion=id%3A51170"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/70282a23-3510-46da-86e1-130d188662e7?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "drupal_internal__nid": 14390,
+    "title": "Linolschnitt-Druckkurs: Kurse für Erwachsene (ab 16 J.) Kunstkurs",
+    "path": {
+     "alias": "/kurse-fuer-erwachsene-ab-16-j/linolschnitt-druckkurs",
+     "pid": 6098,
+     "langcode": "de"
+    },
+    "field_additional_information": null,
+    "field_additional_information_2": "7.–8.11.2026, 10:00–16:00",
+    "field_location": null,
+    "field_teaser_text": "Vom ersten Entwurf bis zum fertigen Druck: Wir experimentieren mit dem Linolschnitt und entdecken die Vielfalt analoger Druckgrafik | 7.–8.11.2026, 10:00–16:00 | Kunstkurs für Erwachsene (ab 16 J.)"
+   },
+   "relationships": {
+    "nodehive_space": {
+     "data": [
+      {
+       "type": "nodehive_space--nodehive_space",
+       "id": "10e3f3ab-3ad4-4646-8cd7-e1b4f262a844",
+       "meta": {
+        "drupal_internal__target_id": 18
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/70282a23-3510-46da-86e1-130d188662e7/nodehive_space?resourceVersion=id%3A51170"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/70282a23-3510-46da-86e1-130d188662e7/relationships/nodehive_space?resourceVersion=id%3A51170"
+      }
+     }
+    },
+    "field_ref_category": {
+     "data": {
+      "type": "taxonomy_term--event_type",
+      "id": "f439fae7-8068-4c7a-bfcf-963cb00e2220",
+      "meta": {
+       "drupal_internal__target_id": 298
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/70282a23-3510-46da-86e1-130d188662e7/field_ref_category?resourceVersion=id%3A51170"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/70282a23-3510-46da-86e1-130d188662e7/relationships/field_ref_category?resourceVersion=id%3A51170"
+      }
+     }
+    },
+    "field_ref_product": {
+     "data": {
+      "type": "commerce_product--ticket",
+      "id": "0a2c5cca-524f-407e-8c2e-f806afee9eca",
+      "meta": {
+       "drupal_internal__target_id": 1425
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/70282a23-3510-46da-86e1-130d188662e7/field_ref_product?resourceVersion=id%3A51170"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/70282a23-3510-46da-86e1-130d188662e7/relationships/field_ref_product?resourceVersion=id%3A51170"
+      }
+     }
+    }
+   }
+  },
+  "9dd81a02-9781-4a12-bc2c-9959828e9afc": {
+   "type": "node--event",
+   "id": "9dd81a02-9781-4a12-bc2c-9959828e9afc",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9dd81a02-9781-4a12-bc2c-9959828e9afc?resourceVersion=id%3A52159"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9dd81a02-9781-4a12-bc2c-9959828e9afc?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "drupal_internal__nid": 14498,
+    "path": {
+     "alias": "/kreativ-verweilen/karneval-der-kaefer",
+     "pid": 6207,
+     "langcode": "de"
+    },
+    "field_additional_information_2": "Täglich zwischen 10:00–17:00",
+    "field_location": "Ab 4 J. bis ins hohe Alter",
+    "field_teaser_text": "Gepunktet, gestreift oder mit ganz vielen Beinchen? Mit verschiedenen Stempeln lassen wir im November kleine Käfer entstehen, die sich Schicht für Schicht zu einer fröhlichen Krabbelgesellschaft zusammenfinden.",
+    "title": "Karneval der Käfer: Kreativ verweilen Fünfliber-Werkstatt",
+    "field_additional_information": "Loft im Creaviva"
+   },
+   "relationships": {
+    "field_ref_category": {
+     "data": {
+      "type": "taxonomy_term--event_type",
+      "id": "c5f7fac3-a5de-4537-862e-4be6691de45a",
+      "meta": {
+       "drupal_internal__target_id": 242
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9dd81a02-9781-4a12-bc2c-9959828e9afc/field_ref_category?resourceVersion=id%3A52159"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9dd81a02-9781-4a12-bc2c-9959828e9afc/relationships/field_ref_category?resourceVersion=id%3A52159"
+      }
+     }
+    },
+    "field_ref_product": {
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9dd81a02-9781-4a12-bc2c-9959828e9afc/field_ref_product?resourceVersion=id%3A52159"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9dd81a02-9781-4a12-bc2c-9959828e9afc/relationships/field_ref_product?resourceVersion=id%3A52159"
+      }
+     }
+    },
+    "nodehive_space": {
+     "data": [
+      {
+       "type": "nodehive_space--nodehive_space",
+       "id": "10e3f3ab-3ad4-4646-8cd7-e1b4f262a844",
+       "meta": {
+        "drupal_internal__target_id": 18
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9dd81a02-9781-4a12-bc2c-9959828e9afc/nodehive_space?resourceVersion=id%3A52159"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9dd81a02-9781-4a12-bc2c-9959828e9afc/relationships/nodehive_space?resourceVersion=id%3A52159"
+      }
+     }
+    }
+   }
+  },
+  "c5664a88-edaf-4fe8-9725-8394a40634a6": {
+   "type": "commerce_product_variation--ticket",
+   "id": "c5664a88-edaf-4fe8-9725-8394a40634a6",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/c5664a88-edaf-4fe8-9725-8394a40634a6"
+    }
+   },
+   "attributes": {
+    "title": "Goldener Morgen ermässigt 30% Bildung Bern",
+    "price": {
+     "number": "52.500000",
+     "currency_code": "CHF",
+     "formatted": "CHF 52.50"
+    }
+   }
+  },
+  "5d14eddc-5af0-48d0-b079-9a2873e72fe4": {
+   "type": "node--event",
+   "id": "5d14eddc-5af0-48d0-b079-9a2873e72fe4",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/5d14eddc-5af0-48d0-b079-9a2873e72fe4?resourceVersion=id%3A52103"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/5d14eddc-5af0-48d0-b079-9a2873e72fe4?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "drupal_internal__nid": 11711,
+    "path": {
+     "alias": "/workshop/mit-roberto-burle-marx-im-atelier",
+     "pid": 5627,
+     "langcode": "de"
+    },
+    "field_additional_information_2": "Familien mit Kindern ab 4 J.",
+    "field_location": "Atelier 3",
+    "field_teaser_text": "Im Familienmorgen am Sonntag finden wir unseren eigenen künstlerischen Ausdruck im Atelier und erkunden gemeinsam die Ausstellung! ",
+    "title": "Mit Roberto Burle Marx im Atelier: Workshop Familienmorgen",
+    "field_additional_information": "Dauer: 75 Min.  "
+   },
+   "relationships": {
+    "field_ref_category": {
+     "data": {
+      "type": "taxonomy_term--event_type",
+      "id": "eb9f15a7-55d8-4a1d-8a3a-19393a7596c5",
+      "meta": {
+       "drupal_internal__target_id": 85
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/5d14eddc-5af0-48d0-b079-9a2873e72fe4/field_ref_category?resourceVersion=id%3A52103"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/5d14eddc-5af0-48d0-b079-9a2873e72fe4/relationships/field_ref_category?resourceVersion=id%3A52103"
+      }
+     }
+    },
+    "field_ref_product": {
+     "data": {
+      "type": "commerce_product--ticket",
+      "id": "e8a8bcb4-9baf-40b5-a4bf-853094c6a374",
+      "meta": {
+       "drupal_internal__target_id": 1433
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/5d14eddc-5af0-48d0-b079-9a2873e72fe4/field_ref_product?resourceVersion=id%3A52103"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/5d14eddc-5af0-48d0-b079-9a2873e72fe4/relationships/field_ref_product?resourceVersion=id%3A52103"
+      }
+     }
+    },
+    "nodehive_space": {
+     "data": [
+      {
+       "type": "nodehive_space--nodehive_space",
+       "id": "10e3f3ab-3ad4-4646-8cd7-e1b4f262a844",
+       "meta": {
+        "drupal_internal__target_id": 18
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/5d14eddc-5af0-48d0-b079-9a2873e72fe4/nodehive_space?resourceVersion=id%3A52103"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/5d14eddc-5af0-48d0-b079-9a2873e72fe4/relationships/nodehive_space?resourceVersion=id%3A52103"
+      }
+     }
+    }
+   }
+  },
+  "dc1090cb-7186-400e-ad07-38b0d9df0b7e": {
+   "type": "commerce_product--ticket",
+   "id": "dc1090cb-7186-400e-ad07-38b0d9df0b7e",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/dc1090cb-7186-400e-ad07-38b0d9df0b7e"
+    }
+   },
+   "relationships": {
+    "variations": {
+     "data": [
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "dc1ec751-c7bc-4410-870a-de6f53191605",
+       "meta": {
+        "drupal_internal__target_id": 97
+       }
+      },
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "e771c708-4bed-441b-a76f-d77140758914",
+       "meta": {
+        "drupal_internal__target_id": 101
+       }
+      },
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "edc665cc-10fc-4287-9941-420533a88df6",
+       "meta": {
+        "drupal_internal__target_id": 103
+       }
+      },
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "40063ce6-69c7-4751-a864-72c1409690bf",
+       "meta": {
+        "drupal_internal__target_id": 98
+       }
+      },
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "3a7dc8a0-f27c-4692-b7e6-6e3d0f557713",
+       "meta": {
+        "drupal_internal__target_id": 99
+       }
+      },
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "59d96e35-c914-49b7-92da-896f0891ec84",
+       "meta": {
+        "drupal_internal__target_id": 100
+       }
+      },
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "567cd267-37e1-4ce9-a5af-e843d8e1f8fa",
+       "meta": {
+        "drupal_internal__target_id": 102
+       }
+      },
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "7fb9fa74-91b3-48fa-b97a-f48c9fed466f",
+       "meta": {
+        "drupal_internal__target_id": 205
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/dc1090cb-7186-400e-ad07-38b0d9df0b7e/variations"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/dc1090cb-7186-400e-ad07-38b0d9df0b7e/relationships/variations"
+      }
+     }
+    }
+   }
+  },
+  "7fb9fa74-91b3-48fa-b97a-f48c9fed466f": {
+   "type": "commerce_product_variation--ticket",
+   "id": "7fb9fa74-91b3-48fa-b97a-f48c9fed466f",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/7fb9fa74-91b3-48fa-b97a-f48c9fed466f"
+    }
+   },
+   "attributes": {
+    "title": "Freiticket für Personen mit Ausweiskategorien S, N, F",
+    "price": {
+     "number": "0.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 0.00"
+    }
+   }
+  },
+  "e8a8bcb4-9baf-40b5-a4bf-853094c6a374": {
+   "type": "commerce_product--ticket",
+   "id": "e8a8bcb4-9baf-40b5-a4bf-853094c6a374",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/e8a8bcb4-9baf-40b5-a4bf-853094c6a374"
+    }
+   },
+   "relationships": {
+    "variations": {
+     "data": [
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "3b1aaac2-6329-4930-9966-c5d456031bad",
+       "meta": {
+        "drupal_internal__target_id": 206
+       }
+      },
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "83f2ab7c-4dd5-4cb3-a848-d773291d47fb",
+       "meta": {
+        "drupal_internal__target_id": 207
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/e8a8bcb4-9baf-40b5-a4bf-853094c6a374/variations"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/e8a8bcb4-9baf-40b5-a4bf-853094c6a374/relationships/variations"
+      }
+     }
+    }
+   }
+  },
+  "438466ee-71dd-4a8f-ace5-e51d68211727": {
+   "type": "commerce_product_variation--ticket",
+   "id": "438466ee-71dd-4a8f-ace5-e51d68211727",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/438466ee-71dd-4a8f-ace5-e51d68211727"
+    }
+   },
+   "attributes": {
+    "title": "Hochdruck Linolschnitt ermässigt 30% Bildung Bern",
+    "price": {
+     "number": "294.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 294.00"
+    }
+   }
+  },
+  "bcb4d1d8-9dd5-4a80-a940-e130179de7ed": {
+   "type": "commerce_product_variation--ticket",
+   "id": "bcb4d1d8-9dd5-4a80-a940-e130179de7ed",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/bcb4d1d8-9dd5-4a80-a940-e130179de7ed"
+    }
+   },
+   "attributes": {
+    "title": "Hochdruck Linolschnitt regulär",
+    "price": {
+     "number": "420.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 420.00"
+    }
+   }
+  },
+  "dc1ec751-c7bc-4410-870a-de6f53191605": {
+   "type": "commerce_product_variation--ticket",
+   "id": "dc1ec751-c7bc-4410-870a-de6f53191605",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/dc1ec751-c7bc-4410-870a-de6f53191605"
+    }
+   },
+   "attributes": {
+    "title": "Offenes Atelier regulär",
+    "price": {
+     "number": "18.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 18.00"
+    }
+   }
+  },
+  "a1ad3f0a-ff9e-4db9-b641-2da6778f4efb": {
+   "type": "node--event",
+   "id": "a1ad3f0a-ff9e-4db9-b641-2da6778f4efb",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/a1ad3f0a-ff9e-4db9-b641-2da6778f4efb?resourceVersion=id%3A50757"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/a1ad3f0a-ff9e-4db9-b641-2da6778f4efb?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "drupal_internal__nid": 14208,
+    "title": "Vogelperspektive: Workshop Offenes Atelier",
+    "path": {
+     "alias": "/workshop/vogelperspektive",
+     "pid": 6042,
+     "langcode": "de"
+    },
+    "field_additional_information": "Atelier 1",
+    "field_additional_information_2": "Dauer: 1 Stunde",
+    "field_location": "Ab 4 J. bis ins hohe Alter",
+    "field_teaser_text": "Wir schneiden biomorphe Formen aus Seidenpapier aus und schichten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen, Bäumen, Teichen und allem, was darin Platz findet."
+   },
+   "relationships": {
+    "nodehive_space": {
+     "data": [
+      {
+       "type": "nodehive_space--nodehive_space",
+       "id": "10e3f3ab-3ad4-4646-8cd7-e1b4f262a844",
+       "meta": {
+        "drupal_internal__target_id": 18
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/a1ad3f0a-ff9e-4db9-b641-2da6778f4efb/nodehive_space?resourceVersion=id%3A50757"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/a1ad3f0a-ff9e-4db9-b641-2da6778f4efb/relationships/nodehive_space?resourceVersion=id%3A50757"
+      }
+     }
+    },
+    "field_ref_category": {
+     "data": {
+      "type": "taxonomy_term--event_type",
+      "id": "eb9f15a7-55d8-4a1d-8a3a-19393a7596c5",
+      "meta": {
+       "drupal_internal__target_id": 85
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/a1ad3f0a-ff9e-4db9-b641-2da6778f4efb/field_ref_category?resourceVersion=id%3A50757"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/a1ad3f0a-ff9e-4db9-b641-2da6778f4efb/relationships/field_ref_category?resourceVersion=id%3A50757"
+      }
+     }
+    },
+    "field_ref_product": {
+     "data": {
+      "type": "commerce_product--ticket",
+      "id": "dc1090cb-7186-400e-ad07-38b0d9df0b7e",
+      "meta": {
+       "drupal_internal__target_id": 1329
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/a1ad3f0a-ff9e-4db9-b641-2da6778f4efb/field_ref_product?resourceVersion=id%3A50757"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/a1ad3f0a-ff9e-4db9-b641-2da6778f4efb/relationships/field_ref_product?resourceVersion=id%3A50757"
+      }
+     }
+    }
+   }
+  },
+  "9f1424cd-f1f8-4cde-8498-c5476ea98e20": {
+   "type": "node--event",
+   "id": "9f1424cd-f1f8-4cde-8498-c5476ea98e20",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9f1424cd-f1f8-4cde-8498-c5476ea98e20?resourceVersion=id%3A49275"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9f1424cd-f1f8-4cde-8498-c5476ea98e20?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "drupal_internal__nid": 9385,
+    "path": {
+     "alias": "/workshop/wo-kinder-mitreden",
+     "pid": 5267,
+     "langcode": "de"
+    },
+    "field_additional_information_2": "12.8.–23.12.2026",
+    "field_location": null,
+    "field_teaser_text": "Einmal wöchentlich treffen sich Kinder ab 9 Jahren am Mittwochnachmittag im Atelier, setzen eigene Projekte um und gestalten das Creaviva aktiv mit.",
+    "title": "Wo Kinder mitreden: Workshop Creaviva Club",
+    "field_additional_information": "Ab 9 J., kostenlos"
+   },
+   "relationships": {
+    "field_ref_category": {
+     "data": {
+      "type": "taxonomy_term--event_type",
+      "id": "eb9f15a7-55d8-4a1d-8a3a-19393a7596c5",
+      "meta": {
+       "drupal_internal__target_id": 85
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9f1424cd-f1f8-4cde-8498-c5476ea98e20/field_ref_category?resourceVersion=id%3A49275"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9f1424cd-f1f8-4cde-8498-c5476ea98e20/relationships/field_ref_category?resourceVersion=id%3A49275"
+      }
+     }
+    },
+    "field_ref_product": {
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9f1424cd-f1f8-4cde-8498-c5476ea98e20/field_ref_product?resourceVersion=id%3A49275"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9f1424cd-f1f8-4cde-8498-c5476ea98e20/relationships/field_ref_product?resourceVersion=id%3A49275"
+      }
+     }
+    },
+    "nodehive_space": {
+     "data": [
+      {
+       "type": "nodehive_space--nodehive_space",
+       "id": "10e3f3ab-3ad4-4646-8cd7-e1b4f262a844",
+       "meta": {
+        "drupal_internal__target_id": 18
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9f1424cd-f1f8-4cde-8498-c5476ea98e20/nodehive_space?resourceVersion=id%3A49275"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/9f1424cd-f1f8-4cde-8498-c5476ea98e20/relationships/nodehive_space?resourceVersion=id%3A49275"
+      }
+     }
+    }
+   }
+  },
+  "40d54ee1-a86e-4890-848c-596313f64784": {
+   "type": "commerce_product--ticket",
+   "id": "40d54ee1-a86e-4890-848c-596313f64784",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/40d54ee1-a86e-4890-848c-596313f64784"
+    }
+   },
+   "relationships": {
+    "variations": {
+     "data": [
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "4c2381d9-9155-48e8-a79d-9a848f6217c2",
+       "meta": {
+        "drupal_internal__target_id": 72
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/40d54ee1-a86e-4890-848c-596313f64784/variations"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/40d54ee1-a86e-4890-848c-596313f64784/relationships/variations"
+      }
+     }
+    }
+   }
+  },
+  "4c2381d9-9155-48e8-a79d-9a848f6217c2": {
+   "type": "commerce_product_variation--ticket",
+   "id": "4c2381d9-9155-48e8-a79d-9a848f6217c2",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/4c2381d9-9155-48e8-a79d-9a848f6217c2"
+    }
+   },
+   "attributes": {
+    "title": "Artur",
+    "price": {
+     "number": "10.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 10.00"
+    }
+   }
+  },
+  "b2845055-d36a-4f68-9b0a-d82e43ccf322": {
+   "type": "commerce_product_variation--ticket",
+   "id": "b2845055-d36a-4f68-9b0a-d82e43ccf322",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/b2845055-d36a-4f68-9b0a-d82e43ccf322"
+    }
+   },
+   "attributes": {
+    "title": "Goldener Morgen regulär",
+    "price": {
+     "number": "75.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 75.00"
+    }
+   }
+  },
+  "3a7dc8a0-f27c-4692-b7e6-6e3d0f557713": {
+   "type": "commerce_product_variation--ticket",
+   "id": "3a7dc8a0-f27c-4692-b7e6-6e3d0f557713",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/3a7dc8a0-f27c-4692-b7e6-6e3d0f557713"
+    }
+   },
+   "attributes": {
+    "title": "Offenes Atelier ermässigt 50% BEKB Family Club",
+    "price": {
+     "number": "9.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 9.00"
+    }
+   }
+  },
+  "3b1aaac2-6329-4930-9966-c5d456031bad": {
+   "type": "commerce_product_variation--ticket",
+   "id": "3b1aaac2-6329-4930-9966-c5d456031bad",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/3b1aaac2-6329-4930-9966-c5d456031bad"
+    }
+   },
+   "attributes": {
+    "title": "Familienmorgen regulär",
+    "price": {
+     "number": "18.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 18.00"
+    }
+   }
+  },
+  "e771c708-4bed-441b-a76f-d77140758914": {
+   "type": "commerce_product_variation--ticket",
+   "id": "e771c708-4bed-441b-a76f-d77140758914",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/e771c708-4bed-441b-a76f-d77140758914"
+    }
+   },
+   "attributes": {
+    "title": "Offenes Atelier Familienticket (max. 5 Personen)",
+    "price": {
+     "number": "45.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 45.00"
+    }
+   }
+  },
+  "51080aad-0221-4883-85db-f60bcf0bb8b4": {
+   "type": "node--event",
+   "id": "51080aad-0221-4883-85db-f60bcf0bb8b4",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/51080aad-0221-4883-85db-f60bcf0bb8b4?resourceVersion=id%3A49958"
+    },
+    "working-copy": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/51080aad-0221-4883-85db-f60bcf0bb8b4?resourceVersion=rel%3Aworking-copy"
+    }
+   },
+   "attributes": {
+    "drupal_internal__nid": 1255,
+    "title": "Kunst-Tour für Kinder: Workshop Artur",
+    "path": {
+     "alias": "/workshop/kunst-tour-fuer-kinder",
+     "pid": 267,
+     "langcode": "de"
+    },
+    "field_additional_information": "Dauer: 120 Minuten",
+    "field_additional_information_2": "6 – 14 Jahre",
+    "field_location": "Treffpunkt: Atelier",
+    "field_teaser_text": "Erkunde gemeinsam mit anderen Kindern und Jugendlichen Kunst im Museum sowie im öffentlichen Raum und gestalte selbst kreativ mit. Im Atelier setzen wir eigene Ideen um."
+   },
+   "relationships": {
+    "nodehive_space": {
+     "data": [
+      {
+       "type": "nodehive_space--nodehive_space",
+       "id": "d23bf42e-d4a3-464c-80a8-539bf79b7df6",
+       "meta": {
+        "drupal_internal__target_id": 7
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/51080aad-0221-4883-85db-f60bcf0bb8b4/nodehive_space?resourceVersion=id%3A49958"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/51080aad-0221-4883-85db-f60bcf0bb8b4/relationships/nodehive_space?resourceVersion=id%3A49958"
+      }
+     }
+    },
+    "field_ref_category": {
+     "data": {
+      "type": "taxonomy_term--event_type",
+      "id": "eb9f15a7-55d8-4a1d-8a3a-19393a7596c5",
+      "meta": {
+       "drupal_internal__target_id": 85
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/51080aad-0221-4883-85db-f60bcf0bb8b4/field_ref_category?resourceVersion=id%3A49958"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/51080aad-0221-4883-85db-f60bcf0bb8b4/relationships/field_ref_category?resourceVersion=id%3A49958"
+      }
+     }
+    },
+    "field_ref_product": {
+     "data": {
+      "type": "commerce_product--ticket",
+      "id": "40d54ee1-a86e-4890-848c-596313f64784",
+      "meta": {
+       "drupal_internal__target_id": 570
+      }
+     },
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/51080aad-0221-4883-85db-f60bcf0bb8b4/field_ref_product?resourceVersion=id%3A49958"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/node/event/51080aad-0221-4883-85db-f60bcf0bb8b4/relationships/field_ref_product?resourceVersion=id%3A49958"
+      }
+     }
+    }
+   }
+  },
+  "0c66752d-ce0d-4fd7-9492-3839b2485a2c": {
+   "type": "commerce_product--ticket",
+   "id": "0c66752d-ce0d-4fd7-9492-3839b2485a2c",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/0c66752d-ce0d-4fd7-9492-3839b2485a2c"
+    }
+   },
+   "relationships": {
+    "variations": {
+     "data": [
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "b2845055-d36a-4f68-9b0a-d82e43ccf322",
+       "meta": {
+        "drupal_internal__target_id": 231
+       }
+      },
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "c5664a88-edaf-4fe8-9725-8394a40634a6",
+       "meta": {
+        "drupal_internal__target_id": 232
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/0c66752d-ce0d-4fd7-9492-3839b2485a2c/variations"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/0c66752d-ce0d-4fd7-9492-3839b2485a2c/relationships/variations"
+      }
+     }
+    }
+   }
+  },
+  "40063ce6-69c7-4751-a864-72c1409690bf": {
+   "type": "commerce_product_variation--ticket",
+   "id": "40063ce6-69c7-4751-a864-72c1409690bf",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/40063ce6-69c7-4751-a864-72c1409690bf"
+    }
+   },
+   "attributes": {
+    "title": "Offenes Atelier ermässigt 50% KulturLegi",
+    "price": {
+     "number": "9.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 9.00"
+    }
+   }
+  },
+  "0a2c5cca-524f-407e-8c2e-f806afee9eca": {
+   "type": "commerce_product--ticket",
+   "id": "0a2c5cca-524f-407e-8c2e-f806afee9eca",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/0a2c5cca-524f-407e-8c2e-f806afee9eca"
+    }
+   },
+   "relationships": {
+    "variations": {
+     "data": [
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "bcb4d1d8-9dd5-4a80-a940-e130179de7ed",
+       "meta": {
+        "drupal_internal__target_id": 182
+       }
+      },
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "438466ee-71dd-4a8f-ace5-e51d68211727",
+       "meta": {
+        "drupal_internal__target_id": 183
+       }
+      },
+      {
+       "type": "commerce_product_variation--ticket",
+       "id": "39e1c207-828d-4982-96f8-9f6b81af9c41",
+       "meta": {
+        "drupal_internal__target_id": 184
+       }
+      }
+     ],
+     "links": {
+      "related": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/0a2c5cca-524f-407e-8c2e-f806afee9eca/variations"
+      },
+      "self": {
+       "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product/ticket/0a2c5cca-524f-407e-8c2e-f806afee9eca/relationships/variations"
+      }
+     }
+    }
+   }
+  },
+  "567cd267-37e1-4ce9-a5af-e843d8e1f8fa": {
+   "type": "commerce_product_variation--ticket",
+   "id": "567cd267-37e1-4ce9-a5af-e843d8e1f8fa",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/567cd267-37e1-4ce9-a5af-e843d8e1f8fa"
+    }
+   },
+   "attributes": {
+    "title": "Atelier-Pass (10er-Karte)",
+    "price": {
+     "number": "0.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 0.00"
+    }
+   }
+  },
+  "83f2ab7c-4dd5-4cb3-a848-d773291d47fb": {
+   "type": "commerce_product_variation--ticket",
+   "id": "83f2ab7c-4dd5-4cb3-a848-d773291d47fb",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/83f2ab7c-4dd5-4cb3-a848-d773291d47fb"
+    }
+   },
+   "attributes": {
+    "title": "Familienmorgen Familienticket (max. 5 Personen)",
+    "price": {
+     "number": "45.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 45.00"
+    }
+   }
+  },
+  "59d96e35-c914-49b7-92da-896f0891ec84": {
+   "type": "commerce_product_variation--ticket",
+   "id": "59d96e35-c914-49b7-92da-896f0891ec84",
+   "links": {
+    "self": {
+     "href": "https://kmbzpk.nodehive.app/de/jsonapi/commerce_product_variation/ticket/59d96e35-c914-49b7-92da-896f0891ec84"
+    }
+   },
+   "attributes": {
+    "title": "Freizeitsterne-Karte (Stiftung Sternschnuppe)",
+    "price": {
+     "number": "0.000000",
+     "currency_code": "CHF",
+     "formatted": "CHF 0.00"
+    }
+   }
+  }
+ }
+}

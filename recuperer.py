@@ -16,6 +16,7 @@ import yaml
 
 from agenda.filtre_enfants import completer, trier
 from agenda.modele import Evenement
+from agenda.regulier import separer
 
 # Dossier du projet (là où se trouve ce fichier)
 DOSSIER = Path(__file__).parent
@@ -101,10 +102,15 @@ def main():
     evenements = [e for e in evenements if dans_la_fenetre(e, maintenant)]
     evenements.sort(key=lambda e: e.debut)
 
+    # Les activités qui reviennent chaque semaine vont dans la section « Chaque semaine »
+    evenements, offres = separer(evenements)
+    print(f"- Offres régulières : {len(offres)} ({', '.join(o.titre[:30] for o in offres)})")
+
     # On écrit le résultat, avec la date de mise à jour
     resultat = {
         "mis_a_jour": maintenant.isoformat(timespec="minutes"),
         "sources": statuts,
+        "offres_regulieres": [o.en_dict() for o in offres],
         "evenements": [e.en_dict() for e in evenements],
     }
     FICHIER_SORTIE.parent.mkdir(exist_ok=True)
@@ -112,7 +118,8 @@ def main():
         json.dump(resultat, f, ensure_ascii=False, indent=2)
 
     n = len(evenements)
-    print(f"{n} événement{'s' if n > 1 else ''} écrit{'s' if n > 1 else ''} dans {FICHIER_SORTIE.relative_to(DOSSIER)}")
+    print(f"{n} événement{'s' if n > 1 else ''} et {len(offres)} offre(s) régulière(s) "
+          f"écrits dans {FICHIER_SORTIE.relative_to(DOSSIER)}")
 
 
 if __name__ == "__main__":
