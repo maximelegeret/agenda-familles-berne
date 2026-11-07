@@ -41,6 +41,8 @@ def test_fenetre_14_jours():
     assert not dans_la_fenetre(exemple(debut="2026-11-22T10:00"), maintenant)   # trop loin
     assert not dans_la_fenetre(exemple(debut="2026-11-07T10:00", fin="2026-11-07T11:00"), maintenant)  # fini
     assert dans_la_fenetre(exemple(debut="2026-11-07T12:00", fin="2026-11-07T14:00"), maintenant)      # en cours
+    assert not dans_la_fenetre(exemple(debut="2026-11-07T10:00"), maintenant)   # sans fin : fini à 12:00
+    assert dans_la_fenetre(exemple(debut="2026-11-07T12:00"), maintenant)       # sans fin : en cours
 
 
 def test_ajouts_manuels_lisibles():

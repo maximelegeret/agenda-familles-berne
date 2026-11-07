@@ -17,6 +17,10 @@ def lire_prix(texte):
     bas = texte.lower()
     if any(mot in bas for mot in MOTS_GRATUIT):
         return "gratuit"
+    # Fourchette de prix : « CHF 10 - 37 » -> '10–37 CHF'
+    fourchette = re.search(r"(\d+)\s*[-–]\s*(\d+)", texte)
+    if fourchette:
+        return f"{fourchette.group(1)}–{fourchette.group(2)} CHF"
     nombre = re.search(r"(\d+(?:[.,]\d+)?)", texte)
     if nombre:
         montant = nombre.group(1).replace(",", ".").rstrip(".")

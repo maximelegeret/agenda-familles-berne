@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-07T14:17+01:00",
+  "mis_a_jour": "2026-11-07T14:30+01:00",
   "sources": [
     {
       "nom": "Kornhausbibliotheken",
@@ -20,6 +20,11 @@
       "nom": "Yehudi Menuhin Forum",
       "ok": true,
       "nb": 1
+    },
+    {
+      "nom": "Bühnen Bern",
+      "ok": true,
+      "nb": 2
     }
   ],
   "offres_regulieres": [
@@ -619,6 +624,31 @@
       "prix": "inconnu",
       "inscription_requise": true,
       "categorie": "conte",
+      "type": "événement",
+      "repetition": "",
+      "ville": "Berne",
+      "licence": "",
+      "autres_sources": []
+    },
+    {
+      "id": "buehnenbern-der-letzte-regenbogenvogel-202611151600",
+      "titre": "Der letzte Regenbogenvogel",
+      "debut": "2026-11-15T16:00",
+      "lieu_nom": "Vidmar 2",
+      "source": "Bühnen Bern",
+      "url_source": "https://buehnenbern.ch/spielplan/programm/der-letzte-regenbogenvogel/",
+      "description_courte": "Der Regenbogenvogel ist ein sehr besonderer Vogel mit einem prachtvollen Gefieder in allen Farben des Regenbogens. Doch leider ist er fast ausgestorben. Um ihn zu retten, muss unbedingt ein…",
+      "fin": null,
+      "adresse": "",
+      "latitude": null,
+      "longitude": null,
+      "age_min": 4,
+      "age_max": null,
+      "age_source": "fourni",
+      "age_texte": "4+",
+      "prix": "inconnu",
+      "inscription_requise": null,
+      "categorie": "spectacle",
       "type": "événement",
       "repetition": "",
       "ville": "Berne",

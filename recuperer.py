@@ -49,9 +49,9 @@ def dans_la_fenetre(evenement, maintenant):
     debut = evenement.date_debut().replace(tzinfo=FUSEAU)
     fin = datetime.fromisoformat(evenement.fin).replace(tzinfo=FUSEAU) if evenement.fin else debut
     limite = maintenant.replace(hour=0, minute=0) + timedelta(days=NB_JOURS + 1)
-    # Sans heure de fin, on garde l'événement toute la journée de son début
+    # Sans heure de fin, on considère qu'il dure 2 heures (une visite de 11:00 disparaît à 13:00)
     if not evenement.fin:
-        fin = fin.replace(hour=23, minute=59)
+        fin = debut + timedelta(hours=2)
     return fin >= maintenant and debut < limite
 
 

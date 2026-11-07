@@ -38,7 +38,8 @@ sources:
   - nom: Bühnen Bern
     lecteur: buehnenbern
     url: https://buehnenbern.ch/spielplan/programm/
-    actif: false   # étape 7
+    actif: true
+    pour_enfants: false  # « Junges Publikum » inclut des pièces pour ados : le tri par âge s'applique
 
   - nom: Eventfrog
     lecteur: eventfrog
