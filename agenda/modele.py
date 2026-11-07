@@ -34,6 +34,7 @@ class Evenement:
     age_min: Optional[float] = None     # en années, ex. 1.5
     age_max: Optional[float] = None
     age_source: Optional[str] = None    # "fourni" (écrit par la source) ou "déduit" (deviné)
+    age_texte: str = ""                 # l'âge tel qu'écrit par la source, ex. « ab vier Jahren, in Begleitung »
     prix: str = "inconnu"               # "gratuit", "15 CHF" ou "inconnu"
     inscription_requise: Optional[bool] = None
     categorie: Optional[str] = None     # une valeur de CATEGORIES

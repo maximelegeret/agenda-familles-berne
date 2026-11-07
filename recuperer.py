@@ -5,7 +5,9 @@ et les écrit dans docs/events.json, que la page web affiche.
 Lancement :  python recuperer.py
 """
 
+import importlib
 import json
+import traceback
 from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -55,10 +57,20 @@ def main():
     maintenant = datetime.now(FUSEAU)
     sources = charger_sources()
     evenements = []
+    statuts = []  # état de chaque source, affiché sur la page en cas de problème
 
-    # Les lecteurs seront branchés ici à partir de l'étape 2.
     for source in sources:
-        print(f"- {source['nom']} : lecteur pas encore écrit")
+        # Chaque source est lue à part : si l'une plante, les autres continuent
+        try:
+            lecteur = importlib.import_module(f"agenda.lecteurs.{source['lecteur']}")
+            lus = lecteur.lire(source)
+            evenements.extend(lus)
+            statuts.append({"nom": source["nom"], "ok": True, "nb": len(lus)})
+            print(f"- {source['nom']} : {len(lus)} lu(s)")
+        except Exception as erreur:
+            traceback.print_exc()
+            statuts.append({"nom": source["nom"], "ok": False, "erreur": str(erreur)})
+            print(f"- {source['nom']} : ÉCHEC ({erreur})")
 
     ajouts = charger_ajouts_manuels()
     print(f"- Ajouts manuels : {len(ajouts)} lu(s)")
@@ -71,6 +83,7 @@ def main():
     # On écrit le résultat, avec la date de mise à jour
     resultat = {
         "mis_a_jour": maintenant.isoformat(timespec="minutes"),
+        "sources": statuts,
         "evenements": [e.en_dict() for e in evenements],
     }
     FICHIER_SORTIE.parent.mkdir(exist_ok=True)

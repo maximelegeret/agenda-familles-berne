@@ -51,6 +51,7 @@ function texteAge(e) {
   if (e.age_min != null && e.age_max != null) texte = remplir(T.age_entre, { min: e.age_min, max: e.age_max });
   else if (e.age_min != null) texte = remplir(T.age_des, { min: e.age_min });
   else if (e.age_max != null) texte = remplir(T.age_jusqu_a, { max: e.age_max });
+  else if (e.age_texte) return e.age_texte; // âge pas encore compris : on montre le texte de la source
   else return null;
   if (e.age_source === "déduit") texte += " " + T.age_deduit;
   return texte;
@@ -110,6 +111,11 @@ function fiche(e) {
 function afficher(donnees) {
   const liste = document.getElementById("liste");
   liste.replaceChildren();
+
+  // Avertissement si une source n'a pas pu être lue
+  for (const s of donnees.sources || []) {
+    if (!s.ok) liste.append(el("p", "message message-erreur", remplir(T.source_en_echec, { nom: s.nom })));
+  }
 
   if (!donnees.evenements.length) {
     liste.append(el("p", "message", T.aucun_evenement));

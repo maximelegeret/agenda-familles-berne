@@ -11,7 +11,7 @@ sources:
   - nom: Kornhausbibliotheken
     lecteur: kob
     url: https://www.kob.ch/agenda/
-    actif: false   # lecteur écrit à l'étape 2
+    actif: true
 
   - nom: Creaviva (Zentrum Paul Klee)
     lecteur: creaviva

@@ -4,6 +4,7 @@
   "chargement": "Chargement…",
   "erreur_chargement": "Impossible de charger les événements.",
   "aucun_evenement": "Aucun événement pour l'instant.",
+  "source_en_echec": "⚠️ {nom} n'a pas pu être lu lors de la dernière mise à jour.",
   "mis_a_jour": "Mis à jour le",
   "aujourd_hui": "Aujourd'hui",
   "demain": "Demain",
