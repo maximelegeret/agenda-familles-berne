@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-07T14:10+01:00",
+  "mis_a_jour": "2026-11-07T14:17+01:00",
   "sources": [
     {
       "nom": "Kornhausbibliotheken",
@@ -15,6 +15,11 @@
       "nom": "MuseumsQuartier Bern",
       "ok": true,
       "nb": 4
+    },
+    {
+      "nom": "Yehudi Menuhin Forum",
+      "ok": true,
+      "nb": 1
     }
   ],
   "offres_regulieres": [
@@ -196,13 +201,13 @@
       "autres_sources": []
     },
     {
-      "id": "manuel-peter-und-der-wolf-2026-11-08",
+      "id": "menuhin-743-202611081600",
       "titre": "Peter und der Wolf",
       "debut": "2026-11-08T16:00",
       "lieu_nom": "Yehudi Menuhin Forum",
       "source": "Yehudi Menuhin Forum",
       "url_source": "https://menuhinforum.ch/events/peter-und-der-wolf/",
-      "description_courte": "Familienkonzert – le conte musical de Prokofiev.",
+      "description_courte": "Familienkonzert – Sergei Prokofiews Musikmärchen mit dem Anemoi Holzbläserquintett und der Schauspielerin Katharina Lienhard als Sprecherin",
       "fin": null,
       "adresse": "Helvetiaplatz 6, 3005 Bern",
       "latitude": null,

@@ -1,17 +1,21 @@
 # Événements ajoutés à la main (trouvés ailleurs, ex. Fäger, affiche dans le quartier…).
-# Copie un bloc existant et modifie-le. Champs obligatoires : id, titre, debut, lieu_nom, source, url_source.
+# Copie le modèle ci-dessous, retire les « # » et modifie-le.
+# Champs obligatoires : id, titre, debut, lieu_nom, source, url_source.
 # Dates au format AAAA-MM-JJTHH:MM (heure de Berne). Les événements passés disparaissent tout seuls.
 # Catégories possibles : atelier, conte, spectacle, musique, nature, sport, fête, visite
+#
+# Modèle :
+#  - id: manuel-peter-und-der-wolf-2026-11-08
+#    titre: Peter und der Wolf
+#    description_courte: Familienkonzert – le conte musical de Prokofiev.
+#    debut: "2026-11-08T16:00"
+#    fin: "2026-11-08T17:00"
+#    lieu_nom: Yehudi Menuhin Forum
+#    adresse: Helvetiaplatz 6, 3005 Bern
+#    age_min: 4
+#    prix: gratuit
+#    categorie: musique
+#    source: Yehudi Menuhin Forum
+#    url_source: https://menuhinforum.ch/events/peter-und-der-wolf/
 
-evenements:
-  # Exemple réel, à retirer quand le lecteur Menuhin Forum sera écrit (étape 6)
-  - id: manuel-peter-und-der-wolf-2026-11-08
-    titre: Peter und der Wolf
-    description_courte: Familienkonzert – le conte musical de Prokofiev.
-    debut: "2026-11-08T16:00"
-    lieu_nom: Yehudi Menuhin Forum
-    adresse: Helvetiaplatz 6, 3005 Bern
-    prix: gratuit
-    categorie: musique
-    source: Yehudi Menuhin Forum
-    url_source: https://menuhinforum.ch/events/peter-und-der-wolf/
+evenements: []

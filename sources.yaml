@@ -32,7 +32,8 @@ sources:
   - nom: Yehudi Menuhin Forum
     lecteur: menuhin
     url: https://menuhinforum.ch/konzertkalender/
-    actif: false   # étape 6
+    actif: true
+    pour_enfants: true   # le lecteur ne garde que les concerts « Familie / Kinder »
 
   - nom: Bühnen Bern
     lecteur: buehnenbern

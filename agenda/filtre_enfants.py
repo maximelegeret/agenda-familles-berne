@@ -30,7 +30,7 @@ RE_PLUS = re.compile(r"\b(\d+)\s*\+")
 # Mots qui signalent un public d'enfants ou de familles
 MOTS_ENFANTS = [
     "kinder", "kind ", "kids", "familie", "familien", "märli", "märchen", "gschicht",
-    "geschichtenzeit", "bilderbuch", "värsli", "kasperli", "chaschperli", "jugend",
+    "geschichtenzeit", "bilderbuch", "värsli", "kasperli", "chaschperli",
     "junges publikum", "kleinkind", "baby", "enfants", "famille", "children", "family",
 ]
 # Mots qui signalent un public adulte
