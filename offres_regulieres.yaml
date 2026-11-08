@@ -1,0 +1,18 @@
+# Offres régulières sans dates publiées (salle de jeux, rendez-vous fixes…).
+# Elles s'affichent dans la section « Chaque semaine » de la page.
+# Obligatoire : titre, repetition (texte libre des horaires), lieu_nom.
+# Facultatif : comme dans ajouts_manuels.yaml (adresse, age_min, age_max, prix, categorie, source, url_source…).
+# Pense à vérifier de temps en temps que l'offre existe toujours.
+
+offres:
+  - titre: Pünktli – Spielzimmer
+    repetition: du mardi au vendredi 8:30–11:30, 14:00–17:00 (hors vacances scolaires)
+    description_courte: Salle de jeux surveillée avec espace extérieur, pour jouer librement en groupe d'âges mélangés. 2 CHF la demi-journée si le parent reste sur place (gratuit pour les membres), 6 CHF l'heure sinon.
+    lieu_nom: MüZe Muri-Gümligen (Thoracherhus)
+    adresse: Kranichweg 10, 3074 Muri bei Bern
+    age_min: 0
+    age_max: 5
+    age_source: fourni
+    prix: dès 2 CHF
+    source: MüZe Muri-Gümligen
+    url_source: https://www.mueze-muri-guemligen.ch/treffpunkt/puenktli/

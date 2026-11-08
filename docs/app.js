@@ -80,7 +80,8 @@ function duree(age) {
 }
 
 function texteAge(e) {
-  const min = e.age_min, max = e.age_max;
+  // « dès 0 an » ne dit rien : un âge minimum de 0 compte comme « pas de minimum »
+  const min = e.age_min ? e.age_min : null, max = e.age_max;
   let texte;
   if (min != null && max != null) texte = min >= 1 ? `${min}–${duree(max)}` : `${duree(min)} – ${duree(max)}`;
   else if (min != null) texte = remplir(T.age_des, { age: duree(min) });

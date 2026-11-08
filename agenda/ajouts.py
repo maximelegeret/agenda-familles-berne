@@ -67,6 +67,33 @@ def lire_fiche(donnees):
     return Evenement(**fiche)
 
 
+def charger_offres(chemin, aujourd_hui=None):
+    """
+    Lit offres_regulieres.yaml : offres sans dates (ex. le Pünktli).
+    Renvoie (offres, erreurs). Chaque offre est un Evenement de type « offre régulière ».
+    """
+    chemin = Path(chemin)
+    if not chemin.exists():
+        return [], []
+    try:
+        contenu = yaml.safe_load(chemin.read_text(encoding="utf-8")) or {}
+    except yaml.YAMLError as erreur:
+        return [], [f"offres_regulieres.yaml n'est pas lisible : {erreur}"]
+    debut = (aujourd_hui or date.today()).strftime("%Y-%m-%dT00:00")
+    offres, erreurs = [], []
+    for numero, donnees in enumerate(contenu.get("offres") or [], start=1):
+        try:
+            if not isinstance(donnees, dict) or not donnees.get("repetition"):
+                raise ValueError("champ obligatoire manquant : repetition")
+            fiche = {**donnees, "debut": debut, "type": "offre régulière"}
+            fiche.setdefault("id", "regulier-" + _identifiant(str(fiche.get("titre", "")), debut).removeprefix("manuel-")[:-13])
+            offres.append(lire_fiche(fiche))
+        except (ValueError, TypeError) as erreur:
+            titre = donnees.get("titre", "sans titre") if isinstance(donnees, dict) else "?"
+            erreurs.append(f"offre n°{numero} (« {titre} ») ignorée : {erreur}")
+    return offres, erreurs
+
+
 def charger(chemin):
     """Lit le fichier. Renvoie (événements valides, liste des erreurs lisibles)."""
     chemin = Path(chemin)

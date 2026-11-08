@@ -65,6 +65,12 @@ sources:
     actif: true
     pour_enfants: true   # le lecteur utilise le filtre « Familien und Kinder » du musée
 
+  - nom: MüZe Muri-Gümligen
+    lecteur: mueze
+    url: https://www.mueze-muri-guemligen.ch/angebot/veranstaltungen/
+    actif: true
+    pour_enfants: true   # le lecteur écarte les rendez-vous parents (consultation, allaitement) et le Repair-Café
+
   - nom: Eventfrog
     lecteur: eventfrog
     url: https://api.eventfrog.net/public/v1/events

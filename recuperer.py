@@ -23,6 +23,7 @@ from agenda.regulier import separer
 DOSSIER = Path(__file__).parent
 FICHIER_SOURCES = DOSSIER / "sources.yaml"
 FICHIER_AJOUTS = DOSSIER / "ajouts_manuels.yaml"
+FICHIER_OFFRES = DOSSIER / "offres_regulieres.yaml"
 FICHIER_SORTIE = DOSSIER / "docs" / "events.json"
 
 # Toutes les dates du projet sont à l'heure de Berne
@@ -114,6 +115,12 @@ def main():
 
     # Les activités qui reviennent chaque semaine vont dans la section « Chaque semaine »
     evenements, offres = separer(evenements)
+
+    # … plus les offres fixes écrites à la main (ex. le Pünktli du MüZe)
+    fixes, erreurs_offres = ajouts.charger_offres(FICHIER_OFFRES)
+    for erreur in erreurs_offres:
+        print(f"    ⚠️  {erreur}")
+    offres += [completer(o) for o in fixes]
     print(f"- Offres régulières : {len(offres)} ({', '.join(o.titre[:30] for o in offres)})")
 
     # On écrit le résultat, avec la date de mise à jour
