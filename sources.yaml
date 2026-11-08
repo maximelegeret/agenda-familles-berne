@@ -41,6 +41,12 @@ sources:
     actif: true
     pour_enfants: false  # « Junges Publikum » inclut des pièces pour ados : le tri par âge s'applique
 
+  - nom: Berner Puppen Theater
+    lecteur: puppentheater
+    url: https://www.berner-puppentheater.ch/spielplan
+    actif: true
+    pour_enfants: true   # le lecteur ne garde que le « Kinderprogramm »
+
   - nom: Eventfrog
     lecteur: eventfrog
     url: https://api.eventfrog.net/public/v1/events

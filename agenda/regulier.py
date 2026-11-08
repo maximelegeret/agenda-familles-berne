@@ -11,6 +11,8 @@ from collections import defaultdict
 from dataclasses import replace
 from datetime import timedelta
 
+CATEGORIES_JAMAIS_REGULIERES = {"spectacle"}
+
 JOURS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
 
 
@@ -64,7 +66,11 @@ def separer(evenements):
 
     dates, offres = [], []
     for seances in groupes.values():
-        if len(seances) >= 2 and _est_hebdomadaire(seances):
+        # Un spectacle joué plusieurs fois par semaine est une série limitée, pas une
+        # offre permanente : il reste visible jour par jour (ex. « Kalif Storch »).
+        if seances[0].categorie in CATEGORIES_JAMAIS_REGULIERES:
+            dates.extend(seances)
+        elif len(seances) >= 2 and _est_hebdomadaire(seances):
             seances.sort(key=lambda s: s.debut)
             prochaine = seances[0]
             offres.append(replace(
