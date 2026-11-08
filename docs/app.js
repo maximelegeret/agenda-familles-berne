@@ -144,7 +144,38 @@ function evenementsFiltres() {
     if (fin < maintenant) return false; // déjà fini depuis la dernière mise à jour
     if (jours && !jours.includes(cleJour(e.debut))) return false;
     return passePrixType(e);
-  });
+  })
+    // Toujours dans l'ordre chronologique, même si le fichier ne l'était pas
+    .sort((a, b) => a.debut.localeCompare(b.debut));
+}
+
+// Regroupe les séances d'une même activité (même titre, même source), dans l'ordre de la première.
+// Pas par lien : certains sites (Schlachthaus) donnent un lien différent à chaque séance.
+function regrouperSeances(evenements) {
+  const groupes = new Map();
+  for (const e of evenements) {
+    const cle = `${e.titre}|${e.source}`;
+    if (!groupes.has(cle)) groupes.set(cle, []);
+    groupes.get(cle).push(e);
+  }
+  return [...groupes.values()];
+}
+
+// « mer. 11 · 15:00 »
+function dateCourte(e) {
+  const d = lireDate(e.debut);
+  return `${d.toLocaleDateString(LANGUE, { weekday: "short", day: "numeric" })} · ${heure(e.debut)}`;
+}
+
+// Ligne « Autres dates : mer. 11 · 15:00, sam. 14 · 15:00 +3 » (null s'il n'y en a pas)
+function autresDates(seances, maximum, avecTitre) {
+  const reste = seances.slice(1);
+  if (!reste.length) return null;
+  const p = el("p", "autres-dates");
+  if (avecTitre) p.append(el("strong", null, `${T.autres_dates} : `));
+  p.append(reste.slice(0, maximum).map(dateCourte).join(", "));
+  if (reste.length > maximum) p.append(" ", el("span", "plus-n", remplir(T.plus_n, { n: reste.length - maximum })));
+  return p;
 }
 
 // ---------------------------------------------------------------------------
@@ -192,7 +223,9 @@ function autresSources(e) {
 // « Bientôt » : la prochaine activité en grand + les suivantes
 // ---------------------------------------------------------------------------
 
-function carteVedette(e) {
+// Grande carte : la prochaine séance d'une activité, et ses autres dates
+function carteVedette(seances) {
+  const e = seances[0];
   const carte = el("article", "vedette");
   carte.dataset.cat = cleIllustration(e.categorie);
   const visuel = el("div", "vedette-visuel");
@@ -209,6 +242,8 @@ function carteVedette(e) {
   if (e.categorie) haut.append(el("span", "type", T.categories[e.categorie]));
   corps.append(haut, el("h2", "vedette-titre", e.titre));
   if (e.description_courte) corps.append(el("p", "vedette-texte", e.description_courte));
+  const dates = autresDates(seances, 4, true);
+  if (dates) corps.append(dates);
   corps.append(ligneLieu(e), pastilles(e), lienSource(e));
   const autres = autresSources(e);
   if (autres) corps.append(autres);
@@ -216,7 +251,9 @@ function carteVedette(e) {
   return carte;
 }
 
-function petiteCarte(e) {
+// Petite carte : une par activité, avec la prochaine séance et quelques dates suivantes
+function petiteCarte(seances) {
+  const e = seances[0];
   const carte = el("a", "mini");
   carte.dataset.cat = cleIllustration(e.categorie);
   carte.href = `#${e.id}`;
@@ -228,21 +265,25 @@ function petiteCarte(e) {
   const badge = el("span", q.proche ? "quand quand-proche" : "quand", q.texte);
   badge.dataset.debut = e.debut; badge.dataset.fin = e.fin || "";
   carte.append(badge, el("h3", "mini-titre", e.titre), el("p", "mini-lieu", e.lieu_nom));
+  const dates = autresDates(seances, 3, false);
+  if (dates) carte.append(dates);
   return carte;
 }
 
 function sectionBientot(evenements) {
   if (!evenements.length) return null;
+  // Une seule carte par activité, même si elle a plusieurs séances (ex. un spectacle)
+  const groupes = regrouperSeances(evenements);
   const section = el("section", "bientot");
-  const premier = evenements[0];
+  const premier = groupes[0][0];
   const aujourdhui = cleJour(premier.debut) === formatJour(new Date());
   section.append(el("h2", "section-titre", aujourdhui ? T.bientot : T.prochaine));
-  section.append(carteVedette(premier));
-  const suivants = evenements.slice(1, 6);
+  section.append(carteVedette(groupes[0]));
+  const suivants = groupes.slice(1, 6);
   if (suivants.length) {
     const rang = el("div", "rangee");
     rang.setAttribute("role", "list");
-    suivants.forEach((e) => { const c = petiteCarte(e); c.setAttribute("role", "listitem"); rang.append(c); });
+    suivants.forEach((g) => { const c = petiteCarte(g); c.setAttribute("role", "listitem"); rang.append(c); });
     section.append(rang);
   }
   return section;

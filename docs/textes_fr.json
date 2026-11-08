@@ -21,6 +21,8 @@
   "prochaine": "Prochaine activité",
   "ensuite": "Tout le programme",
   "en_cours": "En cours",
+  "autres_dates": "Autres dates",
+  "plus_n": "+{n}",
   "dans_min": "Dans {n} min",
   "dans_h": "Dans {h} h",
   "dans_h_min": "Dans {h} h {m}",

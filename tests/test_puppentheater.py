@@ -48,3 +48,16 @@ def test_spectacle_jamais_range_dans_chaque_semaine():
                for d in ("2026-11-14T15:00", "2026-11-21T15:00")]
     dates, offres = separer(seances)
     assert len(dates) == 2 and offres == []
+
+
+def test_ordre_chronologique_apres_regroupement():
+    # Un spectacle à plusieurs dates ne doit pas faire passer le 21 avant le 9
+    def evt(titre, debut, categorie):
+        return Evenement(id=f"{titre}-{debut}", titre=titre, debut=debut, lieu_nom="L", source="S",
+                         url_source=f"https://x/{titre}", categorie=categorie)
+    dates, _ = separer([
+        evt("Kalif Storch", "2026-11-08T11:00", "spectacle"),
+        evt("Kalif Storch", "2026-11-21T15:00", "spectacle"),
+        evt("Märli-Zyt", "2026-11-09T14:00", "conte"),
+    ])
+    assert [d.debut for d in dates] == ["2026-11-08T11:00", "2026-11-09T14:00", "2026-11-21T15:00"]

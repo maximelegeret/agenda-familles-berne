@@ -81,4 +81,6 @@ def separer(evenements):
             ))
         else:
             dates.extend(seances)
+    # Les groupes ont été parcourus un par un : on remet les dates dans l'ordre chronologique
+    dates.sort(key=lambda e: e.debut)
     return dates, offres
