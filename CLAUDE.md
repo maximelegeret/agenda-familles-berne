@@ -62,6 +62,13 @@ Document de cadrage : « Agenda Familles Berne – Cadrage V1 » (6 nov. 2026). 
 
 Pistes non faites (agenda en JavaScript ou absent) : Spielen in Bern / DOK, centres de quartier VBG (vbgbern.ch), Theater Matte, ALPS (alps.museum, en partie via MQB).
 
+## Feuille de route V2 (validée le 8 nov. 2026) : mieux servir la famille, pas d'ouverture au public
+Plan détaillé : `~/.claude/plans/lexical-juggling-flute.md`. Réglages personnels (favoris, âges, domicile) **sur le téléphone uniquement**, jamais dans le dépôt public.
+- Lot 1 : Kunstmuseum (lecteur Creaviva, espace 7), favoris, ajout à l'agenda (.ics + flux `docs/agenda.ics`), partage, filtres âge des enfants et moment de la journée.
+- Lot 2 : `lieux.yaml` (coordonnées, dedans/dehors), carte Leaflet/OSM, distance depuis le domicile.
+- Lot 3 : résumé du week-end par mail le jeudi (GitHub Actions + mot de passe d'application Gmail en secret).
+- Lot 4 : Eventfrog (jeton), idées « jour de pluie », places de jeux (open data), IA Claude (cas flous + sites sans agenda lisible).
+
 ## Points ouverts
 - Licence kob.ch : le cadrage dit CC BY-SA 4.0, les mentions légales du site exigent un accord écrit. OK en usage perso ; à clarifier avant toute ouverture au public.
 - « Das Casino brummt » (Bühnen Bern) introuvable dans le programme actuel : ajout manuel s'il revient.

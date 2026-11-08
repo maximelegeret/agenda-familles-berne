@@ -83,6 +83,13 @@ sources:
     actif: true
     pour_enfants: true   # le lecteur garde les rubriques Kinderfreizeit et Thementage
 
+  - nom: Kunstmuseum Bern
+    lecteur: creaviva    # même API que le Creaviva (Zentrum Paul Klee et Kunstmuseum partagent leur site)
+    url: https://www.kunstmuseumbern.ch/de
+    actif: true
+    pour_enfants: false  # visites pour adultes et ateliers enfants mélangés : le tri par âge et mots-clés s'applique
+    espace: 7
+
   - nom: Eventfrog
     lecteur: eventfrog
     url: https://api.eventfrog.net/public/v1/events

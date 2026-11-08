@@ -17,6 +17,14 @@ from agenda.web import telecharger
 
 API = "https://kmbzpk.nodehive.app/de/jsonapi/node/activity"
 SITE = "https://zpk.org/de"
+
+# Ce qui change d'un espace à l'autre : site, nom du lieu, adresse, préfixe d'identifiant, catégorie
+LIEUX = {
+    18: {"site": "https://zpk.org/de", "lieu": "Creaviva, Zentrum Paul Klee",
+         "adresse": "Monument im Fruchtland 3, 3006 Bern", "prefixe": "creaviva", "categorie": "atelier"},
+    7: {"site": "https://www.kunstmuseumbern.ch/de", "lieu": "Kunstmuseum Bern",
+        "adresse": "Hodlerstrasse 8–12, 3011 Bern", "prefixe": "kmb", "categorie": None},
+}
 NB_JOURS = 15  # un jour de marge sur la fenêtre de 14 jours
 
 # Catégorie « Kurse für Erwachsene (ab 16 J.) » : jamais pour les enfants
@@ -127,20 +135,21 @@ def analyser(seances, lies, espace, nom_source):
         if prix == "inconnu" and any(m in " ".join(extras).lower() for m in ("kostenlos", "gratis")):
             prix = "gratuit"
 
+        lieu = LIEUX.get(espace, LIEUX[18])
         evenements.append(Evenement(
-            id=f"creaviva-{a['drupal_internal__nid']}-{debut:%Y%m%d%H%M}",
+            id=f"{lieu['prefixe']}-{a['drupal_internal__nid']}-{debut:%Y%m%d%H%M}",
             # « Vogelperspektive: Workshop Offenes Atelier » -> on garde le titre complet, plus parlant
             titre=a["title"],
             description_courte=description,
             debut=debut.strftime("%Y-%m-%dT%H:%M"),
             fin=fin.strftime("%Y-%m-%dT%H:%M") if fin else None,
-            lieu_nom="Creaviva, Zentrum Paul Klee",
-            adresse="Monument im Fruchtland 3, 3006 Bern",
+            lieu_nom=lieu["lieu"],
+            adresse=lieu["adresse"],
             age_texte=age_texte,
             prix=prix,
-            categorie="atelier",
+            categorie=lieu["categorie"],
             source=nom_source,
-            url_source=SITE + chemin if chemin else SITE + "/creaviva",
+            url_source=lieu["site"] + chemin if chemin else lieu["site"],
         ))
     return evenements
 
