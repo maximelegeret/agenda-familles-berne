@@ -111,7 +111,7 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 ::selection { background: var(--action-doux); color: var(--encre); }
-:focus-visible { outline: 3px solid var(--action); outline-offset: 3px; border-radius: 12px; }
+:focus-visible { outline: 3px solid var(--action); outline-offset: 3px; border-radius: 16px; }
 a { color: inherit; text-underline-offset: 3px; }
 button { font: inherit; color: inherit; }
 h1, h2, h3, p { margin: 0; }
@@ -179,7 +179,7 @@ h1, h2, h3 { text-wrap: balance; }
 
 .heure { font-weight: 750; font-variant-numeric: tabular-nums; }
 .type { color: var(--i-ink); font-size: 13px; font-weight: 700; }
-.lieu { display: flex; align-items: center; gap: 6px; color: var(--doux); font-size: 14.5px; }
+.lieu { display: flex; align-items: center; gap: 6px; color: var(--doux); font-size: 14px; }
 .lieu .icone { width: 16px; height: 16px; color: var(--i-ink); }
 
 /* Badge « Dans 40 min » : information, pas une action (donc pas de tomate) */
@@ -219,6 +219,43 @@ h1, h2, h3 { text-wrap: balance; }
 .autres-dates strong { color: var(--encre); font-weight: 700; }
 .mini .autres-dates { font-size: 12.5px; }
 .plus-n { font-weight: 700; color: var(--encre); white-space: nowrap; }
+
+/* --- Actions d'une fiche : favori, agenda, partage --- */
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 4px; }
+.action {
+  display: inline-flex; align-items: center; gap: 6px;
+  min-height: 40px; padding: 0 14px; border-radius: 999px; border: 0;
+  background: var(--neutre); color: var(--encre); font-size: 14px; font-weight: 700; cursor: pointer;
+  transition: transform 0.35s var(--ressort), background-color 0.2s;
+}
+.action:active { transform: scale(0.95); }
+.action .icone { width: 18px; height: 18px; }
+/* Favori actif : étoile pleine, couleur chaude des illustrations (un état, pas une action) */
+.action-favori[aria-pressed="true"] { background: var(--inscr-fond); color: var(--inscr-texte); }
+.action-favori[aria-pressed="true"] .icone svg { fill: var(--i-acc); stroke: var(--i-acc); }
+.action-lien { color: var(--action); font-size: 14px; font-weight: 700; text-decoration: none; padding: 8px 4px; }
+.action-lien:hover { text-decoration: underline; }
+
+/* Étoile devant le titre d'une ligne, seulement si l'activité est en favori */
+.ligne-titre { display: inline; }
+.marque-favori { display: none; width: 15px; height: 15px; margin-right: 5px; vertical-align: -1px; }
+.marque-favori svg { fill: var(--i-acc); stroke: var(--i-acc); }
+.est-favori .marque-favori { display: inline-flex; }
+
+/* Message temporaire au-dessus de la barre du bas */
+.toast {
+  position: fixed; z-index: 20; left: 50%; transform: translateX(-50%);
+  bottom: calc(86px + env(safe-area-inset-bottom));
+  background: var(--encre); color: var(--carte); padding: 10px 16px; border-radius: 999px;
+  font-size: 14px; font-weight: 650; box-shadow: var(--ombre-forte); max-width: calc(100% - 32px);
+  animation: monte 0.35s var(--sortie);
+}
+
+/* Lien d'abonnement au flux d'agenda, dans le pied de page */
+.abonnement { margin-top: 10px; display: grid; gap: 4px; }
+.lien-abonnement { display: inline-flex; align-items: center; gap: 6px; color: var(--action); font-weight: 700; text-decoration: none; }
+.lien-abonnement .icone { width: 17px; height: 17px; }
+.abonnement .aide { margin: 0; overflow-wrap: anywhere; }
 
 /* --- Pastilles (âge, prix, inscription) --- */
 .pastilles { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -282,7 +319,7 @@ h1, h2, h3 { text-wrap: balance; }
 }
 .vignette .illu { width: 42px; height: 42px; }
 .ligne-textes { display: grid; gap: 2px; min-width: 0; }
-.ligne-haut { display: flex; align-items: baseline; gap: 8px; font-size: 14.5px; }
+.ligne-haut { display: flex; align-items: baseline; gap: 8px; font-size: 14px; }
 .ligne-titre { font-size: 16.5px; line-height: 1.3; font-weight: 700; }
 .ligne-lieu { color: var(--doux); font-size: 14px; }
 .ligne-textes .pastilles { margin-top: 8px; }
@@ -295,11 +332,11 @@ h1, h2, h3 { text-wrap: balance; }
 .avis {
   display: flex; align-items: flex-start; gap: 10px; margin-top: 18px;
   background: var(--inscr-fond); color: var(--inscr-texte);
-  padding: 12px 14px; border-radius: 16px; font-size: 14.5px; font-weight: 600;
+  padding: 12px 14px; border-radius: 16px; font-size: 14px; font-weight: 600;
 }
 .vide { background: var(--carte); border-radius: var(--rayon-grand); box-shadow: var(--ombre); margin-top: 24px; padding: 28px 24px; display: grid; justify-items: center; text-align: center; gap: 8px; }
 .vide .illu { width: 96px; height: 96px; }
-.vide-titre { font-size: 19px; font-weight: 750; }
+.vide-titre { font-size: 20px; font-weight: 750; }
 .vide-aide { color: var(--doux); margin-bottom: 8px; }
 
 /* --- Pied de page --- */
@@ -358,12 +395,41 @@ h1, h2, h3 { text-wrap: balance; }
 .type-choix {
   display: grid; justify-items: center; gap: 6px; padding: 12px 8px 10px;
   border-radius: 18px; border: 2px solid var(--trait); background: var(--carte);
-  font-size: 14.5px; font-weight: 700; cursor: pointer;
+  font-size: 14px; font-weight: 700; cursor: pointer;
   transition: background-color 0.2s, border-color 0.2s, transform 0.35s var(--ressort);
 }
 .type-choix .illu { width: 44px; height: 44px; }
 .type-choix:active { transform: scale(0.95); }
 .type-choix[aria-pressed="true"] { background: var(--cat-fond); border-color: var(--i-ink); }
+/* Interrupteur « Seulement mes favoris » */
+.interrupteur {
+  width: 100%; display: flex; align-items: center; gap: 10px; margin-top: 14px;
+  padding: 12px 14px; border-radius: 18px; border: 2px solid var(--trait); background: var(--carte);
+  font-size: 15.5px; font-weight: 700; text-align: left; cursor: pointer;
+}
+.interrupteur > .icone { width: 20px; height: 20px; color: var(--i-acc); }
+.interrupteur-curseur {
+  margin-left: auto; flex: none; width: 46px; height: 28px; border-radius: 999px; background: var(--trait);
+  position: relative; transition: background-color 0.2s;
+}
+.interrupteur-curseur::after {
+  content: ""; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--carte); box-shadow: var(--ombre); transition: transform 0.25s var(--sortie);
+}
+.interrupteur[aria-checked="true"] { border-color: var(--action); }
+.interrupteur[aria-checked="true"] .interrupteur-curseur { background: var(--action); }
+.interrupteur[aria-checked="true"] .interrupteur-curseur::after { transform: translateX(18px); }
+
+/* Âges des enfants : petites pastilles rondes 0 à 10 */
+.puces-ages { display: grid; grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); gap: 6px; }
+.puce-age {
+  min-height: 44px; border-radius: 16px; border: 2px solid var(--trait); background: var(--carte);
+  font-size: 15px; font-weight: 750; cursor: pointer; font-variant-numeric: tabular-nums;
+  transition: transform 0.35s var(--ressort);
+}
+.puce-age:active { transform: scale(0.94); }
+.puce-age[aria-pressed="true"] { background: var(--action); border-color: var(--action); color: var(--action-texte); }
+
 .feuille-pied { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 24px; }
 .bouton-texte { border: 0; background: none; font-weight: 700; color: var(--doux); padding: 12px 4px; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
 .bouton-action {

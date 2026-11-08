@@ -47,11 +47,36 @@ typography:
     fontSize: "16px"
     fontWeight: 400
     lineHeight: 1.45
+  sheet-title:
+    fontFamily: "Figtree, ui-rounded, system-ui, sans-serif"
+    fontSize: "21px"
+    fontWeight: 750
+    lineHeight: 1.2
+  day:
+    fontFamily: "Figtree, ui-rounded, system-ui, sans-serif"
+    fontSize: "18px"
+    fontWeight: 750
+    lineHeight: 1.2
+  secondary:
+    fontFamily: "Figtree, ui-rounded, system-ui, sans-serif"
+    fontSize: "15px"
+    fontWeight: 400
+    lineHeight: 1.4
+  meta:
+    fontFamily: "Figtree, ui-rounded, system-ui, sans-serif"
+    fontSize: "14px"
+    fontWeight: 400
+    lineHeight: 1.4
   label:
     fontFamily: "Figtree, ui-rounded, system-ui, sans-serif"
     fontSize: "13px"
     fontWeight: 650
     lineHeight: 1.3
+  badge:
+    fontFamily: "Figtree, ui-rounded, system-ui, sans-serif"
+    fontSize: "12px"
+    fontWeight: 800
+    lineHeight: 1
 rounded:
   chip: "999px"
   tile: "16px"
@@ -144,7 +169,8 @@ Figtree (SIL OFL), self-hosted variable 400–800 in `docs/fonts/`.
 - **Title** 23px / 750: the featured activity.
 - **Section** 20px / 750 and **day** 18px / 750 (sticky).
 - **Item** 16.5px / 700: activity names in lists.
-- **Body** 16px / 400; **label** 13px / 650 for chips and type labels.
+- **Body** 16px / 400; **secondary** 15px for descriptions and buttons; **meta** 14px for places, times, links and actions; **label** 13px / 650 for chips and type labels; **badge** 12px / 800 for the filter count.
+- **Sheet title** 21px / 750.
 
 ### Named Rules
 **The Tabular Time Rule.** Every time and duration uses tabular figures so columns of hours align.
@@ -177,6 +203,15 @@ Bottom bar: three-way period segment (Aujourd'hui / Week-end / 14 jours) + round
 
 ### Featured card ("Bientôt")
 The signature component: tinted illustration panel with the relative-time badge ("En cours", "Dans 40 min", "Demain 16:00"), then time, type, name, short text, place, chips and source link. Badges refresh every minute.
+
+### Actions (favori, agenda, partage)
+A row of neutral-fill pills (40px tall, meta size, line icon + word) at the end of the featured card and of every unfolded row: « Favori », « Agenda » (downloads an .ics), a tomato text link « Google Agenda », « Partager » (native share, else copy + toast). An active favourite turns stamp-amber with a filled amber star; the same star then marks the row title. Regular offers get favourite and share only.
+
+### Filter sheet controls
+« Seulement mes favoris (N) » is a full-width switch (tomato track when on). Children's ages are 44px rounded tiles 0–10 (« < 1 » for babies), tomato when selected; they are a durable setting that « Effacer » and « Tout afficher » keep. Time of day reuses the price segments (Matin / Après-midi / Soir, multi-select).
+
+### Toast
+Ink pill above the bottom bar, white text, 2.6 s, for confirmations (« Ajouté à tes favoris », « Lien copié »).
 
 ### Illustrations
 Authored inline SVG (`docs/illustrations.js`), 64×64, two-tone per type plus the amber accent and card white; the Bern header scene (Münster, Zytglogge, arcades, Aare) follows the theme through `--s-*` variables.

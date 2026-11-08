@@ -15,6 +15,7 @@ from zoneinfo import ZoneInfo
 import yaml
 
 from agenda import ajouts
+from agenda.calendrier import ecrire_ics
 from agenda.doublons import fusionner_doublons
 from agenda.filtre_enfants import completer, trier
 from agenda.regulier import separer
@@ -25,6 +26,7 @@ FICHIER_SOURCES = DOSSIER / "sources.yaml"
 FICHIER_AJOUTS = DOSSIER / "ajouts_manuels.yaml"
 FICHIER_OFFRES = DOSSIER / "offres_regulieres.yaml"
 FICHIER_SORTIE = DOSSIER / "docs" / "events.json"
+FICHIER_AGENDA = DOSSIER / "docs" / "agenda.ics"
 
 # Toutes les dates du projet sont à l'heure de Berne
 FUSEAU = ZoneInfo("Europe/Zurich")
@@ -137,6 +139,10 @@ def main():
     n = len(evenements)
     print(f"{n} événement{'s' if n > 1 else ''} et {len(offres)} offre(s) régulière(s) "
           f"écrits dans {FICHIER_SORTIE.relative_to(DOSSIER)}")
+
+    # Flux d'agenda auquel on peut s'abonner depuis le téléphone
+    ecrire_ics(evenements, FICHIER_AGENDA, maintenant)
+    print(f"Flux d'agenda écrit dans {FICHIER_AGENDA.relative_to(DOSSIER)}")
 
 
 if __name__ == "__main__":

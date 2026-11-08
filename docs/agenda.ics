@@ -1,0 +1,697 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Familles Berne//FR
+X-WR-CALNAME:Agenda Familles Berne
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+X-WR-TIMEZONE:Europe/Zurich
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+COMMENT:This timezone only works from 1970-01-01 to 2038-01-01.
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZNAME:CET
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19810329T030000
+RDATE:19820328T030000,19830327T030000,19840325T030000,19850331T030000,1986
+ 0330T030000,19870329T030000,19880327T030000,19890326T030000,19900325T03000
+ 0,19910331T030000,19920329T030000,19930328T030000,19940327T030000,19950326
+ T030000,19960331T030000,19970330T030000,19980329T030000,19990328T030000,20
+ 000326T030000,20010325T030000,20020331T030000,20030330T030000,20040328T030
+ 000,20050327T030000,20060326T030000,20070325T030000,20080330T030000,200903
+ 29T030000,20100328T030000,20110327T030000,20120325T030000,20130331T030000,
+ 20140330T030000,20150329T030000,20160327T030000,20170326T030000,20180325T0
+ 30000,20190331T030000,20200329T030000,20210328T030000,20220327T030000,2023
+ 0326T030000,20240331T030000,20250330T030000,20260329T030000,20270328T03000
+ 0,20280326T030000,20290325T030000,20300331T030000,20310330T030000,20320328
+ T030000,20330327T030000,20340326T030000,20350325T030000,20360330T030000,20
+ 370329T030000
+TZNAME:CEST
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19810927T030000
+RDATE:19820926T030000,19830925T030000,19840930T030000,19850929T030000,1986
+ 0928T030000,19870927T030000,19880925T030000,19890924T030000,19900930T03000
+ 0,19910929T030000,19920927T030000,19930926T030000,19940925T030000,19950924
+ T030000,19961027T030000,19971026T030000,19981025T030000,19991031T030000,20
+ 001029T030000,20011028T030000,20021027T030000,20031026T030000,20041031T030
+ 000,20051030T030000,20061029T030000,20071028T030000,20081026T030000,200910
+ 25T030000,20101031T030000,20111030T030000,20121028T030000,20131027T030000,
+ 20141026T030000,20151025T030000,20161030T030000,20171029T030000,20181028T0
+ 30000,20191027T030000,20201025T030000,20211031T030000,20221030T030000,2023
+ 1029T030000,20241027T030000,20251026T030000,20261025T030000,20271031T03000
+ 0,20281029T030000,20291028T030000,20301027T030000,20311026T030000,20321031
+ T030000,20331030T030000,20341029T030000,20351028T030000,20361026T030000,20
+ 371025T030000
+TZNAME:CET
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+SUMMARY:Munterbunt (Theater für die Allerjüngsten)
+DTSTART;TZID=Europe/Zurich:20261108T150000
+DTEND;TZID=Europe/Zurich:20261108T160000
+DTSTAMP:20261108T123511Z
+UID:schlachthaus-7582-202611081500@agenda-familles-berne
+DESCRIPTION:Wie fliegt es? Welche Töne bringt es hervor? Welche Bewegunge
+ n entstehen aus einem einzigen Blatt? Wir falten\, knüllen\, reissen\, we
+ rfen und bauen. Wir beobachten den Weg des Zeitungspapiers\, wenn…\nSour
+ ce : Schlachthaus Theater\nhttps://www.schlachthaus.ch/de/programm/theater
+ -fuer-die-allerjuengsten-munterbunt-7581/?s=7582
+LOCATION:Schlachthaus Theater\, Rathausgasse 20/22\, 3011 Bern
+URL:https://www.schlachthaus.ch/de/programm/theater-fuer-die-allerjuengste
+ n-munterbunt-7581/?s=7582
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Im Härz (Engel&Magorrian)
+DTSTART;TZID=Europe/Zurich:20261108T150000
+DTEND;TZID=Europe/Zurich:20261108T160000
+DTSTAMP:20261108T123511Z
+UID:schlachthaus-7403-202611081500@agenda-familles-berne
+DESCRIPTION:Ein Kind muss am Herzen operiert werden. Die Ärztin\, der Ass
+ istenzarzt und die Operationsassistentin arbeiten Hand in Hand\, es ist ei
+ n Routineeingriff. Doch dann geschehen unerwartete Dinge –…\nSource : 
+ Schlachthaus Theater\nhttps://www.schlachthaus.ch/de/programm/engel-magorr
+ ian-im-haerz-7398/?s=7403
+LOCATION:Schlachthaus Theater – Saal\, Rathausgasse 20/22\, 3011 Bern
+URL:https://www.schlachthaus.ch/de/programm/engel-magorrian-im-haerz-7398/
+ ?s=7403
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Peter und der Wolf
+DTSTART;TZID=Europe/Zurich:20261108T160000
+DTEND;TZID=Europe/Zurich:20261108T170000
+DTSTAMP:20261108T123511Z
+UID:menuhin-743-202611081600@agenda-familles-berne
+DESCRIPTION:Familienkonzert – Sergei Prokofiews Musikmärchen mit dem An
+ emoi Holzbläserquintett und der Schauspielerin Katharina Lienhard als Spr
+ echerin\nSource : Yehudi Menuhin Forum\nhttps://menuhinforum.ch/events/pet
+ er-und-der-wolf/
+LOCATION:Yehudi Menuhin Forum\, Helvetiaplatz 6\, 3005 Bern
+URL:https://menuhinforum.ch/events/peter-und-der-wolf/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Märli lose und Tierli baschtle
+DTSTART;TZID=Europe/Zurich:20261111T140000
+DTEND;TZID=Europe/Zurich:20261111T153000
+DTSTAMP:20261108T123511Z
+UID:tierpark-maerli-lose-und-tierli-baschtle-2-202611111400@agenda-famille
+ s-berne
+DESCRIPTION:Ein Märli- und Bastelnachmittag für Kleinkinder in Begleitun
+ g – Erleben Sie mit Ihrem Enkel-\, Paten- oder eigenen Kind einen tieris
+ ch lustigen Nachmittag im Dählhölzli-Zoo. Kinder zwischen vier…\nSourc
+ e : Tierpark Bern\nhttps://tierpark-bern.ch/event/maerli-lose-und-tierli-b
+ aschtle-2/
+LOCATION:Tierpark Dählhölzli\, Tierparkweg 1\, 3005 Bern
+URL:https://tierpark-bern.ch/event/maerli-lose-und-tierli-baschtle-2/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KREALINO – Kinderbasteln
+DTSTART;TZID=Europe/Zurich:20261111T140000
+DTEND;TZID=Europe/Zurich:20261111T160000
+DTSTAMP:20261108T123511Z
+UID:mueze-krealino-kinderbasteln-11-11-2026-1400@agenda-familles-berne
+DESCRIPTION:Basteln für die Kleinen von 2-6 Jahren. 5 Franken pro Kind\, 
+ inklusive einem kleinen Zvieri.\nSource : MüZe Muri-Gümligen\nhttps://ww
+ w.mueze-muri-guemligen.ch/veranstaltungen/krealino-kinderbasteln-11-11-202
+ 6/
+LOCATION:MüZe Muri-Gümligen (Thoracherhus)\, Kranichweg 10\, 3074 Muri b
+ ei Bern
+URL:https://www.mueze-muri-guemligen.ch/veranstaltungen/krealino-kinderbas
+ teln-11-11-2026/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Märli-Zyt
+DTSTART;TZID=Europe/Zurich:20261111T141500
+DTEND;TZID=Europe/Zurich:20261111T144500
+DTSTAMP:20261108T123511Z
+UID:kob-16370-202611111415@agenda-familles-berne
+DESCRIPTION:Märchen und Geschichten in der Bibliothek\, für Kinder ab vi
+ er Jahren.\nSource : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltun
+ g/maerli-zyt/
+LOCATION:Bibliothek Münsingen
+URL:https://www.kob.ch/veranstaltung/maerli-zyt/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Eine Geschichte für dich!
+DTSTART;TZID=Europe/Zurich:20261111T143000
+DTEND;TZID=Europe/Zurich:20261111T150000
+DTSTAMP:20261108T123511Z
+UID:kob-51086-202611111430@agenda-familles-berne
+DESCRIPTION:Eine Geschichte für dich – auf Türkisch\, Arabisch\, Kurdi
+ sch\, Persisch und Deutsch. Für Kinder ab dreijährig. Programm: 14.10.20
+ 26 – Türkisch/Deutsch 11.11.2026 – Arabisch/Deutsch 09.12.2027 –…
+ \nSource : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/eine-ges
+ chichte-fuer-dich/
+LOCATION:Bibliothek Zollikofen
+URL:https://www.kob.ch/veranstaltung/eine-geschichte-fuer-dich/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Atelier bilingue / zweisprachiger Workshop: Workshop s'aMUSÉE !
+DTSTART;TZID=Europe/Zurich:20261111T143000
+DTEND;TZID=Europe/Zurich:20261111T160000
+DTSTAMP:20261108T123511Z
+UID:kmb-1269-202611111430@agenda-familles-berne
+DESCRIPTION:Rejoins-nous dans le monde passionnant de l’art et découvre
+  les artistes et les histoires derrière leurs œuvres.\nSource : Kunstmus
+ eum Bern\nhttps://www.kunstmuseumbern.ch/de/workshop/atelier-bilingue-zwei
+ sprachiger-workshop
+LOCATION:Kunstmuseum Bern\, Hodlerstrasse 8–12\, 3011 Bern
+URL:https://www.kunstmuseumbern.ch/de/workshop/atelier-bilingue-zweisprach
+ iger-workshop
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kinderlesung und Buchpremiere mit Evelyn Studer-Kopp
+DTSTART;TZID=Europe/Zurich:20261111T150000
+DTEND;TZID=Europe/Zurich:20261111T160000
+DTSTAMP:20261108T123511Z
+UID:kob-50165-202611111500@agenda-familles-berne
+DESCRIPTION:Rosi – Weihnachtseinsatz auf dem Bauernhof Weihnachtszauber 
+ liegt über dem verschneiten Bauernhof. Gemeinsam mit ihren besten Freunde
+ n – den Hühnern Ein-Ei\, Zwei-Ei und Drei-Ei\, dem Berner…\nSource : 
+ Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/kinderlesung-und-bu
+ chpremiere-mit-evelyn-studer-kopp/
+LOCATION:Bibliothek Länggasse
+URL:https://www.kob.ch/veranstaltung/kinderlesung-und-buchpremiere-mit-eve
+ lyn-studer-kopp/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kalif Storch
+DTSTART;TZID=Europe/Zurich:20261111T150000
+DTEND;TZID=Europe/Zurich:20261111T160000
+DTSTAMP:20261108T123511Z
+UID:puppentheater-act12-202611111500@agenda-familles-berne
+DESCRIPTION:Der junge Kalif von Bagdad ist reich und mächtig. Aber zum Gl
+ ücklich-Sein fehlt ihm die schöne Prinzessin Lusa\, von der er eines Nac
+ hts geträumt hat.\nSource : Berner Puppen Theater\nhttps://www.berner-pup
+ pentheater.ch/kinderprogramm/?act=12
+LOCATION:Berner Puppen Theater\, Gerechtigkeitsgasse 31\, 3011 Bern
+URL:https://www.berner-puppentheater.ch/kinderprogramm/?act=12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schachkurse für Kinder ab Schulalter
+DTSTART;TZID=Europe/Zurich:20261113T140000
+DTEND;TZID=Europe/Zurich:20261113T160000
+DTSTAMP:20261108T123511Z
+UID:kob-31727-202611131400@agenda-familles-berne
+DESCRIPTION:Für Schachinteressierte bieten wir in der Quartierbibliothek 
+ Länggasse in Kooperation mit dem Schachklub Bern Schachkurse für Kinder 
+ ab Schulalter an. Der Kurs ist gratis. Anmeldung über…\nSource : Kornha
+ usbibliotheken\nhttps://www.kob.ch/veranstaltung/schachkurse-fuer-kinder/
+LOCATION:Bibliothek Länggasse
+URL:https://www.kob.ch/veranstaltung/schachkurse-fuer-kinder/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Cocoriki – Lilemoi 1
+DTSTART;TZID=Europe/Zurich:20261113T144500
+DTEND;TZID=Europe/Zurich:20261113T153000
+DTSTAMP:20261108T123511Z
+UID:kob-36531-202611131445@agenda-familles-berne
+DESCRIPTION:dès 4 ans\nSource : Kornhausbibliotheken\nhttps://www.kob.ch/
+ veranstaltung/cocoriki-lilemoi/
+LOCATION:Kornhausbibliothek
+URL:https://www.kob.ch/veranstaltung/cocoriki-lilemoi/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Cocoriki – Lilemoi 2
+DTSTART;TZID=Europe/Zurich:20261113T160000
+DTEND;TZID=Europe/Zurich:20261113T164500
+DTSTAMP:20261108T123511Z
+UID:kob-46404-202611131600@agenda-familles-berne
+DESCRIPTION:dès 4 ans\nSource : Kornhausbibliotheken\nhttps://www.kob.ch/
+ veranstaltung/cocoriki-lilemoi-2/
+LOCATION:Kornhausbibliothek
+URL:https://www.kob.ch/veranstaltung/cocoriki-lilemoi-2/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schweizer Erzählnacht – «Stimmen»
+DTSTART;TZID=Europe/Zurich:20261113T180000
+DTEND;TZID=Europe/Zurich:20261114T083000
+DTSTAMP:20261108T123511Z
+UID:kob-50984-202611131800@agenda-familles-berne
+DESCRIPTION:Erzählnacht 2026 – Wir übernachten in der Bibliothek Eine 
+ ganze Nacht lang in Geschichten eintauchen. 13./14. November 2026 von 18:0
+ 0–8:30 Uhr Das erwartet dich: – Eine ganze Bibliothek voll…\nSource 
+ : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/schweizer-erzaehl
+ nacht-stimmen-3/
+LOCATION:Bibliothek Länggasse
+URL:https://www.kob.ch/veranstaltung/schweizer-erzaehlnacht-stimmen-3/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schweizer Erzählnacht – «Stimmen»
+DTSTART;TZID=Europe/Zurich:20261113T183000
+DTEND;TZID=Europe/Zurich:20261113T200000
+DTSTAMP:20261108T123511Z
+UID:kob-51174-202611131830@agenda-familles-berne
+DESCRIPTION:Stimmen\, Musik und Spielspass! Freut euch auf einen musikalis
+ chen Auftritt der Musikschüler:innen\, Musikschule Wohlen. Kommt vorbei u
+ nd erlebt mit uns eine bunte Erzählnacht voller Klang und…\nSource : Ko
+ rnhausbibliotheken\nhttps://www.kob.ch/veranstaltung/schweizer-erzaehlnach
+ t-stimmen-4/
+LOCATION:Bibliothek Wohlen mit Ludothek
+URL:https://www.kob.ch/veranstaltung/schweizer-erzaehlnacht-stimmen-4/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schweizer Erzählnacht – «Stimmen»
+DTSTART;TZID=Europe/Zurich:20261113T183000
+DTEND;TZID=Europe/Zurich:20261113T200000
+DTSTAMP:20261108T123511Z
+UID:kob-50898-202611131830@agenda-familles-berne
+DESCRIPTION:Erzähl- und Gesangsstimme verschmelzen zu einer Geschichte. M
+ itarbeiter:innen der Kornhausbibliothek Breitenrain erzählen und untermal
+ en Bilderbücher mit Musik. Serdar liest auf Deutsch vor und…\nSource : 
+ Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/schweizer-erzaehlna
+ cht-stimmen/
+LOCATION:Bibliothek Breitenrain mit Ludothek
+URL:https://www.kob.ch/veranstaltung/schweizer-erzaehlnacht-stimmen/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schweizer Erzählnacht – «Stimmen»
+DTSTART;TZID=Europe/Zurich:20261113T190000
+DTEND;TZID=Europe/Zurich:20261113T213000
+DTSTAMP:20261108T123511Z
+UID:kob-50979-202611131900@agenda-familles-berne
+DESCRIPTION:Für Kinder der 1. bis 3. Klasse. Mitnehmen: – Taschenlampe
+ \, dem Wetter angepasste Kleidung (wir sind teilweise draussen) – Wenn m
+ öglich: kleines Stöckli & kleiner Stein (gesammelt auf dem…\nSource : 
+ Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/schweizer-erzaehlna
+ cht-stimmen-2/
+LOCATION:Bibliothek Ostermundigen mit Ludothek
+URL:https://www.kob.ch/veranstaltung/schweizer-erzaehlnacht-stimmen-2/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schweizer Erzählnacht – «Tierstimmen»
+DTSTART;TZID=Europe/Zurich:20261113T190000
+DTEND;TZID=Europe/Zurich:20261113T210000
+DTSTAMP:20261108T123511Z
+UID:kob-50721-202611131900@agenda-familles-berne
+DESCRIPTION:Ein Abend mit Geschichten\, Spielen und Workshop «Tierstimmen
+  nachahmen» mit dem Beatbox-Künstler Lesya ( Hiphop Center Bern ). Eintr
+ itt: CHF 5.– (ein kleiner Imbiss ist inbegriffen). Die Kinder…\nSource
+  : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/schweizer-erzaeh
+ lnacht-tierstimmen/
+LOCATION:Bibliothek Muri-Gümligen
+URL:https://www.kob.ch/veranstaltung/schweizer-erzaehlnacht-tierstimmen/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schweizer Erzählnacht
+DTSTART;TZID=Europe/Zurich:20261113T190000
+DTEND;TZID=Europe/Zurich:20261113T200000
+DTSTAMP:20261108T123511Z
+UID:kob-42287-202611131900@agenda-familles-berne
+DESCRIPTION:Das diesjährige Motto lautet STIMMEN! Gemeinsam mit Stadträt
+ in Ronja Rennenkampff hören wir uns eine Geschichte zu Stimmen an und tes
+ ten dann\, was wir alles mit unseren Stimmen tun und bewirken…\nSource :
+  Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/schweizer-erzaehln
+ acht-9/
+LOCATION:Bibliothek Holligen
+URL:https://www.kob.ch/veranstaltung/schweizer-erzaehlnacht-9/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schweizer Erzählnacht – «Stimmen»
+DTSTART;TZID=Europe/Zurich:20261113T190000
+DTEND;TZID=Europe/Zurich:20261113T210000
+DTSTAMP:20261108T123511Z
+UID:kob-20592-202611131900@agenda-familles-berne
+DESCRIPTION:Geschichten und Aktivitäten zum Thema «Stimmen» für Kinder
+  von sechs bis acht Jahren. Anmeldung bis 10. November in der Bibliothek o
+ der via muenchenbuchsee@kob.ch Teilnehmer:innenzahl beschränkt.…\nSourc
+ e : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/schweizer-erzae
+ hlnacht/
+LOCATION:Bibliothek Münchenbuchsee
+URL:https://www.kob.ch/veranstaltung/schweizer-erzaehlnacht/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Gschichte-Chischte mit Regina Messer
+DTSTART;TZID=Europe/Zurich:20261114T093000
+DTEND;TZID=Europe/Zurich:20261114T100000
+DTSTAMP:20261108T123511Z
+UID:kob-39228-202611140930@agenda-familles-berne
+DESCRIPTION:Für Kinder ab drei Jahren. Eltern/Begleitpersonen sind ebenfa
+ lls willkommen. Ohne Anmeldung. Das Angebot ist kostenlos.\nSource : Kornh
+ ausbibliotheken\nhttps://www.kob.ch/veranstaltung/gschichte-chischte-mit-r
+ egina-messer/
+LOCATION:Bibliothek Münchenbuchsee
+URL:https://www.kob.ch/veranstaltung/gschichte-chischte-mit-regina-messer/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:3 x S – Spiel\, Spass\, Sprachen
+DTSTART;TZID=Europe/Zurich:20261114T100000
+DTEND;TZID=Europe/Zurich:20261114T110000
+DTSTAMP:20261108T123511Z
+UID:kob-37699-202611141000@agenda-familles-berne
+DESCRIPTION:Was wir machen: Spielerisch Französisch und Englisch sprechen
+  mit dem Wortschatz\, den wir haben. Wir spielen Karten\, erfinden Geschic
+ hten und noch vieles mehr. Mitnehmen: Gute Laune und Neugierde…\nSource 
+ : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/3-x-s-spiel-spass
+ -sprachen/
+LOCATION:Bibliothek Münsingen
+URL:https://www.kob.ch/veranstaltung/3-x-s-spiel-spass-sprachen/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schenk mir eine Geschichte auf Persisch (Farsi)
+DTSTART;TZID=Europe/Zurich:20261114T110000
+DTEND;TZID=Europe/Zurich:20261114T120000
+DTSTAMP:20261108T123511Z
+UID:kob-50148-202611141100@agenda-familles-berne
+DESCRIPTION:Wer die Muttersprache gut spricht\, lernt andere Sprachen bess
+ er! Kinder von zwei bis sechs Jahren\, ihre älteren Geschwister sowie ihr
+ e Eltern oder Grosseltern sind herzlich eingeladen zum…\nSource : Kornha
+ usbibliotheken\nhttps://www.kob.ch/veranstaltung/schenk-mir-eine-geschicht
+ e-auf-persisch-farsi/
+LOCATION:Kornhausbibliothek
+URL:https://www.kob.ch/veranstaltung/schenk-mir-eine-geschichte-auf-persis
+ ch-farsi/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kalif Storch
+DTSTART;TZID=Europe/Zurich:20261114T150000
+DTEND;TZID=Europe/Zurich:20261114T160000
+DTSTAMP:20261108T123511Z
+UID:puppentheater-act12-202611141500@agenda-familles-berne
+DESCRIPTION:Der junge Kalif von Bagdad ist reich und mächtig. Aber zum Gl
+ ücklich-Sein fehlt ihm die schöne Prinzessin Lusa\, von der er eines Nac
+ hts geträumt hat.\nSource : Berner Puppen Theater\nhttps://www.berner-pup
+ pentheater.ch/kinderprogramm/?act=12
+LOCATION:Berner Puppen Theater\, Gerechtigkeitsgasse 31\, 3011 Bern
+URL:https://www.berner-puppentheater.ch/kinderprogramm/?act=12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kalif Storch
+DTSTART;TZID=Europe/Zurich:20261115T110000
+DTEND;TZID=Europe/Zurich:20261115T120000
+DTSTAMP:20261108T123511Z
+UID:puppentheater-act12-202611151100@agenda-familles-berne
+DESCRIPTION:Der junge Kalif von Bagdad ist reich und mächtig. Aber zum Gl
+ ücklich-Sein fehlt ihm die schöne Prinzessin Lusa\, von der er eines Nac
+ hts geträumt hat.\nSource : Berner Puppen Theater\nhttps://www.berner-pup
+ pentheater.ch/kinderprogramm/?act=12
+LOCATION:Berner Puppen Theater\, Gerechtigkeitsgasse 31\, 3011 Bern
+URL:https://www.berner-puppentheater.ch/kinderprogramm/?act=12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Munterbunt (Theater für die Allerjüngsten)
+DTSTART;TZID=Europe/Zurich:20261115T150000
+DTEND;TZID=Europe/Zurich:20261115T160000
+DTSTAMP:20261108T123511Z
+UID:schlachthaus-7584-202611151500@agenda-familles-berne
+DESCRIPTION:Hier gibt es kein Gestern und kein Morgen. Minuten und Stunden
+  können sich lang oder kurz anfühlen. Unser Körper und unsere Gefühle 
+ können verändern\, wie wir die Zeit erleben.\nSource : Schlachthaus Thea
+ ter\nhttps://www.schlachthaus.ch/de/programm/theater-fuer-die-allerjuengst
+ en-munterbunt-7583/?s=7584
+LOCATION:Schlachthaus Theater\, Rathausgasse 20/22\, 3011 Bern
+URL:https://www.schlachthaus.ch/de/programm/theater-fuer-die-allerjuengste
+ n-munterbunt-7583/?s=7584
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Der letzte Regenbogenvogel
+DTSTART;TZID=Europe/Zurich:20261115T160000
+DTEND;TZID=Europe/Zurich:20261115T170000
+DTSTAMP:20261108T123511Z
+UID:buehnenbern-der-letzte-regenbogenvogel-202611151600@agenda-familles-be
+ rne
+DESCRIPTION:Der Regenbogenvogel ist ein sehr besonderer Vogel mit einem pr
+ achtvollen Gefieder in allen Farben des Regenbogens. Doch leider ist er fa
+ st ausgestorben. Um ihn zu retten\, muss unbedingt ein…\nSource : Bühne
+ n Bern\nhttps://buehnenbern.ch/spielplan/programm/der-letzte-regenbogenvog
+ el/
+LOCATION:Vidmar 2
+URL:https://buehnenbern.ch/spielplan/programm/der-letzte-regenbogenvogel/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bilderbuchgeschichte mit Joachim Flach und Charly
+DTSTART;TZID=Europe/Zurich:20261117T150000
+DTEND;TZID=Europe/Zurich:20261117T153000
+DTSTAMP:20261108T123511Z
+UID:kob-25361-202611171500@agenda-familles-berne
+DESCRIPTION:Bilderbuchgeschichte mit Joachim Flach und Charly. Geeignet f
+ ür Kinder ab drei Jahren in Begleitung einer erwachsenen Person.\nSource 
+ : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/bilderbuchgeschic
+ hte-mit-joachim-flach/
+LOCATION:Bibliothek Worb
+URL:https://www.kob.ch/veranstaltung/bilderbuchgeschichte-mit-joachim-flac
+ h/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Tag des Kindes
+DTSTART;TZID=Europe/Zurich:20261118T140000
+DTEND;TZID=Europe/Zurich:20261118T170000
+DTSTAMP:20261108T123511Z
+UID:mueze-4158-1400@agenda-familles-berne
+DESCRIPTION:Am 18. November ist es wieder so weit: Das Organisationskomite
+ e lädt Kinder und ihre Bezugspersonen herzlich zum «Tag des Kindes» ein
+ . In diesem Jahr steht Artikel 30 der UN-Kinderrechtskonvention…\nSource
+  : MüZe Muri-Gümligen\nhttps://www.mueze-muri-guemligen.ch/veranstaltung
+ en/4158/
+LOCATION:MüZe Muri-Gümligen (Thoracherhus)\, Kranichweg 10\, 3074 Muri b
+ ei Bern
+URL:https://www.mueze-muri-guemligen.ch/veranstaltungen/4158/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Gschichte-Zyt u Baschtle
+DTSTART;TZID=Europe/Zurich:20261118T141500
+DTEND;TZID=Europe/Zurich:20261118T163000
+DTSTAMP:20261108T123511Z
+UID:kob-23589-202611181415@agenda-familles-berne
+DESCRIPTION:14.15 Uhr Geschichte in der Bibliothek 14.30 bis 16.30 Uhr Bas
+ teln im Kirchgemeindehaus Für Kinder ab vier Jahren in Begleitung einer e
+ rwachsenen Person. Mitnehmen: Kartonkiste oder Sack für…\nSource : Korn
+ hausbibliotheken\nhttps://www.kob.ch/veranstaltung/gschichte-zyt-u-baschtl
+ e/
+LOCATION:Bibliothek Münsingen
+URL:https://www.kob.ch/veranstaltung/gschichte-zyt-u-baschtle/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bibliotheks-Gschichtli
+DTSTART;TZID=Europe/Zurich:20261118T143000
+DTEND;TZID=Europe/Zurich:20261118T151000
+DTSTAMP:20261108T123511Z
+UID:kob-43496-202611181430@agenda-familles-berne
+DESCRIPTION:Unsere Erzählerin Tabea und ihre treue Begleiterin\, die Schi
+ ldkröte Mona\, nehmen euch mit in eine zauberhafte Geschichtenwelt voller
+  Verse\, Lieder und Basteleien. Für Kinder ab vier Jahren in…\nSource :
+  Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/bibliotheksgschich
+ tli/
+LOCATION:Bibliothek Bümpliz
+URL:https://www.kob.ch/veranstaltung/bibliotheksgschichtli/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Gschichtli ir Bibliothek
+DTSTART;TZID=Europe/Zurich:20261118T143000
+DTEND;TZID=Europe/Zurich:20261118T150000
+DTSTAMP:20261108T123511Z
+UID:kob-40491-202611181430@agenda-familles-berne
+DESCRIPTION:Gschichtli ir Bibliothek verzellt vor Karin von Ballmoos für 
+ Chind ab 3-jährig.\nSource : Kornhausbibliotheken\nhttps://www.kob.ch/ver
+ anstaltung/gschichtli-ir-bibliothek-2/
+LOCATION:Bibliothek Zollikofen
+URL:https://www.kob.ch/veranstaltung/gschichtli-ir-bibliothek-2/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kalif Storch
+DTSTART;TZID=Europe/Zurich:20261118T150000
+DTEND;TZID=Europe/Zurich:20261118T160000
+DTSTAMP:20261108T123511Z
+UID:puppentheater-act12-202611181500@agenda-familles-berne
+DESCRIPTION:Der junge Kalif von Bagdad ist reich und mächtig. Aber zum Gl
+ ücklich-Sein fehlt ihm die schöne Prinzessin Lusa\, von der er eines Nac
+ hts geträumt hat.\nSource : Berner Puppen Theater\nhttps://www.berner-pup
+ pentheater.ch/kinderprogramm/?act=12
+LOCATION:Berner Puppen Theater\, Gerechtigkeitsgasse 31\, 3011 Bern
+URL:https://www.berner-puppentheater.ch/kinderprogramm/?act=12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Märchen mit Maike
+DTSTART;TZID=Europe/Zurich:20261118T150000
+DTEND;TZID=Europe/Zurich:20261118T160000
+DTSTAMP:20261108T123511Z
+UID:kob-51269-202611181500@agenda-familles-berne
+DESCRIPTION:Für alle ab vier Jahren. Komm vorbei und lass dich verzaubern
+ !\nSource : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/maerche
+ n-mit-maike/
+LOCATION:Bibliothek Tscharnergut
+URL:https://www.kob.ch/veranstaltung/maerchen-mit-maike/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Erzähl- und Bastelstunde
+DTSTART;TZID=Europe/Zurich:20261118T150000
+DTEND;TZID=Europe/Zurich:20261118T160000
+DTSTAMP:20261108T123511Z
+UID:kob-44275-202611181500@agenda-familles-berne
+DESCRIPTION:Regula Nobs kommt im Jahr 2026 mit einem Koffer voller Ideen
+ … Wir freuen uns auf euch!\nSource : Kornhausbibliotheken\nhttps://www.k
+ ob.ch/veranstaltung/erzaehl-und-bastelstunde-2/
+LOCATION:Bibliothek Ittigen
+URL:https://www.kob.ch/veranstaltung/erzaehl-und-bastelstunde-2/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Märli mit Regina Wüthrich
+DTSTART;TZID=Europe/Zurich:20261118T150000
+DTEND;TZID=Europe/Zurich:20261118T153000
+DTSTAMP:20261108T123511Z
+UID:kob-19723-202611181500@agenda-familles-berne
+DESCRIPTION:Geeignet für Kinder ab vier Jahren in Begleitung einer erwach
+ senen Person.\nSource : Kornhausbibliotheken\nhttps://www.kob.ch/veranstal
+ tung/maerli/
+LOCATION:Bibliothek Worb
+URL:https://www.kob.ch/veranstaltung/maerli/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bilderbuchgeschichten mit Joachim & Charly
+DTSTART;TZID=Europe/Zurich:20261120T150000
+DTEND;TZID=Europe/Zurich:20261120T154000
+DTSTAMP:20261108T123511Z
+UID:kob-25028-202611201500@agenda-familles-berne
+DESCRIPTION:Für Kinder ab drei Jahren in Begleitung einer erwachsenen Per
+ son. Dauer 30 bis 40 Minuten.\nSource : Kornhausbibliotheken\nhttps://www.
+ kob.ch/veranstaltung/bilderbuchgeschichten-mit-joachim-charly/
+LOCATION:Bibliothek Länggasse
+URL:https://www.kob.ch/veranstaltung/bilderbuchgeschichten-mit-joachim-cha
+ rly/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Geschichten & mehr in der Bibliothek
+DTSTART;TZID=Europe/Zurich:20261120T153000
+DTEND;TZID=Europe/Zurich:20261120T163000
+DTSTAMP:20261108T123511Z
+UID:kob-29774-202611201530@agenda-familles-berne
+DESCRIPTION:Die Bibliotheksgruppe trifft sich einmal im Monat in der Bibli
+ othek Holligen\, wo Anna aus dem Quartier Geschichten von bunten Elefanten
+ \, Freundschaften und Abenteuern erzählt. Danach ist Zeit zum…\nSource 
+ : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/geschichten-mehr-
+ in-der-bibliothek/
+LOCATION:Bibliothek Holligen
+URL:https://www.kob.ch/veranstaltung/geschichten-mehr-in-der-bibliothek/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Erzähl mir eine Geschichte auf Chinesisch
+DTSTART;TZID=Europe/Zurich:20261120T160000
+DTEND;TZID=Europe/Zurich:20261120T170000
+DTSTAMP:20261108T123511Z
+UID:kob-49469-202611201600@agenda-familles-berne
+DESCRIPTION:Wer die Muttersprache gut spricht\, lernt andere Sprachen bess
+ er! Kinder von zwei bis sechs Jahren\, ihre älteren Geschwister sowie ihr
+ e Eltern oder Grosseltern sind herzlich eingeladen zum…\nSource : Kornha
+ usbibliotheken\nhttps://www.kob.ch/veranstaltung/erzaehl-mir-eine-geschich
+ te-auf-chinesisch/
+LOCATION:Bibliothek Länggasse
+URL:https://www.kob.ch/veranstaltung/erzaehl-mir-eine-geschichte-auf-chine
+ sisch/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kunst-Tour für Kinder: Workshop Artur
+DTSTART;TZID=Europe/Zurich:20261121T101500
+DTEND;TZID=Europe/Zurich:20261121T121500
+DTSTAMP:20261108T123511Z
+UID:kmb-1255-202611211015@agenda-familles-berne
+DESCRIPTION:Erkunde gemeinsam mit anderen Kindern und Jugendlichen Kunst i
+ m Museum sowie im öffentlichen Raum und gestalte selbst kreativ mit. Im A
+ telier setzen wir eigene Ideen um.\nSource : Kunstmuseum Bern\nhttps://www
+ .kunstmuseumbern.ch/de/workshop/kunst-tour-fuer-kinder
+LOCATION:Kunstmuseum Bern\, Hodlerstrasse 8–12\, 3011 Bern
+URL:https://www.kunstmuseumbern.ch/de/workshop/kunst-tour-fuer-kinder
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Queerlesen
+DTSTART;TZID=Europe/Zurich:20261121T110000
+DTEND;TZID=Europe/Zurich:20261121T120000
+DTSTAMP:20261108T123511Z
+UID:kob-16671-202611211100@agenda-familles-berne
+DESCRIPTION:Die etwas andere Vorlese-Show für Kids ab vier Jahren\, Regen
+ bogenfamilien und Freund:innen\nSource : Kornhausbibliotheken\nhttps://www
+ .kob.ch/veranstaltung/queerlesen/
+LOCATION:Kornhausbibliothek
+URL:https://www.kob.ch/veranstaltung/queerlesen/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schenk mir eine Geschichte auf Albanisch
+DTSTART;TZID=Europe/Zurich:20261121T130000
+DTEND;TZID=Europe/Zurich:20261121T140000
+DTSTAMP:20261108T123511Z
+UID:kob-41275-202611211300@agenda-familles-berne
+DESCRIPTION:Më trego një përrallë në gjuhën shqipe\nSource : Kornhau
+ sbibliotheken\nhttps://www.kob.ch/veranstaltung/schenk-mir-eine-geschichte
+ -auf-albanisch/
+LOCATION:Kornhausbibliothek
+URL:https://www.kob.ch/veranstaltung/schenk-mir-eine-geschichte-auf-albani
+ sch/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Schenk mir eine Geschichte auf Russisch
+DTSTART;TZID=Europe/Zurich:20261121T140000
+DTEND;TZID=Europe/Zurich:20261121T150000
+DTSTAMP:20261108T123511Z
+UID:kob-33939-202611211400@agenda-familles-berne
+DESCRIPTION:Подарите мне рассказ по-русски.\nSou
+ rce : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/schenk-mir-ei
+ ne-geschichte-auf-russisch/
+LOCATION:Kornhausbibliothek
+URL:https://www.kob.ch/veranstaltung/schenk-mir-eine-geschichte-auf-russis
+ ch/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kalif Storch
+DTSTART;TZID=Europe/Zurich:20261121T150000
+DTEND;TZID=Europe/Zurich:20261121T160000
+DTSTAMP:20261108T123511Z
+UID:puppentheater-act12-202611211500@agenda-familles-berne
+DESCRIPTION:Der junge Kalif von Bagdad ist reich und mächtig. Aber zum Gl
+ ücklich-Sein fehlt ihm die schöne Prinzessin Lusa\, von der er eines Nac
+ hts geträumt hat.\nSource : Berner Puppen Theater\nhttps://www.berner-pup
+ pentheater.ch/kinderprogramm/?act=12
+LOCATION:Berner Puppen Theater\, Gerechtigkeitsgasse 31\, 3011 Bern
+URL:https://www.berner-puppentheater.ch/kinderprogramm/?act=12
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Käfer (Theater Sgaramusch)
+DTSTART;TZID=Europe/Zurich:20261121T160000
+DTEND;TZID=Europe/Zurich:20261121T170000
+DTSTAMP:20261108T123511Z
+UID:schlachthaus-7412-202611211600@agenda-familles-berne
+DESCRIPTION:Normalerweise steht Gregor als erster auf und geht arbeiten. E
+ r bringt Geld für die ganze Familie nach Hause. Am Morgen\, an dem unsere
+  Geschichte anfängt\, ist etwas anders. Gregor steht nicht auf\,…\nSour
+ ce : Schlachthaus Theater\nhttps://www.schlachthaus.ch/de/programm/theater
+ -sgaramusch-kaefer-7408/?s=7412
+LOCATION:Schlachthaus Theater – Saal\, Rathausgasse 20/22\, 3011 Bern
+URL:https://www.schlachthaus.ch/de/programm/theater-sgaramusch-kaefer-7408
+ /?s=7412
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Munterbunt (Theater für die Allerjüngsten)
+DTSTART;TZID=Europe/Zurich:20261122T150000
+DTEND;TZID=Europe/Zurich:20261122T160000
+DTSTAMP:20261108T123511Z
+UID:schlachthaus-7586-202611221500@agenda-familles-berne
+DESCRIPTION:Wir werden ganz klein\, langsam kriechend\, wuselig krabbelnd
+ \, dann ein Sprung – und dann wieder ganz leise\, bespielen wir die Welt
+  unter unseren Füssen.\nSource : Schlachthaus Theater\nhttps://www.schlac
+ hthaus.ch/de/programm/theater-fuer-die-allerjuengsten-munterbunt-7585/?s=7
+ 586
+LOCATION:Schlachthaus Theater\, Rathausgasse 20/22\, 3011 Bern
+URL:https://www.schlachthaus.ch/de/programm/theater-fuer-die-allerjuengste
+ n-munterbunt-7585/?s=7586
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Käfer (Theater Sgaramusch)
+DTSTART;TZID=Europe/Zurich:20261122T150000
+DTEND;TZID=Europe/Zurich:20261122T160000
+DTSTAMP:20261108T123511Z
+UID:schlachthaus-7413-202611221500@agenda-familles-berne
+DESCRIPTION:Normalerweise steht Gregor als erster auf und geht arbeiten. E
+ r bringt Geld für die ganze Familie nach Hause. Am Morgen\, an dem unsere
+  Geschichte anfängt\, ist etwas anders. Gregor steht nicht auf\,…\nSour
+ ce : Schlachthaus Theater\nhttps://www.schlachthaus.ch/de/programm/theater
+ -sgaramusch-kaefer-7408/?s=7413
+LOCATION:Schlachthaus Theater – Saal\, Rathausgasse 20/22\, 3011 Bern
+URL:https://www.schlachthaus.ch/de/programm/theater-sgaramusch-kaefer-7408
+ /?s=7413
+END:VEVENT
+END:VCALENDAR

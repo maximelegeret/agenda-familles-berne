@@ -16,6 +16,11 @@ function remplir(texte, valeurs = {}) {
   return texte.replace(/\{(\w+)\}/g, (_, cle) => valeurs[cle]);
 }
 
+// En français, 0 et 1 s'accordent au singulier : « 1 activité régulière »
+function accorder(texte, n) {
+  return n <= 1 ? texte.replace(/activités/g, "activité").replace(/régulières/g, "régulière") : texte;
+}
+
 // Crée un élément avec une classe et un texte (jamais interprété comme du HTML)
 function el(balise, classe, texte) {
   const e = document.createElement(balise);
@@ -32,6 +37,9 @@ const ICONES = {
   externe: '<path d="M14 5h5v5M19 5l-8 8M18 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h4"/>',
   fermer: '<path d="M6 6l12 12M18 6L6 18"/>',
   alerte: '<path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17v.5"/>',
+  etoile: '<path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/>',
+  agenda: '<rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4M12 13v4M10 15h4"/>',
+  partager: '<path d="M12 4v11M8 8l4-4 4 4"/><path d="M6 12v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6"/>',
 };
 function icone(nom) {
   const s = el("span", "icone");
@@ -101,9 +109,34 @@ function textePrix(prix) {
 // Filtres (mémorisés dans le navigateur)
 // ---------------------------------------------------------------------------
 
-const FILTRES_DEFAUT = { periode: "14_jours", prix: "tous", types: [] };
+// ages : âges des enfants (ex. [2, 5]) ; moments : matin / apres_midi / soir ; favoris : seulement les favoris
+const FILTRES_DEFAUT = { periode: "14_jours", prix: "tous", types: [], ages: [], moments: [], favoris: false };
 let filtres = { ...FILTRES_DEFAUT };
 let donnees = null;
+
+// Favoris : identifiants des activités marquées d'une étoile, gardés sur ce téléphone
+let favoris = new Set();
+function chargerFavoris() {
+  try { favoris = new Set(JSON.parse(localStorage.getItem("agenda-favoris")) || []); } catch (_) { favoris = new Set(); }
+}
+function basculerFavori(id) {
+  if (favoris.has(id)) favoris.delete(id); else favoris.add(id);
+  try { localStorage.setItem("agenda-favoris", JSON.stringify([...favoris])); } catch (_) { /* stockage indisponible */ }
+  return favoris.has(id);
+}
+
+// Moment de la journée d'une séance
+function momentDe(e) {
+  const h = lireDate(e.debut).getHours();
+  return h < 12 ? "matin" : h < 17 ? "apres_midi" : "soir";
+}
+
+// Vrai si l'activité convient à au moins un des âges choisis (âge inconnu : on garde)
+function convientAuxAges(e) {
+  if (!filtres.ages.length) return true;
+  if (e.age_min == null && e.age_max == null) return true;
+  return filtres.ages.some((a) => (e.age_min == null || a >= e.age_min) && (e.age_max == null || a <= e.age_max));
+}
 
 function chargerFiltres() {
   try {
@@ -128,11 +161,15 @@ function joursDeLaPeriode(periode) {
   return null;
 }
 
-// Filtres prix et type (sans la période)
-function passePrixType(e) {
+// Filtres de la feuille (prix, type, âges, favoris), sans la période.
+// Le moment de la journée ne s'applique qu'aux séances datées (pas aux offres régulières).
+function passePrixType(e, avecMoment = true) {
   if (filtres.prix === "gratuit" && e.prix !== "gratuit") return false;
   if (filtres.prix === "payant" && (e.prix === "gratuit" || !e.prix || e.prix === "inconnu")) return false;
   if (filtres.types.length && !filtres.types.includes(e.categorie)) return false;
+  if (!convientAuxAges(e)) return false;
+  if (filtres.favoris && !favoris.has(e.id)) return false;
+  if (avecMoment && filtres.moments.length && !filtres.moments.includes(momentDe(e))) return false;
   return true;
 }
 
@@ -220,6 +257,121 @@ function autresSources(e) {
 }
 
 // ---------------------------------------------------------------------------
+// Actions d'une fiche : favori, agenda, partage
+// ---------------------------------------------------------------------------
+
+// Fuseau de Berne décrit dans le fichier, pour que les agendas placent l'heure juste
+const VTIMEZONE_ZURICH = [
+  "BEGIN:VTIMEZONE", "TZID:Europe/Zurich",
+  "BEGIN:DAYLIGHT", "TZOFFSETFROM:+0100", "TZOFFSETTO:+0200", "TZNAME:CEST",
+  "DTSTART:19700329T020000", "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU", "END:DAYLIGHT",
+  "BEGIN:STANDARD", "TZOFFSETFROM:+0200", "TZOFFSETTO:+0100", "TZNAME:CET",
+  "DTSTART:19701025T030000", "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU", "END:STANDARD",
+  "END:VTIMEZONE",
+];
+
+// "2026-11-11T15:00" -> "20261111T150000" (heure de Berne)
+const dateIcs = (iso) => iso.replace(/[-:]/g, "").slice(0, 13) + "00";
+
+// Fin d'une séance : l'heure de fin, sinon une heure après le début
+function finOuUneHeure(e) {
+  if (e.fin) return e.fin;
+  const d = lireDate(e.debut); d.setHours(d.getHours() + 1);
+  return `${formatJour(d)}T${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+}
+
+function texteIcs(t) {
+  return (t || "").replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/[,;]/g, (c) => "\\" + c);
+}
+
+function fichierIcs(e) {
+  const lignes = [
+    "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Agenda Familles Berne//FR", "CALSCALE:GREGORIAN",
+    ...VTIMEZONE_ZURICH,
+    "BEGIN:VEVENT",
+    `UID:${e.id}@agenda-familles-berne`,
+    `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").slice(0, 15)}Z`,
+    `DTSTART;TZID=Europe/Zurich:${dateIcs(e.debut)}`,
+    `DTEND;TZID=Europe/Zurich:${dateIcs(finOuUneHeure(e))}`,
+    `SUMMARY:${texteIcs(e.titre)}`,
+    `LOCATION:${texteIcs([e.lieu_nom, e.adresse].filter(Boolean).join(", "))}`,
+    `DESCRIPTION:${texteIcs([e.description_courte, e.url_source].filter(Boolean).join("\n"))}`,
+    e.url_source ? `URL:${e.url_source}` : null,
+    "END:VEVENT", "END:VCALENDAR",
+  ].filter(Boolean);
+  return lignes.join("\r\n");
+}
+
+function telechargerIcs(e) {
+  const blob = new Blob([fichierIcs(e)], { type: "text/calendar;charset=utf-8" });
+  const a = el("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `${e.titre.replace(/[^\p{L}\p{N}]+/gu, "-").slice(0, 40)}.ics`;
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+
+function lienGoogleAgenda(e) {
+  const p = new URLSearchParams({
+    action: "TEMPLATE", text: e.titre, ctz: "Europe/Zurich",
+    dates: `${dateIcs(e.debut)}/${dateIcs(finOuUneHeure(e))}`,
+    location: [e.lieu_nom, e.adresse].filter(Boolean).join(", "),
+    details: [e.description_courte, e.url_source].filter(Boolean).join("\n\n"),
+  });
+  return `https://calendar.google.com/calendar/render?${p}`;
+}
+
+// Petit message temporaire en bas de l'écran (« Lien copié »…)
+function message(texte) {
+  document.querySelector(".toast")?.remove();
+  const t = el("div", "toast", texte);
+  t.setAttribute("role", "status");
+  document.body.append(t);
+  setTimeout(() => t.remove(), 2600);
+}
+
+async function partager(e) {
+  const quandTexte = e.type === "offre régulière" ? e.repetition : dateCourte(e);
+  const texte = `${e.titre} — ${quandTexte}, ${e.lieu_nom}`;
+  if (navigator.share) {
+    try { await navigator.share({ title: e.titre, text: texte, url: e.url_source || location.href }); } catch (_) { /* annulé */ }
+    return;
+  }
+  try { await navigator.clipboard.writeText(`${texte}\n${e.url_source || location.href}`); message(T.lien_copie); }
+  catch (_) { message(T.partage_impossible); }
+}
+
+function boutonAction(nomIcone, texte, auClic) {
+  const b = el("button", "action");
+  b.type = "button";
+  b.append(icone(nomIcone), el("span", null, texte));
+  b.addEventListener("click", (ev) => { ev.stopPropagation(); auClic(b); });
+  return b;
+}
+
+function actions(e) {
+  const zone = el("div", "actions");
+  const fav = boutonAction("etoile", favoris.has(e.id) ? T.favori_oui : T.favori, (b) => {
+    const actif = basculerFavori(e.id);
+    b.setAttribute("aria-pressed", String(actif));
+    b.querySelector("span:last-child").textContent = actif ? T.favori_oui : T.favori;
+    document.querySelectorAll(`[data-id="${CSS.escape(e.id)}"]`).forEach((x) => x.classList.toggle("est-favori", actif));
+    message(actif ? T.favori_ajoute : T.favori_retire);
+  });
+  fav.classList.add("action-favori");
+  fav.setAttribute("aria-pressed", String(favoris.has(e.id)));
+  zone.append(fav);
+  if (e.type !== "offre régulière") {
+    zone.append(boutonAction("agenda", T.agenda, () => telechargerIcs(e)));
+    const g = el("a", "action-lien", T.google_agenda);
+    g.href = lienGoogleAgenda(e); g.target = "_blank"; g.rel = "noopener";
+    zone.append(g);
+  }
+  zone.append(boutonAction("partager", T.partager, () => partager(e)));
+  return zone;
+}
+
+// ---------------------------------------------------------------------------
 // « Bientôt » : la prochaine activité en grand + les suivantes
 // ---------------------------------------------------------------------------
 
@@ -244,7 +396,7 @@ function carteVedette(seances) {
   if (e.description_courte) corps.append(el("p", "vedette-texte", e.description_courte));
   const dates = autresDates(seances, 4, true);
   if (dates) corps.append(dates);
-  corps.append(ligneLieu(e), pastilles(e), lienSource(e));
+  corps.append(ligneLieu(e), pastilles(e), lienSource(e), actions(e));
   const autres = autresSources(e);
   if (autres) corps.append(autres);
   carte.append(corps);
@@ -302,7 +454,7 @@ function sectionReguliere(offres) {
   [...new Set(offres.map((o) => cleIllustration(o.categorie)))].slice(0, 3)
     .forEach((c) => pile.append(illustration(c === "fete" ? "fête" : c)));
   const textes = el("span", "reguliers-textes");
-  textes.append(el("strong", null, T.chaque_semaine), el("span", null, remplir(T.chaque_semaine_aide, { n: offres.length })));
+  textes.append(el("strong", null, T.chaque_semaine), el("span", null, accorder(remplir(T.chaque_semaine_aide, { n: offres.length }), offres.length)));
   resume.append(pile, textes, icone("fleche"));
   bloc.append(resume);
   const liste = el("div", "groupe");
@@ -313,7 +465,8 @@ function sectionReguliere(offres) {
 
 // Une ligne de la liste ; un toucher déplie le détail
 function ligne(e, reguliere = false) {
-  const item = el("article", "ligne");
+  const item = el("article", favoris.has(e.id) ? "ligne est-favori" : "ligne");
+  item.dataset.id = e.id;  // permet de mettre à jour l'étoile partout quand on change un favori
   item.id = e.id;
   item.dataset.cat = cleIllustration(e.categorie);
   const bouton = el("button", "ligne-bouton");
@@ -325,14 +478,19 @@ function ligne(e, reguliere = false) {
   const haut = el("span", "ligne-haut");
   haut.append(el("span", "heure", reguliere ? e.repetition : (e.fin ? `${heure(e.debut)} – ${heure(e.fin)}` : heure(e.debut))));
   if (e.categorie) haut.append(el("span", "type", T.categories[e.categorie]));
-  textes.append(haut, el("span", "ligne-titre", e.titre), el("span", "ligne-lieu", e.lieu_nom));
+  const titre = el("span", "ligne-titre");
+  // Petite étoile devant le titre, visible seulement si l'activité est en favori (géré par CSS)
+  const marque = icone("etoile");
+  marque.classList.add("marque-favori");
+  titre.append(marque, el("span", null, e.titre));
+  textes.append(haut, titre, el("span", "ligne-lieu", e.lieu_nom));
   bouton.append(vignette, textes, icone("fleche"));
   item.append(bouton);
 
   const detail = el("div", "ligne-detail");
   detail.hidden = true;
   if (e.description_courte) detail.append(el("p", "ligne-texte", e.description_courte));
-  detail.append(lienSource(e));
+  detail.append(lienSource(e), actions(e));
   const autres = autresSources(e);
   if (autres) detail.append(autres);
   item.append(detail);
@@ -393,7 +551,8 @@ function afficherBarre() {
     b.addEventListener("click", () => { filtres.periode = valeur; sauverFiltres(); afficher(); window.scrollTo({ top: 0, behavior: "smooth" }); });
     segments.append(b);
   }
-  const nbActifs = (filtres.prix !== "tous" ? 1 : 0) + filtres.types.length;
+  const nbActifs = (filtres.prix !== "tous" ? 1 : 0) + filtres.types.length + filtres.moments.length
+    + (filtres.ages.length ? 1 : 0) + (filtres.favoris ? 1 : 0);
   const bf = el("button", nbActifs ? "bouton-filtres actif" : "bouton-filtres");
   bf.type = "button";
   bf.setAttribute("aria-label", nbActifs ? `${T.filtres} (${nbActifs})` : T.filtres);
@@ -421,6 +580,45 @@ function remplirFeuille() {
   fermer.addEventListener("click", () => feuille.close());
   entete.append(fermer);
   feuille.append(el("div", "poignee"), entete);
+
+  // Seulement mes favoris
+  const favori = el("button", "interrupteur");
+  favori.type = "button";
+  favori.setAttribute("role", "switch");
+  favori.setAttribute("aria-checked", String(filtres.favoris));
+  favori.append(icone("etoile"), el("span", null, remplir(T.seulement_favoris, { n: favoris.size })), el("span", "interrupteur-curseur"));
+  favori.addEventListener("click", () => { filtres.favoris = !filtres.favoris; majFeuille(); });
+  feuille.append(favori);
+
+  // Âges de mes enfants (souvenir gardé sur le téléphone)
+  feuille.append(el("h3", "feuille-sous-titre", T.filtre_ages));
+  const ages = el("div", "puces-ages");
+  for (let a = 0; a <= 10; a++) {
+    const b = el("button", "puce-age", a === 0 ? T.moins_un_an : String(a));
+    b.type = "button";
+    b.setAttribute("aria-pressed", String(filtres.ages.includes(a)));
+    b.setAttribute("aria-label", a === 0 ? T.moins_un_an : remplir(a === 1 ? T.an : T.ans, { n: a }));
+    b.addEventListener("click", () => {
+      filtres.ages = filtres.ages.includes(a) ? filtres.ages.filter((x) => x !== a) : [...filtres.ages, a].sort((x, y) => x - y);
+      majFeuille();
+    });
+    ages.append(b);
+  }
+  feuille.append(ages, el("p", "aide", T.filtre_ages_aide));
+
+  // Moment de la journée
+  feuille.append(el("h3", "feuille-sous-titre", T.filtre_moment));
+  const moments = el("div", "segments segments-plein");
+  for (const [v, t] of [["matin", T.moment_matin], ["apres_midi", T.moment_apres_midi], ["soir", T.moment_soir]]) {
+    const b = el("button", "segment", t);
+    b.type = "button"; b.setAttribute("aria-pressed", String(filtres.moments.includes(v)));
+    b.addEventListener("click", () => {
+      filtres.moments = filtres.moments.includes(v) ? filtres.moments.filter((x) => x !== v) : [...filtres.moments, v];
+      majFeuille();
+    });
+    moments.append(b);
+  }
+  feuille.append(moments);
 
   // Prix
   feuille.append(el("h3", "feuille-sous-titre", T.filtre_prix));
@@ -457,7 +655,10 @@ function remplirFeuille() {
   const pied = el("div", "feuille-pied");
   const effacer = el("button", "bouton-texte", T.effacer);
   effacer.type = "button";
-  effacer.addEventListener("click", () => { filtres.prix = "tous"; filtres.types = []; majFeuille(); });
+  // Les âges des enfants sont un réglage durable : « Effacer » ne les retire pas
+  effacer.addEventListener("click", () => {
+    filtres.prix = "tous"; filtres.types = []; filtres.moments = []; filtres.favoris = false; majFeuille();
+  });
   const n = evenementsFiltres().length;
   const voir = el("button", "bouton-action", n === 0 ? T.voir_aucun : n === 1 ? T.voir_resultat : remplir(T.voir_resultats, { n }));
   voir.type = "button";
@@ -494,7 +695,10 @@ function etatVide() {
   vide.append(illustration("autre"), el("p", "vide-titre", T.aucun_resultat), el("p", "vide-aide", T.aucun_resultat_aide));
   const b = el("button", "bouton-action", T.reinitialiser);
   b.type = "button";
-  b.addEventListener("click", () => { filtres = { ...FILTRES_DEFAUT, types: [] }; sauverFiltres(); afficher(); });
+  // « Tout afficher » garde les âges des enfants (réglage durable) et retire le reste
+  b.addEventListener("click", () => {
+    filtres = { ...FILTRES_DEFAUT, types: [], moments: [], ages: filtres.ages }; sauverFiltres(); afficher();
+  });
   vide.append(b);
   return vide;
 }
@@ -502,11 +706,11 @@ function etatVide() {
 function afficher() {
   const contenu = document.getElementById("contenu");
   const evenements = evenementsFiltres();
-  const offres = (donnees.offres_regulieres || []).filter(passePrixType);
+  const offres = (donnees.offres_regulieres || []).filter((o) => passePrixType(o, false));
 
   const n = evenements.length;
   const cleResume = { aujourd_hui: "resume_aujourd_hui", weekend: "resume_weekend", "14_jours": "resume_14_jours" }[filtres.periode];
-  document.getElementById("resume").textContent = remplir(T[cleResume], { n });
+  document.getElementById("resume").textContent = accorder(remplir(T[cleResume], { n }), n);
 
   contenu.replaceChildren(avertissements());
   if (!donnees.evenements.length) {
@@ -539,6 +743,13 @@ function afficherPied() {
   document.getElementById("mise-a-jour").textContent = remplir(T.mis_a_jour, { date: maj });
   const noms = (donnees.sources || []).filter((s) => s.ok && s.nom !== "Ajouts manuels").map((s) => s.nom);
   document.getElementById("sources").textContent = noms.length ? remplir(T.sources_liste, { liste: noms.join(", ") }) : "";
+  // Abonnement au flux d'agenda (webcal:// ouvre directement l'agenda du téléphone)
+  const flux = new URL("agenda.ics", location.href);
+  const abo = el("a", "lien-abonnement");
+  abo.href = flux.href.replace(/^https?:/, "webcal:");
+  abo.append(icone("agenda"), el("span", null, T.abonnement));
+  const aide = el("p", "aide", remplir(T.abonnement_aide, { url: flux.href }));
+  document.getElementById("abonnement").replaceChildren(abo, aide);
 }
 
 async function demarrer() {
@@ -550,6 +761,7 @@ async function demarrer() {
     document.getElementById("titre-page").textContent = T.titre;
     document.getElementById("resume").textContent = T.chargement;
     chargerFiltres();
+    chargerFavoris();
     // "no-store" : toujours la dernière version, jamais une copie en cache
     donnees = await (await fetch("events.json", { cache: "no-store" })).json();
     afficher();

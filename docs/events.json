@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-08T13:08+01:00",
+  "mis_a_jour": "2026-11-08T13:35+01:00",
   "sources": [
     {
       "nom": "Kornhausbibliotheken",
@@ -60,6 +60,11 @@
       "nom": "Botanischer Garten Bern",
       "ok": true,
       "nb": 4
+    },
+    {
+      "nom": "Kunstmuseum Bern",
+      "ok": true,
+      "nb": 2
     }
   ],
   "offres_regulieres": [
@@ -409,6 +414,31 @@
       "prix": "inconnu",
       "inscription_requise": null,
       "categorie": "conte",
+      "type": "événement",
+      "repetition": "",
+      "ville": "Berne",
+      "licence": "",
+      "autres_sources": []
+    },
+    {
+      "id": "kmb-1269-202611111430",
+      "titre": "Atelier bilingue / zweisprachiger Workshop: Workshop s'aMUSÉE !",
+      "debut": "2026-11-11T14:30",
+      "lieu_nom": "Kunstmuseum Bern",
+      "source": "Kunstmuseum Bern",
+      "url_source": "https://www.kunstmuseumbern.ch/de/workshop/atelier-bilingue-zweisprachiger-workshop",
+      "description_courte": "Rejoins-nous dans le monde passionnant de l’art et découvre les artistes et les histoires derrière leurs œuvres.",
+      "fin": "2026-11-11T16:00",
+      "adresse": "Hodlerstrasse 8–12, 3011 Bern",
+      "latitude": null,
+      "longitude": null,
+      "age_min": 6,
+      "age_max": 14,
+      "age_source": "fourni",
+      "age_texte": "6 – 14 Jahre/ans",
+      "prix": "inconnu",
+      "inscription_requise": null,
+      "categorie": "atelier",
       "type": "événement",
       "repetition": "",
       "ville": "Berne",
@@ -1184,6 +1214,31 @@
       "prix": "inconnu",
       "inscription_requise": true,
       "categorie": "conte",
+      "type": "événement",
+      "repetition": "",
+      "ville": "Berne",
+      "licence": "",
+      "autres_sources": []
+    },
+    {
+      "id": "kmb-1255-202611211015",
+      "titre": "Kunst-Tour für Kinder: Workshop Artur",
+      "debut": "2026-11-21T10:15",
+      "lieu_nom": "Kunstmuseum Bern",
+      "source": "Kunstmuseum Bern",
+      "url_source": "https://www.kunstmuseumbern.ch/de/workshop/kunst-tour-fuer-kinder",
+      "description_courte": "Erkunde gemeinsam mit anderen Kindern und Jugendlichen Kunst im Museum sowie im öffentlichen Raum und gestalte selbst kreativ mit. Im Atelier setzen wir eigene Ideen um.",
+      "fin": "2026-11-21T12:15",
+      "adresse": "Hodlerstrasse 8–12, 3011 Bern",
+      "latitude": null,
+      "longitude": null,
+      "age_min": 6,
+      "age_max": 14,
+      "age_source": "fourni",
+      "age_texte": "6 – 14 Jahre",
+      "prix": "inconnu",
+      "inscription_requise": null,
+      "categorie": "atelier",
       "type": "événement",
       "repetition": "",
       "ville": "Berne",
