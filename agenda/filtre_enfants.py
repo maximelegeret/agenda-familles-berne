@@ -21,7 +21,7 @@ NOMBRES = {
 
 # Unités d'âge en allemand, français et anglais
 UNITE = r"(monat\w*|jahr\w*|j\.|ans?\b|mois|years?|months?)"
-RE_INTERVALLE = re.compile(r"(\d+)\s*" + UNITE + r"?\s*(?:bis|-|–)\s*(\d+)\s*" + UNITE)
+RE_INTERVALLE = re.compile(r"(\d+)\s*" + UNITE + r"?\s*(?:bis|-|–|und)\s*(\d+)\s*" + UNITE)
 RE_CLASSES = re.compile(r"(\d+)\.\s*(?:bis|-|–)\s*(\d+)\.\s*klasse")
 RE_DES = re.compile(r"\bab\s*(\d+)\s*" + UNITE)
 RE_JUSQUA = re.compile(r"\bbis\s*(\d+)\s*" + UNITE)
@@ -43,9 +43,11 @@ MOTS_CATEGORIES = [
     ("musique", ["konzert", "musik", "singen", "lieder", "värsli", "concert"]),
     ("conte", ["geschicht", "gschicht", "märli", "märchen", "erzähl", "lesung", "lesen", "vorlese", "bilderbuch", "liest", "conte"]),
     ("atelier", ["workshop", "atelier", "basteln", "baschtle", "bastel", "kurs", "malen", "gestalten"]),
+    # Fêtes avant nature : « Dr Samichlous chunnt i Tierpark » est une fête, pas une sortie nature
+    ("fête", ["fest", "fasnacht", "party", "feier", "fête", "samichlaus", "samichlous", "nikolaus",
+              "weihnacht", "advent", "halloween", "ostern"]),
     ("nature", ["natur", "wald", "garten", "tierpark", "draussen"]),
     ("sport", ["sport", "turnen", "schach", "bewegung"]),
-    ("fête", ["fest", "fasnacht", "party", "feier", "fête"]),
 ]
 
 

@@ -17,13 +17,17 @@ def lire_prix(texte):
     bas = texte.lower()
     if any(mot in bas for mot in MOTS_GRATUIT):
         return "gratuit"
+    # « Im normalen Eintritt inbegriffen » : rien à payer en plus du billet d'entrée
+    if "inbegriffen" in bas or "im eintritt enthalten" in bas:
+        return "compris dans l'entrée"
     # Fourchette de prix : « CHF 10 - 37 » -> '10–37 CHF'
     fourchette = re.search(r"(\d+)\s*[-–]\s*(\d+)", texte)
     if fourchette:
         return f"{fourchette.group(1)}–{fourchette.group(2)} CHF"
     nombre = re.search(r"(\d+(?:[.,]\d+)?)", texte)
     if nombre:
-        montant = nombre.group(1).replace(",", ".").rstrip(".")
+        # « 90.00 » -> « 90 » ; « 7.50 » reste « 7.5 »
+        montant = f"{float(nombre.group(1).replace(',', '.').rstrip('.')):g}"
         # Un supplément au billet d'entrée du musée
         if "eintritt" in bas and ("plus" in bas or "zusätzlich" in bas):
             return f"entrée + {montant} CHF"

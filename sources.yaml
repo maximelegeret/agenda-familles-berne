@@ -53,6 +53,12 @@ sources:
     actif: true
     pour_enfants: false  # le lecteur garde les âges ≤ 10 ans ; le tri général vérifie encore
 
+  - nom: Tierpark Bern
+    lecteur: tierpark
+    url: https://tierpark-bern.ch/veranstaltungskalender/
+    actif: true
+    pour_enfants: true   # le lecteur garde les activités marquées « Event für Kinder » par le Tierpark
+
   - nom: Eventfrog
     lecteur: eventfrog
     url: https://api.eventfrog.net/public/v1/events
