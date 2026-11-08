@@ -77,6 +77,12 @@ sources:
     actif: true
     pour_enfants: false  # rubrique « Junges Publikum » : inclut des offres ados, le tri par âge s'applique
 
+  - nom: Botanischer Garten Bern
+    lecteur: boga
+    url: https://www.boga.unibe.ch/agenda/index_ger.html
+    actif: true
+    pour_enfants: true   # le lecteur garde les rubriques Kinderfreizeit et Thementage
+
   - nom: Eventfrog
     lecteur: eventfrog
     url: https://api.eventfrog.net/public/v1/events
