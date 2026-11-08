@@ -59,6 +59,12 @@ sources:
     actif: true
     pour_enfants: true   # le lecteur garde les activités marquées « Event für Kinder » par le Tierpark
 
+  - nom: Naturhistorisches Museum Bern
+    lecteur: nmbe
+    url: https://www.nmbe.ch/de/kalender
+    actif: true
+    pour_enfants: true   # le lecteur utilise le filtre « Familien und Kinder » du musée
+
   - nom: Eventfrog
     lecteur: eventfrog
     url: https://api.eventfrog.net/public/v1/events

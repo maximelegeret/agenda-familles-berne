@@ -42,7 +42,7 @@ MOTS_CATEGORIES = [
     ("spectacle", ["theater", "puppen", "figurentheater", "zirkus", "tanz", "spectacle", "kasperli", "chaschperli"]),
     ("musique", ["konzert", "musik", "singen", "lieder", "värsli", "concert"]),
     ("conte", ["geschicht", "gschicht", "märli", "märchen", "erzähl", "lesung", "lesen", "vorlese", "bilderbuch", "liest", "conte"]),
-    ("atelier", ["workshop", "atelier", "basteln", "baschtle", "bastel", "kurs", "malen", "gestalten"]),
+    ("atelier", ["workshop", "atelier", "basteln", "baschtle", "bastel", "kurs", "malen", "zeichnen", "gestalten"]),
     # Fêtes avant nature : « Dr Samichlous chunnt i Tierpark » est une fête, pas une sortie nature
     ("fête", ["fest", "fasnacht", "party", "feier", "fête", "samichlaus", "samichlous", "nikolaus",
               "weihnacht", "advent", "halloween", "ostern"]),
