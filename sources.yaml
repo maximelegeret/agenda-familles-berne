@@ -71,6 +71,12 @@ sources:
     actif: true
     pour_enfants: true   # le lecteur écarte les rendez-vous parents (consultation, allaitement) et le Repair-Café
 
+  - nom: Dampfzentrale Bern
+    lecteur: dampfzentrale
+    url: https://www.dampfzentrale.ch/
+    actif: true
+    pour_enfants: false  # rubrique « Junges Publikum » : inclut des offres ados, le tri par âge s'applique
+
   - nom: Eventfrog
     lecteur: eventfrog
     url: https://api.eventfrog.net/public/v1/events
