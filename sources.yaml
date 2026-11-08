@@ -47,6 +47,12 @@ sources:
     actif: true
     pour_enfants: true   # le lecteur ne garde que le « Kinderprogramm »
 
+  - nom: Schlachthaus Theater
+    lecteur: schlachthaus
+    url: https://www.schlachthaus.ch/de/programm/shows/
+    actif: true
+    pour_enfants: false  # le lecteur garde les âges ≤ 10 ans ; le tri général vérifie encore
+
   - nom: Eventfrog
     lecteur: eventfrog
     url: https://api.eventfrog.net/public/v1/events
