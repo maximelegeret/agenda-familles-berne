@@ -21,7 +21,10 @@ Document de cadrage : « Agenda Familles Berne – Cadrage V1 » (6 nov. 2026). 
 - **Architecture** : pas de serveur ni de base. `recuperer.py` lit les sources → `docs/events.json` ; page statique `docs/index.html` + `app.js`.
 - **Hébergement** : dépôt GitHub **public** + GitHub Pages. Aucun secret dans le code : les clés vont dans les secrets GitHub.
 - **Exécution quotidienne** : GitHub Actions (`.github/workflows/quotidien.yml`, 4:00 UTC + bouton manuel).
-- **En ligne** : dépôt https://github.com/maximelegeret/agenda-familles-berne, site https://maximelegeret.github.io/agenda-familles-berne/ (Pages depuis `main` /docs).
+- **En ligne** : dépôt https://github.com/maximelegeret/agenda-familles-berne. Deux hébergements identiques, mis à jour par le même commit nocturne :
+  - GitHub Pages : https://maximelegeret.github.io/agenda-familles-berne/ (Pages depuis `main` /docs) ;
+  - Vercel : https://agenda-familles-berne.vercel.app/ (configuré par `vercel.json` : pas de framework, pas de build, sortie `docs/`). Les adresses de branche `…-git-main-maxime-c428.vercel.app` sont protégées par la connexion Vercel.
+  - Décision du 8 nov. 2026 : garder les deux. Ne pas supprimer `vercel.json` ni désactiver Pages sans l'accord de Maxime.
 - **Commits du robot** : chaque nuit, « github-actions[bot] » commite `docs/events.json`. Toujours faire `git pull` avant de travailler et avant tout push.
 - **Outil gh** : installé dans `/opt/homebrew/bin/gh` (pas dans le PATH du terminal de Maxime).
 - **Python 3.12** (Homebrew), environnement virtuel dans `.venv/`.
