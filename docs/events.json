@@ -1,15 +1,15 @@
 {
-  "mis_a_jour": "2026-11-07T17:51+01:00",
+  "mis_a_jour": "2026-11-08T12:07+01:00",
   "sources": [
     {
       "nom": "Kornhausbibliotheken",
       "ok": true,
-      "nb": 190
+      "nb": 189
     },
     {
       "nom": "Creaviva (Zentrum Paul Klee)",
       "ok": true,
-      "nb": 48
+      "nb": 49
     },
     {
       "nom": "MuseumsQuartier Bern",
@@ -24,7 +24,7 @@
     {
       "nom": "Bühnen Bern",
       "ok": true,
-      "nb": 2
+      "nb": 1
     }
   ],
   "offres_regulieres": [
@@ -49,31 +49,6 @@
       "categorie": "atelier",
       "type": "offre régulière",
       "repetition": "du mardi au dimanche 10:00–17:00",
-      "ville": "Berne",
-      "licence": "",
-      "autres_sources": []
-    },
-    {
-      "id": "creaviva-11711-regulier",
-      "titre": "Mit Roberto Burle Marx im Atelier: Workshop Familienmorgen",
-      "debut": "2026-11-08T10:15",
-      "lieu_nom": "Creaviva, Zentrum Paul Klee",
-      "source": "Creaviva (Zentrum Paul Klee)",
-      "url_source": "https://zpk.org/de/workshop/mit-roberto-burle-marx-im-atelier",
-      "description_courte": "Im Familienmorgen am Sonntag finden wir unseren eigenen künstlerischen Ausdruck im Atelier und erkunden gemeinsam die Ausstellung! Atelier 3",
-      "fin": "2026-11-08T11:30",
-      "adresse": "Monument im Fruchtland 3, 3006 Bern",
-      "latitude": null,
-      "longitude": null,
-      "age_min": 4,
-      "age_max": null,
-      "age_source": "fourni",
-      "age_texte": "Familien mit Kindern ab 4 J.",
-      "prix": "18 CHF",
-      "inscription_requise": null,
-      "categorie": "atelier",
-      "type": "offre régulière",
-      "repetition": "dimanche 10:15–11:30",
       "ville": "Berne",
       "licence": "",
       "autres_sources": []
@@ -174,6 +149,31 @@
       "categorie": null,
       "type": "offre régulière",
       "repetition": "vendredi 14:00–15:30",
+      "ville": "Berne",
+      "licence": "",
+      "autres_sources": []
+    },
+    {
+      "id": "creaviva-11711-regulier",
+      "titre": "Mit Roberto Burle Marx im Atelier: Workshop Familienmorgen",
+      "debut": "2026-11-15T10:15",
+      "lieu_nom": "Creaviva, Zentrum Paul Klee",
+      "source": "Creaviva (Zentrum Paul Klee)",
+      "url_source": "https://zpk.org/de/workshop/mit-roberto-burle-marx-im-atelier",
+      "description_courte": "Im Familienmorgen am Sonntag finden wir unseren eigenen künstlerischen Ausdruck im Atelier und erkunden gemeinsam die Ausstellung! Atelier 3",
+      "fin": "2026-11-15T11:30",
+      "adresse": "Monument im Fruchtland 3, 3006 Bern",
+      "latitude": null,
+      "longitude": null,
+      "age_min": 4,
+      "age_max": null,
+      "age_source": "fourni",
+      "age_texte": "Familien mit Kindern ab 4 J.",
+      "prix": "18 CHF",
+      "inscription_requise": null,
+      "categorie": "atelier",
+      "type": "offre régulière",
+      "repetition": "dimanche 10:15–11:30",
       "ville": "Berne",
       "licence": "",
       "autres_sources": []
