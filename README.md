@@ -5,9 +5,11 @@ Version 1, à usage personnel.
 
 ## Comment ça marche
 
-1. `recuperer.py` lit chaque source (sites des bibliothèques, du Creaviva, du MuseumsQuartier,
-   du Menuhin Forum, de Bühnen Bern), ne garde que les activités pour enfants, fusionne les doublons
-   et écrit le résultat dans `docs/events.json`.
+1. `recuperer.py` lit chaque source listée dans `sources.yaml` (bibliothèques, Creaviva, MuseumsQuartier,
+   Menuhin Forum, Bühnen Bern, Berner Puppen Theater, Schlachthaus, Tierpark, Musée d'histoire naturelle,
+   MüZe Muri-Gümligen, Dampfzentrale, Jardin botanique), ne garde que les activités pour enfants,
+   fusionne les doublons et écrit le résultat dans `docs/events.json`. Les offres sans dates
+   (ex. le Pünktli) viennent de `offres_regulieres.yaml`.
 2. La page `docs/index.html` affiche ce fichier, avec des filtres (quand, prix, type).
 
 Il n'y a ni serveur ni base de données : seulement des fichiers.

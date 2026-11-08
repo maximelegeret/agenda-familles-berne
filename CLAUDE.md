@@ -29,7 +29,8 @@ Document de cadrage : « Agenda Familles Berne – Cadrage V1 » (6 nov. 2026). 
 - **Outil gh** : installé dans `/opt/homebrew/bin/gh` (pas dans le PATH du terminal de Maxime).
 - **Python 3.12** (Homebrew), environnement virtuel dans `.venv/`.
 - **Tri enfants/adultes** : mots-clés uniquement en V1. L'API Claude viendra plus tard, dans une étape dédiée.
-- **Eventfrog** : l'API exige un jeton (Bearer) demandé par Maxime à support@eventfrog.net. En attendant, on commence par les Kornhausbibliotheken (kob.ch).
+- **Eventfrog** : l'API exige un jeton (Bearer). Demande envoyée depuis le Gmail de Maxime à support@eventfrog.net le 8 nov. 2026 (texte validé par Maxime) ; réponse attendue. Le jeton ira dans les secrets GitHub.
+- **Offres régulières** : déduites des séances hebdomadaires (`agenda/regulier.py`), sauf les spectacles (séries limitées, restent jour par jour) ; les offres sans dates sont écrites à la main dans `offres_regulieres.yaml` (ex. Pünktli du MüZe).
 - **Images** : pas d'images des sources (Eventfrog interdit le lien direct, site public). À la place : illustrations dessinées en SVG (`docs/illustrations.js`), une par type d'activité + une scène bernoise.
 - **Design** (7 nov. 2026) : univers « appli chaleureuse » choisi par Maxime avec le skill Impeccable (`.claude/skills/impeccable`, copie manuelle, télémétrie coupée). Produit décrit dans `PRODUCT.md`, système visuel dans `DESIGN.md` : **les lire avant toute modification de la page**. Police Figtree auto-hébergée (`docs/fonts/`, licence OFL).
 - **Nom** : « Agenda Familles Berne » reste en attendant ; Maxime est ouvert à un nom plus chaleureux, à valider avant affichage.
@@ -47,6 +48,19 @@ Document de cadrage : « Agenda Familles Berne – Cadrage V1 » (6 nov. 2026). 
 | MuseumsQuartier | Page `mqb.ch/en/agenda`, libellé « Children & Family » ; **10 s entre requêtes** (robots.txt) |
 | Menuhin Forum | REST `menuhinforum.ch/wp-json/wp/v2/ajde_events` + iCal par événement ; garder « Familienkonzert » |
 | Bühnen Bern | Pages `buehnenbern.ch/spielplan/programm/` ; « Junges Publikum », Kinder/Familie ; écarter « Schulvorstellung » |
+
+## Sources ajoutées le 8 nov. 2026
+| Source | Méthode |
+|---|---|
+| Berner Puppen Theater | `berner-puppentheater.ch/spielplan` ; seulement les liens `/kinderprogramm/` ; prix enfant–adulte sur la page |
+| Schlachthaus Theater | `schlachthaus.ch/de/programm/shows/` ; âge ≤ 10 ans, écarter « Schulvorstellung » ; dates sans année (déduite) |
+| Tierpark Bern | `tierpark-bern.ch/veranstaltungskalender/` ; pictogramme « Event für Kinder » ; fiche : Datum, Kosten, Zielgruppe |
+| Naturhistorisches Museum | `nmbe.ch/de/kalender?audience[36]=36` (Familien und Kinder), pages `&page=N` ; datetime « Z » = heure locale |
+| MüZe Muri-Gümligen | `mueze-muri-guemligen.ch/angebot/veranstaltungen/` ; écarter Beratung/Stilltreffen/Repair/Coiffeur ; Pünktli dans `offres_regulieres.yaml` |
+| Dampfzentrale | page d'accueil (filtre en JavaScript) + fiche : `span.tag` = « Junges Publikum » |
+| Botanischer Garten (BOGA) | `boga.unibe.ch/agenda/index_ger.html` (schema.org startDate) ; rubriques Kinderfreizeit et Thementage |
+
+Pistes non faites (agenda en JavaScript ou absent) : Spielen in Bern / DOK, centres de quartier VBG (vbgbern.ch), Theater Matte, ALPS (alps.museum, en partie via MQB).
 
 ## Points ouverts
 - Licence kob.ch : le cadrage dit CC BY-SA 4.0, les mentions légales du site exigent un accord écrit. OK en usage perso ; à clarifier avant toute ouverture au public.
