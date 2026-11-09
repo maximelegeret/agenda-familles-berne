@@ -43,11 +43,11 @@ jobs:
           # Jeton de l'API Eventfrog, rangé dans les secrets du dépôt (jamais dans le code)
           EVENTFROG_TOKEN: ${{ secrets.EVENTFROG_TOKEN }}
 
-      - name: Enregistrer events.json et agenda.ics s'ils ont changé
+      - name: Enregistrer events.json, agenda.ics et lieux.json s'ils ont changé
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/events.json docs/agenda.ics
+          git add docs/events.json docs/agenda.ics docs/lieux.json
           if git diff --cached --quiet; then
             echo "Aucun changement."
           else

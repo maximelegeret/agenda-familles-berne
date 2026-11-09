@@ -1,0 +1,412 @@
+# Lieux permanents pour l'onglet « Sortir » (V3, Lot A).
+# Liste validée par Maxime le 9 nov. 2026 ; infos relevées sur les sites officiels le même jour.
+# À revérifier une fois par an (ou quand un lieu change ses horaires) : mettre à jour « verifie_le ».
+#
+# Champs :
+#   id           identifiant court, unique
+#   nom          nom affiché
+#   type         animaux | nature | musee | piscine | jeux | bibliotheque | rencontre
+#   dedans       true (couvert), false (dehors) ou "mixte" (les deux)
+#   adresse, lat, lng   coordonnées OpenStreetMap (Nominatim), vérifiées
+#   age_min      âge conseillé minimum (facultatif)
+#   prix         texte court en français ; « gratuit » si rien à payer
+#   resume       une ou deux phrases : pourquoi y aller avec des petits
+#   horaires     « toujours » (accès libre jour et nuit) ou liste de périodes :
+#                  - du: "MM-JJ"  au: "MM-JJ"   (facultatif : toute l'année si absent)
+#                    lun/mar/mer/jeu/ven/sam/dim: "HH:MM-HH:MM" (jour absent = fermé ;
+#                    plusieurs plages séparées par une virgule)
+#   feries       horaires des jours fériés : "ferme", "normal" (comme un jour ordinaire) ou "HH:MM-HH:MM"
+#   fermetures   jours fermés en plus : dates "MM-JJ" ou noms de fêtes mobiles
+#                (vendredi_saint, paques, lundi_paques, ascension, pentecote, lundi_pentecote, zibelemarit)
+#   equipements  langer (table à langer), poussette, cafe, wc, jeux (place de jeux)
+#   remarque     ce qu'il faut savoir avant d'y aller (facultatif)
+#   url          page officielle des horaires
+#   verifie_le   date de la dernière vérification
+
+lieux:
+
+  # --- Animaux & nature ---
+
+  - id: tierpark
+    nom: Tierpark Dählhölzli
+    type: animaux
+    dedans: mixte
+    adresse: Tierparkweg 1, 3005 Bern
+    lat: 46.9341
+    lng: 7.44814
+    prix: "Parc et zoo des enfants gratuits ; Vivarium : adultes 11 CHF, 6–15 ans 7 CHF, moins de 6 ans gratuit"
+    resume: "Ours, loups, élans au bord de l'Aar, chèvres à caresser au zoo des enfants ; le Vivarium (payant, couvert) pour les jours de pluie."
+    horaires:
+      - du: "03-01"
+        au: "10-31"
+        lun: "09:00-18:00"
+        mar: "09:00-18:00"
+        mer: "09:00-18:00"
+        jeu: "09:00-18:00"
+        ven: "09:00-18:00"
+        sam: "09:00-18:00"
+        dim: "09:00-18:00"
+      - du: "11-01"
+        au: "02-29"
+        lun: "09:00-17:00"
+        mar: "09:00-17:00"
+        mer: "09:00-17:00"
+        jeu: "09:00-17:00"
+        ven: "09:00-17:00"
+        sam: "09:00-17:00"
+        dim: "09:00-17:00"
+    feries: normal
+    equipements: [langer, wc, cafe]
+    remarque: "Horaires du Vivarium (partie payante) ; le parc au bord de l'Aar et le zoo des enfants sont ouverts jour et nuit."
+    url: https://tierpark-bern.ch/zoobesuch/oeffnungszeiten/
+    verifie_le: 2026-11-09
+
+  - id: baerenpark
+    nom: BärenPark
+    type: animaux
+    dedans: false
+    adresse: Grosser Muristalden 4, 3006 Bern
+    lat: 46.94795
+    lng: 7.4595
+    prix: gratuit
+    resume: "Les ours de Berne au bord de l'Aar ; petit ascenseur incliné (BäreBähnli) et ours en bois sur lesquels grimper."
+    horaires: toujours
+    equipements: [wc]
+    remarque: "Les ours hibernent environ de novembre à mi-mars : on les voit rarement. Toilettes au restaurant Altes Tramdepot."
+    url: https://tierpark-bern.ch/baerenpark/oeffnungszeiten/
+    verifie_le: 2026-11-09
+
+  - id: boga
+    nom: Jardin botanique (BOGA)
+    type: nature
+    dedans: mixte
+    adresse: Altenbergrain 21, 3013 Bern
+    lat: 46.95352
+    lng: 7.44532
+    prix: gratuit
+    resume: "Jardin au bord de l'Aar et serres chaudes tropicales, ouvertes toute l'année : une bouffée d'été quand il fait gris."
+    horaires:
+      - du: "05-01"
+        au: "09-30"
+        lun: "08:00-19:30"
+        mar: "08:00-19:30"
+        mer: "08:00-19:30"
+        jeu: "08:00-19:30"
+        ven: "08:00-19:30"
+        sam: "08:00-19:30"
+        dim: "08:00-19:30"
+      - du: "10-01"
+        au: "04-30"
+        lun: "08:00-17:00"
+        mar: "08:00-17:00"
+        mer: "08:00-17:00"
+        jeu: "08:00-17:00"
+        ven: "08:00-17:00"
+        sam: "08:00-17:00"
+        dim: "08:00-17:00"
+    feries: normal
+    equipements: []
+    remarque: "Serres ouvertes 08:00–17:00 toute l'année. Café Fleuri seulement d'avril à octobre, les jours de beau temps."
+    url: https://www.boga.unibe.ch/der_garten/besucherinnen_infos/index_ger.html
+    verifie_le: 2026-11-09
+
+  - id: gurten
+    nom: Gurten – Park im Grünen
+    type: nature
+    dedans: false
+    adresse: Gurten Kulm, 3084 Wabern
+    lat: 46.91932
+    lng: 7.43855
+    prix: "Parc gratuit ; funiculaire aller-retour adultes 12.60 CHF, 6–16 ans 6.30 CHF"
+    resume: "Montée en funiculaire, grande place de jeux, petit train, voitures pour enfants et vue sur les Alpes."
+    horaires: toujours
+    equipements: [cafe, jeux]
+    remarque: "Funiculaire toutes les 15 min dès 07:00 (dernière montée 20:00 le dimanche). Petit train : sam–dim 10:30–16:00, en semaine 13:30–16:00, selon la météo."
+    url: https://www.gurtenpark.ch/gurtenbahn
+    verifie_le: 2026-11-09
+
+  - id: rosengarten
+    nom: Rosengarten
+    type: nature
+    dedans: false
+    adresse: Alter Aargauerstalden, 3006 Bern
+    lat: 46.95121
+    lng: 7.4608
+    prix: gratuit
+    resume: "Parc avec vue sur la vieille ville, place de jeux et restaurant à côté."
+    horaires: toujours
+    equipements: [jeux, cafe]
+    remarque: "Parc public. Restaurant Rosengarten ouvert tous les jours 09:00–23:30."
+    url: https://www.rosengarten.be/
+    verifie_le: 2026-11-09
+
+  - id: elfenau
+    nom: Elfenau
+    type: nature
+    dedans: false
+    adresse: Elfenauweg, 3006 Bern
+    lat: 46.93267
+    lng: 7.46559
+    prix: gratuit
+    resume: "Grand parc au bord de l'Aar, étang et forêt : pour courir, observer les canards et pique-niquer."
+    horaires: toujours
+    equipements: []
+    remarque: "Parc public. Horaires des serres de la Stadtgärtnerei non vérifiés."
+    url: https://www.bern.ch/
+    verifie_le: 2026-11-09
+
+  # --- Dedans : musées ---
+
+  - id: nmbe
+    nom: Naturhistorisches Museum
+    type: musee
+    dedans: true
+    adresse: Bernastrasse 15, 3005 Bern
+    lat: 46.94193
+    lng: 7.44945
+    prix: "Adultes 12 CHF, moins de 16 ans gratuit"
+    resume: "Dioramas d'animaux, Barry le saint-bernard, et « Pica's Nest », une salle-forêt où les enfants peuvent grimper."
+    horaires:
+      - lun: "14:00-17:00"
+        mar: "09:00-17:00"
+        mer: "09:00-18:00"
+        jeu: "09:00-17:00"
+        ven: "09:00-17:00"
+        sam: "10:00-17:00"
+        dim: "10:00-17:00"
+    feries: "10:00-17:00"
+    fermetures: ["01-01", vendredi_saint, paques, ascension, pentecote, "08-01", zibelemarit, "12-24", "12-25", "12-31"]
+    equipements: [langer, poussette, cafe, wc]
+    url: https://www.nmbe.ch/en/planing-your-vist
+    verifie_le: 2026-11-09
+
+  - id: mfk
+    nom: Museum für Kommunikation
+    type: musee
+    dedans: true
+    adresse: Helvetiastrasse 16, 3005 Bern
+    lat: 46.94183
+    lng: 7.45025
+    age_min: 2
+    prix: "Adultes 18 CHF, 6–15 ans 6 CHF, moins de 6 ans gratuit"
+    resume: "Musée très interactif, aménagé aussi pour les tout-petits ; parcours « Ratatösk » de 4 à 8 ans."
+    horaires:
+      - mar: "10:00-17:00"
+        mer: "10:00-17:00"
+        jeu: "10:00-17:00"
+        ven: "10:00-17:00"
+        sam: "10:00-17:00"
+        dim: "10:00-17:00"
+    feries: "10:00-17:00"
+    fermetures: ["08-01", "12-25"]
+    equipements: [cafe]
+    remarque: "Ouvert aussi les jours fériés (sauf 1er août et 25 décembre), même un lundi férié."
+    url: https://www.mfk.ch/besuchen/besucherinfo/oeffnungszeiten-preise
+    verifie_le: 2026-11-09
+
+  - id: creaviva
+    nom: Creaviva (Zentrum Paul Klee)
+    type: musee
+    dedans: true
+    adresse: Monument im Fruchtland 3, 3006 Bern
+    lat: 46.94902
+    lng: 7.47439
+    age_min: 4
+    prix: "Atelier ouvert payant ; expositions du Zentrum Paul Klee gratuites pour les moins de 16 ans le dimanche"
+    resume: "Musée pour enfants : atelier ouvert d'une heure sans réservation (dès 4 ans, avec un adulte jusqu'à 8 ans)."
+    horaires:
+      - mar: "10:00-17:00"
+        mer: "10:00-17:00"
+        jeu: "10:00-17:00"
+        ven: "10:00-17:00"
+        sam: "10:00-17:00"
+        dim: "10:00-17:00"
+    feries: normal
+    fermetures: ["12-24", "12-25"]
+    equipements: []
+    remarque: "Atelier ouvert : mar–ven à 14:00 et 16:00, sam–dim à 12:00, 14:00 et 16:00."
+    url: https://www.zpk.org/de/creaviva/offenes-atelier
+    verifie_le: 2026-11-09
+
+  - id: alps
+    nom: Alpines Museum (ALPS)
+    type: musee
+    dedans: true
+    adresse: Helvetiaplatz 4, 3005 Bern
+    lat: 46.94406
+    lng: 7.44818
+    prix: "Adultes 18 CHF, moins de 12 ans gratuit"
+    resume: "Parcours pour enfants et piste sonore dans « Alpensounds » ; sirop offert aux enfants au restaurant, place de jeux dans le jardin du Museumsquartier."
+    horaires:
+      - mar: "10:00-17:00"
+        mer: "10:00-17:00"
+        jeu: "10:00-17:00"
+        ven: "10:00-17:00"
+        sam: "10:00-17:00"
+        dim: "10:00-17:00"
+    feries: normal
+    fermetures: [zibelemarit, "12-24", "12-25", "12-31", "01-01"]
+    equipements: [cafe, jeux]
+    remarque: "Exposition principale en travaux ; seule « Alpensounds » est ouverte."
+    url: https://www.alps.museum/besuch
+    verifie_le: 2026-11-09
+
+  # --- Dedans : piscines ---
+
+  - id: weyermannshaus
+    nom: Hallenbad Weyermannshaus
+    type: piscine
+    dedans: true
+    adresse: Stöckackerstrasse 9, 3027 Bern
+    lat: 46.94822
+    lng: 7.40376
+    prix: "Adultes 7.50 CHF, 6–16 ans 3.80 CHF, moins de 6 ans gratuit"
+    resume: "Piscine couverte de la Ville avec un bassin d'apprentissage à 32 °C, ouverte aussi le dimanche."
+    horaires:
+      - du: "10-01"
+        au: "04-30"
+        mar: "08:00-18:00"
+        mer: "08:00-20:00"
+        jeu: "08:00-18:00"
+        ven: "08:00-20:00"
+        sam: "07:00-16:30"
+        dim: "07:00-18:00"
+    feries: ferme
+    equipements: []
+    remarque: "Bassin d'apprentissage réservé aux écoles lun/mar/jeu/ven 14:00–15:30 (sauf vacances scolaires). Horaires d'hiver ; jours fériés non vérifiés."
+    url: https://www.sportamt-bern.ch/sportanlagen/indoor-anlagen/hallenbaeder/hallenbad-weyermannshaus
+    verifie_le: 2026-11-09
+
+  - id: wyler
+    nom: Hallenbad Wyler
+    type: piscine
+    dedans: true
+    adresse: Scheibenstrasse 65, 3014 Bern
+    lat: 46.9664
+    lng: 7.45222
+    prix: "Adultes 7.50 CHF, 6–16 ans 3.80 CHF, moins de 6 ans gratuit"
+    resume: "Piscine couverte de la Ville avec un bassin d'apprentissage à 32 °C."
+    horaires:
+      - du: "10-01"
+        au: "04-30"
+        mar: "06:00-21:00"
+        mer: "11:00-21:00"
+        jeu: "06:00-21:00"
+        ven: "06:00-21:00"
+        sam: "07:00-13:30"
+    feries: ferme
+    equipements: []
+    remarque: "Bassin d'apprentissage réservé aux écoles lun/mar/jeu/ven 14:00–15:30 (sauf vacances scolaires). 06:00–07:00 avec abonnement seulement. Fermé le dimanche."
+    url: https://www.sportamt-bern.ch/sportanlagen/indoor-anlagen/hallenbaeder/hallenbad-wyler
+    verifie_le: 2026-11-09
+
+  - id: bernaqua
+    nom: Bernaqua (Westside)
+    type: piscine
+    dedans: true
+    adresse: Riedbachstrasse 98, 3027 Bern
+    lat: 46.94518
+    lng: 7.37305
+    prix: "Adultes 36 CHF (2 h), 6–15 ans 24 CHF (2 h), moins de 6 ans gratuit"
+    resume: "Parc aquatique : « Takatikiland » pour les petits, bassin de 20 cm d'eau à 33–36 °C et bateau pirate."
+    horaires:
+      - lun: "09:00-21:00"
+        mar: "09:00-21:00"
+        mer: "09:00-21:00"
+        jeu: "09:00-21:00"
+        ven: "09:00-21:00"
+        sam: "09:00-21:00"
+        dim: "09:00-21:00"
+    feries: normal
+    equipements: [cafe]
+    remarque: "Horaires du Takatikiland (le reste du bain ferme à 22:00). Ascenseur sans marches hors service jusqu'au 23 novembre 2026."
+    url: https://www.bernaqua.ch/infos/oeffnungszeiten
+    verifie_le: 2026-11-09
+
+  # --- Dedans : jeux, livres, rencontres ---
+
+  - id: bimano
+    nom: Bimano Kids
+    type: jeux
+    dedans: true
+    adresse: Zentweg 1A, 3006 Bern
+    lat: 46.95872
+    lng: 7.47257
+    age_min: 1
+    prix: "1–2 ans 5 CHF, 3–15 ans 15 CHF, adulte accompagnant 5 CHF"
+    resume: "Grande salle de jeux couverte : piscine à balles avec un requin, coin des tout-petits, toboggan tunnel."
+    horaires:
+      - lun: "09:00-18:00"
+        mar: "09:00-18:00"
+        mer: "09:00-18:00"
+        jeu: "09:00-18:00"
+        ven: "09:00-18:00"
+        sam: "10:00-18:00"
+        dim: "10:00-18:00"
+    feries: normal
+    fermetures: ["12-25", "01-01"]
+    equipements: [cafe]
+    remarque: "Chaussettes conseillées. Horaires lus dans un tableau du site sans titre clair : à confirmer lors de la première visite."
+    url: https://www.bimano.ch/kids
+    verifie_le: 2026-11-09
+
+  - id: kornhaus
+    nom: Kornhausbibliothek
+    type: bibliotheque
+    dedans: true
+    adresse: Kornhausplatz 18, 3011 Bern
+    lat: 46.94899
+    lng: 7.44734
+    prix: "gratuit (carte gratuite jusqu'à 16 ans)"
+    resume: "Bibliothèque principale au centre, avec livres et films pour enfants ; cafétéria en libre-service."
+    horaires:
+      - mar: "10:00-19:00"
+        mer: "10:00-19:00"
+        jeu: "10:00-19:00"
+        ven: "10:00-19:00"
+        sam: "10:00-17:00"
+    feries: ferme
+    equipements: [cafe]
+    url: https://www.kob.ch/standort/hauptstelle-kornhausbibliothek/
+    verifie_le: 2026-11-09
+
+  - id: breitenrain
+    nom: Bibliothèque et ludothèque Breitenrain
+    type: bibliotheque
+    dedans: true
+    adresse: Stauffacherstrasse 2, 3014 Bern
+    lat: 46.95922
+    lng: 7.45497
+    prix: "Entrée gratuite ; prêt de jeux payant (prix dans le catalogue)"
+    resume: "2000 jeux et jouets à emprunter (Duplo, Playmobil, Brio, jeux d'extérieur) et heures du conte."
+    horaires:
+      - mar: "10:00-18:00"
+        mer: "12:00-18:00"
+        jeu: "10:00-18:00"
+        ven: "10:00-18:00"
+        sam: "10:00-16:00"
+    feries: ferme
+    equipements: []
+    remarque: "Entrée par l'ascenseur du parking Coop."
+    url: https://www.kob.ch/standort/bibliothek-und-ludothek-breitenrain/
+    verifie_le: 2026-11-09
+
+  - id: familienzentrum
+    nom: Familienzentrum Bern
+    type: rencontre
+    dedans: mixte
+    adresse: Giacomettistrasse 2, 3006 Bern
+    lat: 46.94364
+    lng: 7.47452
+    prix: "2 CHF par enfant (salle de jeux et jardin, 2 enfants payants maximum par famille)"
+    resume: "Salle de jeux accompagnée, grand jardin et bistro pour les parents ; repas de midi du mardi au vendredi."
+    horaires:
+      - mar: "09:00-17:00"
+        mer: "09:00-17:00"
+        jeu: "09:00-17:00"
+        ven: "09:00-17:00"
+    feries: ferme
+    equipements: [cafe, jeux]
+    remarque: "Le lundi est réservé au groupe de jeu. Ouverture pendant les vacances scolaires non vérifiée."
+    url: https://familienzentrumbern.ch/
+    verifie_le: 2026-11-09

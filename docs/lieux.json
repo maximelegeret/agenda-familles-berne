@@ -1,0 +1,850 @@
+{
+  "mis_a_jour": "2026-11-09T22:19+01:00",
+  "lieux": [
+    {
+      "id": "tierpark",
+      "nom": "Tierpark Dählhölzli",
+      "type": "animaux",
+      "dedans": "mixte",
+      "adresse": "Tierparkweg 1, 3005 Bern",
+      "lat": 46.9341,
+      "lng": 7.44814,
+      "prix": "Parc et zoo des enfants gratuits ; Vivarium : adultes 11 CHF, 6–15 ans 7 CHF, moins de 6 ans gratuit",
+      "resume": "Ours, loups, élans au bord de l'Aar, chèvres à caresser au zoo des enfants ; le Vivarium (payant, couvert) pour les jours de pluie.",
+      "equipements": [
+        "langer",
+        "wc",
+        "cafe"
+      ],
+      "remarque": "Horaires du Vivarium (partie payante) ; le parc au bord de l'Aar et le zoo des enfants sont ouverts jour et nuit.",
+      "url": "https://tierpark-bern.ch/zoobesuch/oeffnungszeiten/",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [
+          "09:00-17:00"
+        ],
+        "2026-11-10": [
+          "09:00-17:00"
+        ],
+        "2026-11-11": [
+          "09:00-17:00"
+        ],
+        "2026-11-12": [
+          "09:00-17:00"
+        ],
+        "2026-11-13": [
+          "09:00-17:00"
+        ],
+        "2026-11-14": [
+          "09:00-17:00"
+        ],
+        "2026-11-15": [
+          "09:00-17:00"
+        ],
+        "2026-11-16": [
+          "09:00-17:00"
+        ],
+        "2026-11-17": [
+          "09:00-17:00"
+        ],
+        "2026-11-18": [
+          "09:00-17:00"
+        ],
+        "2026-11-19": [
+          "09:00-17:00"
+        ],
+        "2026-11-20": [
+          "09:00-17:00"
+        ],
+        "2026-11-21": [
+          "09:00-17:00"
+        ],
+        "2026-11-22": [
+          "09:00-17:00"
+        ],
+        "2026-11-23": [
+          "09:00-17:00"
+        ]
+      }
+    },
+    {
+      "id": "baerenpark",
+      "nom": "BärenPark",
+      "type": "animaux",
+      "dedans": false,
+      "adresse": "Grosser Muristalden 4, 3006 Bern",
+      "lat": 46.94795,
+      "lng": 7.4595,
+      "prix": "gratuit",
+      "resume": "Les ours de Berne au bord de l'Aar ; petit ascenseur incliné (BäreBähnli) et ours en bois sur lesquels grimper.",
+      "equipements": [
+        "wc"
+      ],
+      "remarque": "Les ours hibernent environ de novembre à mi-mars : on les voit rarement. Toilettes au restaurant Altes Tramdepot.",
+      "url": "https://tierpark-bern.ch/baerenpark/oeffnungszeiten/",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": true
+    },
+    {
+      "id": "boga",
+      "nom": "Jardin botanique (BOGA)",
+      "type": "nature",
+      "dedans": "mixte",
+      "adresse": "Altenbergrain 21, 3013 Bern",
+      "lat": 46.95352,
+      "lng": 7.44532,
+      "prix": "gratuit",
+      "resume": "Jardin au bord de l'Aar et serres chaudes tropicales, ouvertes toute l'année : une bouffée d'été quand il fait gris.",
+      "equipements": [],
+      "remarque": "Serres ouvertes 08:00–17:00 toute l'année. Café Fleuri seulement d'avril à octobre, les jours de beau temps.",
+      "url": "https://www.boga.unibe.ch/der_garten/besucherinnen_infos/index_ger.html",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [
+          "08:00-17:00"
+        ],
+        "2026-11-10": [
+          "08:00-17:00"
+        ],
+        "2026-11-11": [
+          "08:00-17:00"
+        ],
+        "2026-11-12": [
+          "08:00-17:00"
+        ],
+        "2026-11-13": [
+          "08:00-17:00"
+        ],
+        "2026-11-14": [
+          "08:00-17:00"
+        ],
+        "2026-11-15": [
+          "08:00-17:00"
+        ],
+        "2026-11-16": [
+          "08:00-17:00"
+        ],
+        "2026-11-17": [
+          "08:00-17:00"
+        ],
+        "2026-11-18": [
+          "08:00-17:00"
+        ],
+        "2026-11-19": [
+          "08:00-17:00"
+        ],
+        "2026-11-20": [
+          "08:00-17:00"
+        ],
+        "2026-11-21": [
+          "08:00-17:00"
+        ],
+        "2026-11-22": [
+          "08:00-17:00"
+        ],
+        "2026-11-23": [
+          "08:00-17:00"
+        ]
+      }
+    },
+    {
+      "id": "gurten",
+      "nom": "Gurten – Park im Grünen",
+      "type": "nature",
+      "dedans": false,
+      "adresse": "Gurten Kulm, 3084 Wabern",
+      "lat": 46.91932,
+      "lng": 7.43855,
+      "prix": "Parc gratuit ; funiculaire aller-retour adultes 12.60 CHF, 6–16 ans 6.30 CHF",
+      "resume": "Montée en funiculaire, grande place de jeux, petit train, voitures pour enfants et vue sur les Alpes.",
+      "equipements": [
+        "cafe",
+        "jeux"
+      ],
+      "remarque": "Funiculaire toutes les 15 min dès 07:00 (dernière montée 20:00 le dimanche). Petit train : sam–dim 10:30–16:00, en semaine 13:30–16:00, selon la météo.",
+      "url": "https://www.gurtenpark.ch/gurtenbahn",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": true
+    },
+    {
+      "id": "rosengarten",
+      "nom": "Rosengarten",
+      "type": "nature",
+      "dedans": false,
+      "adresse": "Alter Aargauerstalden, 3006 Bern",
+      "lat": 46.95121,
+      "lng": 7.4608,
+      "prix": "gratuit",
+      "resume": "Parc avec vue sur la vieille ville, place de jeux et restaurant à côté.",
+      "equipements": [
+        "jeux",
+        "cafe"
+      ],
+      "remarque": "Parc public. Restaurant Rosengarten ouvert tous les jours 09:00–23:30.",
+      "url": "https://www.rosengarten.be/",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": true
+    },
+    {
+      "id": "elfenau",
+      "nom": "Elfenau",
+      "type": "nature",
+      "dedans": false,
+      "adresse": "Elfenauweg, 3006 Bern",
+      "lat": 46.93267,
+      "lng": 7.46559,
+      "prix": "gratuit",
+      "resume": "Grand parc au bord de l'Aar, étang et forêt : pour courir, observer les canards et pique-niquer.",
+      "equipements": [],
+      "remarque": "Parc public. Horaires des serres de la Stadtgärtnerei non vérifiés.",
+      "url": "https://www.bern.ch/",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": true
+    },
+    {
+      "id": "nmbe",
+      "nom": "Naturhistorisches Museum",
+      "type": "musee",
+      "dedans": true,
+      "adresse": "Bernastrasse 15, 3005 Bern",
+      "lat": 46.94193,
+      "lng": 7.44945,
+      "prix": "Adultes 12 CHF, moins de 16 ans gratuit",
+      "resume": "Dioramas d'animaux, Barry le saint-bernard, et « Pica's Nest », une salle-forêt où les enfants peuvent grimper.",
+      "equipements": [
+        "langer",
+        "poussette",
+        "cafe",
+        "wc"
+      ],
+      "url": "https://www.nmbe.ch/en/planing-your-vist",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [
+          "14:00-17:00"
+        ],
+        "2026-11-10": [
+          "09:00-17:00"
+        ],
+        "2026-11-11": [
+          "09:00-18:00"
+        ],
+        "2026-11-12": [
+          "09:00-17:00"
+        ],
+        "2026-11-13": [
+          "09:00-17:00"
+        ],
+        "2026-11-14": [
+          "10:00-17:00"
+        ],
+        "2026-11-15": [
+          "10:00-17:00"
+        ],
+        "2026-11-16": [
+          "14:00-17:00"
+        ],
+        "2026-11-17": [
+          "09:00-17:00"
+        ],
+        "2026-11-18": [
+          "09:00-18:00"
+        ],
+        "2026-11-19": [
+          "09:00-17:00"
+        ],
+        "2026-11-20": [
+          "09:00-17:00"
+        ],
+        "2026-11-21": [
+          "10:00-17:00"
+        ],
+        "2026-11-22": [
+          "10:00-17:00"
+        ],
+        "2026-11-23": []
+      }
+    },
+    {
+      "id": "mfk",
+      "nom": "Museum für Kommunikation",
+      "type": "musee",
+      "dedans": true,
+      "adresse": "Helvetiastrasse 16, 3005 Bern",
+      "lat": 46.94183,
+      "lng": 7.45025,
+      "age_min": 2,
+      "prix": "Adultes 18 CHF, 6–15 ans 6 CHF, moins de 6 ans gratuit",
+      "resume": "Musée très interactif, aménagé aussi pour les tout-petits ; parcours « Ratatösk » de 4 à 8 ans.",
+      "equipements": [
+        "cafe"
+      ],
+      "remarque": "Ouvert aussi les jours fériés (sauf 1er août et 25 décembre), même un lundi férié.",
+      "url": "https://www.mfk.ch/besuchen/besucherinfo/oeffnungszeiten-preise",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [],
+        "2026-11-10": [
+          "10:00-17:00"
+        ],
+        "2026-11-11": [
+          "10:00-17:00"
+        ],
+        "2026-11-12": [
+          "10:00-17:00"
+        ],
+        "2026-11-13": [
+          "10:00-17:00"
+        ],
+        "2026-11-14": [
+          "10:00-17:00"
+        ],
+        "2026-11-15": [
+          "10:00-17:00"
+        ],
+        "2026-11-16": [],
+        "2026-11-17": [
+          "10:00-17:00"
+        ],
+        "2026-11-18": [
+          "10:00-17:00"
+        ],
+        "2026-11-19": [
+          "10:00-17:00"
+        ],
+        "2026-11-20": [
+          "10:00-17:00"
+        ],
+        "2026-11-21": [
+          "10:00-17:00"
+        ],
+        "2026-11-22": [
+          "10:00-17:00"
+        ],
+        "2026-11-23": []
+      }
+    },
+    {
+      "id": "creaviva",
+      "nom": "Creaviva (Zentrum Paul Klee)",
+      "type": "musee",
+      "dedans": true,
+      "adresse": "Monument im Fruchtland 3, 3006 Bern",
+      "lat": 46.94902,
+      "lng": 7.47439,
+      "age_min": 4,
+      "prix": "Atelier ouvert payant ; expositions du Zentrum Paul Klee gratuites pour les moins de 16 ans le dimanche",
+      "resume": "Musée pour enfants : atelier ouvert d'une heure sans réservation (dès 4 ans, avec un adulte jusqu'à 8 ans).",
+      "equipements": [],
+      "remarque": "Atelier ouvert : mar–ven à 14:00 et 16:00, sam–dim à 12:00, 14:00 et 16:00.",
+      "url": "https://www.zpk.org/de/creaviva/offenes-atelier",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [],
+        "2026-11-10": [
+          "10:00-17:00"
+        ],
+        "2026-11-11": [
+          "10:00-17:00"
+        ],
+        "2026-11-12": [
+          "10:00-17:00"
+        ],
+        "2026-11-13": [
+          "10:00-17:00"
+        ],
+        "2026-11-14": [
+          "10:00-17:00"
+        ],
+        "2026-11-15": [
+          "10:00-17:00"
+        ],
+        "2026-11-16": [],
+        "2026-11-17": [
+          "10:00-17:00"
+        ],
+        "2026-11-18": [
+          "10:00-17:00"
+        ],
+        "2026-11-19": [
+          "10:00-17:00"
+        ],
+        "2026-11-20": [
+          "10:00-17:00"
+        ],
+        "2026-11-21": [
+          "10:00-17:00"
+        ],
+        "2026-11-22": [
+          "10:00-17:00"
+        ],
+        "2026-11-23": []
+      }
+    },
+    {
+      "id": "alps",
+      "nom": "Alpines Museum (ALPS)",
+      "type": "musee",
+      "dedans": true,
+      "adresse": "Helvetiaplatz 4, 3005 Bern",
+      "lat": 46.94406,
+      "lng": 7.44818,
+      "prix": "Adultes 18 CHF, moins de 12 ans gratuit",
+      "resume": "Parcours pour enfants et piste sonore dans « Alpensounds » ; sirop offert aux enfants au restaurant, place de jeux dans le jardin du Museumsquartier.",
+      "equipements": [
+        "cafe",
+        "jeux"
+      ],
+      "remarque": "Exposition principale en travaux ; seule « Alpensounds » est ouverte.",
+      "url": "https://www.alps.museum/besuch",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [],
+        "2026-11-10": [
+          "10:00-17:00"
+        ],
+        "2026-11-11": [
+          "10:00-17:00"
+        ],
+        "2026-11-12": [
+          "10:00-17:00"
+        ],
+        "2026-11-13": [
+          "10:00-17:00"
+        ],
+        "2026-11-14": [
+          "10:00-17:00"
+        ],
+        "2026-11-15": [
+          "10:00-17:00"
+        ],
+        "2026-11-16": [],
+        "2026-11-17": [
+          "10:00-17:00"
+        ],
+        "2026-11-18": [
+          "10:00-17:00"
+        ],
+        "2026-11-19": [
+          "10:00-17:00"
+        ],
+        "2026-11-20": [
+          "10:00-17:00"
+        ],
+        "2026-11-21": [
+          "10:00-17:00"
+        ],
+        "2026-11-22": [
+          "10:00-17:00"
+        ],
+        "2026-11-23": []
+      }
+    },
+    {
+      "id": "weyermannshaus",
+      "nom": "Hallenbad Weyermannshaus",
+      "type": "piscine",
+      "dedans": true,
+      "adresse": "Stöckackerstrasse 9, 3027 Bern",
+      "lat": 46.94822,
+      "lng": 7.40376,
+      "prix": "Adultes 7.50 CHF, 6–16 ans 3.80 CHF, moins de 6 ans gratuit",
+      "resume": "Piscine couverte de la Ville avec un bassin d'apprentissage à 32 °C, ouverte aussi le dimanche.",
+      "equipements": [],
+      "remarque": "Bassin d'apprentissage réservé aux écoles lun/mar/jeu/ven 14:00–15:30 (sauf vacances scolaires). Horaires d'hiver ; jours fériés non vérifiés.",
+      "url": "https://www.sportamt-bern.ch/sportanlagen/indoor-anlagen/hallenbaeder/hallenbad-weyermannshaus",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [],
+        "2026-11-10": [
+          "08:00-18:00"
+        ],
+        "2026-11-11": [
+          "08:00-20:00"
+        ],
+        "2026-11-12": [
+          "08:00-18:00"
+        ],
+        "2026-11-13": [
+          "08:00-20:00"
+        ],
+        "2026-11-14": [
+          "07:00-16:30"
+        ],
+        "2026-11-15": [
+          "07:00-18:00"
+        ],
+        "2026-11-16": [],
+        "2026-11-17": [
+          "08:00-18:00"
+        ],
+        "2026-11-18": [
+          "08:00-20:00"
+        ],
+        "2026-11-19": [
+          "08:00-18:00"
+        ],
+        "2026-11-20": [
+          "08:00-20:00"
+        ],
+        "2026-11-21": [
+          "07:00-16:30"
+        ],
+        "2026-11-22": [
+          "07:00-18:00"
+        ],
+        "2026-11-23": []
+      }
+    },
+    {
+      "id": "wyler",
+      "nom": "Hallenbad Wyler",
+      "type": "piscine",
+      "dedans": true,
+      "adresse": "Scheibenstrasse 65, 3014 Bern",
+      "lat": 46.9664,
+      "lng": 7.45222,
+      "prix": "Adultes 7.50 CHF, 6–16 ans 3.80 CHF, moins de 6 ans gratuit",
+      "resume": "Piscine couverte de la Ville avec un bassin d'apprentissage à 32 °C.",
+      "equipements": [],
+      "remarque": "Bassin d'apprentissage réservé aux écoles lun/mar/jeu/ven 14:00–15:30 (sauf vacances scolaires). 06:00–07:00 avec abonnement seulement. Fermé le dimanche.",
+      "url": "https://www.sportamt-bern.ch/sportanlagen/indoor-anlagen/hallenbaeder/hallenbad-wyler",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [],
+        "2026-11-10": [
+          "06:00-21:00"
+        ],
+        "2026-11-11": [
+          "11:00-21:00"
+        ],
+        "2026-11-12": [
+          "06:00-21:00"
+        ],
+        "2026-11-13": [
+          "06:00-21:00"
+        ],
+        "2026-11-14": [
+          "07:00-13:30"
+        ],
+        "2026-11-15": [],
+        "2026-11-16": [],
+        "2026-11-17": [
+          "06:00-21:00"
+        ],
+        "2026-11-18": [
+          "11:00-21:00"
+        ],
+        "2026-11-19": [
+          "06:00-21:00"
+        ],
+        "2026-11-20": [
+          "06:00-21:00"
+        ],
+        "2026-11-21": [
+          "07:00-13:30"
+        ],
+        "2026-11-22": [],
+        "2026-11-23": []
+      }
+    },
+    {
+      "id": "bernaqua",
+      "nom": "Bernaqua (Westside)",
+      "type": "piscine",
+      "dedans": true,
+      "adresse": "Riedbachstrasse 98, 3027 Bern",
+      "lat": 46.94518,
+      "lng": 7.37305,
+      "prix": "Adultes 36 CHF (2 h), 6–15 ans 24 CHF (2 h), moins de 6 ans gratuit",
+      "resume": "Parc aquatique : « Takatikiland » pour les petits, bassin de 20 cm d'eau à 33–36 °C et bateau pirate.",
+      "equipements": [
+        "cafe"
+      ],
+      "remarque": "Horaires du Takatikiland (le reste du bain ferme à 22:00). Ascenseur sans marches hors service jusqu'au 23 novembre 2026.",
+      "url": "https://www.bernaqua.ch/infos/oeffnungszeiten",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [
+          "09:00-21:00"
+        ],
+        "2026-11-10": [
+          "09:00-21:00"
+        ],
+        "2026-11-11": [
+          "09:00-21:00"
+        ],
+        "2026-11-12": [
+          "09:00-21:00"
+        ],
+        "2026-11-13": [
+          "09:00-21:00"
+        ],
+        "2026-11-14": [
+          "09:00-21:00"
+        ],
+        "2026-11-15": [
+          "09:00-21:00"
+        ],
+        "2026-11-16": [
+          "09:00-21:00"
+        ],
+        "2026-11-17": [
+          "09:00-21:00"
+        ],
+        "2026-11-18": [
+          "09:00-21:00"
+        ],
+        "2026-11-19": [
+          "09:00-21:00"
+        ],
+        "2026-11-20": [
+          "09:00-21:00"
+        ],
+        "2026-11-21": [
+          "09:00-21:00"
+        ],
+        "2026-11-22": [
+          "09:00-21:00"
+        ],
+        "2026-11-23": [
+          "09:00-21:00"
+        ]
+      }
+    },
+    {
+      "id": "bimano",
+      "nom": "Bimano Kids",
+      "type": "jeux",
+      "dedans": true,
+      "adresse": "Zentweg 1A, 3006 Bern",
+      "lat": 46.95872,
+      "lng": 7.47257,
+      "age_min": 1,
+      "prix": "1–2 ans 5 CHF, 3–15 ans 15 CHF, adulte accompagnant 5 CHF",
+      "resume": "Grande salle de jeux couverte : piscine à balles avec un requin, coin des tout-petits, toboggan tunnel.",
+      "equipements": [
+        "cafe"
+      ],
+      "remarque": "Chaussettes conseillées. Horaires lus dans un tableau du site sans titre clair : à confirmer lors de la première visite.",
+      "url": "https://www.bimano.ch/kids",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [
+          "09:00-18:00"
+        ],
+        "2026-11-10": [
+          "09:00-18:00"
+        ],
+        "2026-11-11": [
+          "09:00-18:00"
+        ],
+        "2026-11-12": [
+          "09:00-18:00"
+        ],
+        "2026-11-13": [
+          "09:00-18:00"
+        ],
+        "2026-11-14": [
+          "10:00-18:00"
+        ],
+        "2026-11-15": [
+          "10:00-18:00"
+        ],
+        "2026-11-16": [
+          "09:00-18:00"
+        ],
+        "2026-11-17": [
+          "09:00-18:00"
+        ],
+        "2026-11-18": [
+          "09:00-18:00"
+        ],
+        "2026-11-19": [
+          "09:00-18:00"
+        ],
+        "2026-11-20": [
+          "09:00-18:00"
+        ],
+        "2026-11-21": [
+          "10:00-18:00"
+        ],
+        "2026-11-22": [
+          "10:00-18:00"
+        ],
+        "2026-11-23": [
+          "09:00-18:00"
+        ]
+      }
+    },
+    {
+      "id": "kornhaus",
+      "nom": "Kornhausbibliothek",
+      "type": "bibliotheque",
+      "dedans": true,
+      "adresse": "Kornhausplatz 18, 3011 Bern",
+      "lat": 46.94899,
+      "lng": 7.44734,
+      "prix": "gratuit (carte gratuite jusqu'à 16 ans)",
+      "resume": "Bibliothèque principale au centre, avec livres et films pour enfants ; cafétéria en libre-service.",
+      "equipements": [
+        "cafe"
+      ],
+      "url": "https://www.kob.ch/standort/hauptstelle-kornhausbibliothek/",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [],
+        "2026-11-10": [
+          "10:00-19:00"
+        ],
+        "2026-11-11": [
+          "10:00-19:00"
+        ],
+        "2026-11-12": [
+          "10:00-19:00"
+        ],
+        "2026-11-13": [
+          "10:00-19:00"
+        ],
+        "2026-11-14": [
+          "10:00-17:00"
+        ],
+        "2026-11-15": [],
+        "2026-11-16": [],
+        "2026-11-17": [
+          "10:00-19:00"
+        ],
+        "2026-11-18": [
+          "10:00-19:00"
+        ],
+        "2026-11-19": [
+          "10:00-19:00"
+        ],
+        "2026-11-20": [
+          "10:00-19:00"
+        ],
+        "2026-11-21": [
+          "10:00-17:00"
+        ],
+        "2026-11-22": [],
+        "2026-11-23": []
+      }
+    },
+    {
+      "id": "breitenrain",
+      "nom": "Bibliothèque et ludothèque Breitenrain",
+      "type": "bibliotheque",
+      "dedans": true,
+      "adresse": "Stauffacherstrasse 2, 3014 Bern",
+      "lat": 46.95922,
+      "lng": 7.45497,
+      "prix": "Entrée gratuite ; prêt de jeux payant (prix dans le catalogue)",
+      "resume": "2000 jeux et jouets à emprunter (Duplo, Playmobil, Brio, jeux d'extérieur) et heures du conte.",
+      "equipements": [],
+      "remarque": "Entrée par l'ascenseur du parking Coop.",
+      "url": "https://www.kob.ch/standort/bibliothek-und-ludothek-breitenrain/",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [],
+        "2026-11-10": [
+          "10:00-18:00"
+        ],
+        "2026-11-11": [
+          "12:00-18:00"
+        ],
+        "2026-11-12": [
+          "10:00-18:00"
+        ],
+        "2026-11-13": [
+          "10:00-18:00"
+        ],
+        "2026-11-14": [
+          "10:00-16:00"
+        ],
+        "2026-11-15": [],
+        "2026-11-16": [],
+        "2026-11-17": [
+          "10:00-18:00"
+        ],
+        "2026-11-18": [
+          "12:00-18:00"
+        ],
+        "2026-11-19": [
+          "10:00-18:00"
+        ],
+        "2026-11-20": [
+          "10:00-18:00"
+        ],
+        "2026-11-21": [
+          "10:00-16:00"
+        ],
+        "2026-11-22": [],
+        "2026-11-23": []
+      }
+    },
+    {
+      "id": "familienzentrum",
+      "nom": "Familienzentrum Bern",
+      "type": "rencontre",
+      "dedans": "mixte",
+      "adresse": "Giacomettistrasse 2, 3006 Bern",
+      "lat": 46.94364,
+      "lng": 7.47452,
+      "prix": "2 CHF par enfant (salle de jeux et jardin, 2 enfants payants maximum par famille)",
+      "resume": "Salle de jeux accompagnée, grand jardin et bistro pour les parents ; repas de midi du mardi au vendredi.",
+      "equipements": [
+        "cafe",
+        "jeux"
+      ],
+      "remarque": "Le lundi est réservé au groupe de jeu. Ouverture pendant les vacances scolaires non vérifiée.",
+      "url": "https://familienzentrumbern.ch/",
+      "verifie_le": "2026-11-09",
+      "toujours_ouvert": false,
+      "ouverture": {
+        "2026-11-09": [],
+        "2026-11-10": [
+          "09:00-17:00"
+        ],
+        "2026-11-11": [
+          "09:00-17:00"
+        ],
+        "2026-11-12": [
+          "09:00-17:00"
+        ],
+        "2026-11-13": [
+          "09:00-17:00"
+        ],
+        "2026-11-14": [],
+        "2026-11-15": [],
+        "2026-11-16": [],
+        "2026-11-17": [
+          "09:00-17:00"
+        ],
+        "2026-11-18": [
+          "09:00-17:00"
+        ],
+        "2026-11-19": [
+          "09:00-17:00"
+        ],
+        "2026-11-20": [
+          "09:00-17:00"
+        ],
+        "2026-11-21": [],
+        "2026-11-22": [],
+        "2026-11-23": []
+      }
+    }
+  ]
+}

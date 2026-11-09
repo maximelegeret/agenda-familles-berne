@@ -15,7 +15,7 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
-from agenda import ajouts
+from agenda import ajouts, lieux
 from agenda.calendrier import ecrire_ics
 from agenda.doublons import fusionner_doublons
 from agenda.filtre_enfants import completer, trier
@@ -28,6 +28,8 @@ FICHIER_AJOUTS = DOSSIER / "ajouts_manuels.yaml"
 FICHIER_OFFRES = DOSSIER / "offres_regulieres.yaml"
 FICHIER_SORTIE = DOSSIER / "docs" / "events.json"
 FICHIER_AGENDA = DOSSIER / "docs" / "agenda.ics"
+FICHIER_LIEUX = DOSSIER / "lieux.yaml"
+FICHIER_LIEUX_SORTIE = DOSSIER / "docs" / "lieux.json"
 
 # Toutes les dates du projet sont à l'heure de Berne
 FUSEAU = ZoneInfo("Europe/Zurich")
@@ -92,6 +94,17 @@ def garder_enfants(evenements, source_enfants, maintenant):
     for titre, raison in ecartes.items():
         print(f"    écarté : {titre[:60]}  ({raison})")
     return gardes
+
+
+def ecrire_lieux(maintenant):
+    """Lit lieux.yaml, calcule les horaires des 14 prochains jours et écrit docs/lieux.json."""
+    liste, erreurs = lieux.charger(FICHIER_LIEUX, aujourd_hui=maintenant.date(), nb_jours=NB_JOURS)
+    for erreur in erreurs:
+        print(f"    ⚠️  lieu écarté : {erreur}")
+    with open(FICHIER_LIEUX_SORTIE, "w", encoding="utf-8") as f:
+        json.dump({"mis_a_jour": maintenant.isoformat(timespec="minutes"), "lieux": liste},
+                  f, ensure_ascii=False, indent=2)
+    print(f"{len(liste)} lieux écrits dans {FICHIER_LIEUX_SORTIE.relative_to(DOSSIER)}")
 
 
 def main():
@@ -162,6 +175,9 @@ def main():
     # Flux d'agenda auquel on peut s'abonner depuis le téléphone
     ecrire_ics(evenements, FICHIER_AGENDA, maintenant)
     print(f"Flux d'agenda écrit dans {FICHIER_AGENDA.relative_to(DOSSIER)}")
+
+    # Lieux permanents de l'onglet « Sortir », avec leurs horaires des prochains jours
+    ecrire_lieux(maintenant)
 
 
 if __name__ == "__main__":
