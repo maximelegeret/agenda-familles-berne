@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-08T13:35+01:00",
+  "mis_a_jour": "2026-11-09T13:39+01:00",
   "sources": [
     {
       "nom": "Kornhausbibliotheken",
@@ -9,7 +9,7 @@
     {
       "nom": "Creaviva (Zentrum Paul Klee)",
       "ok": true,
-      "nb": 49
+      "nb": 44
     },
     {
       "nom": "MuseumsQuartier Bern",
@@ -19,7 +19,7 @@
     {
       "nom": "Yehudi Menuhin Forum",
       "ok": true,
-      "nb": 1
+      "nb": 0
     },
     {
       "nom": "Bühnen Bern",
@@ -29,12 +29,12 @@
     {
       "nom": "Berner Puppen Theater",
       "ok": true,
-      "nb": 29
+      "nb": 28
     },
     {
       "nom": "Schlachthaus Theater",
       "ok": true,
-      "nb": 28
+      "nb": 26
     },
     {
       "nom": "Tierpark Bern",
@@ -54,7 +54,7 @@
     {
       "nom": "Dampfzentrale Bern",
       "ok": true,
-      "nb": 2
+      "nb": 0
     },
     {
       "nom": "Botanischer Garten Bern",
@@ -71,12 +71,12 @@
     {
       "id": "creaviva-14498-regulier",
       "titre": "Karneval der Käfer: Kreativ verweilen Fünfliber-Werkstatt",
-      "debut": "2026-11-08T10:00",
+      "debut": "2026-11-10T10:00",
       "lieu_nom": "Creaviva, Zentrum Paul Klee",
       "source": "Creaviva (Zentrum Paul Klee)",
       "url_source": "https://zpk.org/de/kreativ-verweilen/karneval-der-kaefer",
       "description_courte": "Gepunktet, gestreift oder mit ganz vielen Beinchen? Mit verschiedenen Stempeln lassen wir im November kleine Käfer entstehen, die sich Schicht für Schicht zu einer fröhlichen Krabbelgesellschaft… Täglich zwischen 10:00–17:00 · Loft im Creaviva",
-      "fin": "2026-11-08T17:00",
+      "fin": "2026-11-10T17:00",
       "adresse": "Monument im Fruchtland 3, 3006 Bern",
       "latitude": null,
       "longitude": null,
@@ -96,12 +96,12 @@
     {
       "id": "creaviva-14208-regulier",
       "titre": "Vogelperspektive: Workshop Offenes Atelier",
-      "debut": "2026-11-08T14:00",
+      "debut": "2026-11-10T14:00",
       "lieu_nom": "Creaviva, Zentrum Paul Klee",
       "source": "Creaviva (Zentrum Paul Klee)",
       "url_source": "https://zpk.org/de/workshop/vogelperspektive",
       "description_courte": "Wir schneiden biomorphe Formen aus Seidenpapier aus und schichten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen, Bäumen, Teichen und allem, was darin Platz findet. Atelier 1",
-      "fin": "2026-11-08T15:00",
+      "fin": "2026-11-10T15:00",
       "adresse": "Monument im Fruchtland 3, 3006 Bern",
       "latitude": null,
       "longitude": null,
@@ -221,7 +221,7 @@
     {
       "id": "regulier-punktli-spielzimmer",
       "titre": "Pünktli – Spielzimmer",
-      "debut": "2026-11-08T00:00",
+      "debut": "2026-11-09T00:00",
       "lieu_nom": "MüZe Muri-Gümligen (Thoracherhus)",
       "source": "MüZe Muri-Gümligen",
       "url_source": "https://www.mueze-muri-guemligen.ch/treffpunkt/puenktli/",
@@ -245,81 +245,6 @@
     }
   ],
   "evenements": [
-    {
-      "id": "schlachthaus-7582-202611081500",
-      "titre": "Munterbunt (Theater für die Allerjüngsten)",
-      "debut": "2026-11-08T15:00",
-      "lieu_nom": "Schlachthaus Theater",
-      "source": "Schlachthaus Theater",
-      "url_source": "https://www.schlachthaus.ch/de/programm/theater-fuer-die-allerjuengsten-munterbunt-7581/?s=7582",
-      "description_courte": "Wie fliegt es? Welche Töne bringt es hervor? Welche Bewegungen entstehen aus einem einzigen Blatt? Wir falten, knüllen, reissen, werfen und bauen. Wir beobachten den Weg des Zeitungspapiers, wenn…",
-      "fin": null,
-      "adresse": "Rathausgasse 20/22, 3011 Bern",
-      "latitude": null,
-      "longitude": null,
-      "age_min": 1,
-      "age_max": null,
-      "age_source": "fourni",
-      "age_texte": "Ab 1 Jahren",
-      "prix": "5–33 CHF",
-      "inscription_requise": null,
-      "categorie": "spectacle",
-      "type": "événement",
-      "repetition": "",
-      "ville": "Berne",
-      "licence": "",
-      "autres_sources": []
-    },
-    {
-      "id": "schlachthaus-7403-202611081500",
-      "titre": "Im Härz (Engel&Magorrian)",
-      "debut": "2026-11-08T15:00",
-      "lieu_nom": "Schlachthaus Theater – Saal",
-      "source": "Schlachthaus Theater",
-      "url_source": "https://www.schlachthaus.ch/de/programm/engel-magorrian-im-haerz-7398/?s=7403",
-      "description_courte": "Ein Kind muss am Herzen operiert werden. Die Ärztin, der Assistenzarzt und die Operationsassistentin arbeiten Hand in Hand, es ist ein Routineeingriff. Doch dann geschehen unerwartete Dinge –…",
-      "fin": null,
-      "adresse": "Rathausgasse 20/22, 3011 Bern",
-      "latitude": null,
-      "longitude": null,
-      "age_min": 6,
-      "age_max": null,
-      "age_source": "fourni",
-      "age_texte": "Ab 6 Jahren",
-      "prix": "5–33 CHF",
-      "inscription_requise": null,
-      "categorie": "spectacle",
-      "type": "événement",
-      "repetition": "",
-      "ville": "Berne",
-      "licence": "",
-      "autres_sources": []
-    },
-    {
-      "id": "menuhin-743-202611081600",
-      "titre": "Peter und der Wolf",
-      "debut": "2026-11-08T16:00",
-      "lieu_nom": "Yehudi Menuhin Forum",
-      "source": "Yehudi Menuhin Forum",
-      "url_source": "https://menuhinforum.ch/events/peter-und-der-wolf/",
-      "description_courte": "Familienkonzert – Sergei Prokofiews Musikmärchen mit dem Anemoi Holzbläserquintett und der Schauspielerin Katharina Lienhard als Sprecherin",
-      "fin": null,
-      "adresse": "Helvetiaplatz 6, 3005 Bern",
-      "latitude": null,
-      "longitude": null,
-      "age_min": null,
-      "age_max": null,
-      "age_source": null,
-      "age_texte": "",
-      "prix": "gratuit",
-      "inscription_requise": null,
-      "categorie": "musique",
-      "type": "événement",
-      "repetition": "",
-      "ville": "Berne",
-      "licence": "",
-      "autres_sources": []
-    },
     {
       "id": "tierpark-maerli-lose-und-tierli-baschtle-2-202611111400",
       "titre": "Märli lose und Tierli baschtle",
