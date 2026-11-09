@@ -1,6 +1,8 @@
 # Environnement Python local (recréé avec requirements.txt)
 .venv/
 __pycache__/
+# Jetons et clés pour les essais locaux (jamais sur GitHub)
+.env
 .pytest_cache/
 # Fichiers du Mac
 .DS_Store

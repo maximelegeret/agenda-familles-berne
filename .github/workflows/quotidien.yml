@@ -39,6 +39,9 @@ jobs:
 
       - name: Récupérer les événements
         run: python recuperer.py
+        env:
+          # Jeton de l'API Eventfrog, rangé dans les secrets du dépôt (jamais dans le code)
+          EVENTFROG_TOKEN: ${{ secrets.EVENTFROG_TOKEN }}
 
       - name: Enregistrer events.json et agenda.ics s'ils ont changé
         run: |

@@ -7,6 +7,7 @@ Lancement :  python recuperer.py
 
 import importlib
 import json
+import os
 import traceback
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -32,6 +33,23 @@ FICHIER_AGENDA = DOSSIER / "docs" / "agenda.ics"
 FUSEAU = ZoneInfo("Europe/Zurich")
 # On garde les événements des 14 prochains jours
 NB_JOURS = 14
+
+
+def charger_env():
+    """
+    Lit le fichier local .env (s'il existe) et met ses lignes NOM=valeur dans l'environnement.
+    Sert aux essais sur l'ordinateur : .env contient les jetons (ex. EVENTFROG_TOKEN) et n'est
+    jamais envoyé sur GitHub (.gitignore). Sur GitHub, les jetons viennent des secrets du dépôt.
+    """
+    fichier = DOSSIER / ".env"
+    if not fichier.exists():
+        return
+    for ligne in fichier.read_text(encoding="utf-8").splitlines():
+        ligne = ligne.strip()
+        if ligne and not ligne.startswith("#") and "=" in ligne:
+            nom, valeur = ligne.split("=", 1)
+            # Une valeur déjà présente dans l'environnement reste prioritaire
+            os.environ.setdefault(nom.strip(), valeur.strip().strip('"').strip("'"))
 
 
 def charger_sources():
@@ -77,6 +95,7 @@ def garder_enfants(evenements, source_enfants, maintenant):
 
 
 def main():
+    charger_env()
     maintenant = datetime.now(FUSEAU)
     sources = charger_sources()
     evenements = []
