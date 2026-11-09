@@ -93,4 +93,9 @@ sources:
   - nom: Eventfrog
     lecteur: eventfrog
     url: https://api.eventfrog.net/public/v1/events
-    actif: false   # étape 12, quand le jeton sera arrivé
+    actif: true
+    pour_enfants: true   # rubrique « Kinderveranstaltungen » ; le tri par âge écarte quand même les 11 ans et plus
+    rubriques: [906]     # Kinderveranstaltungen, avec ses sous-rubriques (liste : /public/v1/rubrics)
+    rayon_km: 15         # autour du centre de Berne
+    # Jeux de piste payants sur smartphone, répétés chaque jour (choix de Maxime, 9 nov. 2026)
+    organisateurs_exclus: [CityQuest]

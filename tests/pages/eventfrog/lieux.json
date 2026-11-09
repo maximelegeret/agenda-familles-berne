@@ -1,0 +1,198 @@
+{
+ "totalNumberOfResources": 9,
+ "locations": [
+  {
+   "id": "24993",
+   "title": {
+    "de": "Theater Matte",
+    "en": null,
+    "fr": "Theater Matte"
+   },
+   "url": "https://eventfrog.ch/fr/locations/Theater-Matte-24993.html",
+   "descriptionAsHTML": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "addressLine": "Mattenenge 1",
+   "country": "CH",
+   "zip": "3011",
+   "city": "Bern",
+   "lat": 46.9491997,
+   "lng": 7.4580302,
+   "modifyDate": "2025-04-28T01:30:35Z"
+  },
+  {
+   "id": "6625918298309554651",
+   "title": {
+    "de": "Japanisches Informations- und Kulturzentrum",
+    "en": null,
+    "fr": "Japanisches Informations- und Kulturzentrum"
+   },
+   "url": "https://eventfrog.ch/fr/locations/Japanisches-Informations--und-Kulturzentrum-6625918298309554651.html",
+   "descriptionAsHTML": {
+    "de": "Do/Fr/Mo-Mi: 9-12.15, 13.45-17 Uhr",
+    "en": null,
+    "fr": null
+   },
+   "addressLine": "Engestrasse 43",
+   "country": "CH",
+   "zip": "3012",
+   "city": "Bern",
+   "lat": 46.9599636,
+   "lng": 7.4390515,
+   "websiteUrl": "https://www.ch.emb-japan.go.jp/itpr_de/kultur.html",
+   "modifyDate": "2025-05-11T23:29:46Z"
+  },
+  {
+   "id": "6625925331536605749",
+   "title": {
+    "de": "Berner Generationenhaus",
+    "en": null,
+    "fr": "Berner Generationenhaus"
+   },
+   "url": "https://eventfrog.ch/fr/locations/Berner-Generationenhaus-6625925331536605749.html",
+   "descriptionAsHTML": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "addressLine": "Bahnhofplatz 2",
+   "country": "CH",
+   "zip": "3011",
+   "city": "Bern",
+   "lat": 46.9480019,
+   "lng": 7.43962,
+   "websiteUrl": "www.begh.ch",
+   "modifyDate": "2026-07-03T09:09:20Z"
+  },
+  {
+   "id": "7031391794056005221",
+   "title": {
+    "de": "Tojo Theater",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/locations/Tojo-Theater-7031391794056005221.html",
+   "descriptionAsHTML": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "addressLine": "Neubrückstrasse 8",
+   "country": "CH",
+   "zip": "3001",
+   "city": "Bern",
+   "lat": 46.95296,
+   "lng": 7.44032,
+   "websiteUrl": "https://www.tojo.ch",
+   "modifyDate": "2025-04-28T04:24:06Z"
+  },
+  {
+   "id": "7284179023592132414",
+   "title": {
+    "de": "PROGR",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/locations/PROGR-7284179023592132414.html",
+   "descriptionAsHTML": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "addressLine": "Waisenhausplatz 30",
+   "country": "CH",
+   "zip": "3011",
+   "city": "Bern",
+   "lat": 46.9500693,
+   "lng": 7.4439467,
+   "modifyDate": "2026-01-28T08:12:20Z"
+  },
+  {
+   "id": "7403038733505664295",
+   "title": {
+    "de": "Schlössli Mattstetten",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/locations/Schloessli-Mattstetten-7403038733505664295.html",
+   "descriptionAsHTML": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "addressLine": "Bäriswilstrasse 15",
+   "country": "CH",
+   "zip": "3322",
+   "city": "Mattstetten",
+   "lat": 47.0278336,
+   "lng": 7.517162599999999,
+   "modifyDate": "2026-01-12T10:01:55Z"
+  },
+  {
+   "id": "7481365301419899945",
+   "title": {
+    "de": "Rathauspl. 2",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/locations/Rathauspl.-2-7481365301419899945.html",
+   "descriptionAsHTML": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "addressLine": "Rathausplatz 2",
+   "country": "CH",
+   "zip": "3011",
+   "city": "Bern",
+   "lat": 46.9487259,
+   "lng": 7.452323600000001,
+   "modifyDate": "2026-07-10T15:14:51Z"
+  },
+  {
+   "id": "7486368579736058045",
+   "title": {
+    "de": "Bern - Startpunkt frei wählbar in der Stadt",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/locations/Bern---Startpunkt-frei-waehlbar-in-der-Stadt-7486368579736058045.html",
+   "descriptionAsHTML": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "addressLine": "Neuengasse 24",
+   "country": "CH",
+   "zip": "3011",
+   "city": "Bern",
+   "lat": 46.9491139,
+   "lng": 7.4424342,
+   "modifyDate": "2026-07-24T10:36:07Z"
+  },
+  {
+   "id": "7506290539660086535",
+   "title": {
+    "de": "Famlienzentrum Bern",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/locations/Famlienzentrum-Bern-7506290539660086535.html",
+   "descriptionAsHTML": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "addressLine": "Giacomettistrasse 2",
+   "country": "CH",
+   "zip": "3006",
+   "city": "Bern",
+   "lat": 46.9436403,
+   "lng": 7.4745215,
+   "websiteUrl": "https://familienzentrumbern.ch/",
+   "modifyDate": "2026-09-17T09:58:45Z"
+  }
+ ]
+}

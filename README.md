@@ -7,12 +7,16 @@ Version 1, à usage personnel.
 
 1. `recuperer.py` lit chaque source listée dans `sources.yaml` (bibliothèques, Creaviva, MuseumsQuartier,
    Menuhin Forum, Bühnen Bern, Berner Puppen Theater, Schlachthaus, Tierpark, Musée d'histoire naturelle,
-   MüZe Muri-Gümligen, Dampfzentrale, Jardin botanique), ne garde que les activités pour enfants,
+   MüZe Muri-Gümligen, Dampfzentrale, Jardin botanique, Kunstmuseum, Eventfrog), ne garde que les activités pour enfants,
    fusionne les doublons et écrit le résultat dans `docs/events.json`. Les offres sans dates
    (ex. le Pünktli) viennent de `offres_regulieres.yaml`.
 2. La page `docs/index.html` affiche ce fichier, avec des filtres (quand, prix, type).
 
 Il n'y a ni serveur ni base de données : seulement des fichiers.
+
+Eventfrog demande un jeton : en local, il est dans le fichier `.env` (`EVENTFROG_TOKEN=…`, jamais envoyé
+sur GitHub) ; pour la mise à jour de nuit, dans le secret GitHub `EVENTFROG_TOKEN`. Sans jeton, seule
+cette source est sautée.
 
 ## Les commandes utiles
 

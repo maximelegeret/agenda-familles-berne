@@ -29,7 +29,11 @@ Document de cadrage : « Agenda Familles Berne – Cadrage V1 » (6 nov. 2026). 
 - **Outil gh** : installé dans `/opt/homebrew/bin/gh` (pas dans le PATH du terminal de Maxime).
 - **Python 3.12** (Homebrew), environnement virtuel dans `.venv/`.
 - **Tri enfants/adultes** : mots-clés uniquement en V1. L'API Claude viendra plus tard, dans une étape dédiée.
-- **Eventfrog** : l'API exige un jeton (Bearer). Demande envoyée depuis le Gmail de Maxime à support@eventfrog.net le 8 nov. 2026 (texte validé par Maxime) ; réponse attendue. Le jeton ira dans les secrets GitHub.
+- **Eventfrog** (actif depuis le 9 nov. 2026) : jeton « Public API-Key » créé par Maxime dans son compte Eventfrog, rangé dans `.env` (local, ignoré par git) et dans le secret GitHub `EVENTFROG_TOKEN`. `recuperer.py` lit `.env` au démarrage. Ne jamais afficher ni écrire le jeton ailleurs.
+  - Réponse d'Eventfrog (9 nov. 2026) : usage validé. CGU § 17 : contenus repris tels quels, lien vers la page Eventfrog de chaque activité, mise à jour quotidienne, pas de transmission à des tiers, crédits `emblemCredits` si images (on n'en affiche pas). Limites : 30 requêtes/min, 2000/jour.
+  - Leur demande : si un organisateur veut ajouter un événement, le renvoyer vers Eventfrog (saisie gratuite) ; **ne pas créer de formulaire de saisie**.
+  - Choix de Maxime : rubrique 906 « Kinderveranstaltungen » entière, rayon 15 km ; organisateur CityQuest écarté (jeux de piste payants répétés chaque jour).
+  - Les tests se lancent avec `python -m pytest` (un simple `pytest` ne trouve pas le module `agenda`).
 - **Offres régulières** : déduites des séances hebdomadaires (`agenda/regulier.py`), sauf les spectacles (séries limitées, restent jour par jour) ; les offres sans dates sont écrites à la main dans `offres_regulieres.yaml` (ex. Pünktli du MüZe).
 - **Images** : pas d'images des sources (Eventfrog interdit le lien direct, site public). À la place : illustrations dessinées en SVG (`docs/illustrations.js`), une par type d'activité + une scène bernoise.
 - **Design** (7 nov. 2026) : univers « appli chaleureuse » choisi par Maxime avec le skill Impeccable (`.claude/skills/impeccable`, copie manuelle, télémétrie coupée). Produit décrit dans `PRODUCT.md`, système visuel dans `DESIGN.md` : **les lire avant toute modification de la page**. Police Figtree auto-hébergée (`docs/fonts/`, licence OFL).
@@ -42,7 +46,7 @@ Document de cadrage : « Agenda Familles Berne – Cadrage V1 » (6 nov. 2026). 
 ## Sources de la vague 1 (comment les lire)
 | Source | Méthode |
 |---|---|
-| Eventfrog | API `api.eventfrog.net/public/v1/events` (jeton requis), filtres `rubId`, `lat`/`lng`/`r`, `from`/`to` |
+| Eventfrog | API `api.eventfrog.net/public/v1/events` (jeton requis), `rubId=906`, `lat`/`lng`/`r`, `from`/`to`, `page` ; lieux via `/public/v1/locations?id=…` (adresse + coordonnées) |
 | Kornhausbibliotheken | Pages `www.kob.ch/agenda/` + fiches `/veranstaltung/<slug>/` (WordPress) |
 | Creaviva | Pages `zpk.org/de/creaviva` ; Familienmorgen = offre régulière (dimanche 10:15) |
 | MuseumsQuartier | Page `mqb.ch/en/agenda`, libellé « Children & Family » ; **10 s entre requêtes** (robots.txt) |
@@ -67,7 +71,7 @@ Plan détaillé : `~/.claude/plans/lexical-juggling-flute.md`. Réglages personn
 - Lot 1 : Kunstmuseum (lecteur Creaviva, espace 7), favoris, ajout à l'agenda (.ics + flux `docs/agenda.ics`), partage, filtres âge des enfants et moment de la journée.
 - Lot 2 : `lieux.yaml` (coordonnées, dedans/dehors), carte Leaflet/OSM, distance depuis le domicile.
 - Lot 3 : résumé du week-end par mail le jeudi (GitHub Actions + mot de passe d'application Gmail en secret).
-- Lot 4 : Eventfrog (jeton), idées « jour de pluie », places de jeux (open data), IA Claude (cas flous + sites sans agenda lisible).
+- Lot 4 : Eventfrog (fait le 9 nov. 2026), idées « jour de pluie », places de jeux (open data), IA Claude (cas flous + sites sans agenda lisible).
 
 ## Points ouverts
 - Licence kob.ch : le cadrage dit CC BY-SA 4.0, les mentions légales du site exigent un accord écrit. OK en usage perso ; à clarifier avant toute ouverture au public.
@@ -77,5 +81,5 @@ Plan détaillé : `~/.claude/plans/lexical-juggling-flute.md`. Réglages personn
 ```bash
 source .venv/bin/activate      # activer l'environnement Python
 python recuperer.py            # récupérer les événements
-pytest                         # lancer les tests
+python -m pytest               # lancer les tests
 ```

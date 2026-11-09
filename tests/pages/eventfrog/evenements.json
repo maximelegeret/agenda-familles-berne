@@ -1,0 +1,767 @@
+{
+ "totalNumberOfResources": 18,
+ "events": [
+  {
+   "id": "7481364052586801103",
+   "groupId": "7481364046526029566",
+   "rubricId": 48,
+   "title": {
+    "de": "Harry P.Otter und die Zauberprüfung",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.de/de/p/kinderveranstaltungen/familienveranstaltungen/harry-p-otter-und-die-zauberpruefung-bern-7481364052586801103.html",
+   "organizerId": "5108415",
+   "organizerName": "CityQuest-Games",
+   "websiteUrl": "https://www.cityquest-games.de",
+   "presaleLink": "https://eventfrog.de/de/p/kinderveranstaltungen/familienveranstaltungen/harry-p-otter-und-die-zauberpruefung-bern-7481364052586801103.html",
+   "emblemCredits": "Ki",
+   "begin": "2026-11-09T09:00:00+01:00",
+   "end": "2026-11-09T23:00:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": false,
+   "littleTicketsLeft": false,
+   "soldOut": false,
+   "lowestTicketPrice": 4.9,
+   "locationIds": [
+    "7481365301419899945"
+   ],
+   "locationAlias": {
+    "de": "Bern - Startpunkt frei wählbar innerhalb der Stadt",
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-11-01T11:59:00Z",
+   "shortDescription": {
+    "de": "Die 60-minütige Outdoor-Rätselrallye lädt dazu ein, mit Smartphone und GPS magische Aufgaben in der Umgebung zu lösen.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p>Tauche ein in das magischste Abenteuer deiner Stadt! Bei der 60-minütigen Outdoor-Rätselrallye mit Harry P. Otter wird deine Umgebung zum Zauberspielfeld. Mit deinem Smartphone, GPS und Internet löst du knifflige Fragen und lustige Foto-Herausforderungen rund um die Welt des Zaubers.\n <br>\n <br>\n <strong>Highlights:</strong></p>\n<ul>\n <li>Spiele flexibel wann und wo du willst – in jeder Stadt, Region bis 31.12.2026</li>\n <li>1 Ticket gilt für ein Gerät (Smartphone oder Tablet)</li>\n <li>Mittels GPS und Internet werden die Meter zur nächsten Aufgabe&nbsp;gemessen - Bewegung und Rätselspaß&nbsp; in&nbsp;einem Spiel!</li>\n <li>Nach dem Ticketkauf erhältst du die Info zu der benötigten&nbsp;Spiel-App und deinen Zugangscode zum Start&nbsp;</li>\n <li>Teste dein Wissen und besteh die Zauberprüfung!</li>\n</ul>\n<p>\n <br>\n Bereit für magische Momente? Hol dir dein Ticket und starte dein Abenteuer jetzt!\n <br>\n <br>\n Achtung: Ticket nicht stornier- oder umbuchbar, da nach der Buchung automatisch der Zugang übermittelt wird und dieser bis 31.12.2026 eingelöst werden kann.\n</p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7486368089333886917",
+   "groupId": "7486368083071787989",
+   "rubricId": 48,
+   "title": {
+    "de": "B.ARBIE in Not",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.at/de/p/kinderveranstaltungen/familienveranstaltungen/b-arbie-in-not-bern-7486368089333886917.html",
+   "organizerId": "5437210",
+   "organizerName": "CityQuest-Games by VPA4U",
+   "websiteUrl": "https://www.cityquest-games.de",
+   "presaleLink": "https://eventfrog.at/de/p/kinderveranstaltungen/familienveranstaltungen/b-arbie-in-not-bern-7486368089333886917.html",
+   "emblemCredits": "pexel",
+   "begin": "2026-11-10T09:00:00+01:00",
+   "end": "2026-11-10T20:00:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": false,
+   "littleTicketsLeft": false,
+   "soldOut": false,
+   "lowestTicketPrice": 9.9,
+   "locationIds": [
+    "7486368579736058045"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-10-22T17:09:21Z",
+   "shortDescription": {
+    "de": "Barbie hat ihre Münzen verloren. Sie sind im Ort verstreut und wurden zum Teil von Schurken aufgesammelt. Wir wollen Barbie helfen sie einzusammeln und von den Gaunern wieder zurückzuerobern.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p>Barbie&nbsp;war&nbsp;auf&nbsp;dem&nbsp;Weg&nbsp;zur&nbsp;Bank,&nbsp;um&nbsp;ihre&nbsp;Münzen,&nbsp;die&nbsp;sie&nbsp;in&nbsp;den&nbsp;letzten&nbsp;Wochen&nbsp;gesammelt&nbsp;und&nbsp;verdient&nbsp;hat,&nbsp;hinzubringen&nbsp;und&nbsp;auf&nbsp;ihr&nbsp;Konto&nbsp;einzuzahlen.</p>\n<p>Sie&nbsp;hat&nbsp;leider&nbsp;nicht&nbsp;bemerkt,&nbsp;dass&nbsp;die&nbsp;Tasche,&nbsp;in&nbsp;der&nbsp;sie&nbsp;sie&nbsp;gesammelt&nbsp;hat&nbsp;und&nbsp;mit&nbsp;der&nbsp;sie&nbsp;sie&nbsp;hinbringen&nbsp;wollte,&nbsp;ein&nbsp;Loch&nbsp;hatte.&nbsp;Jetzt&nbsp;hat&nbsp;sie&nbsp;am&nbsp;Weg&nbsp;eine&nbsp;Münze&nbsp;nach&nbsp;der&nbsp;anderen&nbsp;verloren.</p>\n<p>Barbie&nbsp;ist&nbsp;traurig&nbsp;und&nbsp;weint.&nbsp;Sie&nbsp;denkt,&nbsp;dass&nbsp;das&nbsp;ihre&nbsp;Münzen&nbsp;nun&nbsp;für&nbsp;immer&nbsp;weg&nbsp;sind.</p>\n<p>Ich&nbsp;denke&nbsp;wir&nbsp;können&nbsp;ihr&nbsp;helfen.&nbsp;vielleicht&nbsp;finden&nbsp;wir&nbsp;ihre&nbsp;Münzen.&nbsp;Vielleicht&nbsp;können&nbsp;wir&nbsp;sie&nbsp;zurückerlangen.</p>\n<p>Ein&nbsp;paar&nbsp;Schurken&nbsp;habe&nbsp;ich&nbsp;zwar&nbsp;gesehen,&nbsp;die&nbsp;welche&nbsp;eingepackt&nbsp;haben,&nbsp;doch&nbsp;vielleicht&nbsp;lassen&nbsp;sie&nbsp;sich&nbsp;auf&nbsp;ein&nbsp;Spiel&nbsp;ein,&nbsp;um&nbsp;sie&nbsp;zurückzugewinnen.&nbsp;Sie&nbsp;dürfen&nbsp;uns&nbsp;fragen&nbsp;und&nbsp;Aufgaben&nbsp;stellen,&nbsp;meistern&nbsp;wir&nbsp;diese,&nbsp;kriegen&nbsp;wir&nbsp;die&nbsp;Münze.&nbsp;Wenn&nbsp;wir&nbsp;es&nbsp;nicht&nbsp;schaffen,&nbsp;dann&nbsp;bleibt&nbsp;die&nbsp;Münze&nbsp;verloren.</p>\n<p>Gemeinsam&nbsp;sind&nbsp;wir&nbsp;doch&nbsp;stark, oder? Wollen wir Barbie helfen wieder ihre Münzen zu bekommen?\n <br>\n <br>\n Diese selbstgeführte Schnitzeljagd begeistert alle Mädchen aber auch Jungs, da Abenteuer Rätsel und Suche miteinander vereint.</p>\n<p>&nbsp;</p>\n<p>Das Spiel kann überall gestartet werden nach Kauf des Tickets und Übermittlung der Zugangsdaten.</p>\n<p>Ab circa 6 Jahren geeignet.</p>\n<p>Es wird ein Smartphone mit GPS und Internet benötigt. Es muss eine App installiert werden, um dann das Spiel jederzeit am gewählten Tag starten zu können. Es ist kein Spielleiter vor Ort. Dafür können Sie das Spiel am Spieltag jederzeit starten. Das Spiel beläuft sich auf max. 2 Stunden. Es wird spaziert und gerätselt und gesammelt.</p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7506313642909911374",
+   "groupId": "0",
+   "rubricId": 57,
+   "title": {
+    "de": "Comics zeichnen",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/kurs/comics-zeichnen-bern-7506313642909911374.html",
+   "organizerName": "Familienzentrum Bern",
+   "presaleLink": "https://familienzentrumbern.ch/kurs/comics-zeichnen-november-1111/",
+   "presaleText": "Die Teilnahme kostet Fr. 25.- pro Kind\nBezahlung vor Ort Bar/Twint",
+   "emblemCredits": "KI generiertes Bild",
+   "begin": "2026-11-11T14:00:00+01:00",
+   "end": "2026-11-11T16:30:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "7506290539660086535"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-09-17T11:53:19Z",
+   "shortDescription": {
+    "de": "Am Nachmittag lernen Kinder ab 8 Jahre die Grundlagen des Comiczeichnens und erstellen einen eigenen Mini-Comic.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p>Erfindest du gerne Figuren und Geschichten? Dann ist der Comic-Kurs das Richtige für dich!</p>\n<p>An diesem Nachmittag lernst du die Grundlagen des Comiczeichnens kennen und machst deinen eigenen Mini-Comic.</p>\n<p>Da viel Zeichnen hungrig macht, werden wir in der Pause ein zVieri bereitstellen.</p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7511389943266032475",
+   "groupId": "7507730945107062034",
+   "rubricId": 48,
+   "title": {
+    "de": "Lachyoga Spezial: Familien",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/familienveranstaltungen/lachyoga-spezial-familien-bern-7511389943266032475.html",
+   "organizerId": "1658118",
+   "organizerName": "Berner Generationenhaus",
+   "presaleLink": "https://eventfrog.ch/de/p/kinderveranstaltungen/familienveranstaltungen/lachyoga-spezial-familien-bern-7511389943266032475.html",
+   "emblemCredits": "Berner Generationenhaus",
+   "begin": "2026-11-11T15:00:00+01:00",
+   "end": "2026-11-11T16:00:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": false,
+   "littleTicketsLeft": false,
+   "soldOut": true,
+   "lowestTicketPrice": 0.0,
+   "locationIds": [
+    "6625925331536605749"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-11-09T08:14:33Z",
+   "shortDescription": {
+    "de": "In dieser Spezial-Ausgabe dürfen (Gross-)Eltern oder andere Bezugspersonen mit ihren Kindern zwischen 6 und 12 Jahren Momente der Leichtigkeit erleben.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p><strong>Lachen ist gesund – und verbindet! In dieser Spezial-Ausgabe dürfen (Gross-)Eltern oder andere Bezugspersonen mit ihren Kindern Momente der Leichtigkeit erleben und bekommen Impulse wie Lachen auch im Alltag genutzt werden kann.&nbsp;</strong></p>\n<p>In dieser besonderen Lachyoga-Stunde sind Erwachsene und Kinder von 6 bis 12 Jahren als Tandem eingeladen. Spielerische Übungen zeigen, wie Lachen im Alltag durch stressige Momente helfen kann und schaffen Raum für neue Energie.&nbsp;</p>\n<p>Es sind keine Vorkenntnisse nötig. Der Einstieg ist jederzeit möglich.&nbsp;</p>\n<p>Teilnahme kostenlos (Kollekte).&nbsp; Es ist eine Anmeldung erforderlich.</p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7506319521373795817",
+   "groupId": "0",
+   "rubricId": 57,
+   "title": {
+    "de": "5.- Bastelstunde: Masken (3006 Bern)",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/kurs/5-bastelstunde-masken-3006-bern-bern-7506319521373795817.html",
+   "organizerId": "4685215",
+   "organizerName": "Familienzentrum Bern",
+   "presaleLink": "https://familienzentrumbern.ch/kurs/5-bastelstunde-1211/",
+   "presaleText": "Kosten pro Kind Fr. 5.-\nBezahlung vor Ort Bar",
+   "emblemCredits": "Unsplash: Jorge Franganillo",
+   "begin": "2026-11-12T15:30:00+01:00",
+   "end": "2026-11-12T16:30:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "7506290539660086535"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-09-17T12:22:17Z",
+   "shortDescription": {
+    "de": "Basteln und Geschichten hören: Kinder gestalten kreative Werke aus verschiedensten Materialien, begleitet von Stephanie. Empfohlen ab 4 Jahre",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p>Komm, lass uns gemeinsam basteln! Passend zur Jahreszeit kannst du Schönes aus verschiedenen Materialien gestalten.</p>\n<p>Zum Schluss wartet eine spannende Geschichte auf dich – ein gemütlicher Ausklang nach dem Basteln.</p>\n<p>Wenn du noch nicht alleine kommen möchtest, darf dich gerne jemand begleiten und wenn du Unterstützung brauchst, ist Stephanie für dich da.</p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7523690087055420171",
+   "groupId": "7523690385782098456",
+   "rubricId": 54,
+   "title": {
+    "de": "Pica & Poco",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/kindertheater/pica-poco-bern-7523690087055420171.html",
+   "organizerName": "Theater Matte & DAS Kindertheater Bern",
+   "presaleLink": "https://theatermatte.ch",
+   "presaleText": "Tickets sind online und telefonisch erhältlich. \nwww.theatermatte.ch oder 031 901 38 80",
+   "emblemCredits": "PICA & POCO von DAS Kindertheater Bern, Foto: Jascha Gysin",
+   "begin": "2026-11-14T14:00:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "24993"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-11-04T10:31:48Z",
+   "shortDescription": {
+    "de": "Ein heiteres und liebevolles Theatererlebnis für alle Menschen ab 3 Jahren. Mit Humor, Poesie und jeder Menge Entdeckungslust für die ganze Familie. Von und mit Livia Franz und Markus Maria Enggist.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p><strong>Uraufführung von und mit Livia Franz und Markus Maria Enggist\n  <br> Zwei Menschen. Ein Bahnsteig. Kein Zug in Sicht – dafür umso mehr Möglichkeiten.</strong></p>\n<p>Pica und Poco begegnen einander auf einem Bahnsteig. Der Zug verspätet sich. Die Zeit scheint stillzustehen. Und da steht ein Koffer – ganz allein. Wem gehört er? Was verbirgt sich darin? Welche Geschichten trägt er mit sich? Oder ist vielleicht gerade das Warten das eigentliche Spiel?</p>\n<p>Zwischen Gleisänderungen, Lautsprecherdurchsagen und überraschenden Momenten wird gestaunt, getanzt, gespielt – und immer wieder herzlich gelacht. Pica und Poco lernen einander kennen, teilen Gedanken, Wünsche und Sorgen und entdecken, dass sich manches leichter weitertragen lässt, wenn jemand anderes ein Stück des Weges mitgeht. Mit clowneskem Charme, viel Fantasie und einer grossen Portion Spielfreude entsteht eine poetische Welt, in der aus kleinen Momenten grosse Geschichten wachsen, aus Zufällen neue Möglichkeiten und aus dem Warten ein fröhliches Spiel, das die Welt mit einem Augenzwinkern auf den Kopf stellt.</p>\n<p>PICA &amp; POCO ist ein heiteres und liebevolles Theatererlebnis für alle Menschen ab 3 Jahren. Mit Humor, Poesie und jeder Menge Entdeckungslust lädt das Stück Gross und Klein zum Staunen, Mitfiebern und Mitlachen ein – und erzählt davon, dass die schönsten Abenteuer manchmal genau dort beginnen, wo man sie am wenigsten erwartet.</p>\n<p><strong>Stück von:</strong> Livia Franz und Markus Maria Enggist</p>\n<p><strong>Coaching: </strong>Marco Cupellari, Perpetuomobileteatro, Locarno\n <br>\n <strong>Oeil exterieur:</strong> Miriam Jenni und Adamo Guerriero</p>\n<p><strong>Schauspiel: </strong>Livia Franz und Markus Maria Enggist\n <br>\n <strong>Die Stimme:</strong> Silvain Ernst</p>\n<p><strong>Kostüm:</strong> Katrin Schilt<strong> | Technik: </strong>Iris Mundle</p>\n<p><strong>Eine Co-Produktion mit</strong> <a href=\"https://daskindertheater.ch\" target=\"_blank\" rel=\"nofollow\">daskindertheater.ch</a></p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7431272809903443952",
+   "groupId": "0",
+   "rubricId": 49,
+   "title": {
+    "de": "Drei Frauen - Drei Stimmen Herbstmärchen für Gross und Klein",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/ferienprogramm/drei-frauen-drei-stimmen-herbstmaerchen-fuer-gross-und-klein-mattstetten-7431272809903443952.html",
+   "organizerId": "3763896",
+   "organizerName": "Sabine Heiz-Wullschleger",
+   "presaleLink": "https://eventfrog.ch/de/p/kinderveranstaltungen/ferienprogramm/drei-frauen-drei-stimmen-herbstmaerchen-fuer-gross-und-klein-mattstetten-7431272809903443952.html",
+   "emblemCredits": "Sabine Heiz",
+   "begin": "2026-11-14T14:00:00+01:00",
+   "end": "2026-11-14T15:00:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": false,
+   "littleTicketsLeft": false,
+   "soldOut": false,
+   "lowestTicketPrice": 10.0,
+   "locationIds": [
+    "7403038733505664295"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-04-23T08:30:15Z",
+   "shortDescription": {
+    "de": "Drei Frauen erzählen lebendige Herbstmärchen für Gross und Klein, gefolgt von einem gemeinsamen Znüni.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p><strong>Herbstmärchen für Gross &amp; Klein</strong></p>\n<p>Wenn die Blätter golden leuchten und die Tage gemütlicher werden, ist die perfekte Zeit für Geschichten. Erlebe einen stimmungsvollen Märchennachmittag mit lebendig erzählten Herbstmärchen voller Magie, Natur, geheimnisvoller Wesen und berührender Abenteuer.</p>\n<p><strong>Drei Frauen – drei Stimmen</strong> entführen Kinder und Erwachsene in eine warme Märchenwelt zum Staunen, Lachen und gemeinsamen Träumen. Im Anschluss lädt ein feines <strong>Znüni</strong> zum gemütlichen Zusammensein ein.</p>\n<p>🎟️ <strong>Jetzt Tickets sichern und gemeinsam den Zauber der Herbstmärchen erleben – die Plätze sind begrenzt!</strong></p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7523690385803069982",
+   "groupId": "7523690385782098456",
+   "rubricId": 54,
+   "title": {
+    "de": "Pica & Poco",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/kindertheater/pica-poco-bern-7523690385803069982.html",
+   "organizerName": "Theater Matte & DAS Kindertheater Bern",
+   "presaleLink": "https://theatermatte.ch",
+   "presaleText": "Tickets sind online und telefonisch erhältlich. \nwww.theatermatte.ch oder 031 901 38 80",
+   "emblemCredits": "PICA & POCO von DAS Kindertheater Bern, Foto: Jascha Gysin",
+   "begin": "2026-11-15T11:00:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "24993"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-11-04T10:30:50Z",
+   "shortDescription": {
+    "de": "Ein heiteres und liebevolles Theatererlebnis für alle Menschen ab 3 Jahren. Mit Humor, Poesie und jeder Menge Entdeckungslust für die ganze Familie. Von und mit Livia Franz und Markus Maria Enggist.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p><strong>Uraufführung von und mit Livia Franz und Markus Maria Enggist\n  <br> Zwei Menschen. Ein Bahnsteig. Kein Zug in Sicht – dafür umso mehr Möglichkeiten.</strong></p>\n<p>Pica und Poco begegnen einander auf einem Bahnsteig. Der Zug verspätet sich. Die Zeit scheint stillzustehen. Und da steht ein Koffer – ganz allein. Wem gehört er? Was verbirgt sich darin? Welche Geschichten trägt er mit sich? Oder ist vielleicht gerade das Warten das eigentliche Spiel?</p>\n<p>Zwischen Gleisänderungen, Lautsprecherdurchsagen und überraschenden Momenten wird gestaunt, getanzt, gespielt – und immer wieder herzlich gelacht. Pica und Poco lernen einander kennen, teilen Gedanken, Wünsche und Sorgen und entdecken, dass sich manches leichter weitertragen lässt, wenn jemand anderes ein Stück des Weges mitgeht. Mit clowneskem Charme, viel Fantasie und einer grossen Portion Spielfreude entsteht eine poetische Welt, in der aus kleinen Momenten grosse Geschichten wachsen, aus Zufällen neue Möglichkeiten und aus dem Warten ein fröhliches Spiel, das die Welt mit einem Augenzwinkern auf den Kopf stellt.</p>\n<p>PICA &amp; POCO ist ein heiteres und liebevolles Theatererlebnis für alle Menschen ab 3 Jahren. Mit Humor, Poesie und jeder Menge Entdeckungslust lädt das Stück Gross und Klein zum Staunen, Mitfiebern und Mitlachen ein – und erzählt davon, dass die schönsten Abenteuer manchmal genau dort beginnen, wo man sie am wenigsten erwartet.</p>\n<p><strong>Stück von:</strong> Livia Franz und Markus Maria Enggist</p>\n<p><strong>Coaching: </strong>Marco Cupellari, Perpetuomobileteatro, Locarno\n <br>\n <strong>Oeil exterieur:</strong> Miriam Jenni und Adamo Guerriero</p>\n<p><strong>Schauspiel: </strong>Livia Franz und Markus Maria Enggist\n <br>\n <strong>Die Stimme:</strong> Silvain Ernst</p>\n<p><strong>Kostüm:</strong> Katrin Schilt<strong> | Technik: </strong>Iris Mundle</p>\n<p><strong>Eine Co-Produktion mit</strong> <a href=\"https://daskindertheater.ch\" target=\"_blank\" rel=\"nofollow\">daskindertheater.ch</a></p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7523690385899539574",
+   "groupId": "7523690385782098456",
+   "rubricId": 54,
+   "title": {
+    "de": "Pica & Poco",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/kindertheater/pica-poco-bern-7523690385899539574.html",
+   "organizerName": "Theater Matte & DAS Kindertheater Bern",
+   "presaleLink": "https://theatermatte.ch",
+   "presaleText": "Tickets sind online und telefonisch erhältlich. \nwww.theatermatte.ch oder 031 901 38 80",
+   "emblemCredits": "PICA & POCO von DAS Kindertheater Bern, Foto: Jascha Gysin",
+   "begin": "2026-11-15T14:00:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "24993"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-11-04T10:28:19Z",
+   "shortDescription": {
+    "de": "Ein heiteres und liebevolles Theatererlebnis für alle Menschen ab 3 Jahren. Mit Humor, Poesie und jeder Menge Entdeckungslust für die ganze Familie. Von und mit Livia Franz und Markus Maria Enggist.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p><strong>Uraufführung von und mit Livia Franz und Markus Maria Enggist\n  <br> Zwei Menschen. Ein Bahnsteig. Kein Zug in Sicht – dafür umso mehr Möglichkeiten.</strong></p>\n<p>Pica und Poco begegnen einander auf einem Bahnsteig. Der Zug verspätet sich. Die Zeit scheint stillzustehen. Und da steht ein Koffer – ganz allein. Wem gehört er? Was verbirgt sich darin? Welche Geschichten trägt er mit sich? Oder ist vielleicht gerade das Warten das eigentliche Spiel?</p>\n<p>Zwischen Gleisänderungen, Lautsprecherdurchsagen und überraschenden Momenten wird gestaunt, getanzt, gespielt – und immer wieder herzlich gelacht. Pica und Poco lernen einander kennen, teilen Gedanken, Wünsche und Sorgen und entdecken, dass sich manches leichter weitertragen lässt, wenn jemand anderes ein Stück des Weges mitgeht. Mit clowneskem Charme, viel Fantasie und einer grossen Portion Spielfreude entsteht eine poetische Welt, in der aus kleinen Momenten grosse Geschichten wachsen, aus Zufällen neue Möglichkeiten und aus dem Warten ein fröhliches Spiel, das die Welt mit einem Augenzwinkern auf den Kopf stellt.</p>\n<p>PICA &amp; POCO ist ein heiteres und liebevolles Theatererlebnis für alle Menschen ab 3 Jahren. Mit Humor, Poesie und jeder Menge Entdeckungslust lädt das Stück Gross und Klein zum Staunen, Mitfiebern und Mitlachen ein – und erzählt davon, dass die schönsten Abenteuer manchmal genau dort beginnen, wo man sie am wenigsten erwartet.</p>\n<p><strong>Stück von:</strong> Livia Franz und Markus Maria Enggist</p>\n<p><strong>Coaching: </strong>Marco Cupellari, Perpetuomobileteatro, Locarno\n <br>\n <strong>Oeil exterieur:</strong> Miriam Jenni und Adamo Guerriero</p>\n<p><strong>Schauspiel: </strong>Livia Franz und Markus Maria Enggist\n <br>\n <strong>Die Stimme:</strong> Silvain Ernst</p>\n<p><strong>Kostüm:</strong> Katrin Schilt<strong> | Technik: </strong>Iris Mundle</p>\n<p><strong>Eine Co-Produktion mit</strong> <a href=\"https://daskindertheater.ch\" target=\"_blank\" rel=\"nofollow\">daskindertheater.ch</a></p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7511828756903766409",
+   "groupId": "0",
+   "rubricId": 54,
+   "title": {
+    "de": "Triplette: «Ei Ei Ei»",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/kindertheater/triplette-ei-ei-ei-bern-7511828756903766409.html",
+   "organizerName": "Tojo Theater Reitschule Bern",
+   "presaleLink": "https://www.tojo.ch",
+   "emblemCredits": "Christian Felber",
+   "begin": "2026-11-15T15:00:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "7031391794056005221"
+   ],
+   "locationAlias": {
+    "de": "Tojo Theater Reitschule Bern",
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-10-02T17:03:59Z",
+   "shortDescription": {
+    "de": "Drei Hühner mit Träumen, Hobbies und Neugierde stossen eines Tages auf das Thema Schönheit. Was ist das überhaupt? Sie suchen und entdecken schliesslich, dass wahre Schönheit von Innen kommt. Ab 6 J.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p>Willkommen im Hühnerstall, wo nichts ist, wie es auf den ersten Blick scheint! Hier leben drei Hennen mit ganz eigenen Persönlichkeiten. Für die Hühnerbesitzerin ist alles wie immer: Sie bringt Futter, sammelt Eier und achtet darauf, dass es ihren Hennen gut geht. Doch kaum ist sie ausser Sicht, entfaltet sich das geheime Leben im Stall.</p>\n<p>Denn diese Hühner haben Träume, Hobbies und eine lebhafte Neugier auf die Welt. Eines Tages stossen sie auf ein grosses Thema: Schönheit. Aber was ist das überhaupt? Um dieser Frage auf den Grund zu gehen, begeben sich die drei auf die Suche – und entdecken bald, dass wahre Schönheit von Innen kommt.</p>\n<p>Ein Theaterstück ab 6 Jahren, das auf liebevolle Weise das Thema Schönheit hinterfragt.</p>\n<p>Schauspiel/Regie: Sylvie Kohler, Nicole Lechmann, Irene Wespi. Musik: Timo Keller. Bühne/Kostüme: Annina Polivka. Licht: Orpheo Carcano, Karl Egli. Bewegungscoaching: Deborah Gassmann. Œil extérieur: Michael Fuchs. Produktionsleitung: Isabelle Odermatt. Fotos: Christian Felber. Dauer: 60 Min. Ab 6 Jahren.</p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7521504615931585631",
+   "groupId": "0",
+   "rubricId": 57,
+   "title": {
+    "de": "Mit dem Essen (Musik) spielen – Klang-Workshop für Kinder",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/kurs/mit-dem-essen-musik-spielen-klang-workshop-fuer-kinder-bern-7521504615931585631.html",
+   "organizerName": "Musikfestival Bern",
+   "presaleLink": "https://442hz.com/de/ensembles/Musikfestival_Bern/shop/event/196263/#event",
+   "presaleText": "Im Online-Shop oder per Mail an tickets@musikfestivalbern.ch",
+   "emblemCredits": "iStock",
+   "begin": "2026-11-15T15:00:00+01:00",
+   "end": "2026-11-15T16:30:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "7284179023592132414"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-10-29T10:00:21Z",
+   "shortDescription": {
+    "de": "Eine spielerische Erkundung von Klängen, die im ganz Alltäglichen stecken – für Kinder ab 3 Jahren und ihre Begleitpersonen. ",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p>Kinder ab 3 Jahren sind in diesem Workshop dazu eingeladen, ganz genau hinzuhören und eigene Klangwelten zu erfinden: Die beiden Perkussionistinnen Zoi Argyriou und Núria Carbó nehmen die Komposition «Ricefall» von Michael Pisaro als Ausgangspunkt für eine spielerische Erkundung von Klängen, die im ganz Alltäglichen stecken. Die Kinder lassen Reis auf verschiedenste Arten auf unterschiedliche Gegenstände rieseln und erzeugen damit erstaunlich viele, überraschende Klänge.</p>\n<p>&nbsp;</p>\n<p>Für Kinder ab 3 Jahren mit ihren Begleitpersonen.&nbsp;</p>\n<p>Bitte einen klingenden Lieblingsgegenstand mitbringen!</p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7506316984109295163",
+   "groupId": "0",
+   "rubricId": 54,
+   "title": {
+    "de": "Märli mit Martin: Das Waldhaus & Hans im Glück",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/kindertheater/maerli-mit-martin-das-waldhaus-hans-im-glueck-bern-7506316984109295163.html",
+   "organizerId": "4744946",
+   "organizerName": "Familienzentrum Bern",
+   "presaleLink": "https://familienzentrumbern.ch/kurs/maerlistunde-1911/",
+   "presaleText": "Eine Anmeldung ist erwünscht, bei Spontanteilnahme bitte kurz anrufen ob es noch Platz hat.",
+   "emblemCredits": "Martin Frey",
+   "begin": "2026-11-19T15:30:00+01:00",
+   "end": "2026-11-19T16:30:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "7506290539660086535"
+   ],
+   "locationAlias": {
+    "de": "Familienzentrum Bern",
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-09-17T11:55:29Z",
+   "shortDescription": {
+    "de": "In unserem gemütlichen Keller erzählt Martin Frey traditionelle Märchen der Gebrüder Grimm (ein längeres oder zwei kürzere).",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p>Empfohlen für Kinder zwischen 4 - 9 Jahre</p>\n<p>In unseren&nbsp;gemütlichen Räumlichkeiten&nbsp;erzählt Martin Frey traditionelle Märchen der Gebrüder Grimm (ein längeres oder zwei kürzere). Zwerg Zottel hört mit, die Geschichten werden mit Musik untermalt, zudem zeigt Martin die Bilder einer bekannten Bilderbuchillustratorin. Dauer ca. 60 Minuten.</p>\n<p>Damit alle die Vorstellung ungestört geniessen können, bitten wir alle Teilnehmer herzlich, während der Aufführung auf ihren Plätzen zu bleiben und den Raum nicht zu verlassen.</p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7523690385987620069",
+   "groupId": "7523690385782098456",
+   "rubricId": 54,
+   "title": {
+    "de": "Pica & Poco",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/kindertheater/pica-poco-bern-7523690385987620069.html",
+   "organizerName": "Theater Matte & DAS Kindertheater Bern",
+   "presaleLink": "https://theatermatte.ch",
+   "presaleText": "Tickets sind online und telefonisch erhältlich. \nwww.theatermatte.ch oder 031 901 38 80",
+   "emblemCredits": "PICA & POCO von DAS Kindertheater Bern, Foto: Jascha Gysin",
+   "begin": "2026-11-22T11:00:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "24993"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-11-04T10:37:36Z",
+   "shortDescription": {
+    "de": "Ein heiteres und liebevolles Theatererlebnis für alle Menschen ab 3 Jahren. Mit Humor, Poesie und jeder Menge Entdeckungslust für die ganze Familie. Von und mit Livia Franz und Markus Maria Enggist.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p><strong>Uraufführung von und mit Livia Franz und Markus Maria Enggist\n  <br> Zwei Menschen. Ein Bahnsteig. Kein Zug in Sicht – dafür umso mehr Möglichkeiten.</strong></p>\n<p>Pica und Poco begegnen einander auf einem Bahnsteig. Der Zug verspätet sich. Die Zeit scheint stillzustehen. Und da steht ein Koffer – ganz allein. Wem gehört er? Was verbirgt sich darin? Welche Geschichten trägt er mit sich? Oder ist vielleicht gerade das Warten das eigentliche Spiel?</p>\n<p>Zwischen Gleisänderungen, Lautsprecherdurchsagen und überraschenden Momenten wird gestaunt, getanzt, gespielt – und immer wieder herzlich gelacht. Pica und Poco lernen einander kennen, teilen Gedanken, Wünsche und Sorgen und entdecken, dass sich manches leichter weitertragen lässt, wenn jemand anderes ein Stück des Weges mitgeht. Mit clowneskem Charme, viel Fantasie und einer grossen Portion Spielfreude entsteht eine poetische Welt, in der aus kleinen Momenten grosse Geschichten wachsen, aus Zufällen neue Möglichkeiten und aus dem Warten ein fröhliches Spiel, das die Welt mit einem Augenzwinkern auf den Kopf stellt.</p>\n<p>PICA &amp; POCO ist ein heiteres und liebevolles Theatererlebnis für alle Menschen ab 3 Jahren. Mit Humor, Poesie und jeder Menge Entdeckungslust lädt das Stück Gross und Klein zum Staunen, Mitfiebern und Mitlachen ein – und erzählt davon, dass die schönsten Abenteuer manchmal genau dort beginnen, wo man sie am wenigsten erwartet.</p>\n<p><strong>Stück von:</strong> Livia Franz und Markus Maria Enggist</p>\n<p><strong>Coaching: </strong>Marco Cupellari, Perpetuomobileteatro, Locarno\n <br>\n <strong>Oeil exterieur:</strong> Miriam Jenni und Adamo Guerriero</p>\n<p><strong>Schauspiel: </strong>Livia Franz und Markus Maria Enggist\n <br>\n <strong>Die Stimme:</strong> Silvain Ernst</p>\n<p><strong>Kostüm:</strong> Katrin Schilt<strong> | Technik: </strong>Iris Mundle</p>\n<p><strong>Eine Co-Produktion mit</strong> <a href=\"https://daskindertheater.ch\" target=\"_blank\" rel=\"nofollow\">daskindertheater.ch</a></p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7509239228590472512",
+   "groupId": "7509239427425658394",
+   "rubricId": 56,
+   "title": {
+    "de": "Familienkonzert mit japanischen Kinderliedern",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/konzert/familienkonzert-mit-japanischen-kinderliedern-bern-7509239228590472512.html",
+   "organizerId": "4488561",
+   "organizerName": "Japanisches Informations- und Kulturzentrum, Japanische Botschaft in der Schweiz",
+   "websiteUrl": "https://www.ch.emb-japan.go.jp/itprtop_de/index.html",
+   "facebookUrl": "https://www.facebook.com/JapaneseEmbassyBern",
+   "presaleText": "Eintritt frei",
+   "emblemCredits": "JICC",
+   "begin": "2026-11-22T11:00:00+01:00",
+   "end": "2026-11-22T11:50:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "6625918298309554651"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-10-23T13:24:55Z",
+   "shortDescription": {
+    "de": "Das Familienkonzert bietet traditionelle japanische Kinderlieder und spannendes Kamishibai für Kinder und Erwachsene.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p>Freuen Sie sich auf traditionelle japanische Kinderlieder, schöne Melodien und ein spannendes Kamishibai – japanisches Erzähltheater.</p>\n<p>Bei diesem Familienkonzert erwartet Sie ein liebevoll zusammengestelltes Programm mit traditionellen und beliebten japanischen Kinderliedern. Die Musik lädt zum Zuhören, Mitsingen und gemeinsamen Entdecken ein – für Kinder und Erwachsene gleichermassen!\n <br>\n <br>\n ♪ 50 Minuten / Konzert\n <br>\n ♪ Geeignet für Kinder von 4 bis 12 Jahre alt / Auch babys&amp;Kleinkinder sind herzlich willkommen😉\n <br>\n ♪ Die Teilnehmerzahl ist begrenzt.\n <br>\n ♪ Eine Voranmeldung ist erforderlich.\n <br>\n ♪ Bitte melden Sie sich über <a href=\"https://forms.gle/EyF8htXqqmAEyPVN6\" target=\"_blank\" rel=\"nofollow\">den Link</a> oder senden Sie uns eine E-Mail mit den Namen aller Gäste an &lt;<a href=\"http://emailto:jicc@br.mofa.go.jp\" target=\"_blank\" rel=\"nofollow\">jicc@br.mofa.go.jp</a>&gt;.</p>\n<p>Wir freuen uns darauf, Sie und Ihre Familie bei diesem besonderen musikalischen Erlebnis begrüssen zu dürfen!😃</p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7523690386037951747",
+   "groupId": "7523690385782098456",
+   "rubricId": 54,
+   "title": {
+    "de": "Pica & Poco",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/kindertheater/pica-poco-bern-7523690386037951747.html",
+   "organizerName": "Theater Matte & DAS Kindertheater Bern",
+   "presaleLink": "https://theatermatte.ch",
+   "presaleText": "Tickets sind online und telefonisch erhältlich. \nwww.theatermatte.ch oder 031 901 38 80",
+   "emblemCredits": "PICA & POCO von DAS Kindertheater Bern, Foto: Jascha Gysin",
+   "begin": "2026-11-22T14:00:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "24993"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-11-04T10:31:26Z",
+   "shortDescription": {
+    "de": "Ein heiteres und liebevolles Theatererlebnis für alle Menschen ab 3 Jahren. Mit Humor, Poesie und jeder Menge Entdeckungslust für die ganze Familie. Von und mit Livia Franz und Markus Maria Enggist.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p><strong>Uraufführung von und mit Livia Franz und Markus Maria Enggist\n  <br> Zwei Menschen. Ein Bahnsteig. Kein Zug in Sicht – dafür umso mehr Möglichkeiten.</strong></p>\n<p>Pica und Poco begegnen einander auf einem Bahnsteig. Der Zug verspätet sich. Die Zeit scheint stillzustehen. Und da steht ein Koffer – ganz allein. Wem gehört er? Was verbirgt sich darin? Welche Geschichten trägt er mit sich? Oder ist vielleicht gerade das Warten das eigentliche Spiel?</p>\n<p>Zwischen Gleisänderungen, Lautsprecherdurchsagen und überraschenden Momenten wird gestaunt, getanzt, gespielt – und immer wieder herzlich gelacht. Pica und Poco lernen einander kennen, teilen Gedanken, Wünsche und Sorgen und entdecken, dass sich manches leichter weitertragen lässt, wenn jemand anderes ein Stück des Weges mitgeht. Mit clowneskem Charme, viel Fantasie und einer grossen Portion Spielfreude entsteht eine poetische Welt, in der aus kleinen Momenten grosse Geschichten wachsen, aus Zufällen neue Möglichkeiten und aus dem Warten ein fröhliches Spiel, das die Welt mit einem Augenzwinkern auf den Kopf stellt.</p>\n<p>PICA &amp; POCO ist ein heiteres und liebevolles Theatererlebnis für alle Menschen ab 3 Jahren. Mit Humor, Poesie und jeder Menge Entdeckungslust lädt das Stück Gross und Klein zum Staunen, Mitfiebern und Mitlachen ein – und erzählt davon, dass die schönsten Abenteuer manchmal genau dort beginnen, wo man sie am wenigsten erwartet.</p>\n<p><strong>Stück von:</strong> Livia Franz und Markus Maria Enggist</p>\n<p><strong>Coaching: </strong>Marco Cupellari, Perpetuomobileteatro, Locarno\n <br>\n <strong>Oeil exterieur:</strong> Miriam Jenni und Adamo Guerriero</p>\n<p><strong>Schauspiel: </strong>Livia Franz und Markus Maria Enggist\n <br>\n <strong>Die Stimme:</strong> Silvain Ernst</p>\n<p><strong>Kostüm:</strong> Katrin Schilt<strong> | Technik: </strong>Iris Mundle</p>\n<p><strong>Eine Co-Produktion mit</strong> <a href=\"https://daskindertheater.ch\" target=\"_blank\" rel=\"nofollow\">daskindertheater.ch</a></p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7509239427450824224",
+   "groupId": "7509239427425658394",
+   "rubricId": 56,
+   "title": {
+    "de": "Familienkonzert mit japanischen Kinderliedern",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/konzert/familienkonzert-mit-japanischen-kinderliedern-bern-7509239427450824224.html",
+   "organizerName": "Japan Information and Cultural Center (JICC), Embassy of Japan in Switzerland",
+   "websiteUrl": "https://www.ch.emb-japan.go.jp/itprtop_de/index.html",
+   "facebookUrl": "https://www.facebook.com/JapaneseEmbassyBern",
+   "presaleText": "Eintritt frei",
+   "emblemCredits": "JICC",
+   "begin": "2026-11-22T14:00:00+01:00",
+   "end": "2026-11-22T14:50:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": true,
+   "littleTicketsLeft": null,
+   "soldOut": null,
+   "locationIds": [
+    "6625918298309554651"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-10-23T13:26:05Z",
+   "shortDescription": {
+    "de": "Das Familienkonzert bietet traditionelle japanische Kinderlieder und spannendes Kamishibai für Kinder und Erwachsene.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p>Freuen Sie sich auf traditionelle japanische Kinderlieder, schöne Melodien und ein spannendes Kamishibai – japanisches Erzähltheater.</p>\n<p>Bei diesem Familienkonzert erwartet Sie ein liebevoll zusammengestelltes Programm mit traditionellen und beliebten japanischen Kinderliedern. Die Musik lädt zum Zuhören, Mitsingen und gemeinsamen Entdecken ein – für Kinder und Erwachsene gleichermassen!\n <br>\n <br>\n ♪ 50 Minuten / Konzert\n <br>\n ♪ Geeignet für Kinder von 4 bis 12 Jahre alt&nbsp;/ Auch babys&amp;Kleinkinder sind herzlich willkommen😉\n <br>\n ♪ Die Teilnehmerzahl ist begrenzt.\n <br>\n ♪ Eine Voranmeldung ist erforderlich.\n <br>\n ♪ Bitte melden Sie sich über <a href=\"https://forms.gle/7A5C2vsGpLtkzL9PA\" target=\"_blank\" rel=\"nofollow\">den Link</a> oder senden Sie uns eine E-Mail mit den Namen aller Gäste an &lt;<a href=\"http://emailto:jicc@br.mofa.go.jp\" target=\"_blank\" rel=\"nofollow\">jicc@br.mofa.go.jp</a>&gt;.\n <br>\n <br>\n Wir freuen uns darauf, Sie und Ihre Familie bei diesem besonderen musikalischen Erlebnis begrüssen zu dürfen!😃</p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7513511612214452725",
+   "groupId": "0",
+   "rubricId": 48,
+   "title": {
+    "de": "Kulturknirps",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/familienveranstaltungen/kulturknirps-bern-7513511612214452725.html",
+   "organizerId": "1658118",
+   "organizerName": "Berner Generationenhaus",
+   "presaleLink": "https://eventfrog.ch/de/p/kinderveranstaltungen/familienveranstaltungen/kulturknirps-bern-7513511612214452725.html",
+   "emblemCredits": "Spielzimmer Bern",
+   "begin": "2026-11-23T09:30:00+01:00",
+   "end": "2026-11-23T10:30:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": false,
+   "littleTicketsLeft": true,
+   "soldOut": false,
+   "lowestTicketPrice": 0.0,
+   "locationIds": [
+    "6625925331536605749"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-11-09T10:14:11Z",
+   "shortDescription": {
+    "de": "Kulturknirps ermöglicht Kleinkindern einen ersten Kontakt zu ästhetischen, kindgerechten Materialien und Musik. Für Kinder im Alter von 0 bis 4 Jahren und ihre Begleitpersonen.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p><strong>Bühne frei für die Allerjüngsten! Sie tauchen ein in eine fantasievolle Welt voller Musik, Theater und Kunst. Die interaktiven Vorstellungen bieten einen ersten, spielerischen Zugang zur Welt der Kreativität - mit viel Raum für Neugierde.</strong></p>\n<p>Kulturknirps ermöglicht Kleinkindern einen ersten Kontakt zu ästhetischen, kindgerechten Materialien und Musik. Sie sind Teil des Bühnengeschehens und inspirieren die Künstlerinnen zu ihrem Spiel.</p>\n<p>Für Kinder im Alter von 0 bis 4 Jahren und ihre Begleitpersonen.</p>\n<p>Neu gibt es zwei Zeitslots für den Kulturknirps:\n <br>\n <strong>Erste Durchführung: 9.30 - 10.30 Uhr</strong>\n <br>\n <strong>Zweite Durchführung: 10.30 - 11.30 Uhr</strong></p>\n<p>Die Teilnahme ist kostenlos (Kollekte).&nbsp;Eine Anmeldung ist erforderlich.</p>",
+    "en": null,
+    "fr": null
+   }
+  },
+  {
+   "id": "7515707852775759920",
+   "groupId": "0",
+   "rubricId": 48,
+   "title": {
+    "de": "Kulturknirps",
+    "en": null,
+    "fr": null
+   },
+   "url": "https://eventfrog.ch/de/p/kinderveranstaltungen/familienveranstaltungen/kulturknirps-bern-7515707852775759920.html",
+   "organizerId": "1658118",
+   "organizerName": "Berner Generationenhaus",
+   "presaleLink": "https://eventfrog.ch/de/p/kinderveranstaltungen/familienveranstaltungen/kulturknirps-bern-7515707852775759920.html",
+   "emblemCredits": "Spielzimmer Bern",
+   "begin": "2026-11-23T10:30:00+01:00",
+   "end": "2026-11-23T11:30:00+01:00",
+   "cancelled": false,
+   "visible": true,
+   "published": true,
+   "agendaEntryOnly": false,
+   "littleTicketsLeft": true,
+   "soldOut": false,
+   "lowestTicketPrice": 0.0,
+   "locationIds": [
+    "6625925331536605749"
+   ],
+   "locationAlias": {
+    "de": null,
+    "en": null,
+    "fr": null
+   },
+   "modifyDate": "2026-11-09T10:12:58Z",
+   "shortDescription": {
+    "de": "Kulturknirps ermöglicht Kleinkindern einen ersten Kontakt zu ästhetischen, kindgerechten Materialien und Musik. Für Kinder im Alter von 0 bis 4 Jahren und ihre Begleitpersonen.",
+    "en": null,
+    "fr": null
+   },
+   "descriptionAsHTML": {
+    "de": "<p><strong>Bühne frei für die Allerjüngsten! Sie tauchen ein in eine fantasievolle Welt voller Musik, Theater und Kunst. Die interaktiven Vorstellungen bieten einen ersten, spielerischen Zugang zur Welt der Kreativität - mit viel Raum für Neugierde.</strong></p>\n<p>Kulturknirps ermöglicht Kleinkindern einen ersten Kontakt zu ästhetischen, kindgerechten Materialien und Musik. Sie sind Teil des Bühnengeschehens und inspirieren die Künstlerinnen zu ihrem Spiel.</p>\n<p>Für Kinder im Alter von 0 bis 4 Jahren und ihre Begleitpersonen.</p>\n<p>Neu gibt es zwei Zeitslots für den Kulturknirps:\n <br>\n <strong>Erste Durchführung: 9.30 - 10.30 Uhr</strong>\n <br>\n <strong>Zweite Durchführung: 10.30 - 11.30 Uhr</strong></p>\n<p>Die Teilnahme ist kostenlos (Kollekte).&nbsp;Eine Anmeldung ist erforderlich.</p>",
+    "en": null,
+    "fr": null
+   }
+  }
+ ]
+}
