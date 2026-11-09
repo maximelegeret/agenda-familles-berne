@@ -73,6 +73,14 @@ Plan détaillé : `~/.claude/plans/lexical-juggling-flute.md`. Réglages personn
 - Lot 3 : résumé du week-end par mail le jeudi (GitHub Actions + mot de passe d'application Gmail en secret).
 - Lot 4 : Eventfrog (fait le 9 nov. 2026), idées « jour de pluie », places de jeux (open data), IA Claude (cas flous + sites sans agenda lisible).
 
+## V3 (validée le 9 nov. 2026) : au-delà de la liste, « dimanche 9 h, il pleut, on fait quoi ? »
+Plan détaillé : `~/.claude/plans/lexical-juggling-flute.md`. Lot A (onglets + « Sortir »), Lot B (places de jeux, cafés, carte), Lot C (« Pratique » : échéances, infos utiles, anniversaires, saisons).
+- **Lieux** : `lieux.yaml`, choisis par Maxime et vérifiés sur les sites officiels (champ `verifie_le`, à revérifier une fois par an). `agenda/lieux.py` calcule chaque nuit les plages d'ouverture des 14 prochains jours (saisons, jours fériés bernois, Zibelemärit) dans `docs/lieux.json` ; la page compare juste l'heure.
+- **Page** : onglets en bas (Agenda / Sortir ; Pratique viendra au Lot C, pas d'onglet vide). Période et filtres dans un bandeau collant en haut. Code de l'onglet dans `docs/sortir.js`.
+- **Météo** : Open-Meteo lu par la page (gratuit, sans clé, seulement les coordonnées du centre de Berne), crédit affiché (CC BY 4.0). S'il pleut, les lieux couverts passent en premier.
+- **Pour vérifier** : `…/?maintenant=2026-11-15T09:00&meteo=pluie#sortir` simule une heure et une météo.
+- Manques signalés à Maxime : aucun café avec coin jeux ni ferme fiable trouvés ; Bernisches Historisches Museum illisible ; horaires d'été des piscines non relevés (hors saison = fermé).
+
 ## Points ouverts
 - Licence kob.ch : le cadrage dit CC BY-SA 4.0, les mentions légales du site exigent un accord écrit. OK en usage perso ; à clarifier avant toute ouverture au public.
 - « Das Casino brummt » (Bühnen Bern) introuvable dans le programme actuel : ajout manuel s'il revient.

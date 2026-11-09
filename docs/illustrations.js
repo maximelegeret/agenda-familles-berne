@@ -80,6 +80,62 @@ const ILLUSTRATIONS = {
     <path class="i-ink" d="M40 40l3 1-1 3-3-1z"/><circle class="i-acc" cx="50" cy="48" r="2"/>
     <path class="i-soft" d="M22 40l2.4 1.6-1.6 2.4-2.4-1.6z"/>`,
 
+  // --- Types de lieux (onglet « Sortir ») ---
+
+  // Animaux : une tête d'ours (Berne oblige) et une petite feuille
+  animaux: `
+    <circle class="i-ink" cx="17" cy="19" r="7"/><circle class="i-ink" cx="47" cy="19" r="7"/>
+    <circle class="i-soft" cx="17" cy="19" r="3.2"/><circle class="i-soft" cx="47" cy="19" r="3.2"/>
+    <circle class="i-soft i-trait" cx="32" cy="33" r="18"/>
+    <ellipse class="i-hi i-trait-fin" cx="32" cy="40" rx="8.5" ry="6.5"/>
+    <path class="i-ink" d="M28.6 37.2h6.8l-3.4 3.6z"/>
+    <path class="i-ligne" d="M32 41v2.2M28.5 44c2 1.6 5 1.6 7 0"/>
+    <circle class="i-ink" cx="25" cy="29" r="2"/><circle class="i-ink" cx="39" cy="29" r="2"/>
+    <path class="i-acc" d="M52 46c4-4 8-3 9-1-2 4-6 5-9 1z"/>`,
+
+  // Musée : un tableau encadré avec une montagne et un soleil
+  musee: `
+    <rect class="i-ink" x="8" y="10" width="48" height="40" rx="4"/>
+    <rect class="i-hi" x="13" y="15" width="38" height="30" rx="2"/>
+    <path class="i-soft" d="M13 45l12-16 8 10 6-6 12 12z"/>
+    <path class="i-ink" d="M25 29l3.4 4.4-3.4-1.6-3 2.2z" opacity=".5"/>
+    <circle class="i-acc" cx="42" cy="23" r="4"/>
+    <path class="i-ink" d="M22 54h20v3H22z"/>`,
+
+  // Piscine : un canard qui flotte sur les vagues, une échelle
+  piscine: `
+    <path class="i-ligne" d="M12 10v28M22 10v28M12 17h10M12 25h10M12 33h10"/>
+    <path class="i-acc" d="M34 30c0-4 3-7 7-7s7 3 7 7c3 0 7 1 7 5 0 5-6 8-14 8s-13-3-13-8c0-3 3-5 6-5z"/>
+    <path class="i-ink" d="M47 27.6l5-1.2-1.2 3z"/>
+    <circle class="i-ink" cx="43" cy="27" r="1.4"/>
+    <path class="i-soft" d="M6 44c5-3 9-3 13 0s9 3 13 0 9-3 13 0 9 3 13 0v12H6z"/>
+    <path class="i-ligne" d="M8 50c4-2 7-2 11 0M30 52c4-2 7-2 11 0"/>`,
+
+  // Jeux : un toboggan, son échelle et une balle
+  jeux: `
+    <path class="i-ligne" d="M16 52V18M26 52V18M16 26h10M16 34h10M16 42h10"/>
+    <path class="i-ink" d="M13 16h16v5H13z"/>
+    <path class="i-soft i-trait" d="M27 18c10 0 12 8 16 18s8 12 15 12v6c-10 0-15-3-19-13S33 24 27 24z"/>
+    <circle class="i-acc" cx="49" cy="20" r="5.5"/>
+    <path class="i-ink" d="M6 52h52v3H6z"/>`,
+
+  // Livres et jeux : une pile de livres avec un marque-page et un dé
+  bibliotheque: `
+    <rect class="i-ink" x="10" y="42" width="38" height="9" rx="2"/>
+    <rect class="i-soft i-trait" x="14" y="31" width="34" height="9" rx="2"/>
+    <rect class="i-hi i-trait" x="12" y="20" width="32" height="9" rx="2"/>
+    <path class="i-acc" d="M36 20h5v14l-2.5-2-2.5 2z"/>
+    <rect class="i-hi i-trait" x="44" y="10" width="12" height="12" rx="3" transform="rotate(12 50 16)"/>
+    <circle class="i-ink" cx="48" cy="14" r="1.3"/><circle class="i-ink" cx="52" cy="18.6" r="1.3"/>`,
+
+  // Lieu de rencontre : une maison avec un cœur
+  rencontre: `
+    <path class="i-soft i-trait" d="M12 30l20-16 20 16v22H12z"/>
+    <path class="i-ink" d="M7 31L32 11l25 20-3 3.4L32 17 10 34.4z"/>
+    <path class="i-hi i-trait" d="M26 52V40a6 6 0 0 1 12 0v12z"/>
+    <path class="i-acc" d="M32 33.5c-3.6-2.6-6-4.4-6-7a3.2 3.2 0 0 1 6-1.6 3.2 3.2 0 0 1 6 1.6c0 2.6-2.4 4.4-6 7z"/>
+    <path class="i-ink" d="M6 52h52v3H6z"/>`,
+
   // Autre : un soleil souriant, pour les activités sans type
   autre: `
     <circle class="i-acc" cx="32" cy="32" r="12"/>

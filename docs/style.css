@@ -28,12 +28,14 @@
   --gratuit-texte: #2c6630;
   --inscr-fond: #fff0d1;
   --inscr-texte: #855400;
+  --pluie: #4f86b0;           /* icône météo quand il pleut ou neige */
   --ombre: 0 1px 2px rgb(90 45 20 / 0.06), 0 10px 28px -14px rgb(90 45 20 / 0.28);
   --ombre-forte: 0 2px 6px rgb(90 45 20 / 0.08), 0 18px 40px -12px rgb(90 45 20 / 0.35);
   --rayon: 22px;
   --rayon-grand: 28px;
   --ressort: cubic-bezier(0.22, 1, 0.36, 1); /* appui doux, sans rebond */
   --sortie: cubic-bezier(0.16, 1, 0.3, 1);
+  --haut-bandeau: 70px;       /* hauteur du bandeau collant (période / dedans-dehors) */
 
   /* Scène bernoise de l'en-tête */
   --s-soleil: #ffc98d; --s-colline-loin: #e9d6be; --s-colline: #cfdcbf;
@@ -62,6 +64,7 @@
     --gratuit-texte: #a6dba9;
     --inscr-fond: #45351a;
     --inscr-texte: #f5cf86;
+    --pluie: #8fc1e6;
     --ombre: 0 1px 2px rgb(0 0 0 / 0.3), 0 10px 28px -14px rgb(0 0 0 / 0.6);
     --ombre-forte: 0 2px 6px rgb(0 0 0 / 0.35), 0 18px 40px -12px rgb(0 0 0 / 0.7);
     --s-soleil: #a35a3a; --s-colline-loin: #3a2e27; --s-colline: #2f3a2b;
@@ -82,6 +85,13 @@
 [data-cat="sport"]     { --cat-fond: #fbecc0; --i-ink: #8d5c08; --i-soft: #f4d27a; }
 [data-cat="fete"]      { --cat-fond: #fcdcd2; --i-ink: #b03e28; --i-soft: #f5ae9c; }
 [data-cat="autre"]     { --cat-fond: #f4e6d6; --i-ink: #86572c; --i-soft: #e6c7a3; }
+/* Types de lieux (onglet « Sortir ») ; nature reprend la teinte de l'agenda */
+[data-cat="animaux"]      { --cat-fond: #f6e7cf; --i-ink: #835419; --i-soft: #e8c48f; }
+[data-cat="musee"]        { --cat-fond: #e2e6f4; --i-ink: #414e8c; --i-soft: #b8c1e7; }
+[data-cat="piscine"]      { --cat-fond: #d5eef0; --i-ink: #1d6871; --i-soft: #9dd2d7; }
+[data-cat="jeux"]         { --cat-fond: #f8e1ed; --i-ink: #93376a; --i-soft: #ecb2d1; }
+[data-cat="bibliotheque"] { --cat-fond: #e7ecd8; --i-ink: #52622a; --i-soft: #c5d29d; }
+[data-cat="rencontre"]    { --cat-fond: #f9e2d6; --i-ink: #97452c; --i-soft: #efb79f; }
 
 @media (prefers-color-scheme: dark) {
   [data-cat="conte"]     { --cat-fond: #342b4a; --i-ink: #cbbcff; --i-soft: #5b4a8a; }
@@ -93,6 +103,12 @@
   [data-cat="sport"]     { --cat-fond: #44391c; --i-ink: #ffd987; --i-soft: #85692a; }
   [data-cat="fete"]      { --cat-fond: #482b24; --i-ink: #ffb8a5; --i-soft: #8a4637; }
   [data-cat="autre"]     { --cat-fond: #3d3024; --i-ink: #f0c99c; --i-soft: #7a5a3b; }
+  [data-cat="animaux"]      { --cat-fond: #40321d; --i-ink: #f3cf96; --i-soft: #85663a; }
+  [data-cat="musee"]        { --cat-fond: #2a3049; --i-ink: #bcc6ff; --i-soft: #4b578f; }
+  [data-cat="piscine"]      { --cat-fond: #1f3c40; --i-ink: #9fe3ea; --i-soft: #3a7178; }
+  [data-cat="jeux"]         { --cat-fond: #44283a; --i-ink: #ffb6dc; --i-soft: #874a6c; }
+  [data-cat="bibliotheque"] { --cat-fond: #323a22; --i-ink: #d3e3a4; --i-soft: #5f6d3a; }
+  [data-cat="rencontre"]    { --cat-fond: #45291f; --i-ink: #ffbfa6; --i-soft: #8a4c38; }
 }
 
 /* --- Base --- */
@@ -294,7 +310,8 @@ h1, h2, h3 { text-wrap: balance; }
 /* --- Liste par jour --- */
 .jour { margin-top: 18px; }
 .jour-titre {
-  position: sticky; top: 0; z-index: 2; background: var(--fond);
+  /* collé juste sous le bandeau de période */
+  position: sticky; top: var(--haut-bandeau); z-index: 2; background: var(--fond);
   display: flex; align-items: baseline; gap: 8px;
   font-size: 18px; font-weight: 750; padding: 12px 4px 10px;
 }
@@ -342,14 +359,37 @@ h1, h2, h3 { text-wrap: balance; }
 /* --- Pied de page --- */
 .pied { max-width: 680px; margin: 32px auto 0; padding: 0 20px; color: var(--doux); font-size: 13.5px; display: grid; gap: 4px; }
 
-/* --- Barre du bas --- */
+/* --- Barre du bas : les onglets --- */
 .barre {
   position: fixed; z-index: 10;
   left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom));
-  max-width: 560px; margin: 0 auto;
-  display: flex; gap: 6px; padding: 6px;
+  max-width: 420px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 6px;
   background: var(--carte); border-radius: 999px; box-shadow: var(--ombre-forte);
 }
+.onglet {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 50px; border: 0; border-radius: 999px; background: none; cursor: pointer;
+  font-size: 15px; font-weight: 700; color: var(--doux);
+  transition: background-color 0.25s, color 0.25s, transform 0.35s var(--ressort);
+}
+.onglet .icone { width: 22px; height: 22px; }
+.onglet:active { transform: scale(0.95); }
+.onglet[aria-current="page"] { background: var(--neutre); color: var(--encre); font-weight: 750; }
+.onglet[aria-current="page"] .icone { color: var(--action); }
+
+/* --- Bandeau collant en haut : période + filtres (Agenda) ou dedans/dehors (Sortir) --- */
+.bandeau {
+  position: sticky; top: 0; z-index: 4;
+  height: var(--haut-bandeau);
+  display: flex; align-items: center; gap: 8px;
+  padding: 0 max(16px, calc((100% - 648px) / 2));
+  margin-top: 14px;
+  background: var(--fond);
+}
+.bandeau .segments { background: var(--carte); box-shadow: var(--ombre); padding: 4px; border-radius: 999px; }
+.bandeau .bouton-filtres { width: 54px; height: 54px; background: var(--carte); box-shadow: var(--ombre); }
+.bandeau .bouton-filtres.actif { background: var(--encre); }
 .segments { flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
 .segment {
   border: 0; background: none; border-radius: 999px; min-height: 46px; padding: 0 4px;
@@ -439,6 +479,38 @@ h1, h2, h3 { text-wrap: balance; }
   transition: transform 0.35s var(--ressort);
 }
 .bouton-action:active { transform: scale(0.96); }
+
+/* --- Onglet « Sortir » --- */
+.meteo {
+  display: flex; align-items: center; gap: 12px; margin-top: 18px;
+  background: var(--carte); border-radius: var(--rayon); box-shadow: var(--ombre);
+  padding: 14px 16px;
+}
+.meteo > .icone { width: 34px; height: 34px; color: var(--i-acc); }
+.meteo-mauvais > .icone { color: var(--pluie); }
+.meteo-textes { display: grid; gap: 1px; }
+.meteo-texte { font-size: 16.5px; }
+.meteo-texte strong { font-weight: 750; }
+.meteo-temp { color: var(--doux); font-weight: 650; }
+.meteo-conseil { color: var(--doux); font-size: 14px; }
+.meteo-attente { color: var(--doux); font-size: 15px; }
+.statut { color: var(--encre); }
+.statut-bientot { color: var(--inscr-texte); }
+.est-ferme .statut { color: var(--doux); font-weight: 650; }
+.est-ferme .vignette { filter: saturate(0.35); opacity: 0.75; }
+.ligne-lieu-item .ligne-lieu { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.equipements { display: inline-flex; align-items: center; gap: 4px; padding: 0 4px; color: var(--doux); }
+.equipements .icone { width: 18px; height: 18px; }
+.ligne-horaires { color: var(--encre); font-weight: 650; }
+.remarque {
+  display: flex; align-items: flex-start; gap: 8px;
+  background: var(--inscr-fond); color: var(--inscr-texte);
+  padding: 10px 12px; border-radius: 16px; font-size: 14px; font-weight: 600;
+}
+.remarque .icone { width: 17px; height: 17px; margin-top: 1px; }
+.verifie { color: var(--doux); font-size: 13px; }
+.vide-compact { margin-top: 0; padding: 20px; }
+.vide-compact .vide-titre { font-size: 17px; }
 
 /* --- Mouvement --- */
 @keyframes monte { from { opacity: 0; transform: translateY(14px) scale(0.98); } }

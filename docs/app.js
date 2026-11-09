@@ -1,7 +1,8 @@
-// Agenda Familles Berne : affichage de docs/events.json.
-// - En haut : la prochaine activité en grand (« Bientôt »), puis les suivantes en petites cartes.
-// - Ensuite : les offres régulières (repliables), puis la liste par jour.
-// - En bas : la barre de période (aujourd'hui / week-end / 14 jours) et la feuille des filtres.
+// Agenda Familles Berne : affichage de docs/events.json (onglet « Agenda »).
+// - En haut : le bandeau de période (aujourd'hui / week-end / 14 jours) et le bouton des filtres.
+// - Puis la prochaine activité en grand (« Bientôt »), les suivantes en petites cartes,
+//   les offres régulières (repliables) et la liste par jour.
+// - En bas : les onglets Agenda / Sortir. L'onglet « Sortir » (lieux ouverts) est dans sortir.js.
 // Tous les textes viennent de textes_fr.json (traduction allemande prévue plus tard).
 
 const LANGUE = "fr";
@@ -40,6 +41,21 @@ const ICONES = {
   etoile: '<path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z"/>',
   agenda: '<rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M9 3v4M15 3v4M12 13v4M10 15h4"/>',
   partager: '<path d="M12 4v11M8 8l4-4 4 4"/><path d="M6 12v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6"/>',
+  // Onglet « Sortir » : une boussole
+  sortir: '<circle cx="12" cy="12" r="8.5"/><path d="M15.2 8.8l-2 4.4-4.4 2 2-4.4z"/>',
+  // Météo
+  soleil: '<circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4"/>',
+  nuage: '<path d="M7.5 18h9.5a4 4 0 0 0 .4-8A5.5 5.5 0 0 0 6.9 11.2 3.4 3.4 0 0 0 7.5 18z"/>',
+  eclaircie: '<path d="M9 4.5v1.3M4.2 9H5.5M5.6 5.6l.9.9M12.4 5.6l-.9.9"/><path d="M6.6 10.6A3 3 0 0 1 11.7 8"/><path d="M9.5 19h8a3.5 3.5 0 0 0 .3-7 4.8 4.8 0 0 0-9.1 1.1 3 3 0 0 0 .8 5.9z"/>',
+  pluie: '<path d="M7.5 15h9.5a4 4 0 0 0 .4-8A5.5 5.5 0 0 0 6.9 8.2 3.4 3.4 0 0 0 7.5 15z"/><path d="M8.5 18l-1 2.5M12.5 18l-1 2.5M16.5 18l-1 2.5"/>',
+  neige: '<path d="M7.5 14h9.5a4 4 0 0 0 .4-8A5.5 5.5 0 0 0 6.9 7.2 3.4 3.4 0 0 0 7.5 14z"/><path d="M8 18.5h.01M12 20h.01M16 18.5h.01M10 21.5h.01M14 21.5h.01" stroke-width="2.6"/>',
+  brouillard: '<path d="M4 9h16M6 13h12M4 17h16"/>',
+  // Équipements des lieux
+  cafe: '<path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M16 10.5h1.5a2.5 2.5 0 0 1 0 5H16M8.5 3.5c-.8 1 .8 2 0 3M12 3.5c-.8 1 .8 2 0 3"/>',
+  langer: '<rect x="3" y="13" width="18" height="5" rx="2.5"/><circle cx="7.5" cy="9.5" r="2.3"/><path d="M11 11h7.5"/>',
+  poussette: '<path d="M4 5h2.2l2.4 9h9.2l2-6.5H7.4"/><circle cx="9.5" cy="18.5" r="1.6"/><circle cx="16.5" cy="18.5" r="1.6"/>',
+  wc: '<path d="M5 4h14M7 4v6h10V4M8 10v3a4 4 0 0 0 8 0v-3M10 17l-1 3h6l-1-3"/>',
+  jeux: '<path d="M5 20V6M10 20V6M5 10h5M5 15h5M4 6h7"/><path d="M10 7c4 0 5 4 6.5 8S19 19 21 19"/>',
 };
 function icone(nom) {
   const s = el("span", "icone");
@@ -108,6 +124,9 @@ function textePrix(prix) {
 // ---------------------------------------------------------------------------
 // Filtres (mémorisés dans le navigateur)
 // ---------------------------------------------------------------------------
+
+// Onglet affiché : "agenda" ou "sortir" (gardé dans l'adresse : …/#sortir)
+let onglet = location.hash === "#sortir" ? "sortir" : "agenda";
 
 // ages : âges des enfants (ex. [2, 5]) ; moments : matin / apres_midi / soir ; favoris : seulement les favoris
 const FILTRES_DEFAUT = { periode: "14_jours", prix: "tous", types: [], ages: [], moments: [], favoris: false };
@@ -536,13 +555,38 @@ function sectionsParJour(evenements) {
 }
 
 // ---------------------------------------------------------------------------
-// Barre du bas et feuille des filtres
+// Onglets (barre du bas), bandeau de période et feuille des filtres
 // ---------------------------------------------------------------------------
 
-function afficherBarre() {
+function afficherOnglets() {
   const barre = document.getElementById("barre");
+  barre.setAttribute("aria-label", T.onglets);
   barre.replaceChildren();
-  const segments = el("div", "segments");
+  for (const [valeur, texte, nomIcone] of [["agenda", T.onglet_agenda, "agenda"], ["sortir", T.onglet_sortir, "sortir"]]) {
+    const b = el("button", "onglet");
+    b.type = "button";
+    if (onglet === valeur) b.setAttribute("aria-current", "page");
+    b.append(icone(nomIcone), el("span", null, texte));
+    b.addEventListener("click", () => changerOnglet(valeur));
+    barre.append(b);
+  }
+}
+
+function changerOnglet(valeur) {
+  if (valeur === onglet) { window.scrollTo({ top: 0, behavior: "smooth" }); return; }
+  onglet = valeur;
+  history.replaceState(null, "", valeur === "sortir" ? "#sortir" : location.pathname + location.search);
+  window.scrollTo({ top: 0 });
+  afficher();
+}
+
+// Bandeau de l'Agenda : période + bouton des filtres (reste en haut en défilant)
+function afficherBandeau() {
+  const barre = document.getElementById("bandeau");
+  barre.setAttribute("role", "region");
+  barre.setAttribute("aria-label", T.periode_et_filtres);
+  barre.replaceChildren();
+  const segments = el("div", "segments segments-plein");
   segments.setAttribute("role", "group");
   for (const [valeur, texte] of [["aujourd_hui", T.periode_aujourd_hui], ["weekend", T.periode_weekend], ["14_jours", T.periode_14_jours]]) {
     const b = el("button", "segment", texte);
@@ -703,7 +747,18 @@ function etatVide() {
   return vide;
 }
 
+// Affiche l'onglet courant : en-tête, bandeau, contenu, pied de page et onglets
 function afficher() {
+  document.body.dataset.onglet = onglet;
+  afficherOnglets();
+  document.getElementById("abonnement").hidden = onglet !== "agenda";
+  document.getElementById("sources").hidden = onglet !== "agenda";
+  if (onglet === "sortir") { afficherSortir(); return; }  // dans sortir.js
+  document.getElementById("titre-page").textContent = T.titre;
+  afficherAgenda();
+}
+
+function afficherAgenda() {
   const contenu = document.getElementById("contenu");
   const evenements = evenementsFiltres();
   const offres = (donnees.offres_regulieres || []).filter((o) => passePrixType(o, false));
@@ -726,7 +781,8 @@ function afficher() {
     const titre = el("h2", "section-titre section-titre-liste", T.ensuite);
     contenu.append(titre, sectionsParJour(evenements));
   }
-  afficherBarre();
+  afficherBandeau();
+  if (donnees.mis_a_jour) afficherPied();
 }
 
 // Les « Dans 40 min » se mettent à jour chaque minute, sans tout redessiner
@@ -739,6 +795,7 @@ function rafraichirQuand() {
 }
 
 function afficherPied() {
+  document.getElementById("pied-sortir").hidden = true;
   const maj = lireDate(donnees.mis_a_jour).toLocaleString(LANGUE, { weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
   document.getElementById("mise-a-jour").textContent = remplir(T.mis_a_jour, { date: maj });
   const noms = (donnees.sources || []).filter((s) => s.ok && s.nom !== "Ajouts manuels").map((s) => s.nom);
@@ -765,10 +822,11 @@ async function demarrer() {
     // "no-store" : toujours la dernière version, jamais une copie en cache
     donnees = await (await fetch("events.json", { cache: "no-store" })).json();
     afficher();
-    afficherPied();
     setInterval(rafraichirQuand, 60000);
     // Fermer la feuille en touchant le fond assombri
     document.getElementById("feuille").addEventListener("click", (ev) => { if (ev.target.id === "feuille") ev.target.close(); });
+    // Bouton « retour » du téléphone entre #sortir et l'agenda
+    window.addEventListener("hashchange", () => { onglet = location.hash === "#sortir" ? "sortir" : "agenda"; afficher(); });
   } catch (erreur) {
     console.error(erreur);
     const p = el("p", "avis");
@@ -777,4 +835,5 @@ async function demarrer() {
   }
 }
 
-demarrer();
+// On attend que tous les scripts (dont sortir.js) soient chargés avant de démarrer
+document.addEventListener("DOMContentLoaded", demarrer);

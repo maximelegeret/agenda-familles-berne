@@ -15,10 +15,12 @@ colors:
   free-ink: "#2c6630"
   stamp-fill: "#fff0d1"
   stamp-ink: "#855400"
+  rain-ink: "#4f86b0"
   night-ground: "#1d1714"
   night-card: "#2a221d"
   night-ink: "#f6ece4"
   night-tomato: "#ff6b47"
+  night-rain-ink: "#8fc1e6"
 typography:
   display:
     fontFamily: "Figtree, ui-rounded, system-ui, sans-serif"
@@ -153,7 +155,10 @@ Warmth comes from the apricot ground, rounded type and authored illustrations, n
 - **Neutral fill** `#f7ede4`, **hairline** `#f1e2d5`: chips, idle buttons, dividers.
 
 ### Activity type tints
-Each type sets `--cat-fond` (tile background), `--i-ink` (illustration ink and type label) and `--i-soft` (illustration mid-tone), light and dark: conte lilac, atelier apricot, spectacle rose, musique sky, visite sage, nature leaf, sport sun, fête coral, autre sand. Values live in `docs/style.css` under `[data-cat]`.
+Each type sets `--cat-fond` (tile background), `--i-ink` (illustration ink and type label) and `--i-soft` (illustration mid-tone), light and dark: conte lilac, atelier apricot, spectacle rose, musique sky, visite sage, nature leaf, sport sun, fête coral, autre sand. Place types (Sortir tab) follow the same rule: animaux ochre, musée slate blue, piscine aqua, jeux plum, bibliothèque olive, rencontre terracotta; nature reuses leaf. Values live in `docs/style.css` under `[data-cat]`.
+
+### Weather
+- **Rain ink** `#4f86b0` (night `#8fc1e6`): the weather icon only, when it rains or snows. Fair weather uses the amber accent.
 
 ### Named Rules
 **The Pressable Colour Rule.** Tomato appears only on elements that respond to a tap. Information ("Dans 40 min") uses ink, never tomato.
@@ -199,7 +204,12 @@ Neutral fill by default; free = green fill; registration = amber "stamp" fill; u
 List items are rows inside one white group card per day, separated by hairlines; never a card per row. A row is a button: illustration tile, time + type, name, place, chips; tapping unfolds description and source link.
 
 ### Navigation
-Bottom bar: three-way period segment (Aujourd'hui / Week-end / 14 jours) + round filter button with a count badge. Filters open as a bottom sheet (`<dialog>`) with price segments, type choices as illustrated tiles, and a "Voir N activités" primary button.
+Bottom bar: two tabs, Agenda and Sortir (Pratique joins later), white pill floating 12px above the safe area. Each tab is a line icon + word; the current tab gets a neutral-fill pill, ink text and a tomato icon (the only tomato in the bar).
+
+Sticky band (`--haut-bandeau`, 70px) under the header, apricot ground so content scrolls beneath it: in Agenda, the three-way period segment (Aujourd'hui / Week-end / 14 jours) as a white pill + round white filter button with a count badge; in Sortir, the Tous / Dedans / Dehors segment. Day titles stick just below the band. Filters open as a bottom sheet (`<dialog>`) with price segments, type choices as illustrated tiles, and a "Voir N activités" primary button.
+
+### Sortir ("Où aller maintenant ?")
+Weather strip (white card: icon, "Pluie jusqu'à 14 h · 6°", one line of advice), then "Ouvert maintenant", "Ça commence bientôt" (agenda rows starting within 3 h) and "Fermé pour l'instant", each one white group card of rows. A place row reuses the agenda row: type tile, status ("Ouvert jusqu'à 17:00", "Ferme à 17:00" in stamp ink, "Accès libre", "Ouvre à 10:00") + type label, name, two-line summary, chips (Dedans/Dehors, Gratuit, age) and soft-ink equipment icons. Closed rows desaturate the tile and soften the status, never the name. Unfolding shows today's hours, price, a stamp-amber note when something matters before leaving, address, "Site officiel" and the verification date. Opening hours are computed nightly in Python (`docs/lieux.json`); rain puts covered places first.
 
 ### Featured card ("Bientôt")
 The signature component: tinted illustration panel with the relative-time badge ("En cours", "Dans 40 min", "Demain 16:00"), then time, type, name, short text, place, chips and source link. Badges refresh every minute.

@@ -22,22 +22,27 @@
     </div>
   </header>
 
-  <!-- Contenu rempli par app.js : prochaine activité, offres régulières, liste par jour -->
+  <!-- Bandeau qui reste en haut en défilant : période + filtres (Agenda) ou dedans/dehors (Sortir) -->
+  <div id="bandeau" class="bandeau"></div>
+
+  <!-- Contenu rempli par app.js (onglet Agenda) ou sortir.js (onglet Sortir) -->
   <main id="contenu" class="contenu" aria-live="polite"></main>
 
   <footer class="pied">
     <p id="mise-a-jour"></p>
     <p id="sources"></p>
     <div id="abonnement" class="abonnement"></div>
+    <p id="pied-sortir" hidden></p>
   </footer>
 
-  <!-- Barre du bas, à portée de pouce : période + bouton des filtres -->
-  <nav id="barre" class="barre" aria-label="Période et filtres"></nav>
+  <!-- Barre du bas, à portée de pouce : les onglets Agenda / Sortir -->
+  <nav id="barre" class="barre"></nav>
 
   <!-- Feuille des filtres (prix, type), qui monte du bas de l'écran -->
   <dialog id="feuille" class="feuille" aria-labelledby="feuille-titre"></dialog>
 
   <script src="illustrations.js"></script>
   <script src="app.js"></script>
+  <script src="sortir.js"></script>
 </body>
 </html>
