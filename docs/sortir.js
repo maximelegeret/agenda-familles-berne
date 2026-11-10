@@ -20,7 +20,29 @@ let erreurLieux = false;
 let meteo = null;          // { texte, icone, mauvais (pluie/neige), temperature } ou { indisponible: true }
 let meteoLueA = 0;
 let choixLieux = "tous";   // tous | dedans | dehors (gardé sur le téléphone)
-try { choixLieux = localStorage.getItem("sortir-choix") || "tous"; } catch (_) { /* stockage indisponible */ }
+let vueSortir = "liste";   // liste | carte
+// Point de départ pour les distances : la maison (placée une fois sur la carte, gardée sur ce
+// téléphone, jamais envoyée) ou la position GPS du moment (jamais enregistrée).
+let depart = "";           // "" | maison | position
+let maison = null;         // [lat, lng]
+let position = null;       // [lat, lng]
+let placerMaison = false;  // vrai pendant qu'on attend un toucher sur la carte
+let vueCarte = null;       // centre et zoom de la carte, gardés entre deux affichages
+function lireStockage(cle) { try { return localStorage.getItem(cle); } catch (_) { return null; } }
+function ecrireStockage(cle, valeur) { try { localStorage.setItem(cle, valeur); } catch (_) { /* stockage indisponible */ } }
+choixLieux = lireStockage("sortir-choix") || "tous";
+vueSortir = lireStockage("sortir-vue") || "liste";
+try { maison = JSON.parse(lireStockage("sortir-maison")); } catch (_) { maison = null; }
+depart = maison && lireStockage("sortir-depart") === "maison" ? "maison" : "";
+
+// Icônes en plus de celles de app.js
+Object.assign(ICONES, {
+  carte: '<path d="M9 5L4 7v12l5-2 6 2 5-2V5l-5 2z"/><path d="M9 5v12M15 7v12"/>',
+  liste: '<path d="M9 7h11M9 12h11M9 17h11"/><circle cx="5" cy="7" r="1"/><circle cx="5" cy="12" r="1"/><circle cx="5" cy="17" r="1"/>',
+  maison: '<path d="M4 11l8-6.5 8 6.5"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/>',
+  position: '<circle cx="12" cy="12" r="3.2"/><circle cx="12" cy="12" r="8"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22"/>',
+  itineraire: '<circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="6" r="2.2"/><path d="M8 18h7a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h7"/>',
+});
 
 // Types de lieux -> teinte et illustration (nature réutilise celle de l'agenda)
 const cleLieu = (type) => (type === "nature" ? "nature" : type);
@@ -79,6 +101,25 @@ function rangMeteo(lieu) {
   if (meteo.mauvais) return lieu.dedans === true ? 0 : lieu.dedans === "mixte" ? 1 : 2;
   return lieu.dedans === true ? 1 : 0;
 }
+
+// Distance à vol d'oiseau (formule de haversine), en kilomètres
+function distanceKm([lat1, lng1], [lat2, lng2]) {
+  const rad = Math.PI / 180;
+  const a = Math.sin((lat2 - lat1) * rad / 2) ** 2
+    + Math.cos(lat1 * rad) * Math.cos(lat2 * rad) * Math.sin((lng2 - lng1) * rad / 2) ** 2;
+  return 12742 * Math.asin(Math.sqrt(a));
+}
+const pointDepart = () => (depart === "maison" ? maison : depart === "position" ? position : null);
+function distanceDe(lieu) {
+  const p = pointDepart();
+  return p && lieu.lat != null ? distanceKm(p, [lieu.lat, lieu.lng]) : null;
+}
+function texteDistance(km) {
+  if (km < 1) return remplir(T.m, { n: Math.max(50, Math.round(km * 10) * 100) });
+  return remplir(T.km, { n: (Math.round(km * 10) / 10).toLocaleString(LANGUE) });
+}
+// Itinéraire en transports publics : seule la destination est envoyée (le départ = position du téléphone)
+const lienItineraire = (lat, lng) => `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=transit`;
 
 // ---------------------------------------------------------------------------
 // Météo du jour (Open-Meteo)
@@ -196,6 +237,7 @@ function pastillesLieu(lieu) {
 
 function ligneDeLieu(lieu, statut, m) {
   const item = el("article", statut.ouvert ? "ligne ligne-lieu-item" : "ligne ligne-lieu-item est-ferme");
+  item.id = `lieu-${lieu.id}`;
   item.dataset.cat = cleLieu(lieu.type);
   const bouton = el("button", "ligne-bouton");
   bouton.type = "button";
@@ -206,6 +248,8 @@ function ligneDeLieu(lieu, statut, m) {
   const haut = el("span", "ligne-haut");
   haut.append(el("span", statut.ordre === 1 ? "heure statut statut-bientot" : "heure statut", statut.texte));
   haut.append(el("span", "type", T.types_lieux[lieu.type]));
+  const km = distanceDe(lieu);
+  if (km != null) haut.append(el("span", "distance", texteDistance(km)));
   textes.append(haut, el("span", "ligne-titre", lieu.nom), el("span", "ligne-lieu", lieu.resume), pastillesLieu(lieu));
   bouton.append(vignette, textes, icone("fleche"));
   item.append(bouton);
@@ -222,10 +266,15 @@ function ligneDeLieu(lieu, statut, m) {
   const adresse = el("p", "lieu");
   adresse.append(icone("lieu"), el("span", null, lieu.adresse));
   detail.append(adresse);
+  const liens = el("div", "actions");
   const a = el("a", "lien-source");
   a.href = lieu.url; a.target = "_blank"; a.rel = "noopener";
   a.append(el("span", null, T.site_officiel), icone("externe"));
-  detail.append(a);
+  const trajet = el("a", "action");
+  trajet.href = lienItineraire(lieu.lat, lieu.lng); trajet.target = "_blank"; trajet.rel = "noopener";
+  trajet.append(icone("itineraire"), el("span", null, T.itineraire));
+  liens.append(trajet, a);
+  detail.append(liens);
   const verifie = lireDate(lieu.verifie_le + "T12:00").toLocaleDateString(LANGUE, { day: "numeric", month: "long", year: "numeric" });
   detail.append(el("p", "verifie", remplir(T.verifie_le, { date: verifie })));
   item.append(detail);
@@ -260,7 +309,63 @@ function afficherBandeauSortir() {
     });
     segments.append(b);
   }
-  bandeau.append(segments);
+  // Bouton rond : passer de la liste à la carte et inversement
+  const bascule = el("button", "bouton-filtres");
+  bascule.type = "button";
+  bascule.setAttribute("aria-label", vueSortir === "carte" ? T.vue_liste : T.vue_carte);
+  bascule.append(icone(vueSortir === "carte" ? "liste" : "carte"));
+  bascule.addEventListener("click", () => changerVue(vueSortir === "carte" ? "liste" : "carte"));
+  bandeau.append(segments, bascule);
+}
+
+function changerVue(vue) {
+  vueSortir = vue;
+  ecrireStockage("sortir-vue", vue);
+  if (vue === "liste") placerMaison = false;
+  afficherSortir();
+  // On fait défiler pour que la carte (ou le début de la liste) soit à l'écran, sous le bandeau
+  const bandeau = document.getElementById("bandeau");
+  requestAnimationFrame(() => window.scrollTo({ top: bandeau.offsetTop - 14 }));
+}
+
+// Rangée « Distance depuis : Maison / Ma position »
+function rangeeDepart() {
+  const zone = el("div", "depart");
+  zone.append(el("span", "depart-titre", T.distance_depuis));
+  const choix = el("div", "depart-choix");
+  const bMaison = el("button", "puce-depart");
+  bMaison.type = "button";
+  bMaison.setAttribute("aria-pressed", String(depart === "maison"));
+  bMaison.append(icone("maison"), el("span", null, T.depart_maison));
+  bMaison.addEventListener("click", () => {
+    if (!maison) { placerMaison = true; changerVue("carte"); return; }  // pas encore placée : on la place
+    depart = depart === "maison" ? "" : "maison";
+    ecrireStockage("sortir-depart", depart);
+    afficherSortir();
+  });
+  const bPosition = el("button", "puce-depart");
+  bPosition.type = "button";
+  bPosition.setAttribute("aria-pressed", String(depart === "position"));
+  bPosition.append(icone("position"), el("span", null, T.depart_position));
+  bPosition.addEventListener("click", () => {
+    if (depart === "position") { depart = ""; afficherSortir(); return; }
+    if (!navigator.geolocation) { message(T.position_indisponible); return; }
+    message(T.position_en_cours);
+    navigator.geolocation.getCurrentPosition(
+      (p) => { position = [p.coords.latitude, p.coords.longitude]; depart = "position"; afficherSortir(); },
+      () => message(T.position_indisponible),
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: 120000 },
+    );
+  });
+  choix.append(bMaison, bPosition);
+  zone.append(choix);
+  if (vueSortir === "carte" && maison && !placerMaison) {
+    const deplacer = el("button", "bouton-texte", T.deplacer_maison);
+    deplacer.type = "button";
+    deplacer.addEventListener("click", () => { placerMaison = true; afficherSortir(); });
+    zone.append(deplacer);
+  }
+  return zone;
 }
 
 // Activités de l'agenda en cours ou qui commencent dans les 3 prochaines heures
@@ -297,6 +402,7 @@ function afficherSortir() {
   const parRang = (a, b) => (rangMeteo(a.lieu) - rangMeteo(b.lieu))
     || (a.statut.ordre - b.statut.ordre)
     || (lieuConvientAuxAges(b.lieu) - lieuConvientAuxAges(a.lieu))
+    || ((distanceDe(a.lieu) ?? 0) - (distanceDe(b.lieu) ?? 0))
     || a.lieu.nom.localeCompare(b.lieu.nom, LANGUE);
   const ouverts = choisis.filter((x) => x.statut.ouvert).sort(parRang);
   const fermes = choisis.filter((x) => !x.statut.ouvert)
@@ -311,8 +417,21 @@ function afficherSortir() {
   }
   document.getElementById("resume").textContent = resume;
 
-  contenu.replaceChildren(bandeMeteo());
+  contenu.replaceChildren(bandeMeteo(), rangeeDepart());
 
+  if (vueSortir === "carte") {
+    contenu.append(zoneCarte([...ouverts, ...fermes], m));
+  } else {
+    afficherListeSortir(contenu, ouverts, fermes, m);
+  }
+
+  // La météo arrive après coup : on redessine une fois reçue
+  if (!meteo || (!meteo.indisponible && Date.now() - meteoLueA > 30 * 60e3 && !PARAMS_SORTIR.get("meteo"))) {
+    chargerMeteo().then(() => { if (onglet === "sortir") afficherSortir(); });
+  }
+}
+
+function afficherListeSortir(contenu, ouverts, fermes, m) {
   contenu.append(el("h2", "section-titre", T.ouvert_maintenant));
   if (ouverts.length) {
     const groupe = el("div", "groupe");
@@ -338,17 +457,121 @@ function afficherSortir() {
     fermes.forEach((x) => groupe.append(ligneDeLieu(x.lieu, x.statut, m)));
     contenu.append(groupe);
   }
+}
 
-  // La météo arrive après coup : on redessine une fois reçue
-  if (!meteo || (!meteo.indisponible && Date.now() - meteoLueA > 30 * 60e3 && !PARAMS_SORTIR.get("meteo"))) {
-    chargerMeteo().then(() => { if (onglet === "sortir") afficherSortir(); });
+// ---------------------------------------------------------------------------
+// La carte (Leaflet + fond OpenStreetMap), chargée seulement quand on l'ouvre
+// ---------------------------------------------------------------------------
+
+function chargerLeaflet() {
+  if (window.L) return Promise.resolve();
+  if (chargerLeaflet.promesse) return chargerLeaflet.promesse;
+  chargerLeaflet.promesse = new Promise((ok, echec) => {
+    const css = document.createElement("link");
+    css.rel = "stylesheet"; css.href = "vendor/leaflet/leaflet.css";
+    document.head.append(css);
+    const js = document.createElement("script");
+    js.src = "vendor/leaflet/leaflet.js";
+    js.onload = ok;
+    js.onerror = () => { chargerLeaflet.promesse = null; echec(); };
+    document.head.append(js);
+  });
+  return chargerLeaflet.promesse;
+}
+
+// Petit marqueur rond avec l'illustration du type (mêmes teintes que les vignettes)
+function marqueur(cat, ferme, classe = "") {
+  const tuile = el("span", `repere ${ferme ? "repere-ferme" : ""} ${classe}`);
+  tuile.dataset.cat = cat;
+  tuile.append(illustration(cat));
+  return L.divIcon({ html: tuile.outerHTML, className: "repere-boite", iconSize: [40, 40], iconAnchor: [20, 20], popupAnchor: [0, -18] });
+}
+
+function marqueurIcone(nom, classe) {
+  const tuile = el("span", `repere ${classe}`);
+  tuile.append(icone(nom));
+  return L.divIcon({ html: tuile.outerHTML, className: "repere-boite", iconSize: [40, 40], iconAnchor: [20, 20] });
+}
+
+function bulleLieu(lieu, statut) {
+  const boite = el("div", "bulle");
+  boite.append(el("strong", "bulle-titre", lieu.nom));
+  const ligneStatut = el("span", "bulle-statut", statut.texte);
+  const km = distanceDe(lieu);
+  boite.append(ligneStatut);
+  if (km != null) boite.append(el("span", "bulle-distance", texteDistance(km)));
+  const voir = el("button", "action", T.voir_fiche);
+  voir.type = "button";
+  voir.addEventListener("click", () => {
+    changerVue("liste");
+    const item = document.getElementById(`lieu-${lieu.id}`);
+    if (!item) return;
+    item.querySelector(".ligne-bouton").click();
+    item.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+  const trajet = el("a", "action-lien", T.itineraire);
+  trajet.href = lienItineraire(lieu.lat, lieu.lng); trajet.target = "_blank"; trajet.rel = "noopener";
+  const actionsBulle = el("div", "bulle-actions");
+  actionsBulle.append(voir, trajet);
+  boite.append(actionsBulle);
+  return boite;
+}
+
+function zoneCarte(liste, m) {
+  const bloc = el("div", "carte-bloc");
+  if (placerMaison) {
+    const aide = el("p", "carte-aide");
+    aide.append(icone("maison"), el("span", null, T.placer_maison_aide));
+    bloc.append(aide);
   }
+  const zone = el("div", placerMaison ? "carte carte-placement" : "carte");
+  bloc.append(zone);
+
+  chargerLeaflet().then(() => {
+    if (!zone.isConnected) return;
+    const carte = L.map(zone, { zoomControl: true, attributionControl: true });
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(carte);
+
+    const points = [];
+    for (const { lieu, statut } of liste) {
+      if (lieu.lat == null) continue;
+      const repere = L.marker([lieu.lat, lieu.lng], { icon: marqueur(cleLieu(lieu.type), !statut.ouvert), title: lieu.nom, keyboard: true });
+      repere.bindPopup(() => bulleLieu(lieu, statut));
+      repere.addTo(carte);
+      points.push([lieu.lat, lieu.lng]);
+    }
+    if (maison) L.marker(maison, { icon: marqueurIcone("maison", "repere-maison"), title: T.chez_nous, interactive: false }).addTo(carte);
+    if (position) L.marker(position, { icon: marqueurIcone("position", "repere-position"), title: T.ici, interactive: false }).addTo(carte);
+
+    // Première ouverture : centre de Berne (ou la maison), les lieux plus loin restent à un glissement
+    if (vueCarte) carte.setView(vueCarte.centre, vueCarte.zoom);
+    else carte.setView(pointDepart() || [46.948, 7.447], 13);
+    carte.on("moveend", () => { vueCarte = { centre: carte.getCenter(), zoom: carte.getZoom() }; });
+
+    // Placer la maison : le prochain toucher sur la carte l'enregistre (sur ce téléphone seulement)
+    carte.on("click", (ev) => {
+      if (!placerMaison) return;
+      maison = [Math.round(ev.latlng.lat * 1e5) / 1e5, Math.round(ev.latlng.lng * 1e5) / 1e5];
+      ecrireStockage("sortir-maison", JSON.stringify(maison));
+      depart = "maison";
+      ecrireStockage("sortir-depart", "maison");
+      placerMaison = false;
+      message(T.maison_placee);
+      afficherSortir();
+    });
+  }).catch(() => {
+    zone.replaceChildren(el("p", "carte-aide", T.carte_indisponible));
+  });
+  return bloc;
 }
 
 function piedSortir() {
   const p = document.getElementById("pied-sortir");
   p.hidden = false;
-  p.textContent = `${T.pied_sortir} ${T.credit_meteo}`;
+  p.textContent = `${T.pied_sortir} ${T.credit_meteo} ${T.credit_carte}`;
   if (lieux) {
     const maj = lireDate(lieux.mis_a_jour).toLocaleString(LANGUE, { weekday: "long", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
     document.getElementById("mise-a-jour").textContent = remplir(T.mis_a_jour, { date: maj });

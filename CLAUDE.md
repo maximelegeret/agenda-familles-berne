@@ -79,6 +79,11 @@ Plan détaillé : `~/.claude/plans/lexical-juggling-flute.md`. Lot A (onglets + 
 - **Page** : onglets en bas (Agenda / Sortir ; Pratique viendra au Lot C, pas d'onglet vide). Période et filtres dans un bandeau collant en haut. Code de l'onglet dans `docs/sortir.js`.
 - **Météo** : Open-Meteo lu par la page (gratuit, sans clé, seulement les coordonnées du centre de Berne), crédit affiché (CC BY 4.0). S'il pleut, les lieux couverts passent en premier.
 - **Pour vérifier** : `…/?maintenant=2026-11-15T09:00&meteo=pluie#sortir` simule une heure et une météo.
+- **Lot B (10 nov. 2026)** :
+  - places de jeux choisies à la main par Claude, sur le choix de Maxime (sources familienleben.ch et freizeit.ch). Les données ouvertes de la Ville (opendata.swiss « Spielplätze ») refusent les accès automatiques : ne pas contourner ce blocage. OpenStreetMap Overpass est surchargé et réservé à un usage humain ;
+  - carte Leaflet 1.9.4 hébergée dans `docs/vendor/leaflet/` (licence BSD-2), fond OpenStreetMap avec son crédit ;
+  - distance depuis « Maison » (placée sur la carte, gardée dans le localStorage du téléphone) ou depuis « Ma position » (GPS, jamais enregistrée) ;
+  - itinéraire : lien Google Maps en transports publics, avec seulement la destination.
 - Manques signalés à Maxime : aucun café avec coin jeux ni ferme fiable trouvés ; Bernisches Historisches Museum illisible ; horaires d'été des piscines non relevés (hors saison = fermé).
 
 ## Points ouverts

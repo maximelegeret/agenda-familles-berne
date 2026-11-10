@@ -510,6 +510,58 @@ h1, h2, h3 { text-wrap: balance; }
 .remarque .icone { width: 17px; height: 17px; margin-top: 1px; }
 .verifie { color: var(--doux); font-size: 13px; }
 .vide-compact { margin-top: 0; padding: 20px; }
+.distance { color: var(--doux); font-size: 13px; font-weight: 650; margin-left: auto; white-space: nowrap; }
+
+/* « Distance depuis : Maison / Ma position » */
+.depart { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 14px; padding: 0 4px; }
+.depart-titre { color: var(--doux); font-size: 14px; font-weight: 650; }
+.depart-choix { display: flex; gap: 8px; }
+.puce-depart {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 14px;
+  border-radius: 999px; border: 2px solid var(--trait); background: var(--carte);
+  font-size: 14px; font-weight: 700; cursor: pointer; transition: transform 0.35s var(--ressort);
+}
+.puce-depart:active { transform: scale(0.95); }
+.puce-depart .icone { width: 18px; height: 18px; }
+.puce-depart[aria-pressed="true"] { background: var(--action); border-color: var(--action); color: var(--action-texte); }
+.depart .bouton-texte { padding: 8px 0; font-size: 14px; }
+
+/* Carte */
+.carte-bloc { margin-top: 14px; display: grid; gap: 10px; }
+.carte {
+  height: max(360px, calc(100svh - 360px)); border-radius: var(--rayon); overflow: hidden;
+  box-shadow: var(--ombre); background: var(--neutre); isolation: isolate;
+}
+.carte-placement { cursor: crosshair; outline: 3px solid var(--action); outline-offset: -3px; }
+.carte-aide {
+  display: flex; align-items: flex-start; gap: 8px; padding: 12px 14px; border-radius: 16px;
+  background: var(--inscr-fond); color: var(--inscr-texte); font-size: 14px; font-weight: 600;
+}
+.carte-aide .icone { width: 18px; height: 18px; }
+.repere-boite { background: none; border: 0; }
+.repere {
+  width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--cat-fond, var(--carte)); border: 2.5px solid var(--carte); box-shadow: var(--ombre);
+}
+.repere .illu { width: 26px; height: 26px; }
+.repere-ferme { filter: saturate(0.35); opacity: 0.8; }
+.repere-maison, .repere-position { background: var(--encre); color: var(--carte); }
+.repere-maison .icone, .repere-position .icone { width: 20px; height: 20px; }
+.bulle { display: grid; gap: 4px; min-width: 180px; font-family: "Figtree", ui-rounded, system-ui, sans-serif; }
+.bulle-titre { font-size: 16px; font-weight: 750; }
+.bulle-statut { font-size: 14px; font-weight: 650; }
+.bulle-distance { color: var(--doux); font-size: 13px; }
+.bulle-actions { display: flex; align-items: center; gap: 10px; margin-top: 6px; }
+/* Préfixe .carte : leaflet.css est chargé après cette feuille, il faut passer devant lui */
+.carte .leaflet-popup-content-wrapper, .carte .leaflet-popup-tip { background: var(--carte); color: var(--encre); box-shadow: var(--ombre-forte); }
+.carte .leaflet-popup-content-wrapper { border-radius: 18px; }
+.carte .leaflet-popup-content { margin: 14px 16px; line-height: 1.4; font-size: 14px; }
+.carte.leaflet-container { font-family: "Figtree", ui-rounded, system-ui, sans-serif; background: var(--neutre); }
+.carte.leaflet-container a.leaflet-popup-close-button { color: var(--doux); }
+.carte.leaflet-container a.action-lien { color: var(--action); }
+.carte .leaflet-bar a { background: var(--carte); color: var(--encre); border-color: var(--trait); }
+.carte .leaflet-control-attribution { background: color-mix(in srgb, var(--carte) 85%, transparent); color: var(--doux); }
+.carte .leaflet-control-attribution a { color: var(--doux); }
 .vide-compact .vide-titre { font-size: 17px; }
 
 /* --- Mouvement --- */
