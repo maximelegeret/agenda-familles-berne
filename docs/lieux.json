@@ -1,5 +1,5 @@
 {
-  "mis_a_jour": "2026-11-10T13:18+01:00",
+  "mis_a_jour": "2026-11-10T21:42+01:00",
   "lieux": [
     {
       "id": "tierpark",
@@ -177,12 +177,12 @@
       "lat": 46.95121,
       "lng": 7.4608,
       "prix": "gratuit",
-      "resume": "Parc avec vue sur la vieille ville, place de jeux et restaurant à côté.",
+      "resume": "Parc avec vue sur la vieille ville ; place de jeux avec un dragon à escalader, dont le toboggan sort par la gueule.",
       "equipements": [
         "jeux",
         "cafe"
       ],
-      "remarque": "Parc public. Restaurant Rosengarten ouvert tous les jours 09:00–23:30.",
+      "remarque": "Parc public. Restaurant Rosengarten ouvert tous les jours 09:00–23:30. Dragon décrit par familienleben.ch.",
       "url": "https://www.rosengarten.be/",
       "verifie_le": "2026-11-09",
       "toujours_ouvert": true
@@ -192,13 +192,15 @@
       "nom": "Elfenau",
       "type": "nature",
       "dedans": false,
-      "adresse": "Elfenauweg, 3006 Bern",
-      "lat": 46.93267,
-      "lng": 7.46559,
+      "adresse": "Elfenauweg 94, 3006 Bern",
+      "lat": 46.93279,
+      "lng": 7.46604,
       "prix": "gratuit",
-      "resume": "Grand parc au bord de l'Aar, étang et forêt : pour courir, observer les canards et pique-niquer.",
-      "equipements": [],
-      "remarque": "Parc public. Horaires des serres de la Stadtgärtnerei non vérifiés.",
+      "resume": "Grand parc au bord de l'Aar ; place de jeux avec hutte de castor, rigoles d'eau, toboggans et bac à sable, oies et poules de la ferme voisine.",
+      "equipements": [
+        "jeux"
+      ],
+      "remarque": "Parc public. Place de jeux décrite par familienleben.ch. Horaires des serres de la Stadtgärtnerei non vérifiés. Bus jusqu'à Manuelstrasse.",
       "url": "https://www.bern.ch/",
       "verifie_le": "2026-11-09",
       "toujours_ouvert": true
@@ -861,6 +863,112 @@
           "09:00-17:00"
         ]
       }
+    },
+    {
+      "id": "langmuur",
+      "nom": "Spielplatz Längmuur",
+      "type": "jeux",
+      "dedans": false,
+      "adresse": "Langmauerweg 20A, 3011 Bern",
+      "lat": 46.94981,
+      "lng": 7.45424,
+      "prix": "gratuit",
+      "resume": "Place de jeux d'aventure au bord de l'Aar : pompe à eau et jeux de boue, bateau pirate, avion, véhicules, terrain de foot.",
+      "equipements": [
+        "jeux"
+      ],
+      "remarque": "Change avec les saisons et le programme. Arrêt Nydegg.",
+      "url": "https://www.familienleben.ch/freizeit/spielen/spielplaetze-in-bern-2089",
+      "verifie_le": "2026-11-10",
+      "toujours_ouvert": true
+    },
+    {
+      "id": "schuetzenweg",
+      "nom": "Spielplatz am Schützenweg",
+      "type": "jeux",
+      "dedans": false,
+      "adresse": "Allmendstrasse 21, 3014 Bern",
+      "lat": 46.95909,
+      "lng": 7.4511,
+      "prix": "gratuit",
+      "resume": "Jeux insolites : un bateau pirate, une carcasse de voiture et un vrai avion.",
+      "equipements": [
+        "jeux"
+      ],
+      "remarque": "Tram jusqu'à Wyleregg.",
+      "url": "https://www.familienleben.ch/freizeit/spielen/spielplaetze-in-bern-2089",
+      "verifie_le": "2026-11-10",
+      "toujours_ouvert": true
+    },
+    {
+      "id": "halenbrunnen",
+      "nom": "Spielplatz Halenbrunnen",
+      "type": "jeux",
+      "dedans": false,
+      "adresse": "Halenstrasse 2, 3012 Bern",
+      "lat": 46.95712,
+      "lng": 7.42297,
+      "prix": "gratuit",
+      "resume": "À l'orée de la forêt : grande prairie, foyer pour pique-niquer et petite piste pour apprendre le vélo.",
+      "equipements": [
+        "jeux"
+      ],
+      "url": "https://www.familienleben.ch/freizeit/spielen/spielplaetze-in-bern-2089",
+      "verifie_le": "2026-11-10",
+      "toujours_ouvert": true
+    },
+    {
+      "id": "monbijoupark",
+      "nom": "Spielplatz Monbijoupark",
+      "type": "jeux",
+      "dedans": false,
+      "adresse": "Monbijoustrasse 40, 3011 Bern",
+      "lat": 46.94193,
+      "lng": 7.43481,
+      "prix": "gratuit",
+      "resume": "Grand parc près de la gare, avec place de jeux, balançoires et prairie pour jouer au ballon.",
+      "equipements": [
+        "jeux"
+      ],
+      "url": "https://www.familienleben.ch/freizeit/spielen/spielplaetze-in-bern-2089",
+      "verifie_le": "2026-11-10",
+      "toujours_ouvert": true
+    },
+    {
+      "id": "steinhoelzli",
+      "nom": "Spielplatz Steinhölzli (Dübystrasse)",
+      "type": "jeux",
+      "dedans": false,
+      "adresse": "Schwarzenburgstrasse 59, 3008 Bern",
+      "lat": 46.93604,
+      "lng": 7.42518,
+      "prix": "gratuit",
+      "resume": "Un grand crocodile à bascule, des toboggans, des balançoires et de quoi grimper.",
+      "equipements": [
+        "jeux"
+      ],
+      "remarque": "Arrêt de bus Dübystrasse, juste à côté.",
+      "url": "https://www.familienleben.ch/freizeit/spielen/spielplaetze-in-bern-2089",
+      "verifie_le": "2026-11-10",
+      "toujours_ouvert": true
+    },
+    {
+      "id": "westside-spielplatz",
+      "nom": "Spielplatz Westside",
+      "type": "jeux",
+      "dedans": false,
+      "adresse": "Riedbachstrasse 100, 3027 Bern",
+      "lat": 46.94433,
+      "lng": 7.37428,
+      "prix": "gratuit",
+      "resume": "Place de jeux sur le thème de la ferme : tracteur pour les plus petits, ferme et animaux en bois.",
+      "equipements": [
+        "jeux"
+      ],
+      "remarque": "Près du centre commercial Westside (et de Bernaqua). Emplacement exact sur place à confirmer.",
+      "url": "https://www.familienleben.ch/freizeit/spielen/spielplaetze-in-bern-2089",
+      "verifie_le": "2026-11-10",
+      "toujours_ouvert": true
     }
   ]
 }
