@@ -55,38 +55,9 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 SUMMARY:Karneval der Käfer: Kreativ verweilen Fünfliber-Werkstatt
-DTSTART;TZID=Europe/Zurich:20261124T100000
-DTEND;TZID=Europe/Zurich:20261124T170000
-DTSTAMP:20261124T143916Z
-UID:creaviva-14498-202611241000@agenda-familles-berne
-DESCRIPTION:Gepunktet\, gestreift oder mit ganz vielen Beinchen? Mit versc
- hiedenen Stempeln lassen wir im November kleine Käfer entstehen\, die sic
- h Schicht für Schicht zu einer fröhlichen Krabbelgesellschaft… Täglic
- h zwischen 10:00–17:00 · Loft im Creaviva\nSource : Creaviva (Zentrum P
- aul Klee)\nhttps://zpk.org/de/kreativ-verweilen/karneval-der-kaefer
-LOCATION:Creaviva\, Zentrum Paul Klee\, Monument im Fruchtland 3\, 3006 Be
- rn
-URL:https://zpk.org/de/kreativ-verweilen/karneval-der-kaefer
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Vogelperspektive: Workshop Offenes Atelier
-DTSTART;TZID=Europe/Zurich:20261124T160000
-DTEND;TZID=Europe/Zurich:20261124T170000
-DTSTAMP:20261124T143916Z
-UID:creaviva-14208-202611241600@agenda-familles-berne
-DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
- ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
- äumen\, Teichen und allem\, was darin Platz findet. Atelier 1\nSource : C
- reaviva (Zentrum Paul Klee)\nhttps://zpk.org/de/workshop/vogelperspektive
-LOCATION:Creaviva\, Zentrum Paul Klee\, Monument im Fruchtland 3\, 3006 Be
- rn
-URL:https://zpk.org/de/workshop/vogelperspektive
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Karneval der Käfer: Kreativ verweilen Fünfliber-Werkstatt
 DTSTART;TZID=Europe/Zurich:20261125T100000
 DTEND;TZID=Europe/Zurich:20261125T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14498-202611251000@agenda-familles-berne
 DESCRIPTION:Gepunktet\, gestreift oder mit ganz vielen Beinchen? Mit versc
  hiedenen Stempeln lassen wir im November kleine Käfer entstehen\, die sic
@@ -98,22 +69,10 @@ LOCATION:Creaviva\, Zentrum Paul Klee\, Monument im Fruchtland 3\, 3006 Be
 URL:https://zpk.org/de/kreativ-verweilen/karneval-der-kaefer
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Riime mit de Chliine
-DTSTART;TZID=Europe/Zurich:20261125T103000
-DTEND;TZID=Europe/Zurich:20261125T110000
-DTSTAMP:20261124T143916Z
-UID:kob-18348-202611251030@agenda-familles-berne
-DESCRIPTION:Värsli und Lieder i Mundart für die Chlinschte ab ca. 6 Mone
- t bis öppe 4jährig ir Begleitig vore erwachsene Person.\nSource : Kornha
- usbibliotheken\nhttps://www.kob.ch/veranstaltung/riime-mit-de-chliine-2/
-LOCATION:Bibliothek Muri-Gümligen
-URL:https://www.kob.ch/veranstaltung/riime-mit-de-chliine-2/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Die Zauberlaterne Bern ABC
 DTSTART;TZID=Europe/Zurich:20261125T134500
 DTEND;TZID=Europe/Zurich:20261125T153000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7529582181439559640@agenda-familles-berne
 DESCRIPTION:Die Zauberlaterne Bern ist ein Filmklub für Kinder von 6 bis 
  12 Jahren. Hier entdecken sie – ohne ihre Eltern\, aber in Begleitung ve
@@ -125,24 +84,10 @@ URL:https://eventfrog.ch/de/p/kinderveranstaltungen/familienveranstaltunge
  n/die-zauberlaterne-bern-abc-bern-7529582181439559640.html
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vogelperspektive: Workshop Offenes Atelier
-DTSTART;TZID=Europe/Zurich:20261125T140000
-DTEND;TZID=Europe/Zurich:20261125T150000
-DTSTAMP:20261124T143916Z
-UID:creaviva-14208-202611251400@agenda-familles-berne
-DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
- ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
- äumen\, Teichen und allem\, was darin Platz findet. Atelier 1\nSource : C
- reaviva (Zentrum Paul Klee)\nhttps://zpk.org/de/workshop/vogelperspektive
-LOCATION:Creaviva\, Zentrum Paul Klee\, Monument im Fruchtland 3\, 3006 Be
- rn
-URL:https://zpk.org/de/workshop/vogelperspektive
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Tierzeichnen
 DTSTART;TZID=Europe/Zurich:20261125T140000
 DTEND;TZID=Europe/Zurich:20261125T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:nmbe-tierzeichnen-202611251400@agenda-familles-berne
 DESCRIPTION:Für alle\, die gerne zeichnen und es noch besser können woll
  en. Zeichen- und Malwerkstatt für Gross und Klein\, für Neulinge und Ge
@@ -155,7 +100,7 @@ BEGIN:VEVENT
 SUMMARY:Zaubergarten – Von Schamanenzauber und Göttertrank
 DTSTART;TZID=Europe/Zurich:20261125T140000
 DTEND;TZID=Europe/Zurich:20261125T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:boga-von_schamanenzauber_und_goettertrank_251-202611251400@agenda-fami
  lles-berne
 DESCRIPTION:Unser Zauberjahr neigt sich langsam dem Ende zu. Mit Hilfe von
@@ -171,7 +116,7 @@ BEGIN:VEVENT
 SUMMARY:Kreativwerkstatt: Nagelbild (3006 Bern)
 DTSTART;TZID=Europe/Zurich:20261125T140000
 DTEND;TZID=Europe/Zurich:20261125T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7506326505196113493@agenda-familles-berne
 DESCRIPTION:Kinder ab 6 Jahren basteln unter Anleitung von Stephanie und D
  änu kreative Werke aus Holz und Verpackungsmaterial. Zvieri inklusive.\nS
@@ -182,24 +127,10 @@ URL:https://eventfrog.ch/de/p/kinderveranstaltungen/kurs/kreativwerkstatt-
  nagelbild-3006-bern-bern-7506326505196113493.html
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Märli u angeri Gschichtli
-DTSTART;TZID=Europe/Zurich:20261125T141500
-DTEND;TZID=Europe/Zurich:20261125T150000
-DTSTAMP:20261124T143916Z
-UID:kob-23099-202611251415@agenda-familles-berne
-DESCRIPTION:Trudy Studer erzählt Märchen\, mit und ohne das geheimnisvol
- le Kamishibai. Kamishibai ist eine traditionelle japanische Form des Gesch
- ichtenerzählens. Das Wort setzt sich zusammen aus Kami = Papier…\nSourc
- e : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/maerli-u-angeri
- -gschichtli-3/
-LOCATION:Bibliothek Urtenen-Schönbühl
-URL:https://www.kob.ch/veranstaltung/maerli-u-angeri-gschichtli-3/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:Theaternachmittag für Kids
 DTSTART;TZID=Europe/Zurich:20261125T143000
 DTEND;TZID=Europe/Zurich:20261125T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:mueze-theaternachmittag-fuer-kids-25-11-2026-1430@agenda-familles-bern
  e
 DESCRIPTION:Wir spielen Theater!\nSource : MüZe Muri-Gümligen\nhttps://w
@@ -214,7 +145,7 @@ BEGIN:VEVENT
 SUMMARY:Geschichten vor Kunst: Workshop KunstSpatz
 DTSTART;TZID=Europe/Zurich:20261125T143000
 DTEND;TZID=Europe/Zurich:20261125T154500
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kmb-1305-202611251430@agenda-familles-berne
 DESCRIPTION:Freuen Sie sich auf lebhaft erzählte Geschichten vor Kunstwer
  ken\, gefolgt vom gemeinsamen Gestalten im Atelier. Der KunstSpatz platzie
@@ -227,7 +158,7 @@ BEGIN:VEVENT
 SUMMARY:Schenk mir eine Geschichte auf Arabisch
 DTSTART;TZID=Europe/Zurich:20261125T150000
 DTEND;TZID=Europe/Zurich:20261125T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-38831-202611251500@agenda-familles-berne
 DESCRIPTION:Wer die Muttersprache gut spricht\, lernt andere Sprachen bess
  er! Kinder von zwei bis sechs Jahren\, ihre älteren Geschwister sowie ihr
@@ -242,7 +173,7 @@ BEGIN:VEVENT
 SUMMARY:Vogelperspektive: Workshop Offenes Atelier
 DTSTART;TZID=Europe/Zurich:20261125T160000
 DTEND;TZID=Europe/Zurich:20261125T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14208-202611251600@agenda-familles-berne
 DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
  ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
@@ -256,7 +187,7 @@ BEGIN:VEVENT
 SUMMARY:Die Zauberlaterne Bern ABC
 DTSTART;TZID=Europe/Zurich:20261125T160000
 DTEND;TZID=Europe/Zurich:20261125T173000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7529582464454388417@agenda-familles-berne
 DESCRIPTION:Die Zauberlaterne Bern ist ein Filmklub für Kinder von 6 bis 
  12 Jahren. Hier entdecken sie – ohne ihre Eltern\, aber in Begleitung ve
@@ -271,7 +202,7 @@ BEGIN:VEVENT
 SUMMARY:Geschichten – Lieder – Värsli – Spiele
 DTSTART;TZID=Europe/Zurich:20261126T093000
 DTEND;TZID=Europe/Zurich:20261126T100000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-51412-202611260930@agenda-familles-berne
 DESCRIPTION:Für alle Kinder bis vier Jahre und ihre Eltern. Wir freuen un
  s auf euch! Gratis und ohne Anmeldung Im Anschluss Bücher ausleihen und/o
@@ -285,7 +216,7 @@ BEGIN:VEVENT
 SUMMARY:Karneval der Käfer: Kreativ verweilen Fünfliber-Werkstatt
 DTSTART;TZID=Europe/Zurich:20261126T100000
 DTEND;TZID=Europe/Zurich:20261126T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14498-202611261000@agenda-familles-berne
 DESCRIPTION:Gepunktet\, gestreift oder mit ganz vielen Beinchen? Mit versc
  hiedenen Stempeln lassen wir im November kleine Käfer entstehen\, die sic
@@ -300,7 +231,7 @@ BEGIN:VEVENT
 SUMMARY:Vogelperspektive: Workshop Offenes Atelier
 DTSTART;TZID=Europe/Zurich:20261126T140000
 DTEND;TZID=Europe/Zurich:20261126T150000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14208-202611261400@agenda-familles-berne
 DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
  ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
@@ -314,7 +245,7 @@ BEGIN:VEVENT
 SUMMARY:Vogelperspektive: Workshop Offenes Atelier
 DTSTART;TZID=Europe/Zurich:20261126T160000
 DTEND;TZID=Europe/Zurich:20261126T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14208-202611261600@agenda-familles-berne
 DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
  ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
@@ -328,7 +259,7 @@ BEGIN:VEVENT
 SUMMARY:Karneval der Käfer: Kreativ verweilen Fünfliber-Werkstatt
 DTSTART;TZID=Europe/Zurich:20261127T100000
 DTEND;TZID=Europe/Zurich:20261127T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14498-202611271000@agenda-familles-berne
 DESCRIPTION:Gepunktet\, gestreift oder mit ganz vielen Beinchen? Mit versc
  hiedenen Stempeln lassen wir im November kleine Käfer entstehen\, die sic
@@ -343,7 +274,7 @@ BEGIN:VEVENT
 SUMMARY:Vogelperspektive: Workshop Offenes Atelier
 DTSTART;TZID=Europe/Zurich:20261127T140000
 DTEND;TZID=Europe/Zurich:20261127T150000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14208-202611271400@agenda-familles-berne
 DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
  ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
@@ -357,7 +288,7 @@ BEGIN:VEVENT
 SUMMARY:Cocoriki – Lilemoi 1
 DTSTART;TZID=Europe/Zurich:20261127T144500
 DTEND;TZID=Europe/Zurich:20261127T153000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-36531-202611271445@agenda-familles-berne
 DESCRIPTION:dès 4 ans\nSource : Kornhausbibliotheken\nhttps://www.kob.ch/
  veranstaltung/cocoriki-lilemoi/
@@ -368,7 +299,7 @@ BEGIN:VEVENT
 SUMMARY:Toddler art workshops - Spinning November
 DTSTART;TZID=Europe/Zurich:20261127T144500
 DTEND;TZID=Europe/Zurich:20261127T161500
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7524381795258769880@agenda-familles-berne
 DESCRIPTION:Art workshops for the smallest kids\, from 1\,5-5yo\, focused 
  on process art and exploration.\nSource : Eventfrog\nhttps://eventfrog.ch/
@@ -382,7 +313,7 @@ BEGIN:VEVENT
 SUMMARY:Vogelperspektive: Workshop Offenes Atelier
 DTSTART;TZID=Europe/Zurich:20261127T160000
 DTEND;TZID=Europe/Zurich:20261127T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14208-202611271600@agenda-familles-berne
 DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
  ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
@@ -396,7 +327,7 @@ BEGIN:VEVENT
 SUMMARY:Cocoriki – Lilemoi 2
 DTSTART;TZID=Europe/Zurich:20261127T160000
 DTEND;TZID=Europe/Zurich:20261127T164500
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-46404-202611271600@agenda-familles-berne
 DESCRIPTION:dès 4 ans\nSource : Kornhausbibliotheken\nhttps://www.kob.ch/
  veranstaltung/cocoriki-lilemoi-2/
@@ -407,7 +338,7 @@ BEGIN:VEVENT
 SUMMARY:Zauberkurs für Kinder
 DTSTART;TZID=Europe/Zurich:20261128T093000
 DTEND;TZID=Europe/Zurich:20261128T123000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7506326846109156964@agenda-familles-berne
 DESCRIPTION:Zauberkurs mit Profi: Kinder ab 6 Jare lernen Tricks mit Allta
  gsgegenständen und zeigen Eltern um 16 Uhr eine fröhliche Zaubershow. Zv
@@ -421,7 +352,7 @@ BEGIN:VEVENT
 SUMMARY:Karneval der Käfer: Kreativ verweilen Fünfliber-Werkstatt
 DTSTART;TZID=Europe/Zurich:20261128T100000
 DTEND;TZID=Europe/Zurich:20261128T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14498-202611281000@agenda-familles-berne
 DESCRIPTION:Gepunktet\, gestreift oder mit ganz vielen Beinchen? Mit versc
  hiedenen Stempeln lassen wir im November kleine Käfer entstehen\, die sic
@@ -436,7 +367,7 @@ BEGIN:VEVENT
 SUMMARY:ESP Saturday Club - 28th November
 DTSTART;TZID=Europe/Zurich:20261128T103000
 DTEND;TZID=Europe/Zurich:20261128T120000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7480186249967307706@agenda-familles-berne
 DESCRIPTION:Join us once a month for fun activities in English! 10:30 - 12
  :00 CHF 35 for non-ESP students\, CHF 30 for ESP students.\nSource : Event
@@ -450,7 +381,7 @@ BEGIN:VEVENT
 SUMMARY:Pica & Poco
 DTSTART;TZID=Europe/Zurich:20261128T110000
 DTEND;TZID=Europe/Zurich:20261128T120000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7523690386088283396@agenda-familles-berne
 DESCRIPTION:Ein heiteres und liebevolles Theatererlebnis für alle Mensche
  n ab 3 Jahren. Mit Humor\, Poesie und jeder Menge Entdeckungslust für die
@@ -465,7 +396,7 @@ BEGIN:VEVENT
 SUMMARY:Vogelperspektive: Workshop Offenes Atelier
 DTSTART;TZID=Europe/Zurich:20261128T120000
 DTEND;TZID=Europe/Zurich:20261128T130000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14208-202611281200@agenda-familles-berne
 DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
  ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
@@ -479,7 +410,7 @@ BEGIN:VEVENT
 SUMMARY:Zauberkurs für Kinder
 DTSTART;TZID=Europe/Zurich:20261128T133000
 DTEND;TZID=Europe/Zurich:20261128T163000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7506327097540918995@agenda-familles-berne
 DESCRIPTION:Zauberkurs mit Profi: Kinder ab 6 Jare lernen Tricks mit Allta
  gsgegenständen und zeigen Eltern um 16 Uhr eine fröhliche Zaubershow. Zv
@@ -493,7 +424,7 @@ BEGIN:VEVENT
 SUMMARY:Vogelperspektive: Workshop Offenes Atelier
 DTSTART;TZID=Europe/Zurich:20261128T140000
 DTEND;TZID=Europe/Zurich:20261128T150000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14208-202611281400@agenda-familles-berne
 DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
  ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
@@ -507,7 +438,7 @@ BEGIN:VEVENT
 SUMMARY:Pica & Poco
 DTSTART;TZID=Europe/Zurich:20261128T140000
 DTEND;TZID=Europe/Zurich:20261128T150000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7523690386134420741@agenda-familles-berne
 DESCRIPTION:Ein heiteres und liebevolles Theatererlebnis für alle Mensche
  n ab 3 Jahren. Mit Humor\, Poesie und jeder Menge Entdeckungslust für die
@@ -522,7 +453,7 @@ BEGIN:VEVENT
 SUMMARY:Vogelperspektive: Workshop Offenes Atelier
 DTSTART;TZID=Europe/Zurich:20261128T160000
 DTEND;TZID=Europe/Zurich:20261128T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14208-202611281600@agenda-familles-berne
 DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
  ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
@@ -536,7 +467,7 @@ BEGIN:VEVENT
 SUMMARY:Kinderlotto
 DTSTART;TZID=Europe/Zurich:20261128T160000
 DTEND;TZID=Europe/Zurich:20261128T173000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-51216-202611281600@agenda-familles-berne
 DESCRIPTION:Kinderlotto von ca. sechs bis zehn Jahren mit lustigen Preisen
  ! Kleiner Imbiss vorhanden.\nSource : Kornhausbibliotheken\nhttps://www.ko
@@ -548,7 +479,7 @@ BEGIN:VEVENT
 SUMMARY:Karneval der Käfer: Kreativ verweilen Fünfliber-Werkstatt
 DTSTART;TZID=Europe/Zurich:20261129T100000
 DTEND;TZID=Europe/Zurich:20261129T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14498-202611291000@agenda-familles-berne
 DESCRIPTION:Gepunktet\, gestreift oder mit ganz vielen Beinchen? Mit versc
  hiedenen Stempeln lassen wir im November kleine Käfer entstehen\, die sic
@@ -563,7 +494,7 @@ BEGIN:VEVENT
 SUMMARY:Tiergeschichten aus dem Naturlabor
 DTSTART;TZID=Europe/Zurich:20261129T110000
 DTEND;TZID=Europe/Zurich:20261129T114000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:mqb-tiergeschichten-aus-dem-naturlabor-202611291100@agenda-familles-be
  rne
 DESCRIPTION:Was für ein Theater in unserem Naturlabor! Das Forschungsteam
@@ -578,7 +509,7 @@ BEGIN:VEVENT
 SUMMARY:Pica & Poco
 DTSTART;TZID=Europe/Zurich:20261129T110000
 DTEND;TZID=Europe/Zurich:20261129T120000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7523690386184752414@agenda-familles-berne
 DESCRIPTION:Ein heiteres und liebevolles Theatererlebnis für alle Mensche
  n ab 3 Jahren. Mit Humor\, Poesie und jeder Menge Entdeckungslust für die
@@ -593,7 +524,7 @@ BEGIN:VEVENT
 SUMMARY:Vogelperspektive: Workshop Offenes Atelier
 DTSTART;TZID=Europe/Zurich:20261129T120000
 DTEND;TZID=Europe/Zurich:20261129T130000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14208-202611291200@agenda-familles-berne
 DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
  ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
@@ -607,7 +538,7 @@ BEGIN:VEVENT
 SUMMARY:Tiergeschichten aus dem Naturlabor
 DTSTART;TZID=Europe/Zurich:20261129T133000
 DTEND;TZID=Europe/Zurich:20261129T141000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:mqb-tiergeschichten-aus-dem-naturlabor-202611291330@agenda-familles-be
  rne
 DESCRIPTION:Was für ein Theater in unserem Naturlabor! Das Forschungsteam
@@ -622,7 +553,7 @@ BEGIN:VEVENT
 SUMMARY:Vogelperspektive: Workshop Offenes Atelier
 DTSTART;TZID=Europe/Zurich:20261129T140000
 DTEND;TZID=Europe/Zurich:20261129T150000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14208-202611291400@agenda-familles-berne
 DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
  ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
@@ -636,7 +567,7 @@ BEGIN:VEVENT
 SUMMARY:Pica & Poco
 DTSTART;TZID=Europe/Zurich:20261129T140000
 DTEND;TZID=Europe/Zurich:20261129T150000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7523690572986483479@agenda-familles-berne
 DESCRIPTION:Ein heiteres und liebevolles Theatererlebnis für alle Mensche
  n ab 3 Jahren. Mit Humor\, Poesie und jeder Menge Entdeckungslust für die
@@ -651,7 +582,7 @@ BEGIN:VEVENT
 SUMMARY:Munterbunt (Theater für die Allerjüngsten)
 DTSTART;TZID=Europe/Zurich:20261129T150000
 DTEND;TZID=Europe/Zurich:20261129T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:schlachthaus-7588-202611291500@agenda-familles-berne
 DESCRIPTION:Wie fliegt es? Welche Töne bringt es hervor? Welche Bewegunge
  n entstehen aus einem einzigen Blatt? Wir falten\, knüllen\, reissen\, we
@@ -666,7 +597,7 @@ BEGIN:VEVENT
 SUMMARY:Vogelperspektive: Workshop Offenes Atelier
 DTSTART;TZID=Europe/Zurich:20261129T160000
 DTEND;TZID=Europe/Zurich:20261129T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:creaviva-14208-202611291600@agenda-familles-berne
 DESCRIPTION:Wir schneiden biomorphe Formen aus Seidenpapier aus und schich
  ten Lage für Lage übereinander. Ein Park entsteht mit eigenen Wegen\, B
@@ -680,7 +611,7 @@ BEGIN:VEVENT
 SUMMARY:Samichlous-Auszug aus dem Zytglogge
 DTSTART;TZID=Europe/Zurich:20261129T164500
 DTEND;TZID=Europe/Zurich:20261129T173000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7521102083136689905@agenda-familles-berne
 DESCRIPTION:Jährlich begrüsst der Oberchlaus die Besucher mit einer Gesc
  hichte. Mit dem fünften Glockenschlag ziehen ca. 15 Samichlous- und Schmu
@@ -696,7 +627,7 @@ BEGIN:VEVENT
 SUMMARY:ISBerne kennenlernen – Open Morning für Familien
 DTSTART;TZID=Europe/Zurich:20261130T093000
 DTEND;TZID=Europe/Zurich:20261130T110000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7505589300311905460@agenda-familles-berne
 DESCRIPTION:Bei unserem Open Morning entdecken Familien unsere Bildungsang
  ebote für Kinder und Jugendliche von 3 bis 18 Jahren und erleben den Schu
@@ -713,7 +644,7 @@ BEGIN:VEVENT
 SUMMARY:Värsli für di Chlyne
 DTSTART;TZID=Europe/Zurich:20261201T091500
 DTEND;TZID=Europe/Zurich:20261201T094500
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-42199-202612010915@agenda-familles-berne
 DESCRIPTION:Geschichte\, Verse\, Lieder mit Carmen Lüthi. Für Kinder bis
   4 Jahre in Begleitung. Jeweils von 9:15 bis ca. 09:45 Uhr oder von 10:15 
@@ -727,7 +658,7 @@ BEGIN:VEVENT
 SUMMARY:Värsli für di Chlyne
 DTSTART;TZID=Europe/Zurich:20261201T101500
 DTEND;TZID=Europe/Zurich:20261201T104500
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-42199-202612011015@agenda-familles-berne
 DESCRIPTION:Geschichte\, Verse\, Lieder mit Carmen Lüthi. Für Kinder bis
   4 Jahre in Begleitung. Jeweils von 9:15 bis ca. 09:45 Uhr oder von 10:15 
@@ -741,7 +672,7 @@ BEGIN:VEVENT
 SUMMARY:Märlistunde
 DTSTART;TZID=Europe/Zurich:20261202T140000
 DTEND;TZID=Europe/Zurich:20261202T144500
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-21355-202612021400@agenda-familles-berne
 DESCRIPTION:Mit Barbara Häusermann und Nadine Toller-Schwab .\nSource : 
  Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/maerlistunde/
@@ -752,7 +683,7 @@ BEGIN:VEVENT
 SUMMARY:Pokémon Tauschbörse
 DTSTART;TZID=Europe/Zurich:20261202T140000
 DTEND;TZID=Europe/Zurich:20261202T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:mueze-pokemon-tauschboerse-02-12-2026-1400@agenda-familles-berne
 DESCRIPTION:Komm und schnapp sie dir!\nSource : MüZe Muri-Gümligen\nhttp
  s://www.mueze-muri-guemligen.ch/veranstaltungen/pokemon-tauschboerse-02-12
@@ -766,7 +697,7 @@ BEGIN:VEVENT
 SUMMARY:Märlihuus
 DTSTART;TZID=Europe/Zurich:20261202T140000
 DTEND;TZID=Europe/Zurich:20261202T153000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7515794771371130829@agenda-familles-berne
 DESCRIPTION:Schauspielerin Prisca Saxer erzählt Geschichten für Kleine\,
   Halb-Starke und Möchte-Gern-Grosse und zaubert ihnen warme Ohren und gro
@@ -780,7 +711,7 @@ BEGIN:VEVENT
 SUMMARY:Märchen und Zeichnen
 DTSTART;TZID=Europe/Zurich:20261202T143000
 DTEND;TZID=Europe/Zurich:20261202T153000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:mueze-maerchen-und-zeichnen-02-12-2026-1430@agenda-familles-berne
 DESCRIPTION:Tauche ein in die Welt der Geschichten! Zuerst lauschen wir sp
  annenden Märli und dann geht die Reise weiter und du darfst mit Farbstift
@@ -797,7 +728,7 @@ SUMMARY:Atelier bilingue / zweisprachiger Workshop: Reise in die Freiheit:
   Workshop s'aMUSÉE !
 DTSTART;TZID=Europe/Zurich:20261202T143000
 DTEND;TZID=Europe/Zurich:20261202T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kmb-14202-202612021430@agenda-familles-berne
 DESCRIPTION:Rejoins-nous dans le monde passionnant de l’art et découvre
   les artistes et les histoires derrière leurs œuvres.\nSource : Kunstmus
@@ -811,7 +742,7 @@ BEGIN:VEVENT
 SUMMARY:Märli auf dem Münsterturm
 DTSTART;TZID=Europe/Zurich:20261202T143000
 DTEND;TZID=Europe/Zurich:20261202T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7432775166084572745@agenda-familles-berne
 DESCRIPTION:Märli auf dem Münsterturm - Kindergeschichten mit Brigitte H
  irsig\nSource : Eventfrog\nhttps://eventfrog.ch/de/p/kinderveranstaltungen
@@ -825,7 +756,7 @@ BEGIN:VEVENT
 SUMMARY:La Grenouille: «Schlafen Fische?»
 DTSTART;TZID=Europe/Zurich:20261202T160000
 DTEND;TZID=Europe/Zurich:20261202T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7523784444437639516@agenda-familles-berne
 DESCRIPTION:Sannas kleiner Bruder Emil ist gestorben. Ist der Tod wirklich
   Schlafes Bruder? Ein Theatersolo über die grossen\, kleinen\, letzten Fr
@@ -840,7 +771,7 @@ BEGIN:VEVENT
 SUMMARY:Värsli-Zyt
 DTSTART;TZID=Europe/Zurich:20261203T093000
 DTEND;TZID=Europe/Zurich:20261203T100000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-50819-202612030930@agenda-familles-berne
 DESCRIPTION:Geschichten\, Verse\, Lieder mit Carmen Lüthi für Kinder bis
   vier Jahre in Begleitung. Kostenlos. Anmeldung: muensingen@kob.ch Im Ansc
@@ -853,7 +784,7 @@ BEGIN:VEVENT
 SUMMARY:Samichlaus
 DTSTART;TZID=Europe/Zurich:20261204T093000
 DTEND;TZID=Europe/Zurich:20261204T103000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:mueze-samichlaus-04-12-2026-0930@agenda-familles-berne
 DESCRIPTION:Der Samichlaus besucht uns in der TreffPunkt MüZe Cafeteria! 
  Gemeinsam verbringen wir einen schönen Morgen bei Gritibänzduft während
@@ -869,7 +800,7 @@ BEGIN:VEVENT
 SUMMARY:Festliche Fotos im TreffPunkt MüZe
 DTSTART;TZID=Europe/Zurich:20261204T093000
 DTEND;TZID=Europe/Zurich:20261204T113000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:mueze-festliche-fotos-im-treffpunkt-mueze-04-12-2026-0930@agenda-famil
  les-berne
 DESCRIPTION:Lasst eure Kinder professionell von Frauke Supersaxo fotografi
@@ -885,7 +816,7 @@ BEGIN:VEVENT
 SUMMARY:Festliche Fotos im TreffPunkt MüZe
 DTSTART;TZID=Europe/Zurich:20261204T150000
 DTEND;TZID=Europe/Zurich:20261204T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:mueze-festliche-fotos-im-treffpunkt-mueze-04-12-2026-2-1500@agenda-fam
  illes-berne
 DESCRIPTION:Lasst eure Kinder professionell von Frauke Supersaxo fotografi
@@ -901,7 +832,7 @@ BEGIN:VEVENT
 SUMMARY:NPZ Chlousetag
 DTSTART;TZID=Europe/Zurich:20261204T160000
 DTEND;TZID=Europe/Zurich:20261204T213000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7526961894101405020@agenda-familles-berne
 DESCRIPTION:Ein Fest für die ganze (NPZ) Familie\nSource : Eventfrog\nhtt
  ps://eventfrog.ch/de/p/kinderveranstaltungen/familienveranstaltungen/npz-c
@@ -914,7 +845,7 @@ BEGIN:VEVENT
 SUMMARY:Gemeinsames Singen in der Aula
 DTSTART;TZID=Europe/Zurich:20261204T181500
 DTEND;TZID=Europe/Zurich:20261204T191500
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7498310638147491296@agenda-familles-berne
 DESCRIPTION:Gemeinsam singen wir Weihnachtslieder in der Aula. Begleitung 
  am Klavier durch Lucas Hauser.\nSource : Eventfrog\nhttps://eventfrog.ch/d
@@ -928,7 +859,7 @@ BEGIN:VEVENT
 SUMMARY:Märchentheater im Psychomotorik-Raum
 DTSTART;TZID=Europe/Zurich:20261204T181500
 DTEND;TZID=Europe/Zurich:20261204T191500
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7498313272128489790@agenda-familles-berne
 DESCRIPTION:Tauche ein in die Märchenwelt. Gespielt und musiziert von ver
  schiedenen Lehrpersonen.\nSource : Eventfrog\nhttps://eventfrog.ch/de/p/ki
@@ -942,7 +873,7 @@ BEGIN:VEVENT
 SUMMARY:Gemeinsames Singen in der Aula
 DTSTART;TZID=Europe/Zurich:20261204T181500
 DTEND;TZID=Europe/Zurich:20261204T191500
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7498299149315492114@agenda-familles-berne
 DESCRIPTION:Gemeinsam singen wir Weihnachtslieder in der Aula. Begleitung 
  am Klavier durch Lucas Hauser.\nSource : Eventfrog\nhttps://eventfrog.ch/d
@@ -956,7 +887,7 @@ BEGIN:VEVENT
 SUMMARY:Adventsgeschichten für Kinder
 DTSTART;TZID=Europe/Zurich:20261204T190000
 DTEND;TZID=Europe/Zurich:20261204T193000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-51437-202612041900@agenda-familles-berne
 DESCRIPTION:Taucht ein in die magische Adventszeit! Ohne Anmeldung.\nSourc
  e : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/adventsgeschich
@@ -968,7 +899,7 @@ BEGIN:VEVENT
 SUMMARY:La Grenouille: «Schlafen Fische?»
 DTSTART;TZID=Europe/Zurich:20261204T190000
 DTEND;TZID=Europe/Zurich:20261204T200000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7523784536557152023@agenda-familles-berne
 DESCRIPTION:Sannas kleiner Bruder Emil ist gestorben. Ist der Tod wirklich
   Schlafes Bruder? Ein Theatersolo über die grossen\, kleinen\, letzten Fr
@@ -983,7 +914,7 @@ BEGIN:VEVENT
 SUMMARY:Sternenwochen
 DTSTART;TZID=Europe/Zurich:20261205T100000
 DTEND;TZID=Europe/Zurich:20261205T130000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-51449-202612051000@agenda-familles-berne
 DESCRIPTION:Sammelaktion von Kindern für Kinder Kinder vom Quartier backe
  n und verkaufen Kuchen und sammeln für Flüchtlingskinder aus Laos\, die 
@@ -997,7 +928,7 @@ BEGIN:VEVENT
 SUMMARY:3 x S – Spiel\, Spass\, Sprachen
 DTSTART;TZID=Europe/Zurich:20261205T100000
 DTEND;TZID=Europe/Zurich:20261205T110000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-37699-202612051000@agenda-familles-berne
 DESCRIPTION:Was wir machen: Spielerisch Französisch und Englisch sprechen
   mit dem Wortschatz\, den wir haben. Wir spielen Karten\, erfinden Geschic
@@ -1011,7 +942,7 @@ BEGIN:VEVENT
 SUMMARY:Schenk mir eine Geschichte auf Persisch (Farsi)
 DTSTART;TZID=Europe/Zurich:20261205T110000
 DTEND;TZID=Europe/Zurich:20261205T120000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-50148-202612051100@agenda-familles-berne
 DESCRIPTION:Wer die Muttersprache gut spricht\, lernt andere Sprachen bess
  er! Kinder von zwei bis sechs Jahren\, ihre älteren Geschwister sowie ihr
@@ -1026,7 +957,7 @@ BEGIN:VEVENT
 SUMMARY:Pica & Poco
 DTSTART;TZID=Europe/Zurich:20261205T110000
 DTEND;TZID=Europe/Zurich:20261205T120000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7523690386281221444@agenda-familles-berne
 DESCRIPTION:Ein heiteres und liebevolles Theatererlebnis für alle Mensche
  n ab 3 Jahren. Mit Humor\, Poesie und jeder Menge Entdeckungslust für die
@@ -1041,7 +972,7 @@ BEGIN:VEVENT
 SUMMARY:Schenk mir eine Geschichte auf Albanisch
 DTSTART;TZID=Europe/Zurich:20261205T130000
 DTEND;TZID=Europe/Zurich:20261205T140000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-41275-202612051300@agenda-familles-berne
 DESCRIPTION:Më trego një përrallë në gjuhën shqipe\nSource : Kornhau
  sbibliotheken\nhttps://www.kob.ch/veranstaltung/schenk-mir-eine-geschichte
@@ -1055,7 +986,7 @@ SUMMARY:Musikalische Geschichte und Instrumentenparcours mit dem Junior En
  semble der Jugendmusik Bern-Bümpliz
 DTSTART;TZID=Europe/Zurich:20261205T140000
 DTEND;TZID=Europe/Zurich:20261205T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-50970-202612051400@agenda-familles-berne
 DESCRIPTION:Geschichte hören. Musik entdecken. Instrumente ausprobieren. 
  Was passiert\, wenn eine Geschichte plötzlich zu klingen beginnt? Das Jun
@@ -1071,7 +1002,7 @@ BEGIN:VEVENT
 SUMMARY:Schenk mir eine Geschichte auf Russisch
 DTSTART;TZID=Europe/Zurich:20261205T140000
 DTEND;TZID=Europe/Zurich:20261205T150000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:kob-33939-202612051400@agenda-familles-berne
 DESCRIPTION:Подарите мне рассказ по-русски.\nSou
  rce : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/schenk-mir-ei
@@ -1084,7 +1015,7 @@ BEGIN:VEVENT
 SUMMARY:Gewürznelken und Tannenduft
 DTSTART;TZID=Europe/Zurich:20261205T140000
 DTEND;TZID=Europe/Zurich:20261205T180000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:boga-gewuerznelken_und_tannenduft-202612051400@agenda-familles-berne
 DESCRIPTION:Weihnachten lockt schon bald mit besinnlichem Duft und Kerzens
  chein. Der Samichlaus bereitet sich vor und braucht dazu allerlei Pflanzen
@@ -1099,7 +1030,7 @@ BEGIN:VEVENT
 SUMMARY:Pica & Poco
 DTSTART;TZID=Europe/Zurich:20261205T140000
 DTEND;TZID=Europe/Zurich:20261205T150000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7523690912569934827@agenda-familles-berne
 DESCRIPTION:Ein heiteres und liebevolles Theatererlebnis für alle Mensche
  n ab 3 Jahren. Mit Humor\, Poesie und jeder Menge Entdeckungslust für die
@@ -1114,7 +1045,7 @@ BEGIN:VEVENT
 SUMMARY:Die Schneekönigin
 DTSTART;TZID=Europe/Zurich:20261205T150000
 DTEND;TZID=Europe/Zurich:20261205T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:buehnenbern-schneekonigin-202612051500@agenda-familles-berne
 DESCRIPTION:Kalt ist die Welt der Schneekönigin\, und kalt ist ihr Herz. 
  Eines Tages taucht sie als Eiskristall vor Kays Fenster auf. Auch sein Her
@@ -1127,7 +1058,7 @@ BEGIN:VEVENT
 SUMMARY:Wiehnachte für d'Alina
 DTSTART;TZID=Europe/Zurich:20261205T150000
 DTEND;TZID=Europe/Zurich:20261205T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:puppentheater-act79-202612051500@agenda-familles-berne
 DESCRIPTION:Syrien. Winter. Gleissendes Wüstenlicht. Dann\, eine mondfins
  tere Nacht. Ein heller Stern erscheint am Himmel. Ein junges Paar\, die ho
@@ -1141,7 +1072,7 @@ BEGIN:VEVENT
 SUMMARY:Dr Samichlous chunnt i Tierpark
 DTSTART;TZID=Europe/Zurich:20261205T153000
 DTEND;TZID=Europe/Zurich:20261205T163000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:tierpark-dr-samichlous-chunnt-i-tierpark-3-202612051530@agenda-famille
  s-berne
 DESCRIPTION:Samichlous und Schmutzli kommen mit dem Esel und verteilen kle
@@ -1156,7 +1087,7 @@ BEGIN:VEVENT
 SUMMARY:BON APP! (Teatro Lata)
 DTSTART;TZID=Europe/Zurich:20261205T160000
 DTEND;TZID=Europe/Zurich:20261205T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:schlachthaus-7421-202612051600@agenda-familles-berne
 DESCRIPTION:Frank und Carlos arbeiten beim Lieferservice Super Blitz – e
  in ganz schön stressiger Job! Im Minutentakt kommen neue Bestellungen rei
@@ -1171,7 +1102,7 @@ BEGIN:VEVENT
 SUMMARY:Wiehnachte für d'Alina
 DTSTART;TZID=Europe/Zurich:20261206T110000
 DTEND;TZID=Europe/Zurich:20261206T120000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:puppentheater-act79-202612061100@agenda-familles-berne
 DESCRIPTION:Syrien. Winter. Gleissendes Wüstenlicht. Dann\, eine mondfins
  tere Nacht. Ein heller Stern erscheint am Himmel. Ein junges Paar\, die ho
@@ -1185,7 +1116,7 @@ BEGIN:VEVENT
 SUMMARY:Chlousefahrten
 DTSTART;TZID=Europe/Zurich:20261206T120000
 DTEND;TZID=Europe/Zurich:20261206T132000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7521874496065651453@agenda-familles-berne
 DESCRIPTION:Mit dem historischen Tram zum Samichlous und zurück\nSource :
   Eventfrog\nhttps://eventfrog.ch/de/p/kinderveranstaltungen/familienverans
@@ -1198,7 +1129,7 @@ BEGIN:VEVENT
 SUMMARY:Chlousefahrten
 DTSTART;TZID=Europe/Zurich:20261206T123000
 DTEND;TZID=Europe/Zurich:20261206T135000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7521874748957049730@agenda-familles-berne
 DESCRIPTION:Mit dem historischen Tram zum Samichlous und zurück\nSource :
   Eventfrog\nhttps://eventfrog.ch/de/p/kinderveranstaltungen/familienverans
@@ -1211,7 +1142,7 @@ BEGIN:VEVENT
 SUMMARY:Chlousefahrten
 DTSTART;TZID=Europe/Zurich:20261206T133000
 DTEND;TZID=Europe/Zurich:20261206T145000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7521875123218955414@agenda-familles-berne
 DESCRIPTION:Mit dem historischen Tram zum Samichlous und zurück\nSource :
   Eventfrog\nhttps://eventfrog.ch/de/p/kinderveranstaltungen/familienverans
@@ -1224,7 +1155,7 @@ BEGIN:VEVENT
 SUMMARY:Chlousefahrten
 DTSTART;TZID=Europe/Zurich:20261206T140000
 DTEND;TZID=Europe/Zurich:20261206T152000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7521875338567129123@agenda-familles-berne
 DESCRIPTION:Mit dem historischen Tram zum Samichlous und zurück\nSource :
   Eventfrog\nhttps://eventfrog.ch/de/p/kinderveranstaltungen/familienverans
@@ -1237,7 +1168,7 @@ BEGIN:VEVENT
 SUMMARY:BON APP! (Teatro Lata)
 DTSTART;TZID=Europe/Zurich:20261206T150000
 DTEND;TZID=Europe/Zurich:20261206T160000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:schlachthaus-7422-202612061500@agenda-familles-berne
 DESCRIPTION:Frank und Carlos arbeiten beim Lieferservice Super Blitz – e
  in ganz schön stressiger Job! Im Minutentakt kommen neue Bestellungen rei
@@ -1252,7 +1183,7 @@ BEGIN:VEVENT
 SUMMARY:Chlousefahrten
 DTSTART;TZID=Europe/Zurich:20261206T150000
 DTEND;TZID=Europe/Zurich:20261206T162000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7521875607405205984@agenda-familles-berne
 DESCRIPTION:Mit dem historischen Tram zum Samichlous und zurück\nSource :
   Eventfrog\nhttps://eventfrog.ch/de/p/kinderveranstaltungen/familienverans
@@ -1265,7 +1196,7 @@ BEGIN:VEVENT
 SUMMARY:Chlousefahrten
 DTSTART;TZID=Europe/Zurich:20261206T153000
 DTEND;TZID=Europe/Zurich:20261206T165000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7521875728519939510@agenda-familles-berne
 DESCRIPTION:Mit dem historischen Tram zum Samichlous und zurück\nSource :
   Eventfrog\nhttps://eventfrog.ch/de/p/kinderveranstaltungen/familienverans
@@ -1278,7 +1209,7 @@ BEGIN:VEVENT
 SUMMARY:Munterbunt (Theater für die Allerjüngsten)
 DTSTART;TZID=Europe/Zurich:20261206T160000
 DTEND;TZID=Europe/Zurich:20261206T170000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:schlachthaus-7598-202612061600@agenda-familles-berne
 DESCRIPTION:Hier gibt es kein Gestern und kein Morgen. Minuten und Stunden
   können sich lang oder kurz anfühlen. Unser Körper und unsere Gefühle 
@@ -1293,7 +1224,7 @@ BEGIN:VEVENT
 SUMMARY:Chlousefahrten
 DTSTART;TZID=Europe/Zurich:20261206T163000
 DTEND;TZID=Europe/Zurich:20261206T175000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7521875872430722854@agenda-familles-berne
 DESCRIPTION:Mit dem historischen Tram zum Samichlous und zurück\nSource :
   Eventfrog\nhttps://eventfrog.ch/de/p/kinderveranstaltungen/familienverans
@@ -1306,7 +1237,7 @@ BEGIN:VEVENT
 SUMMARY:Chlousefahrten
 DTSTART;TZID=Europe/Zurich:20261206T170000
 DTEND;TZID=Europe/Zurich:20261206T182000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:eventfrog-7521876026588183420@agenda-familles-berne
 DESCRIPTION:Mit dem historischen Tram zum Samichlous und zurück\nSource :
   Eventfrog\nhttps://eventfrog.ch/de/p/kinderveranstaltungen/familienverans
@@ -1319,7 +1250,7 @@ BEGIN:VEVENT
 SUMMARY:Die Schneekönigin
 DTSTART;TZID=Europe/Zurich:20261206T180000
 DTEND;TZID=Europe/Zurich:20261206T190000
-DTSTAMP:20261124T143916Z
+DTSTAMP:20261125T140009Z
 UID:buehnenbern-schneekonigin-202612061800@agenda-familles-berne
 DESCRIPTION:Kalt ist die Welt der Schneekönigin\, und kalt ist ihr Herz. 
  Eines Tages taucht sie als Eiskristall vor Kays Fenster auf. Auch sein Her
@@ -1327,5 +1258,133 @@ DESCRIPTION:Kalt ist die Welt der Schneekönigin\, und kalt ist ihr Herz.
  e : Bühnen Bern\nhttps://buehnenbern.ch/spielplan/programm/schneekonigin/
 LOCATION:Stadttheater
 URL:https://buehnenbern.ch/spielplan/programm/schneekonigin/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Värsli-Zyt
+DTSTART;TZID=Europe/Zurich:20261209T100000
+DTEND;TZID=Europe/Zurich:20261209T104500
+DTSTAMP:20261125T140009Z
+UID:kob-50710-202612091000@agenda-familles-berne
+DESCRIPTION:Mit Fabienne Liechti. Värsli und Sprachspiele für Kinder bis
+  ca. vier Jahre in Begleitung einer Bezugsperson. Keine Anmeldung erforder
+ lich.\nSource : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/vae
+ rsli-zyt-2/
+LOCATION:Bibliothek Breitenrain mit Ludothek
+URL:https://www.kob.ch/veranstaltung/vaersli-zyt-2/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kinder basteln für die Tierpark-Tiere
+DTSTART;TZID=Europe/Zurich:20261209T140000
+DTEND;TZID=Europe/Zurich:20261209T163000
+DTSTAMP:20261125T140009Z
+UID:tierpark-kinder-basteln-fuer-die-daehlhoelzli-tiere-2-202612091400@age
+ nda-familles-berne
+DESCRIPTION:Kinder basteln unter fachkundiger Anleitung Beschäftigungsobj
+ ekte für die Tiere und dürfen dann beim «Auspacken» zuschauen. – An 
+ diesem Tag darfst du mithelfen\, etwas für Affen\, Fische oder…\nSource
+  : Tierpark Bern\nhttps://tierpark-bern.ch/event/kinder-basteln-fuer-die-d
+ aehlhoelzli-tiere-2/
+LOCATION:Tierpark Dählhölzli\, Tierparkweg 1\, 3005 Bern
+URL:https://tierpark-bern.ch/event/kinder-basteln-fuer-die-daehlhoelzli-ti
+ ere-2/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:KREALINO – Kinderbasteln
+DTSTART;TZID=Europe/Zurich:20261209T140000
+DTEND;TZID=Europe/Zurich:20261209T160000
+DTSTAMP:20261125T140009Z
+UID:mueze-krealino-kinderbasteln-09-12-2026-1400@agenda-familles-berne
+DESCRIPTION:Basteln für die Kleinen von 2-6 Jahren. 5 Franken pro Kind\, 
+ inklusive einem kleinen Zvieri.\nSource : MüZe Muri-Gümligen\nhttps://ww
+ w.mueze-muri-guemligen.ch/veranstaltungen/krealino-kinderbasteln-09-12-202
+ 6/
+LOCATION:MüZe Muri-Gümligen (Thoracherhus)\, Kranichweg 10\, 3074 Muri b
+ ei Bern
+URL:https://www.mueze-muri-guemligen.ch/veranstaltungen/krealino-kinderbas
+ teln-09-12-2026/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Geschichten vor Kunst: Workshop KunstSpatz
+DTSTART;TZID=Europe/Zurich:20261209T143000
+DTEND;TZID=Europe/Zurich:20261209T154500
+DTSTAMP:20261125T140009Z
+UID:kmb-1305-202612091430@agenda-familles-berne
+DESCRIPTION:Freuen Sie sich auf lebhaft erzählte Geschichten vor Kunstwer
+ ken\, gefolgt vom gemeinsamen Gestalten im Atelier. Der KunstSpatz platzie
+ rt sich jeden Monat vor einem ausgewählten Kunstwerk.\nSource : Kunstmuse
+ um Bern\nhttps://www.kunstmuseumbern.ch/de/workshop/geschichten-vor-kunst
+LOCATION:Kunstmuseum Bern\, Hodlerstrasse 8–12\, 3011 Bern
+URL:https://www.kunstmuseumbern.ch/de/workshop/geschichten-vor-kunst
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Eine Geschichte für dich!
+DTSTART;TZID=Europe/Zurich:20261209T143000
+DTEND;TZID=Europe/Zurich:20261209T150000
+DTSTAMP:20261125T140009Z
+UID:kob-51086-202612091430@agenda-familles-berne
+DESCRIPTION:Eine Geschichte für dich – auf Türkisch\, Arabisch\, Kurdi
+ sch\, Persisch und Deutsch. Für Kinder ab dreijährig. Programm: 14.10.20
+ 26 – Türkisch/Deutsch 11.11.2026 – Arabisch/Deutsch 09.12.2026 –…
+ \nSource : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/eine-ges
+ chichte-fuer-dich/
+LOCATION:Bibliothek Zollikofen
+URL:https://www.kob.ch/veranstaltung/eine-geschichte-fuer-dich/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Wiehnachte für d'Alina
+DTSTART;TZID=Europe/Zurich:20261209T150000
+DTEND;TZID=Europe/Zurich:20261209T160000
+DTSTAMP:20261125T140009Z
+UID:puppentheater-act79-202612091500@agenda-familles-berne
+DESCRIPTION:Syrien. Winter. Gleissendes Wüstenlicht. Dann\, eine mondfins
+ tere Nacht. Ein heller Stern erscheint am Himmel. Ein junges Paar\, die ho
+ chschwangere Mara und ihr Mann\, der Schreiner Yussuf\, werden…\nSource 
+ : Berner Puppen Theater\nhttps://www.berner-puppentheater.ch/kinderprogram
+ m/?act=79
+LOCATION:Berner Puppen Theater\, Gerechtigkeitsgasse 31\, 3011 Bern
+URL:https://www.berner-puppentheater.ch/kinderprogramm/?act=79
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Pantomime GLÜZUWEI: Glücklich zu Weihnachten
+DTSTART;TZID=Europe/Zurich:20261209T153000
+DTEND;TZID=Europe/Zurich:20261209T160000
+DTSTAMP:20261125T140009Z
+UID:kob-50981-202612091530@agenda-familles-berne
+DESCRIPTION:Eine humorvolle Weihnachtsgeschichte – ganz ohne Worte Die P
+ antomime handelt von den humorvollen Vorbereitungen für eine Weihnachtsfe
+ ier. Dabei wird ausschliesslich ohne Sprache gespielt\, sodass…\nSource 
+ : Kornhausbibliotheken\nhttps://www.kob.ch/veranstaltung/pantomime-gluezuw
+ ei-gluecklich-zu-weihnachten/
+LOCATION:Bibliothek Länggasse
+URL:https://www.kob.ch/veranstaltung/pantomime-gluezuwei-gluecklich-zu-wei
+ hnachten/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Die Schneekönigin
+DTSTART;TZID=Europe/Zurich:20261209T180000
+DTEND;TZID=Europe/Zurich:20261209T190000
+DTSTAMP:20261125T140009Z
+UID:buehnenbern-schneekonigin-202612091800@agenda-familles-berne
+DESCRIPTION:Kalt ist die Welt der Schneekönigin\, und kalt ist ihr Herz. 
+ Eines Tages taucht sie als Eiskristall vor Kays Fenster auf. Auch sein Her
+ z ist durch einen Splitter des Teufelsspiegels kalt geworden –…\nSourc
+ e : Bühnen Bern\nhttps://buehnenbern.ch/spielplan/programm/schneekonigin/
+LOCATION:Stadttheater
+URL:https://buehnenbern.ch/spielplan/programm/schneekonigin/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Bilderbuchlesung Rosi: Weihnachtseinsatz auf dem Bauernhof
+DTSTART;TZID=Europe/Zurich:20261209T183000
+DTEND;TZID=Europe/Zurich:20261209T200000
+DTSTAMP:20261125T140009Z
+UID:kob-50989-202612091830@agenda-familles-berne
+DESCRIPTION:Bilderbuchgeschichte mit Evelyn Studer-Kopp Ein weihnachtliche
+ r Feuerwehreinsatz auf dem Bauernhof: Rosi ist voller Vorfreude\, Weihnach
+ ten steht vor der Tür. Rund um den Bauernhof tanzen die…\nSource : Korn
+ hausbibliotheken\nhttps://www.kob.ch/veranstaltung/rosi-weihnachtseinsatz-
+ auf-dem-bauernhof-2/
+LOCATION:Bibliothek Breitenrain mit Ludothek
+URL:https://www.kob.ch/veranstaltung/rosi-weihnachtseinsatz-auf-dem-bauern
+ hof-2/
 END:VEVENT
 END:VCALENDAR
